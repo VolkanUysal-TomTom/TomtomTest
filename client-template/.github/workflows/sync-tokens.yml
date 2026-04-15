@@ -29,6 +29,8 @@ jobs:
         run: |
           git config user.name  "tomtom-ds-bot"
           git config user.email "ds-bot@tomtom.com"
+          # Delete remote branch if it exists from a previous run
+          git push origin --delete "${{ steps.vars.outputs.BRANCH }}" 2>/dev/null || true
           git checkout -b "${{ steps.vars.outputs.BRANCH }}"
 
       - name: Download and unpack new base tokens
@@ -47,13 +49,21 @@ jobs:
           rm -rf _tmp_tokens base-tokens.zip
 
       - name: Commit updated base tokens
+        id: commit
         run: |
           git add tokens/tomtom-base
-          git commit -m "chore(tokens): update tomtom-base to v${{ steps.vars.outputs.VERSION }}"
+          if git diff --staged --quiet; then
+            echo "No changes to tomtom-base — base tokens already up to date."
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "chore(tokens): update tomtom-base to v${{ steps.vars.outputs.VERSION }}"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
           git push origin "${{ steps.vars.outputs.BRANCH }}"
 
       - name: Fetch migration manifest for PR description
         id: manifest
+        if: steps.commit.outputs.changed == 'true'
         run: |
           MANIFEST=$(curl -s \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
@@ -77,6 +87,7 @@ jobs:
 
       - name: Create pull request
         id: pr
+        if: steps.commit.outputs.changed == 'true'
         uses: actions/github-script@v7
         with:
           script: |
@@ -105,18 +116,14 @@ jobs:
                 deprecatedSection,
                 '',
                 '---',
-                '### Next step',
-                '',
-                `👉 **[Open Designer Review Tool](${{ steps.vars.outputs.REVIEW_URL }}&pr=${pr?.data?.number ?? 'PR_NUMBER'}&owner=${context.repo.owner}&repo=${context.repo.repo}&branch=sync%2Fv${{ steps.vars.outputs.VERSION }})**`,
-                '',
-                'Review new tokens, accept defaults or set custom values, then merge this PR.',
-                'After merging, pull the changes in Token Studio.',
+                '_The designer review link will be posted as a comment below._',
               ].filter(Boolean).join('\n')
             });
 
             return pr.data.number;
 
       - name: Post review tool link as PR comment
+        if: steps.commit.outputs.changed == 'true'
         uses: actions/github-script@v7
         with:
           script: |
