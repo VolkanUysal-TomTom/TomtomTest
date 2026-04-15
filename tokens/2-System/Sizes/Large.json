@@ -1,0 +1,215 @@
+{
+  "Radius": {
+    "tt_sys_size_radius_null": {
+      "value": "{tt_glb_size_null}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_radius_xs": {
+      "value": "{tt_glb_size_2}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_radius_s": {
+      "value": "{tt_glb_size_4}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_radius_r": {
+      "value": "{tt_glb_size_8}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_radius_m": {
+      "value": "{tt_glb_size_12}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_radius_l": {
+      "value": "{tt_glb_size_16}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_radius_xl": {
+      "value": "{tt_glb_size_24}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_radius_xxl": {
+      "value": "{tt_glb_size_36}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_radius_full": {
+      "value": "{tt_glb_size_full}",
+      "type": "number",
+      "description": ""
+    }
+  },
+  "Scale": {
+    "tt_sys_size_scale_xxxs": {
+      "value": "{tt_glb_size_32}",
+      "type": "number"
+    },
+    "tt_sys_size_scale_xxs": {
+      "value": "{tt_glb_size_40}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_scale_xs": {
+      "value": "{tt_glb_size_48}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_scale_s": {
+      "value": "{tt_glb_size_56}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_scale_r": {
+      "value": "{tt_glb_size_64}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_scale_m": {
+      "value": "{tt_glb_size_72}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_scale_l": {
+      "value": "{tt_glb_size_88}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_scale_xl": {
+      "value": "{tt_glb_size_112}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_scale_xxl": {
+      "value": "{tt_glb_size_128}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_scale_xxxl": {
+      "value": "{tt_glb_size_168}",
+      "type": "number",
+      "description": ""
+    }
+  },
+  "Icon": {
+    "tt_sys_size_icon_xs": {
+      "value": "{tt_glb_size_24}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_icon_s": {
+      "value": "{tt_glb_size_32}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_icon_r": {
+      "value": "{tt_glb_size_40}",
+      "type": "number"
+    },
+    "tt_sys_size_icon_m": {
+      "value": "{tt_glb_size_48}",
+      "type": "number"
+    },
+    "tt_sys_size_icon_l": {
+      "value": "{tt_glb_size_56}",
+      "type": "number"
+    },
+    "tt_sys_size_icon_xl": {
+      "value": "{tt_glb_size_64}",
+      "type": "number"
+    },
+    "tt_sys_size_icon_xxl": {
+      "value": "{tt_glb_size_88}",
+      "type": "number"
+    }
+  },
+  "Graphic": {
+    "tt_sys_size_graphic_s": {
+      "value": "{tt_glb_size_200}",
+      "type": "number"
+    },
+    "tt_sys_size_graphic_m": {
+      "value": "{tt_glb_size_300}",
+      "type": "number"
+    },
+    "tt_sys_size_graphic_l": {
+      "value": "{tt_glb_size_360}",
+      "type": "number"
+    }
+  },
+  "Weight": {
+    "tt_sys_size_weight_s": {
+      "value": "{tt_glb_size_2}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_weight_r": {
+      "value": "{tt_glb_size_3}",
+      "type": "number"
+    },
+    "tt_sys_size_weight_m": {
+      "value": "{tt_glb_size_4}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_weight_l": {
+      "value": "{tt_glb_size_8}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_weight_xl": {
+      "value": "{tt_glb_size_12}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_weight_null": {
+      "value": "{tt_glb_size_null}",
+      "type": "number",
+      "description": ""
+    }
+  },
+  "Font Size": {
+    "tt_sys_fontSize_xxl": {
+      "value": "{tt_glb_size_96}",
+      "type": "fontSizes"
+    },
+    "tt_sys_fontSize_xl": {
+      "value": "{tt_glb_size_64}",
+      "type": "fontSizes"
+    },
+    "tt_sys_fontSize_l": {
+      "value": "{tt_glb_size_40}",
+      "type": "fontSizes"
+    },
+    "tt_sys_fontSize_m": {
+      "value": "{tt_glb_size_36}",
+      "type": "fontSizes"
+    },
+    "tt_sys_fontSize_r": {
+      "value": "{tt_glb_size_32}",
+      "type": "fontSizes"
+    },
+    "tt_sys_fontSize_s": {
+      "value": "{tt_glb_size_28}",
+      "type": "fontSizes"
+    },
+    "tt_sys_fontSize_xs": {
+      "value": "{tt_glb_size_28}",
+      "type": "fontSizes"
+    },
+    "tt_sys_fontSize_xxs": {
+      "value": "{tt_glb_size_24}",
+      "type": "fontSizes"
+    },
+    "tt_sys_fontSize_xxxs": {
+      "value": "{tt_glb_size_20}",
+      "type": "fontSizes"
+    }
+  }
+}

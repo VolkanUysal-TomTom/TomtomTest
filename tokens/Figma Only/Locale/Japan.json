@@ -1,0 +1,2838 @@
+{
+  "fo_locale_unit_distance_long": {
+    "value": "km",
+    "type": "text"
+  },
+  "fo_locale_unit_distance_short": {
+    "value": "m",
+    "type": "text"
+  },
+  "fo_locale_unit_speed": {
+    "value": "km/h",
+    "type": "text"
+  },
+  "fo_locale_unit_temperature": {
+    "value": "°C",
+    "type": "text"
+  },
+  "fo_locale_unit_currency": {
+    "value": "¥",
+    "type": "text"
+  },
+  "fo_locale_unit_price_decimal_separator": {
+    "value": ".",
+    "type": "text"
+  },
+  "fo_locale_unit_time_hr": {
+    "value": "時間",
+    "type": "text"
+  },
+  "fo_locale_unit_time_min": {
+    "value": "分",
+    "type": "text"
+  },
+  "fo_content_eu": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "fo_content_us": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "fo_content_japan": {
+    "value": "true",
+    "type": "boolean"
+  },
+  "fo_content_korea": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "Buttons": {
+    "fo_locale_containedButton_cancel": {
+      "value": "キャンセル",
+      "type": "text"
+    },
+    "fo_locale_containedButton_delete": {
+      "value": "削除",
+      "type": "text"
+    },
+    "fo_locale_containedButton_save": {
+      "value": "保存",
+      "type": "text"
+    },
+    "fo_locale_containedButton_confirm": {
+      "value": "確認",
+      "type": "text"
+    },
+    "fo_locale_containedButton_done": {
+      "value": "完了",
+      "type": "text"
+    },
+    "fo_locale_containedButton_no": {
+      "value": "いいえ",
+      "type": "text"
+    },
+    "fo_locale_containedButton_yes": {
+      "value": "はい",
+      "type": "text"
+    },
+    "fo_locale_containedButton_dismiss": {
+      "value": "無視",
+      "type": "text"
+    },
+    "fo_locale_containedButton_accept": {
+      "value": "承認",
+      "type": "text"
+    },
+    "fo_locale_containedButton_drive": {
+      "value": "案内開始",
+      "type": "text"
+    },
+    "fo_locale_containedButton_more": {
+      "value": "さらに表示",
+      "type": "text"
+    },
+    "fo_locale_containedButton_showMore": {
+      "value": "もっと表示",
+      "type": "text"
+    },
+    "fo_locale_uncontainedButton_readMore": {
+      "value": "続きを読む",
+      "type": "text"
+    },
+    "fo_locale_uncontainedButton_showLess": {
+      "value": "表示を減らす",
+      "type": "text"
+    }
+  },
+  "General UI": {
+    "fo_locale_spinnerMessage_loading": {
+      "value": "読み込み中",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_applying": {
+      "value": "適用中",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_applied": {
+      "value": "適用済み",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_error": {
+      "value": "エラー",
+      "type": "text"
+    },
+    "fo_locale_errorMessage_connection": {
+      "value": "問題が発生しました。接続を確認して、もう一度お試しください。",
+      "type": "text"
+    }
+  },
+  "Guidance": {
+    "NIP": {
+      "fo_locale_nip_firstRow_address": {
+        "value": "昭和通り",
+        "type": "text"
+      },
+      "fo_locale_nip_firstRow_city": {
+        "value": "東京",
+        "type": "text"
+      },
+      "fo_locale_nip_secondRow_address": {
+        "value": "外苑西通り",
+        "type": "text"
+      },
+      "fo_locale_nip_secondRow_city": {
+        "value": "東京",
+        "type": "text"
+      },
+      "fo_locale_nip_distance": {
+        "value": "2.4 {fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    },
+    "Current Street": {
+      "fo_locale_currentStreet_address": {
+        "value": "青山通り",
+        "type": "text"
+      },
+      "fo_locale_currentStreetEmpty": {
+        "value": "通報",
+        "type": "text"
+      }
+    },
+    "ETA": {
+      "fo_locale_eta_distanceValue": {
+        "value": "452",
+        "type": "text"
+      },
+      "fo_locale_eta_endRoute": {
+        "value": "案内を終了しますか?",
+        "type": "text"
+      }
+    },
+    "Arrival": {
+      "fo_locale_arrival_header_destinationRight": {
+        "value": "目的地は\n右にあります",
+        "type": "text"
+      },
+      "fo_locale_arrival_header_destinationLeft": {
+        "value": "目的地は\n左にあります",
+        "type": "text"
+      },
+      "fo_locale_arrival_destination_title": {
+        "value": "SHIBUYA SKY",
+        "type": "text"
+      },
+      "fo_locale_arrival_destination_address": {
+        "value": "東京都渋谷区渋谷2-24-12",
+        "type": "text"
+      },
+      "fo_locale_arrival_waypoint_title": {
+        "value": "ブルーボトルコーヒー 青山",
+        "type": "text"
+      },
+      "fo_locale_arrival_waypoint_address": {
+        "value": "東京都港区南青山3-13-14",
+        "type": "text"
+      },
+      "fo_locale_arrival_destinationWithCharger_title": {
+        "value": "東京ミッドタウン",
+        "type": "text"
+      },
+      "fo_locale_arrival_destinationWithCharger_address": {
+        "value": "東京都港区赤坂9-7-1",
+        "type": "text"
+      },
+      "fo_locale_arrival_chargingStation_title": {
+        "value": "ENEOS EV充電ステーション",
+        "type": "text"
+      },
+      "fo_locale_arrival_chargingStation_address": {
+        "value": "東京都港区芝5-36-7",
+        "type": "text"
+      },
+      "fo_locale_arrival_finishButton": {
+        "value": "終了",
+        "type": "text"
+      },
+      "fo_locale_arrival_findAlternativeButton": {
+        "value": "代替を探す",
+        "type": "text"
+      },
+      "fo_locale_arrival_continueDrivingButton": {
+        "value": "走行を続ける",
+        "type": "text"
+      }
+    },
+    "Upcoming Events": {
+      "fo_locale_upcomingEvents_item1_value": {
+        "value": "250",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item1_body": {
+        "value": "固定式スピードカメラ",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item2_value": {
+        "value": "350",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item2_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_value": {
+        "value": "750",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_body": {
+        "value": "路面凍結",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_value": {
+        "value": "800",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_body": {
+        "value": "逆走車",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_body": {
+        "value": "故障車",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_body": {
+        "value": "より速いルート",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_time": {
+        "value": "9{fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_body": {
+        "value": "渋滞",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_time": {
+        "value": "2{fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_body": {
+        "value": "渋滞",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_time": {
+        "value": "10{fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item9_value": {
+        "value": "11",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item9_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item10_value": {
+        "value": "16",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item10_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_value": {
+        "value": "21",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_body": {
+        "value": "渋滞",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_time": {
+        "value": "35{fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_neutral_speed": {
+        "value": "平均 50 {fo_locale_unit_speed}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_slightlySpeeding_speed": {
+        "value": "平均 55 {fo_locale_unit_speed}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_speeding_speed": {
+        "value": "平均 60 {fo_locale_unit_speed}",
+        "type": "text"
+      }
+    },
+    "Rerouting": {
+      "fo_locale_routeUpdateEvent_routeDeviation": {
+        "value": "ルート逸脱",
+        "type": "text"
+      },
+      "fo_locale_routeUpdateEvent_updatingRoute": {
+        "value": "ルートを更新中",
+        "type": "text"
+      }
+    },
+    "Event Details": {
+      "fo_locale_eventDetails_address": {
+        "value": "東京都新宿区西新宿2-8-1",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_city": {
+        "value": "東京",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_streetType": {
+        "value": "通り",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_streetName": {
+        "value": "中央通り",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_time": {
+        "value": "16:23",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_distanceSaved": {
+        "value": "2 km短縮",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_betterRoute": {
+        "value": "より良いルート",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_nextStop": {
+        "value": "次の立ち寄り地",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_accident": {
+        "value": "事故",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_fewerChargingStops": {
+        "value": "充電回数が少ない",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_avoidsTunnels": {
+        "value": "トンネル回避",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_via": {
+        "value": "経由",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_and": {
+        "value": "と",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_reportedOn": {
+        "value": "発生地点",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_lastUpdated": {
+        "value": "最終更新:",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_ago": {
+        "value": "前",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_charge": {
+        "value": "充電",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_removeStopButton": {
+        "value": "立ち寄り地を削除",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_minFaster": {
+        "value": "9{fo_locale_unit_time_min}短縮",
+        "type": "text"
+      }
+    },
+    "Instruction Events": {
+      "fo_locale_instructionEvents_item1_value": {
+        "value": "150",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item1_address": {
+        "value": "中央通りを直進",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_value": {
+        "value": "300",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_address": {
+        "value": "右折して外苑西通りへ",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_value": {
+        "value": "1.2",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_address": {
+        "value": "左側の出口を使用",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_value": {
+        "value": "800",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_address": {
+        "value": "次の交差点を右折",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_value": {
+        "value": "2.5",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_address": {
+        "value": "環状線に合流",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_value": {
+        "value": "120",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_address": {
+        "value": "目的地は右側です",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_value": {
+        "value": "450",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_address": {
+        "value": "次の信号を左折",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_value": {
+        "value": "3.0",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_address": {
+        "value": "料金所を通過",
+        "type": "text"
+      }
+    }
+  },
+  "List Items": {
+    "Search Results Item Group": {
+      "fo_locale_searchResult_chargepoint": {
+        "value": "充電ポイント",
+        "type": "text"
+      },
+      "EV": {
+        "fo_locale_searchResultEv_item1_value": {
+          "value": "140",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item1_address": {
+          "value": "東京都港区芝5-36-7",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_value": {
+          "value": "370",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_address": {
+          "value": "東京都新宿区西新宿2-8-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_value": {
+          "value": "600",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_address": {
+          "value": "東京都渋谷区道玄坂1-22-7",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_value": {
+          "value": "700",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_address": {
+          "value": "東京都中央区銀座5-1-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_value": {
+          "value": "800",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_address": {
+          "value": "東京都千代田区丸の内1-9-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_value": {
+          "value": "900",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_address": {
+          "value": "東京都品川区東品川2-3-10",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_value": {
+          "value": "1.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_address": {
+          "value": "東京都豊島区南池袋1-28-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_value": {
+          "value": "2",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_address": {
+          "value": "東京都台東区浅草2-3-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_value": {
+          "value": "2.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_address": {
+          "value": "神奈川県横浜市西区みなとみらい2-3-5",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_value": {
+          "value": "3",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_address": {
+          "value": "千葉県千葉市中央区新町1000",
+          "type": "text"
+        }
+      },
+      "Mixed": {
+        "fo_locale_searchResult_houseNumber": {
+          "value": "番地",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_title": {
+          "value": "羽田空港",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_address": {
+          "value": "東京都大田区羽田空港",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_value": {
+          "value": "27",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_title": {
+          "value": "東京駅",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_address": {
+          "value": "東京都千代田区丸の内1丁目",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_value": {
+          "value": "6.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_title": {
+          "value": "新宿駅",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_address": {
+          "value": "東京都新宿区新宿3丁目",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_value": {
+          "value": "36",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_title": {
+          "value": "渋谷スクランブル交差点",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_address": {
+          "value": "東京都渋谷区渋谷2丁目",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_value": {
+          "value": "2.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_title": {
+          "value": "東京ミッドタウン",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_address": {
+          "value": "東京都港区赤坂9-7-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_value": {
+          "value": "4",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_title": {
+          "value": "東京タワー",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_address": {
+          "value": "東京都港区芝公園4-2-8",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_value": {
+          "value": "5.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_title": {
+          "value": "上野公園",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_address": {
+          "value": "東京都台東区上野公園",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_value": {
+          "value": "6.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_title": {
+          "value": "浅草寺",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_address": {
+          "value": "東京都台東区浅草2-3-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_value": {
+          "value": "295",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_title": {
+          "value": "横浜みなとみらい",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_address": {
+          "value": "神奈川県横浜市西区みなとみらい",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_value": {
+          "value": "4.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_title": {
+          "value": "成田国際空港",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_address": {
+          "value": "千葉県成田市古込1-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_value": {
+          "value": "88",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Restaurant": {
+        "fo_locale_searchResultRestaurant_item1_title": {
+          "value": "すき家 渋谷店",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_address": {
+          "value": "東京都渋谷区道玄坂2-1-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_value": {
+          "value": "2.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_title": {
+          "value": "一蘭 渋谷店",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_address": {
+          "value": "東京都渋谷区道玄坂1-22-7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_value": {
+          "value": "2.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_title": {
+          "value": "叙々苑 六本木店",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_address": {
+          "value": "東京都港区六本木6-1-26",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_title": {
+          "value": "鳥貴族 新宿店",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_address": {
+          "value": "東京都新宿区歌舞伎町1-6-2",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_title": {
+          "value": "牛かつ もと村",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_address": {
+          "value": "東京都渋谷区渋谷3-18-10",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_title": {
+          "value": "回転寿司みさき",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_address": {
+          "value": "東京都中央区銀座4-1-2",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_title": {
+          "value": "AFURI 原宿",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_address": {
+          "value": "東京都渋谷区神宮前1-19-7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_title": {
+          "value": "らぁ麺 鳳仙花",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_address": {
+          "value": "東京都新宿区西新宿7-9-10",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_value": {
+          "value": "3.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_title": {
+          "value": "焼肉ライク",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_address": {
+          "value": "東京都新宿区新宿3-34-11",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_value": {
+          "value": "3.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_title": {
+          "value": "ブルーボトルコーヒー 青山",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_address": {
+          "value": "東京都港区南青山3-13-14",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_value": {
+          "value": "3.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Parking": {
+        "fo_locale_searchResultParking_item1_title": {
+          "value": "タイムズ 渋谷駅前",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_address": {
+          "value": "東京都渋谷区渋谷1-1-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_value": {
+          "value": "150",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_title": {
+          "value": "タイムズ 新宿駅西口",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_address": {
+          "value": "東京都新宿区西新宿1-1-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_value": {
+          "value": "480",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_title": {
+          "value": "三井のリパーク 銀座",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_address": {
+          "value": "東京都中央区銀座5-1-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_value": {
+          "value": "600",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_title": {
+          "value": "NPC24H 六本木",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_address": {
+          "value": "東京都港区六本木6-10-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_value": {
+          "value": "900",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_title": {
+          "value": "パークジャパン 恵比寿",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_address": {
+          "value": "東京都渋谷区恵比寿1-1-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_value": {
+          "value": "1.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_title": {
+          "value": "エコロパーク 上野",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_address": {
+          "value": "東京都台東区上野6-16-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_value": {
+          "value": "1.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_title": {
+          "value": "タイムズ 秋葉原",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_address": {
+          "value": "東京都千代田区外神田1-15-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_value": {
+          "value": "2.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_title": {
+          "value": "リパーク 品川駅港南口",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_address": {
+          "value": "東京都港区港南2-16-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_value": {
+          "value": "2.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_title": {
+          "value": "タイムズ 池袋東口",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_address": {
+          "value": "東京都豊島区南池袋1-28-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_title": {
+          "value": "タイムズ 東京駅八重洲",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_address": {
+          "value": "東京都中央区八重洲1-5-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_value": {
+          "value": "3.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Petrol Station": {
+        "fo_locale_searchResultPetrolStation_item1_title": {
+          "value": "ENEOS",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_address": {
+          "value": "東京都港区芝5-36-7",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_value": {
+          "value": "600",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_title": {
+          "value": "出光",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_address": {
+          "value": "東京都渋谷区恵比寿1-1-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_value": {
+          "value": "800",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_title": {
+          "value": "コスモ石油",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_address": {
+          "value": "東京都新宿区西新宿2-8-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_value": {
+          "value": "1.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_title": {
+          "value": "昭和シェル",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_address": {
+          "value": "東京都中央区銀座4-1-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_value": {
+          "value": "1.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_title": {
+          "value": "apollostation",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_address": {
+          "value": "東京都港区六本木6-10-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_value": {
+          "value": "2.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_title": {
+          "value": "ENEOS",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_address": {
+          "value": "東京都千代田区丸の内1-9-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_value": {
+          "value": "2.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_title": {
+          "value": "出光",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_address": {
+          "value": "東京都台東区上野6-16-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_value": {
+          "value": "2.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_title": {
+          "value": "コスモ石油",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_address": {
+          "value": "東京都品川区東品川2-3-10",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_title": {
+          "value": "ENEOS",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_address": {
+          "value": "東京都豊島区南池袋1-28-1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_value": {
+          "value": "3.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_title": {
+          "value": "apollostation",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_address": {
+          "value": "神奈川県横浜市西区みなとみらい2-3-5",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_value": {
+          "value": "3.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      }
+    },
+    "Recents": {
+      "fo_locale_recents": {
+        "value": "目的地履歴",
+        "type": "text"
+      },
+      "fo_locale_recents_today": {
+        "value": "今日",
+        "type": "text"
+      },
+      "fo_locale_recents_empty": {
+        "value": "目的地履歴なし",
+        "type": "text"
+      },
+      "fo_locale_recents_smart": {
+        "value": "おすすめ",
+        "type": "text"
+      },
+      "fo_locale_recents_message": {
+        "value": "住所や場所（充電スタンド、レストラン、駐車場など）を検索できます。",
+        "type": "text"
+      },
+      "fo_locale_recents_clearAllButton": {
+        "value": "すべてクリア",
+        "type": "text"
+      },
+      "fo_locale_recents_clearHistory_title": {
+        "value": "履歴をクリア",
+        "type": "text"
+      },
+      "fo_locale_recents_clearHistory_body": {
+        "value": "最近の履歴をすべて削除しようとしています。",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_title": {
+        "value": "鮨 銀座おのでら",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_address": {
+        "value": "東京都渋谷区代々木神園町1-1",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_value": {
+        "value": "1.7",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_title": {
+        "value": "e-Mobility Power",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_address": {
+        "value": "東京都新宿区西新宿2-8-1",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_value": {
+        "value": "800",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_title": {
+        "value": "東京タワー",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_address": {
+        "value": "東京都港区芝公園4-2-8",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_value": {
+        "value": "2",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_title": {
+        "value": "TSUTAYA 渋谷",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_address": {
+        "value": "東京都渋谷区宇田川町21-6",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_value": {
+        "value": "1.9",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_title": {
+        "value": "江戸川区総合体育館",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_address": {
+        "value": "東京都江戸川区松本1丁目35‑1",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_value": {
+        "value": "3.5",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_title": {
+        "value": "浅草寺",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_address": {
+        "value": "東京都台東区浅草2-3-1",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_value": {
+        "value": "2.4",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    },
+    "Favourites": {
+      "fo_locale_favourites": {
+        "value": "お気に入り",
+        "type": "text"
+      },
+      "fo_locale_favourites_addButton": {
+        "value": "お気に入りに追加",
+        "type": "text"
+      },
+      "fo_locale_favourites_message": {
+        "value": "保存した場所はここに表示されます。",
+        "type": "text"
+      },
+      "fo_locale_favourites_item1_title": {
+        "value": "自宅",
+        "type": "text"
+      },
+      "fo_locale_favourites_item1_address": {
+        "value": "東京都渋谷区恵比寿1-1-1",
+        "type": "text"
+      },
+      "fo_locale_favourites_item2_title": {
+        "value": "職場",
+        "type": "text"
+      },
+      "fo_locale_favourites_item2_address": {
+        "value": "東京都港区六本木6-10-1",
+        "type": "text"
+      },
+      "fo_locale_favourites_item3_title": {
+        "value": "東京タワー",
+        "type": "text"
+      },
+      "fo_locale_favourites_item3_address": {
+        "value": "東京都港区芝公園4-2-8",
+        "type": "text"
+      },
+      "fo_locale_favourites_item4_title": {
+        "value": "家族",
+        "type": "text"
+      },
+      "fo_locale_favourites_item4_address": {
+        "value": "神奈川県横浜市中区",
+        "type": "text"
+      },
+      "fo_locale_favourites_item5_title": {
+        "value": "猿田彦珈琲 恵比寿本店",
+        "type": "text"
+      },
+      "fo_locale_favourites_item5_address": {
+        "value": "東京都渋谷区恵比寿1-6-6",
+        "type": "text"
+      },
+      "fo_locale_favourites_item6_title": {
+        "value": "e-Mobility Power",
+        "type": "text"
+      },
+      "fo_locale_favourites_item6_address": {
+        "value": "東京都新宿区西新宿2-8-1",
+        "type": "text"
+      },
+      "fo_locale_favourites_item7_title": {
+        "value": "明治神宮外苑アイススケート場",
+        "type": "text"
+      },
+      "fo_locale_favourites_item7_address": {
+        "value": "東京都新宿区霞ヶ丘町11‑1",
+        "type": "text"
+      }
+    },
+    "Routing": {
+      "Route Overview Items": {
+        "fo_locale_routing_connectionItem1_value": {
+          "value": "84",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem2_value": {
+          "value": "72",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem3_value": {
+          "value": "58",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem1_time": {
+          "value": "22:30",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem2_time": {
+          "value": "23:56",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem3_time": {
+          "value": "01:18",
+          "type": "text"
+        },
+        "Start Item": {
+          "fo_locale_routingStartItem_currentLocation": {
+            "value": "現在地",
+            "type": "text"
+          }
+        },
+        "Routing Location Item": {
+          "fo_locale_routingLocationItem_charge": {
+            "value": "充電",
+            "type": "text"
+          }
+        }
+      },
+      "Route Option Items": {
+        "fo_locale_routeOptionItem_overview": {
+          "value": "概要",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_title": {
+          "value": "早さ優先",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_value": {
+          "value": "588",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_price": {
+          "value": "6,480",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_title": {
+          "value": "距離優先",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_value": {
+          "value": "595",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_price": {
+          "value": "4,980",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_title": {
+          "value": "一般道優先 (toll free)",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_value": {
+          "value": "708",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_price": {
+          "value": "7,900",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_title": {
+          "value": "エコ",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_value": {
+          "value": "735",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_price": {
+          "value": "8,600",
+          "type": "text"
+        }
+      }
+    },
+    "Location": {
+      "EV Availability Item": {
+        "fo_locale_evAvailabilityCard1_item1": {
+          "value": "55",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard1_item2": {
+          "value": "52",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard1_item3": {
+          "value": "45",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item1": {
+          "value": "40",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item2": {
+          "value": "38",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item3": {
+          "value": "33",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item1": {
+          "value": "50",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item2": {
+          "value": "46",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item3": {
+          "value": "39",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "Location": {
+    "EV Availability": {
+      "fo_locale_evAvailability_available": {
+        "value": "利用可能",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_slot": {
+        "value": "スロット",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_slots": {
+        "value": "スロット",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_plugs": {
+        "value": "プラグ",
+        "type": "text"
+      }
+    },
+    "Location Details": {
+      "fo_locale_locationDetails_routesButton": {
+        "value": "他のルート",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_chargeHere": {
+        "value": "ここで充電できます",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_skipChargingStopsMessage": {
+        "value": "この目的地までの走行中、不要な充電停止をスキップします。",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_details": {
+        "value": "詳細",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_rating": {
+        "value": "評価",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_priceRange": {
+        "value": "価格帯",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_findNearby": {
+        "value": "近くを探す",
+        "type": "text"
+      },
+      "Opening Hours": {
+        "fo_locale_locationDetails_openingHours_list": {
+          "value": "10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_until": {
+          "value": "18:00まで",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_open": {
+          "value": "営業中",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_openAlways": {
+          "value": "24時間営業",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_closed": {
+          "value": "営業終了",
+          "type": "text"
+        }
+      },
+      "Parking Trend": {
+        "fo_locale_locationDetails_parking_parkingSpaces": {
+          "value": "駐車スペース",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_free": {
+          "value": "無料",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_vacant": {
+          "value": "空きあり",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_almostFull": {
+          "value": "ほぼ満車",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_full": {
+          "value": "満車",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_busy": {
+          "value": "混雑中",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_unknown": {
+          "value": "不明",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_emptying": {
+          "value": "空き増加中",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_fillingUp": {
+          "value": "混雑中",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_closed": {
+          "value": "営業終了",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_total": {
+          "value": "合計",
+          "type": "text"
+        }
+      },
+      "Services": {
+        "fo_locale_locationDetails_services_services": {
+          "value": "サービス",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_services_truckAccessible": {
+          "value": "ラック通行可",
+          "type": "text"
+        }
+      },
+      "Single Point": {
+        "fo_locale_locationDetails_singlePoint_title": {
+          "value": "東京駅",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_address": {
+          "value": "東京都千代田区",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_distance_value": {
+          "value": "885",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "EV POI": {
+        "fo_locale_locationDetails_EV_title": {
+          "value": "Greenspot",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_address": {
+          "value": "東京都港区芝5-36-7",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_distance_value": {
+          "value": "6.7",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_phone": {
+          "value": "+81 3-1234-5678",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_website": {
+          "value": "charge.example.jp",
+          "type": "text"
+        }
+      },
+      "Parking": {
+        "fo_locale_locationDetails_parking_title": {
+          "value": "タイムズ 新宿駅西口",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_address": {
+          "value": "東京都新宿区西新宿1-1-1",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_distance_value": {
+          "value": "800",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_distance_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_phone": {
+          "value": "+81 3-2345-6789",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_website": {
+          "value": "times24.jp",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_price": {
+          "value": "¥ 300/30分",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_lowChanceOnStreet": {
+          "value": "路上駐車の可能性が低い",
+          "type": "text"
+        }
+      },
+      "Petrol Station": {
+        "fo_locale_locationDetails_petrolStation_title": {
+          "value": "ENEOS",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_address": {
+          "value": "東京都港区芝5-36-7",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_distance_value": {
+          "value": "1.5",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_phone": {
+          "value": "+81 3-3456-7890",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_website": {
+          "value": "eneos.co.jp",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_fuelPrices": {
+          "value": "燃料価格",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceDiesel": {
+          "value": "軽油 - ¥165",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceCommercialDiesel": {
+          "value": "業務用軽油 - ¥175",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceBioDiesel": {
+          "value": "バイオディーゼル - ¥163",
+          "type": "text"
+        }
+      },
+      "Restaurant": {
+        "fo_locale_locationDetails_restaurant_title": {
+          "value": "一蘭 渋谷店",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_address": {
+          "value": "東京都渋谷区道玄坂1-22-7",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_distance_value": {
+          "value": "6.5",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_phone": {
+          "value": "+81 3-4567-8901",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_website": {
+          "value": "ichiran.com",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_priceRange": {
+          "value": "$$",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_w3w": {
+          "value": "quietly.drifted.station",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_about": {
+          "value": "この文章はデザインやレイアウトを確認するための仮テキストです。実際のコンテンツは後ほど追加されます。",
+          "type": "text"
+        }
+      },
+      "Charge Points": {
+        "fo_locale_locationDetails_chargePoints_compatibleTitle": {
+          "value": "対応充電ポイント",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_incompatibleTitle": {
+          "value": "非対応充電ポイント",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_pricesShownMessage": {
+          "value": "価格はkWhあたりで表示されています。",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_additionalFeesMessage": {
+          "value": "追加料金や駐車料金が発生する場合があります。",
+          "type": "text"
+        }
+      },
+      "Payment": {
+        "fo_locale_locationDetails_payment_payment": {
+          "value": "支払い",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_paymentProviders": {
+          "value": "決済事業者",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_paymentMethods": {
+          "value": "支払い方法",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_inNetwork": {
+          "value": "ネットワーク内",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_creditDebit": {
+          "value": "クレジットカード、デビットカード",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_creditDebitCash": {
+          "value": "クレジットカード、デビットカード、現金",
+          "type": "text"
+        }
+      }
+    },
+    "State Of Charge": {
+      "fo_locale_soc_atArrival": {
+        "value": "到着時",
+        "type": "text"
+      },
+      "fo_locale_soc_onArrival": {
+        "value": "到着時",
+        "type": "text"
+      },
+      "fo_locale_soc_includes": {
+        "value": "含まれるもの",
+        "type": "text"
+      },
+      "fo_locale_soc_batteryLevelReached": {
+        "value": "バッテリー残量に到達",
+        "type": "text"
+      },
+      "fo_locale_soc_outOfRange": {
+        "value": "走行可能距離外",
+        "type": "text"
+      }
+    }
+  },
+  "Routing": {
+    "fo_locale_routing_manageStopsButton": {
+      "value": "経由地の管理",
+      "type": "text"
+    },
+    "fo_locale_routing_alternativeRoutesButton": {
+      "value": "代替ルート",
+      "type": "text"
+    },
+    "fo_locale_routing_addStopButton": {
+      "value": "経由地を追加",
+      "type": "text"
+    },
+    "fo_locale_routing_routePreferencesButton": {
+      "value": "ルートの好み",
+      "type": "text"
+    },
+    "fo_locale_routing_noRoute": {
+      "value": "利用可能なルートがありません",
+      "type": "text"
+    },
+    "fo_locale_routing_outOfRangeAlert": {
+      "value": "目的地が走行可能距離外ですe",
+      "type": "text"
+    },
+    "EV Planning": {
+      "fo_locale_routing_evPlanning_planEvRouteButton": {
+        "value": "EVルートを計画",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_currentBatteryLevel": {
+        "value": "現在のバッテリー残量",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_batteryOnArrival": {
+        "value": "到着時のバッテリー残量",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_planningTitle": {
+        "value": "BMW i4 でルートを計画",
+        "type": "text"
+      }
+    },
+    "Stops": {
+      "fo_locale_routing_stops_stopAddress": {
+        "value": "東京都港区芝5-36-7",
+        "type": "text"
+      },
+      "fo_locale_routing_removeStopAddress": {
+        "value": "東京都港区芝5-36-7, 東京",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_manageStops": {
+        "value": "立ち寄り地を管理",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_message": {
+        "value": "自動計画された充電停止地点は管理できません",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_removeStop": {
+        "value": "この立ち寄り地を削除しますか？",
+        "type": "text"
+      }
+    },
+    "Journey Summary": {
+      "fo_locale_journeySummary_charges": {
+        "value": "回の充電",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance1_value": {
+        "value": "100",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance2_value": {
+        "value": "55",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance2_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_price": {
+        "value": "1,850",
+        "type": "text"
+      }
+    },
+    "Routes": {
+      "fo_locale_routing_routes": {
+        "value": "ルート",
+        "type": "text"
+      },
+      "fo_locale_routing_routes_containsRestrictedRoads": {
+        "value": "このルートには法的に制限された道路が含まれています",
+        "type": "text"
+      },
+      "fo_locale_routing_routes_planCharging": {
+        "value": "充電を自動計画",
+        "type": "text"
+      }
+    },
+    "Preferences": {
+      "fo_locale_routing_preferences": {
+        "value": "設定",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_minBattery": {
+        "value": "到着時の最小バッテリー残量",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_planChargingBanner": {
+        "value": "到着時バッテリーを編集するには、充電の自動計画を有効にしてください",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_atChargingStop": {
+        "value": "充電地点",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryAtChargingStop": {
+        "value": "充電地点でのバッテリー残量",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_atDestination": {
+        "value": "目的地",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryAtDestination": {
+        "value": "目的地でのバッテリー残量",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_bodyUnit": {
+        "value": "車両基準",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryMessage": {
+        "value": "R高いバッテリー残量で到達できない場所もあります",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType": {
+        "value": "現在のルートタイプ",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_fastest": {
+        "value": "最速",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_eco": {
+        "value": "エコ",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_shortest": {
+        "value": "最短",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_winding": {
+        "value": "ワインディング",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid": {
+        "value": "このルートで回避",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_tolls": {
+        "value": "有料道路",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_unpavedRoads": {
+        "value": "未舗装道路",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_motorways": {
+        "value": "高速道路",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_lowEmissionZones": {
+        "value": "低排出ゾーン",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_ferries": {
+        "value": "フェリー",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_tunnels": {
+        "value": "トンネル",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_borderCrossings": {
+        "value": "国境通過",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_hovLanes": {
+        "value": "HOVレーン",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_autoRerouting": {
+        "value": "自動再ルート",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_changesMessage": {
+        "value": "ここでの変更は現在のルートのみに適用されます",
+        "type": "text"
+      }
+    }
+  },
+  "Filters": {
+    "fo_locale_filters": {
+      "value": "フィルター",
+      "type": "text"
+    },
+    "fo_locale_filters_resultsShown": {
+      "value": "10件の結果",
+      "type": "text"
+    },
+    "fo_locale_filters_chargingSpeed": {
+      "value": "充電速度",
+      "type": "text"
+    },
+    "fo_locale_filters_services": {
+      "value": "サービス",
+      "type": "text"
+    },
+    "fo_locale_filters_myPreferredOperators": {
+      "value": "お気に入りの事業者",
+      "type": "text"
+    },
+    "fo_locale_filters_popularOperators": {
+      "value": "日本で人気の事業者",
+      "type": "text"
+    },
+    "fo_locale_filters_myChargingCards": {
+      "value": "マイ充電カード",
+      "type": "text"
+    },
+    "fo_locale_filters_plugChargeCompatible": {
+      "value": "Plug&Charge 対応",
+      "type": "text"
+    },
+    "fo_locale_filters_editPreferences": {
+      "value": "設定を編集",
+      "type": "text"
+    },
+    "Search Area": {
+      "fo_locale_filters_searchArea": {
+        "value": "検索エリア",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_alongRoute": {
+        "value": "ルート沿い",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_nearYou": {
+        "value": "現在地付近",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_nearDestination": {
+        "value": "目的地付近",
+        "type": "text"
+      }
+    },
+    "Preferences": {
+      "fo_locale_filters_preferences": {
+        "value": "設定",
+        "type": "text"
+      },
+      "fo_locale_filters_preferences_none": {
+        "value": "なし",
+        "type": "text"
+      },
+      "fo_locale_filters_preferences_adblue": {
+        "value": "AdBlue",
+        "type": "text"
+      }
+    },
+    "Charging Stations": {
+      "fo_locale_filters_chargingStations": {
+        "value": "充電ステーション",
+        "type": "text"
+      },
+      "fo_locale_filters_chargingStations_availableNow": {
+        "value": "現在利用可能",
+        "type": "text"
+      }
+    }
+  },
+  "Headers": {
+    "Search Input": {
+      "fo_locale_searchInput_inactive": {
+        "value": "どこへ行きますか？",
+        "type": "text"
+      },
+      "fo_locale_searchInput_activeTyping": {
+        "value": "しん",
+        "type": "text"
+      },
+      "fo_locale_searchInput_street": {
+        "value": "新宿",
+        "type": "text"
+      },
+      "fo_locale_searchInput_houseNumber": {
+        "value": "12",
+        "type": "text"
+      },
+      "fo_locale_searchInput_idle": {
+        "value": "しぶ",
+        "type": "text"
+      },
+      "fo_locale_searchInput_poi": {
+        "value": "EV充電器",
+        "type": "text"
+      }
+    },
+    "Event Details Header": {
+      "fo_locale_eventDetailsHeader_distance_value": {
+        "value": "286",
+        "type": "text"
+      },
+      "fo_locale_eventDetailsHeader_distance_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    }
+  },
+  "Subheadings": {
+    "Feed Forward": {
+      "fo_locale_feedForward_offlineResults": {
+        "value": "オフラインの結果",
+        "type": "text"
+      },
+      "fo_locale_feedForward_offline": {
+        "value": "オフライン",
+        "type": "text"
+      },
+      "fo_locale_feedForward_alongRoute": {
+        "value": "ルート沿い",
+        "type": "text"
+      }
+    }
+  },
+  "Weather": {
+    "fo_locale_weather_currentTemperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_maxTemperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_minTemperature": {
+      "value": "15°",
+      "type": "text"
+    },
+    "fo_locale_weather_currentWeatherDescription": {
+      "value": "晴れ時々くもり",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem1_time": {
+      "value": "10:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem1_temperature": {
+      "value": "23°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem2_time": {
+      "value": "11:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem2_temperature": {
+      "value": "20°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem3_time": {
+      "value": "12:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem3_temperature": {
+      "value": "18°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem4_time": {
+      "value": "13:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem4_temperature": {
+      "value": "16°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem5_time": {
+      "value": "14:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem5_temperature": {
+      "value": "18°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem6_time": {
+      "value": "15:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem6_temperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_chanceOfSun": {
+      "value": "日照確率",
+      "type": "text"
+    },
+    "fo_locale_weather_windSpeed": {
+      "value": "風速",
+      "type": "text"
+    },
+    "fo_locale_weather_windSpeed_value": {
+      "value": "8 {fo_locale_unit_speed}",
+      "type": "text"
+    },
+    "fo_locale_weather_chanceOfRain": {
+      "value": "降水確率",
+      "type": "text"
+    },
+    "fo_locale_weather_uvIndex": {
+      "value": "紫外線指数",
+      "type": "text"
+    },
+    "fo_locale_weather_direction": {
+      "value": "風向",
+      "type": "text"
+    },
+    "fo_locale_weather_precipitation": {
+      "value": "降水量",
+      "type": "text"
+    },
+    "fo_locale_weather_precipitation_value": {
+      "value": "1 mm",
+      "type": "text"
+    },
+    "fo_locale_weather_locationCurrent_city": {
+      "value": "東京",
+      "type": "text"
+    },
+    "fo_locale_weather_locationCurrent_temperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop1_city": {
+      "value": "横浜",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop1_temperature": {
+      "value": "23°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop2_city": {
+      "value": "千葉",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop2_temperature": {
+      "value": "20°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationDestination_city": {
+      "value": "さいたま",
+      "type": "text"
+    },
+    "fo_locale_weather_locationDestination_temperature": {
+      "value": "16°",
+      "type": "text"
+    }
+  },
+  "POI Categories": {
+    "fo_locale_poiCategories_moreCategories": {
+      "value": "さらに表示",
+      "type": "text"
+    },
+    "Accomodation": {
+      "fo_locale_poiCategories_accomodation": {
+        "value": "宿泊施設",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_accomodation_campsite": {
+        "value": "キャンプ場",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_accomodation_hotelMotel": {
+        "value": "ホテル／モーテル",
+        "type": "text"
+      }
+    },
+    "Car": {
+      "fo_locale_poiCategories_car": {
+        "value": "車",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_carDealer": {
+        "value": "自動車販売店",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_carWash": {
+        "value": "洗車場",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_fuel": {
+        "value": "ガソリンスタンド",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_evChargingStation": {
+        "value": "充電ステーション",
+        "type": "text"
+      }
+    },
+    "Commercial": {
+      "fo_locale_poiCategories_commercial": {
+        "value": "商業施設",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_company": {
+        "value": "会社",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_shop": {
+        "value": "상점",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_groceryStore": {
+        "value": "食料品店",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_repairFacility": {
+        "value": "修理工場",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_vehicleRepairShop": {
+        "value": "自動車修理工場",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_cashDispenser": {
+        "value": "ATM",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_postOffice": {
+        "value": "郵便局",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_market": {
+        "value": "市場",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_supermarket": {
+        "value": "スーパーマーケット",
+        "type": "text"
+      }
+    },
+    "Education": {
+      "fo_locale_poiCategories_education": {
+        "value": "教育",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_education_education": {
+        "value": "教育機関",
+        "type": "text"
+      }
+    },
+    "Entertainment": {
+      "fo_locale_poiCategories_entertainment": {
+        "value": "エンターテインメント",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_entertainment_importantTouristAttraction": {
+        "value": "主要観光地",
+        "type": "text"
+      }
+    },
+    "Food & Drink": {
+      "fo_locale_poiCategories_foodDrink": {
+        "value": "飲食",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_pubBar": {
+        "value": "パブ／バー",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_restaurant": {
+        "value": "レストラン",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_hamburgerRestaurant": {
+        "value": "ハンバーガー店",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_fastFood": {
+        "value": "ファストフード",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_cafe": {
+        "value": "カフェ",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_coffeeshopBar": {
+        "value": "カフェ / バー",
+        "type": "text"
+      }
+    },
+    "Health": {
+      "fo_locale_poiCategories_health": {
+        "value": "医療",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_health_hospital": {
+        "value": "病院",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_health_pharmacy": {
+        "value": "薬局",
+        "type": "text"
+      }
+    },
+    "Outdoor / Sports": {
+      "fo_locale_poiCategories_outdoorSports": {
+        "value": "アウトドア／スポーツ",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_beach": {
+        "value": "ビーチ",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_parkRecreationalArea": {
+        "value": "公園・レクリエーションエリア",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_restArea": {
+        "value": "休憩所",
+        "type": "text"
+      }
+    },
+    "Parking": {
+      "fo_locale_poiCategories_parking": {
+        "value": "駐車場",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_parking_parking": {
+        "value": "駐車場",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_parking_parkingGarage": {
+        "value": "立体駐車場",
+        "type": "text"
+      }
+    },
+    "Public": {
+      "fo_locale_poiCategories_public": {
+        "value": "公共施設",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_building": {
+        "value": "建物",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_placeOfWorship": {
+        "value": "宗教施設",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_policeStation": {
+        "value": "警察署",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_publicAuthority": {
+        "value": "公共機関",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_restroom": {
+        "value": "トイレ",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_publicRestroom": {
+        "value": "公衆トイレ",
+        "type": "text"
+      }
+    },
+    "Transport": {
+      "fo_locale_poiCategories_transport": {
+        "value": "交通",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_trainStation": {
+        "value": "駅",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_busStop": {
+        "value": "バス停",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_airport": {
+        "value": "空港",
+        "type": "text"
+      }
+    }
+  },
+  "Quick Settings": {
+    "fo_locale_quickSettings": {
+      "value": "クイック設定",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_fullSettingsButtons": {
+      "value": "詳細設定",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_drivingMode": {
+      "value": "運転中の視点 - ",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_drivingMode_3D": {
+      "value": "3D",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_soundsAlerts": {
+      "value": "サウンド - ",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_soundsAlerts_allOn": {
+      "value": "すべてオン",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map": {
+      "value": "地図",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map_default": {
+      "value": "標準",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map_satellite": {
+      "value": "衛星",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays": {
+      "value": "オーバーレイ",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays_evRange": {
+      "value": "EV走行可能範囲",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays_weather": {
+      "value": "天気",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings": {
+      "value": "地図設定",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_3DBuildings": {
+      "value": "3D建物",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_3DBuildingsBody": {
+      "value": "地図上に3Dで建物を表示します",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_trafficFlow": {
+      "value": "交通状況",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_trafficFlowBody": {
+      "value": "道路上の交通状況を表示",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_laneLevelVisualisation": {
+      "value": "レーンレベル表示",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_laneLevelVisualisationBody": {
+      "value": "高精細な道路形状を表示",
+      "type": "text"
+    }
+  }
+}

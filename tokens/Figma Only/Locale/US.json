@@ -1,0 +1,2838 @@
+{
+  "fo_locale_unit_distance_long": {
+    "value": "mi",
+    "type": "text"
+  },
+  "fo_locale_unit_distance_short": {
+    "value": "ft",
+    "type": "text"
+  },
+  "fo_locale_unit_speed": {
+    "value": "mph",
+    "type": "text"
+  },
+  "fo_locale_unit_temperature": {
+    "value": "°F",
+    "type": "text"
+  },
+  "fo_locale_unit_currency": {
+    "value": "$",
+    "type": "text"
+  },
+  "fo_locale_unit_price_decimal_separator": {
+    "value": ".",
+    "type": "text"
+  },
+  "fo_locale_unit_time_hr": {
+    "value": "hr",
+    "type": "text"
+  },
+  "fo_locale_unit_time_min": {
+    "value": "min",
+    "type": "text"
+  },
+  "fo_content_eu": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "fo_content_us": {
+    "value": "true",
+    "type": "boolean"
+  },
+  "fo_content_japan": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "fo_content_korea": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "Buttons": {
+    "fo_locale_containedButton_cancel": {
+      "value": "Cancel",
+      "type": "text"
+    },
+    "fo_locale_containedButton_delete": {
+      "value": "Delete",
+      "type": "text"
+    },
+    "fo_locale_containedButton_save": {
+      "value": "Save",
+      "type": "text"
+    },
+    "fo_locale_containedButton_confirm": {
+      "value": "Confirm",
+      "type": "text"
+    },
+    "fo_locale_containedButton_done": {
+      "value": "Done",
+      "type": "text"
+    },
+    "fo_locale_containedButton_no": {
+      "value": "No",
+      "type": "text"
+    },
+    "fo_locale_containedButton_yes": {
+      "value": "Yes",
+      "type": "text"
+    },
+    "fo_locale_containedButton_dismiss": {
+      "value": "Dismiss",
+      "type": "text"
+    },
+    "fo_locale_containedButton_accept": {
+      "value": "Accept",
+      "type": "text"
+    },
+    "fo_locale_containedButton_drive": {
+      "value": "Drive",
+      "type": "text"
+    },
+    "fo_locale_containedButton_more": {
+      "value": "More",
+      "type": "text"
+    },
+    "fo_locale_containedButton_showMore": {
+      "value": "Show more",
+      "type": "text"
+    },
+    "fo_locale_uncontainedButton_readMore": {
+      "value": "Read more",
+      "type": "text"
+    },
+    "fo_locale_uncontainedButton_showLess": {
+      "value": "Show less",
+      "type": "text"
+    }
+  },
+  "General UI": {
+    "fo_locale_spinnerMessage_loading": {
+      "value": "Loading",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_applying": {
+      "value": "Applying",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_applied": {
+      "value": "Applied",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_error": {
+      "value": "Error",
+      "type": "text"
+    },
+    "fo_locale_errorMessage_connection": {
+      "value": "Something went wrong. Please, check your connection and try again.",
+      "type": "text"
+    }
+  },
+  "Guidance": {
+    "NIP": {
+      "fo_locale_nip_firstRow_address": {
+        "value": "John C. Lodge Fwy / Farmington Hills,",
+        "type": "text"
+      },
+      "fo_locale_nip_secondRow_address": {
+        "value": "John C. Lodge Fwy / Farmington Hills,",
+        "type": "text"
+      },
+      "fo_locale_nip_firstRow_city": {
+        "value": "Michigan",
+        "type": "text"
+      },
+      "fo_locale_nip_secondRow_city": {
+        "value": "Michigan",
+        "type": "text"
+      },
+      "fo_locale_nip_distance": {
+        "value": "1.5 {fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    },
+    "Current Street": {
+      "fo_locale_currentStreet_address": {
+        "value": "Union Ave",
+        "type": "text"
+      },
+      "fo_locale_currentStreetEmpty": {
+        "value": "Report",
+        "type": "text"
+      }
+    },
+    "ETA": {
+      "fo_locale_eta_distanceValue": {
+        "value": "280",
+        "type": "text"
+      },
+      "fo_locale_eta_endRoute": {
+        "value": "End route?",
+        "type": "text"
+      }
+    },
+    "Arrival": {
+      "fo_locale_arrival_header_destinationRight": {
+        "value": "Destination on the right",
+        "type": "text"
+      },
+      "fo_locale_arrival_header_destinationLeft": {
+        "value": "Destination on the left",
+        "type": "text"
+      },
+      "fo_locale_arrival_destination_title": {
+        "value": "Burger King – Daly City",
+        "type": "text"
+      },
+      "fo_locale_arrival_destination_address": {
+        "value": "1201 El Camino Real, Daly City, CA 94015",
+        "type": "text"
+      },
+      "fo_locale_arrival_waypoint_title": {
+        "value": "Philz Coffee",
+        "type": "text"
+      },
+      "fo_locale_arrival_waypoint_address": {
+        "value": "4032 18th St, San Francisco, CA 94114",
+        "type": "text"
+      },
+      "fo_locale_arrival_destinationWithCharger_title": {
+        "value": "McDonald's (with EV charging)",
+        "type": "text"
+      },
+      "fo_locale_arrival_destinationWithCharger_address": {
+        "value": "2280 Pine St, Redding, CA 96001",
+        "type": "text"
+      },
+      "fo_locale_arrival_chargingStation_title": {
+        "value": "EVgo Charging Station",
+        "type": "text"
+      },
+      "fo_locale_arrival_chargingStation_address": {
+        "value": "899 W Evelyn Ave, Mountain View, CA 94041",
+        "type": "text"
+      },
+      "fo_locale_arrival_finishButton": {
+        "value": "Finish",
+        "type": "text"
+      },
+      "fo_locale_arrival_findAlternativeButton": {
+        "value": "Find alternative",
+        "type": "text"
+      },
+      "fo_locale_arrival_continueDrivingButton": {
+        "value": "Continue driving",
+        "type": "text"
+      }
+    },
+    "Upcoming Events": {
+      "fo_locale_upcomingEvents_item1_value": {
+        "value": "820",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item1_body": {
+        "value": "Fixed speed camera",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item2_value": {
+        "value": "0.2",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item2_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_value": {
+        "value": "0.4",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_body": {
+        "value": "Slippery road",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_value": {
+        "value": "0.5",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_body": {
+        "value": "Wrong-way driver",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_value": {
+        "value": "0.6",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_body": {
+        "value": "Broken-down vehicle",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_value": {
+        "value": "0.6",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_body": {
+        "value": "Faster route",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_time": {
+        "value": "9 {fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_value": {
+        "value": "0.6",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_body": {
+        "value": "Traffic",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_time": {
+        "value": "2 {fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_value": {
+        "value": "0.6",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_body": {
+        "value": "Traffic",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_time": {
+        "value": "10 {fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item9_value": {
+        "value": "6.8",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item9_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item10_value": {
+        "value": "9.9",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item10_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_value": {
+        "value": "13",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_body": {
+        "value": "Traffic",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_time": {
+        "value": "35 {fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_neutral_speed": {
+        "value": "30 {fo_locale_unit_speed} avg.",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_slightlySpeeding_speed": {
+        "value": "35 {fo_locale_unit_speed} avg.",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_speeding_speed": {
+        "value": "40 {fo_locale_unit_speed} avg.",
+        "type": "text"
+      }
+    },
+    "Rerouting": {
+      "fo_locale_routeUpdateEvent_routeDeviation": {
+        "value": "Route deviation",
+        "type": "text"
+      },
+      "fo_locale_routeUpdateEvent_updatingRoute": {
+        "value": "Updating route",
+        "type": "text"
+      }
+    },
+    "Event Details": {
+      "fo_locale_eventDetails_address": {
+        "value": "501 Main St",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_city": {
+        "value": "Houston, TX",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_streetType": {
+        "value": "Allen",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_streetName": {
+        "value": "Pkwy",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_time": {
+        "value": "4:23",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_distanceSaved": {
+        "value": "Shorter by 1.2 mi",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_betterRoute": {
+        "value": "Better route",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_nextStop": {
+        "value": "Next stop",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_accident": {
+        "value": "Accident",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_fewerChargingStops": {
+        "value": "Fewer charging stops",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_avoidsTunnels": {
+        "value": "Avoids tunnels",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_via": {
+        "value": "Via",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_and": {
+        "value": "and",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_reportedOn": {
+        "value": "Reported on",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_lastUpdated": {
+        "value": "Last updated:",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_ago": {
+        "value": "ago.",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_charge": {
+        "value": "charge",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_removeStopButton": {
+        "value": "Remove stop",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_minFaster": {
+        "value": "9 {fo_locale_unit_time_min} faster",
+        "type": "text"
+      }
+    },
+    "Instruction Events": {
+      "fo_locale_instructionEvents_item1_value": {
+        "value": "800",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item1_address": {
+        "value": "E 9th St",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_value": {
+        "value": "0.6",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_address": {
+        "value": "E 9th St/Oak St",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_value": {
+        "value": "0.8",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_address": {
+        "value": "E Michigan Blvd",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_value": {
+        "value": "1",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_address": {
+        "value": "US-20 E",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_value": {
+        "value": "1.3",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_address": {
+        "value": "I-94 E",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_value": {
+        "value": "7.2",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_address": {
+        "value": "I-94 E",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_value": {
+        "value": "10",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_address": {
+        "value": "I-94 E",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_value": {
+        "value": "14.8",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_address": {
+        "value": "I-196 N",
+        "type": "text"
+      }
+    }
+  },
+  "List Items": {
+    "Search Results Item Group": {
+      "fo_locale_searchResult_chargepoint": {
+        "value": "Chargepoint",
+        "type": "text"
+      },
+      "EV": {
+        "fo_locale_searchResultEv_item1_value": {
+          "value": "460",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item1_address": {
+          "value": "335 W 23rd St, New York, NY 10011",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_value": {
+          "value": "0.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_address": {
+          "value": "501 W 26th St, New York, NY 10001",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_value": {
+          "value": "0.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_address": {
+          "value": "545 W 27th St, New York, NY 10001",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_value": {
+          "value": "0.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_address": {
+          "value": "418 W 29th St, New York, NY 10001",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_value": {
+          "value": "0.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_address": {
+          "value": "360 Tenth Ave, New York, NY 10001",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_value": {
+          "value": "0.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_address": {
+          "value": "450 W 33rd St, New York, NY 10001",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_value": {
+          "value": "1",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_address": {
+          "value": "8 E 38th St, New York, NY 10016",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_value": {
+          "value": "1.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_address": {
+          "value": "135 E 47th St, New York, NY 10017",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_value": {
+          "value": "1.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_address": {
+          "value": "520 E 63rd St, New York, NY 10065",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_value": {
+          "value": "1.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_address": {
+          "value": "303 E 76th St, New York, NY 10021",
+          "type": "text"
+        }
+      },
+      "Mixed": {
+        "fo_locale_searchResult_houseNumber": {
+          "value": "House number",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_title": {
+          "value": "Chicago O’Hare International Airport",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_address": {
+          "value": "10000 W Balmoral Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_value": {
+          "value": "18",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_title": {
+          "value": "Chalmers Place Apartments",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_address": {
+          "value": "4411 N Chalmers Pl",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_value": {
+          "value": "0.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_title": {
+          "value": "Chase Tower",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_address": {
+          "value": "10 S Dearborn St",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_value": {
+          "value": "0.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_title": {
+          "value": "Chatham Market",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_address": {
+          "value": "8522 S Holland Rd",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_value": {
+          "value": "1.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_title": {
+          "value": "Charlevoix Street",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_address": {
+          "value": "Chicago, IL",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_value": {
+          "value": "2.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_title": {
+          "value": "ChargePoint – West Loop",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_address": {
+          "value": "1000 W Monroe St",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_value": {
+          "value": "3.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_title": {
+          "value": "Chamberlain University",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_address": {
+          "value": "Chamberlain University",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_value": {
+          "value": "4.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_title": {
+          "value": "Channing Street",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_address": {
+          "value": "Chicago, IL",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_value": {
+          "value": "2.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_title": {
+          "value": "Charlemagne Apartments",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_address": {
+          "value": "1450 N Lake Shore Dr",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_value": {
+          "value": "6",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_title": {
+          "value": "Charter Grove, IL",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_address": {
+          "value": "Illinois",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_value": {
+          "value": "54",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Restaurant": {
+        "fo_locale_searchResultRestaurant_item1_title": {
+          "value": "Lou Mitchell’s",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_address": {
+          "value": "565 W Jackson Blvd",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_value": {
+          "value": "1.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_title": {
+          "value": "Girl & The Goat",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_address": {
+          "value": "809 W Randolph St",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_value": {
+          "value": "1.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_title": {
+          "value": "The Purple Pig",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_address": {
+          "value": "444 N Michigan Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_value": {
+          "value": "1.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_title": {
+          "value": "The Gage",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_address": {
+          "value": "24 S Michigan Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_value": {
+          "value": "1.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_title": {
+          "value": "Au Cheval",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_address": {
+          "value": "800 W Randolph St",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_value": {
+          "value": "2.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_title": {
+          "value": "The Signature Room",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_address": {
+          "value": "875 N Michigan Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_value": {
+          "value": "2.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_title": {
+          "value": "Beatrix River North",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_address": {
+          "value": "519 N Clark St",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_value": {
+          "value": "2.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_title": {
+          "value": "Parachute",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_address": {
+          "value": "3500 N Elston Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_title": {
+          "value": "La Scarola",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_address": {
+          "value": "721 W Grand Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_value": {
+          "value": "2.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_title": {
+          "value": "Pequod’s Pizza",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_address": {
+          "value": "2207 N Clybourn Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Parking": {
+        "fo_locale_searchResultParking_item1_title": {
+          "value": "Millennium Park Garage",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_address": {
+          "value": "Millennium Park Garage",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_value": {
+          "value": "500",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_title": {
+          "value": "Wabash–Randolph Garage",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_address": {
+          "value": "20 E Randolph St",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_value": {
+          "value": "0.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_title": {
+          "value": "InterPark Adams & Wabash",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_address": {
+          "value": "17 E Adams St",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_value": {
+          "value": "0.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_title": {
+          "value": "Theatre District Garage",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_address": {
+          "value": "181 N Dearborn St",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_value": {
+          "value": "0.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_title": {
+          "value": "Grant Park South Garage",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_address": {
+          "value": "325 S Michigan Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_value": {
+          "value": "1.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_title": {
+          "value": "Legacy Parking – West Loop",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_address": {
+          "value": "201 W Madison St",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_value": {
+          "value": "1.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_title": {
+          "value": "River North Parking",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_address": {
+          "value": "10 W Hubbard St",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_value": {
+          "value": "1.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_title": {
+          "value": "West Loop Parking",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_address": {
+          "value": "1001 W Madison St",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_value": {
+          "value": "1.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_title": {
+          "value": "Lincoln Park Garage",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_address": {
+          "value": "1962 N Lincoln Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_value": {
+          "value": "2.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_title": {
+          "value": "Soldier Field North Garage",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_address": {
+          "value": "1410 Museum Campus Dr",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_value": {
+          "value": "2.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Petrol Station": {
+        "fo_locale_searchResultPetrolStation_item1_title": {
+          "value": "BP",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_address": {
+          "value": "1950 N Elston Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_value": {
+          "value": "0.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_title": {
+          "value": "Shell",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_address": {
+          "value": "100 W Ontario St",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_value": {
+          "value": "0.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_title": {
+          "value": "Mobil",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_address": {
+          "value": "1647 N Western Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_value": {
+          "value": "0.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_title": {
+          "value": "BP",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_address": {
+          "value": "1540 W Fullerton Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_value": {
+          "value": "1.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_title": {
+          "value": "Shell",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_address": {
+          "value": "1959 N Halsted St",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_value": {
+          "value": "1.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_title": {
+          "value": "Speedway",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_address": {
+          "value": "1540 N Ashland Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_value": {
+          "value": "1.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_title": {
+          "value": "BP",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_address": {
+          "value": "3200 N Ashland Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_value": {
+          "value": "1.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_title": {
+          "value": "Mobil",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_address": {
+          "value": "1200 W Diversey Pkwy",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_value": {
+          "value": "2",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_title": {
+          "value": "Shell",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_address": {
+          "value": "2001 N Clybourn Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_value": {
+          "value": "2.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_title": {
+          "value": "BP",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_address": {
+          "value": "3540 N Lincoln Ave",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_value": {
+          "value": "2.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      }
+    },
+    "Recents": {
+      "fo_locale_recents": {
+        "value": "Recents",
+        "type": "text"
+      },
+      "fo_locale_recents_today": {
+        "value": "Today",
+        "type": "text"
+      },
+      "fo_locale_recents_empty": {
+        "value": "No recent destinations",
+        "type": "text"
+      },
+      "fo_locale_recents_smart": {
+        "value": "Suggested",
+        "type": "text"
+      },
+      "fo_locale_recents_message": {
+        "value": "You can search for an address or a place, like a charge station, restaurant, or parking garage.",
+        "type": "text"
+      },
+      "fo_locale_recents_clearAllButton": {
+        "value": "Clear all",
+        "type": "text"
+      },
+      "fo_locale_recents_clearHistory_title": {
+        "value": "Clear recent history",
+        "type": "text"
+      },
+      "fo_locale_recents_clearHistory_body": {
+        "value": "You are about to delete your entire recent history.",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_title": {
+        "value": "Lou Mitchell’s",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_address": {
+        "value": "565 W Jackson Blvd, Chicago, IL",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_value": {
+        "value": "1.1",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_title": {
+        "value": "ChargePoint",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_address": {
+        "value": "233 N Michigan Ave, Chicago, IL",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_value": {
+        "value": "0.4",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_title": {
+        "value": "900 W Washington Blvd",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_address": {
+        "value": "Chicago, IL",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_value": {
+        "value": "1.2",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_title": {
+        "value": "Chicago Public Library – Harold Washington Library",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_address": {
+        "value": "400 S State St, Chicago, IL",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_value": {
+        "value": "1.9",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_title": {
+        "value": "CrossFit Chicago West Loop",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_address": {
+        "value": "933 W Randolph St, Chicago, IL",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_value": {
+        "value": "2.2",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_title": {
+        "value": "The Greenwich Parlour",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_address": {
+        "value": "52 W Houston St, New York, NY 10012",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_value": {
+        "value": "1.5",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    },
+    "Favourites": {
+      "fo_locale_favourites": {
+        "value": "Favorites",
+        "type": "text"
+      },
+      "fo_locale_favourites_addButton": {
+        "value": "Add favorite",
+        "type": "text"
+      },
+      "fo_locale_favourites_message": {
+        "value": "Any locations you save will be shown here.",
+        "type": "text"
+      },
+      "fo_locale_favourites_item1_title": {
+        "value": "Home",
+        "type": "text"
+      },
+      "fo_locale_favourites_item1_address": {
+        "value": "245 W 29th St, New York, NY 10001",
+        "type": "text"
+      },
+      "fo_locale_favourites_item2_title": {
+        "value": "Work",
+        "type": "text"
+      },
+      "fo_locale_favourites_item2_address": {
+        "value": "200 Park Ave, New York, NY 10166",
+        "type": "text"
+      },
+      "fo_locale_favourites_item3_title": {
+        "value": "Times Square",
+        "type": "text"
+      },
+      "fo_locale_favourites_item3_address": {
+        "value": "1560 Broadway, New York, NY 10036",
+        "type": "text"
+      },
+      "fo_locale_favourites_item4_title": {
+        "value": "Mom & Dad",
+        "type": "text"
+      },
+      "fo_locale_favourites_item4_address": {
+        "value": "1410 3rd Ave, New York, NY 10075",
+        "type": "text"
+      },
+      "fo_locale_favourites_item5_title": {
+        "value": "Dean & DeLuca Café",
+        "type": "text"
+      },
+      "fo_locale_favourites_item5_address": {
+        "value": "560 Broadway, New York, NY 10012",
+        "type": "text"
+      },
+      "fo_locale_favourites_item6_title": {
+        "value": "Electra Charging",
+        "type": "text"
+      },
+      "fo_locale_favourites_item6_address": {
+        "value": "450 W 33rd St, New York, NY 10001",
+        "type": "text"
+      },
+      "fo_locale_favourites_item7_title": {
+        "value": "Ice Rink",
+        "type": "text"
+      },
+      "fo_locale_favourites_item7_address": {
+        "value": "600 5th Ave, New York, NY 10020",
+        "type": "text"
+      }
+    },
+    "Routing": {
+      "Route Overview Items": {
+        "fo_locale_routing_connectionItem1_value": {
+          "value": "52",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem2_value": {
+          "value": "45",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem3_value": {
+          "value": "36",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem1_time": {
+          "value": "10:30",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem2_time": {
+          "value": "11:56",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem3_time": {
+          "value": "01:18",
+          "type": "text"
+        },
+        "Start Item": {
+          "fo_locale_routingStartItem_currentLocation": {
+            "value": "Current location",
+            "type": "text"
+          }
+        },
+        "Routing Location Item": {
+          "fo_locale_routingLocationItem_charge": {
+            "value": "charge",
+            "type": "text"
+          }
+        }
+      },
+      "Route Option Items": {
+        "fo_locale_routeOptionItem_overview": {
+          "value": "Overview",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_title": {
+          "value": "Fast",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_value": {
+          "value": "365",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_price": {
+          "value": "14.50",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_title": {
+          "value": "Eco",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_value": {
+          "value": "370",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_price": {
+          "value": "7.90",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_title": {
+          "value": "Thrilling",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_value": {
+          "value": "440",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_price": {
+          "value": "23.60",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_title": {
+          "value": "Fast",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_value": {
+          "value": "461",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_price": {
+          "value": "56.40",
+          "type": "text"
+        }
+      }
+    },
+    "Location": {
+      "EV Availability Item": {
+        "fo_locale_evAvailabilityCard1_item1": {
+          "value": "0{fo_locale_unit_price_decimal_separator}79",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard1_item2": {
+          "value": "0{fo_locale_unit_price_decimal_separator}75",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard1_item3": {
+          "value": "0{fo_locale_unit_price_decimal_separator}55",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item1": {
+          "value": "0{fo_locale_unit_price_decimal_separator}35",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item2": {
+          "value": "0{fo_locale_unit_price_decimal_separator}30",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item3": {
+          "value": "0{fo_locale_unit_price_decimal_separator}25",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item1": {
+          "value": "0{fo_locale_unit_price_decimal_separator}75",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item2": {
+          "value": "0{fo_locale_unit_price_decimal_separator}65",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item3": {
+          "value": "0{fo_locale_unit_price_decimal_separator}25",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "Location": {
+    "EV Availability": {
+      "fo_locale_evAvailability_available": {
+        "value": "available",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_slot": {
+        "value": "slot",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_slots": {
+        "value": "slots",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_plugs": {
+        "value": "plugs",
+        "type": "text"
+      }
+    },
+    "Location Details": {
+      "fo_locale_locationDetails_routesButton": {
+        "value": "Routes",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_chargeHere": {
+        "value": "I can charge here",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_skipChargingStopsMessage": {
+        "value": "Skip unnecessary charging stops when driving to this destination.",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_details": {
+        "value": "Details",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_rating": {
+        "value": "Rating",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_priceRange": {
+        "value": "Price range",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_findNearby": {
+        "value": "Find nearby",
+        "type": "text"
+      },
+      "Opening Hours": {
+        "fo_locale_locationDetails_openingHours_list": {
+          "value": "10:00 AM - 6:00 PM\n10:00 AM - 6:00 PM\n10:00 AM - 6:00 PM\n10:00 AM - 6:00 PM\n10:00 AM - 6:00 PM\n10:00 AM - 6:00 PM\n10:00 AM - 6:00 PM",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_until": {
+          "value": "Until 6:00 PM",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_open": {
+          "value": "Open",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_openAlways": {
+          "value": "Open 24/7",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_closed": {
+          "value": "Closed",
+          "type": "text"
+        }
+      },
+      "Parking Trend": {
+        "fo_locale_locationDetails_parking_parkingSpaces": {
+          "value": "Parking spaces",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_free": {
+          "value": "Free",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_vacant": {
+          "value": "Vacant",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_almostFull": {
+          "value": "Almost full",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_full": {
+          "value": "Full",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_busy": {
+          "value": "Busy",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_unknown": {
+          "value": "Unknown",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_emptying": {
+          "value": "Emptying",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_fillingUp": {
+          "value": "Filling up",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_closed": {
+          "value": "Closed",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_total": {
+          "value": "Total",
+          "type": "text"
+        }
+      },
+      "Services": {
+        "fo_locale_locationDetails_services_services": {
+          "value": "Services",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_services_truckAccessible": {
+          "value": "Accessible by truck",
+          "type": "text"
+        }
+      },
+      "Single Point": {
+        "fo_locale_locationDetails_singlePoint_title": {
+          "value": "Times Square",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_address": {
+          "value": "Broadway & W 47th St, New York, NY 10036, USA",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_distance_value": {
+          "value": "550",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "EV POI": {
+        "fo_locale_locationDetails_EV_title": {
+          "value": "Electrify America – Oakland",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_address": {
+          "value": "5615 Redwood Rd, Oakland, CA 94619, USA",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_distance_value": {
+          "value": "4.2",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_phone": {
+          "value": "+1 (510) 555-0143",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_website": {
+          "value": "electrifyamerica.com",
+          "type": "text"
+        }
+      },
+      "Parking": {
+        "fo_locale_locationDetails_parking_title": {
+          "value": "Pier 40 Parking Garage",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_address": {
+          "value": "353 West St, New York, NY 10014, USA",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_distance_value": {
+          "value": "0.5",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_phone": {
+          "value": "+1 (212) 555-0198",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_website": {
+          "value": "pier40parking.com",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_price": {
+          "value": "$3.00/hr",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_lowChanceOnStreet": {
+          "value": "Low chance of on-street parking",
+          "type": "text"
+        }
+      },
+      "Petrol Station": {
+        "fo_locale_locationDetails_petrolStation_title": {
+          "value": "Shell Gas Station",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_address": {
+          "value": "145 Houston St, New York, NY 10002, USA",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_distance_value": {
+          "value": "0.9",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_phone": {
+          "value": "+1 (212) 555-0149",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_website": {
+          "value": "shell.us",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_fuelPrices": {
+          "value": "Fuel prices",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceDiesel": {
+          "value": "Diesel - $3.78",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceCommercialDiesel": {
+          "value": "Commercial Diesel - $4.75",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceBioDiesel": {
+          "value": "Bio Diesel - $4.84",
+          "type": "text"
+        }
+      },
+      "Restaurant": {
+        "fo_locale_locationDetails_restaurant_title": {
+          "value": "Lombardi’s Pizza",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_address": {
+          "value": "32 Spring St, New York, NY 10012, USA",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_distance_value": {
+          "value": "4",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_phone": {
+          "value": "+1 (212) 555-0176",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_website": {
+          "value": "lombardis.com",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_priceRange": {
+          "value": "$4.70 - $16.10",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_w3w": {
+          "value": "fund.soccer.gift",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_about": {
+          "value": "Stirred by starlight across the centuries, Cambrian explosion Sea of Tranquility, realm of galaxies prime number...",
+          "type": "text"
+        }
+      },
+      "Charge Points": {
+        "fo_locale_locationDetails_chargePoints_compatibleTitle": {
+          "value": "Compatible charge points",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_incompatibleTitle": {
+          "value": "Incompatible charge points",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_pricesShownMessage": {
+          "value": "Prices shown per kWh.",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_additionalFeesMessage": {
+          "value": "Additional fees and parking costs may apply.",
+          "type": "text"
+        }
+      },
+      "Payment": {
+        "fo_locale_locationDetails_payment_payment": {
+          "value": "Payment",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_paymentProviders": {
+          "value": "Payment providers",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_paymentMethods": {
+          "value": "Payment methods",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_inNetwork": {
+          "value": "In network",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_creditDebit": {
+          "value": "Credit cards, Debit cards",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_creditDebitCash": {
+          "value": "Credit cards, Debit cards, Cash",
+          "type": "text"
+        }
+      }
+    },
+    "State Of Charge": {
+      "fo_locale_soc_atArrival": {
+        "value": "at arrival",
+        "type": "text"
+      },
+      "fo_locale_soc_onArrival": {
+        "value": "on arrival",
+        "type": "text"
+      },
+      "fo_locale_soc_includes": {
+        "value": "Includes",
+        "type": "text"
+      },
+      "fo_locale_soc_batteryLevelReached": {
+        "value": "Battery level reached",
+        "type": "text"
+      },
+      "fo_locale_soc_outOfRange": {
+        "value": "Out of range",
+        "type": "text"
+      }
+    }
+  },
+  "Routing": {
+    "fo_locale_routing_manageStopsButton": {
+      "value": "Manage stops",
+      "type": "text"
+    },
+    "fo_locale_routing_alternativeRoutesButton": {
+      "value": "Alternative routes",
+      "type": "text"
+    },
+    "fo_locale_routing_addStopButton": {
+      "value": "Add stop",
+      "type": "text"
+    },
+    "fo_locale_routing_routePreferencesButton": {
+      "value": "Route preferences",
+      "type": "text"
+    },
+    "fo_locale_routing_noRoute": {
+      "value": "No available route",
+      "type": "text"
+    },
+    "fo_locale_routing_outOfRangeAlert": {
+      "value": "Destination out of range",
+      "type": "text"
+    },
+    "EV Planning": {
+      "fo_locale_routing_evPlanning_planEvRouteButton": {
+        "value": "Plan EV route",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_currentBatteryLevel": {
+        "value": "Current battery level",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_batteryOnArrival": {
+        "value": "Battery level on arrival",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_planningTitle": {
+        "value": "Planning with BMW i4",
+        "type": "text"
+      }
+    },
+    "Stops": {
+      "fo_locale_routing_stops_stopAddress": {
+        "value": "51 Hugo Street",
+        "type": "text"
+      },
+      "fo_locale_routing_removeStopAddress": {
+        "value": "51 Hugo Street, Oakland, CA 94607",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_manageStops": {
+        "value": "Manage stops",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_message": {
+        "value": "Auto-planned charging stops cannot be managed.",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_removeStop": {
+        "value": "Remove this stop?",
+        "type": "text"
+      }
+    },
+    "Journey Summary": {
+      "fo_locale_journeySummary_charges": {
+        "value": "charges",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance1_value": {
+        "value": "330",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance2_value": {
+        "value": "34",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance2_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_price": {
+        "value": "14.50",
+        "type": "text"
+      }
+    },
+    "Routes": {
+      "fo_locale_routing_routes": {
+        "value": "Routes",
+        "type": "text"
+      },
+      "fo_locale_routing_routes_containsRestrictedRoads": {
+        "value": "Route contains legally restricted roads",
+        "type": "text"
+      },
+      "fo_locale_routing_routes_planCharging": {
+        "value": "Plan charging automatically",
+        "type": "text"
+      }
+    },
+    "Preferences": {
+      "fo_locale_routing_preferences": {
+        "value": "Preferences",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_minBattery": {
+        "value": "Minimum battery on arrival",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_planChargingBanner": {
+        "value": "Turn on Plan charging automatically to edit arrival battery",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_atChargingStop": {
+        "value": "At charging stop",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryAtChargingStop": {
+        "value": "Battery at charging station",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_atDestination": {
+        "value": "At destination",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryAtDestination": {
+        "value": "Battery at destination",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_bodyUnit": {
+        "value": "Body Unit",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryMessage": {
+        "value": "Reaching certain locations with high battery percentage is not always possible",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType": {
+        "value": "Current route type",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_fastest": {
+        "value": "Fastest",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_eco": {
+        "value": "Eco",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_shortest": {
+        "value": "Shortest",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_winding": {
+        "value": "Winding",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid": {
+        "value": "Avoid on this route",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_tolls": {
+        "value": "Tolls",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_unpavedRoads": {
+        "value": "Unpaved Roads",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_motorways": {
+        "value": "Motorways",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_lowEmissionZones": {
+        "value": "Low Emission Zones",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_ferries": {
+        "value": "Ferries",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_tunnels": {
+        "value": "Tunnels",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_borderCrossings": {
+        "value": "Border Crossings",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_hovLanes": {
+        "value": "HOV Lanes",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_autoRerouting": {
+        "value": "Auto rerouting",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_changesMessage": {
+        "value": "Changes made here are applied to the current route only.",
+        "type": "text"
+      }
+    }
+  },
+  "Filters": {
+    "fo_locale_filters": {
+      "value": "Filters",
+      "type": "text"
+    },
+    "fo_locale_filters_resultsShown": {
+      "value": "10 results shown",
+      "type": "text"
+    },
+    "fo_locale_filters_chargingSpeed": {
+      "value": "Charging speed",
+      "type": "text"
+    },
+    "fo_locale_filters_services": {
+      "value": "Services",
+      "type": "text"
+    },
+    "fo_locale_filters_myPreferredOperators": {
+      "value": "My preferred operators",
+      "type": "text"
+    },
+    "fo_locale_filters_popularOperators": {
+      "value": "Popular operators in the US",
+      "type": "text"
+    },
+    "fo_locale_filters_myChargingCards": {
+      "value": "My charging cards",
+      "type": "text"
+    },
+    "fo_locale_filters_plugChargeCompatible": {
+      "value": "Plug&Charge compatible",
+      "type": "text"
+    },
+    "fo_locale_filters_editPreferences": {
+      "value": "Edit preferences",
+      "type": "text"
+    },
+    "Search Area": {
+      "fo_locale_filters_searchArea": {
+        "value": "Search area",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_alongRoute": {
+        "value": "Along route",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_nearYou": {
+        "value": "Near you",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_nearDestination": {
+        "value": "Near destination",
+        "type": "text"
+      }
+    },
+    "Preferences": {
+      "fo_locale_filters_preferences": {
+        "value": "Preferences",
+        "type": "text"
+      },
+      "fo_locale_filters_preferences_none": {
+        "value": "None",
+        "type": "text"
+      },
+      "fo_locale_filters_preferences_adblue": {
+        "value": "AdBlue",
+        "type": "text"
+      }
+    },
+    "Charging Stations": {
+      "fo_locale_filters_chargingStations": {
+        "value": "Charging Stations",
+        "type": "text"
+      },
+      "fo_locale_filters_chargingStations_availableNow": {
+        "value": "Available now",
+        "type": "text"
+      }
+    }
+  },
+  "Headers": {
+    "Search Input": {
+      "fo_locale_searchInput_inactive": {
+        "value": "Where to?",
+        "type": "text"
+      },
+      "fo_locale_searchInput_activeTyping": {
+        "value": "Cha",
+        "type": "text"
+      },
+      "fo_locale_searchInput_street": {
+        "value": "Chalmers Pl",
+        "type": "text"
+      },
+      "fo_locale_searchInput_houseNumber": {
+        "value": "142",
+        "type": "text"
+      },
+      "fo_locale_searchInput_idle": {
+        "value": "Chalmers",
+        "type": "text"
+      },
+      "fo_locale_searchInput_poi": {
+        "value": "EV Chargers",
+        "type": "text"
+      }
+    },
+    "Event Details Header": {
+      "fo_locale_eventDetailsHeader_distance_value": {
+        "value": "178",
+        "type": "text"
+      },
+      "fo_locale_eventDetailsHeader_distance_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    }
+  },
+  "Subheadings": {
+    "Feed Forward": {
+      "fo_locale_feedForward_offlineResults": {
+        "value": "Offline results",
+        "type": "text"
+      },
+      "fo_locale_feedForward_offline": {
+        "value": "Offline",
+        "type": "text"
+      },
+      "fo_locale_feedForward_alongRoute": {
+        "value": "Along route",
+        "type": "text"
+      }
+    }
+  },
+  "Weather": {
+    "fo_locale_weather_currentTemperature": {
+      "value": "77°",
+      "type": "text"
+    },
+    "fo_locale_weather_maxTemperature": {
+      "value": "77°",
+      "type": "text"
+    },
+    "fo_locale_weather_minTemperature": {
+      "value": "59°",
+      "type": "text"
+    },
+    "fo_locale_weather_currentWeatherDescription": {
+      "value": "Sunny with scattered clouds",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem1_time": {
+      "value": "10:00 AM",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem1_temperature": {
+      "value": "73°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem2_time": {
+      "value": "11:00 AM",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem2_temperature": {
+      "value": "68°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem3_time": {
+      "value": "12:00 PM",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem3_temperature": {
+      "value": "64°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem4_time": {
+      "value": "1:00 PM",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem4_temperature": {
+      "value": "61°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem5_time": {
+      "value": "2:00 PM",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem5_temperature": {
+      "value": "64°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem6_time": {
+      "value": "3:00 PM",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem6_temperature": {
+      "value": "77°",
+      "type": "text"
+    },
+    "fo_locale_weather_chanceOfSun": {
+      "value": "Chance of sun",
+      "type": "text"
+    },
+    "fo_locale_weather_windSpeed": {
+      "value": "Wind speed",
+      "type": "text"
+    },
+    "fo_locale_weather_windSpeed_value": {
+      "value": "5 {fo_locale_unit_speed}",
+      "type": "text"
+    },
+    "fo_locale_weather_chanceOfRain": {
+      "value": "Chance of rain",
+      "type": "text"
+    },
+    "fo_locale_weather_uvIndex": {
+      "value": "UV index",
+      "type": "text"
+    },
+    "fo_locale_weather_direction": {
+      "value": "Direction",
+      "type": "text"
+    },
+    "fo_locale_weather_precipitation": {
+      "value": "Precipitation",
+      "type": "text"
+    },
+    "fo_locale_weather_precipitation_value": {
+      "value": "0.04 in",
+      "type": "text"
+    },
+    "fo_locale_weather_locationCurrent_city": {
+      "value": "Seattle",
+      "type": "text"
+    },
+    "fo_locale_weather_locationCurrent_temperature": {
+      "value": "77°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop1_city": {
+      "value": "Seattle",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop1_temperature": {
+      "value": "73°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop2_city": {
+      "value": "Olympia",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop2_temperature": {
+      "value": "68°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationDestination_city": {
+      "value": "Portland",
+      "type": "text"
+    },
+    "fo_locale_weather_locationDestination_temperature": {
+      "value": "61°",
+      "type": "text"
+    }
+  },
+  "POI Categories": {
+    "fo_locale_poiCategories_moreCategories": {
+      "value": "More categories",
+      "type": "text"
+    },
+    "Accomodation": {
+      "fo_locale_poiCategories_accomodation": {
+        "value": "Accomodation",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_accomodation_campsite": {
+        "value": "Campsite",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_accomodation_hotelMotel": {
+        "value": "Hotel / Motel",
+        "type": "text"
+      }
+    },
+    "Car": {
+      "fo_locale_poiCategories_car": {
+        "value": "Car",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_carDealer": {
+        "value": "Automotive dealer",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_carWash": {
+        "value": "Car wash",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_fuel": {
+        "value": "Gas station",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_evChargingStation": {
+        "value": "Charging station",
+        "type": "text"
+      }
+    },
+    "Commercial": {
+      "fo_locale_poiCategories_commercial": {
+        "value": "Commercial",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_company": {
+        "value": "Company",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_shop": {
+        "value": "Shop",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_groceryStore": {
+        "value": "Grocery store",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_repairFacility": {
+        "value": "Repair facility",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_vehicleRepairShop": {
+        "value": "Vehicle repair shop",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_cashDispenser": {
+        "value": "ATM",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_postOffice": {
+        "value": "Post office",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_market": {
+        "value": "Market",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_supermarket": {
+        "value": "Supermarket",
+        "type": "text"
+      }
+    },
+    "Education": {
+      "fo_locale_poiCategories_education": {
+        "value": "Education",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_education_education": {
+        "value": "Education",
+        "type": "text"
+      }
+    },
+    "Entertainment": {
+      "fo_locale_poiCategories_entertainment": {
+        "value": "Entertainment",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_entertainment_importantTouristAttraction": {
+        "value": "Important tourist attraction",
+        "type": "text"
+      }
+    },
+    "Food & Drink": {
+      "fo_locale_poiCategories_foodDrink": {
+        "value": "Food & Drink",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_pubBar": {
+        "value": "Pub / Bar",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_restaurant": {
+        "value": "Restaurant",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_hamburgerRestaurant": {
+        "value": "Hamburger restaurant",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_fastFood": {
+        "value": "Fast food",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_cafe": {
+        "value": "Cafe",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_coffeeshopBar": {
+        "value": "Coffeeshop / Bar",
+        "type": "text"
+      }
+    },
+    "Health": {
+      "fo_locale_poiCategories_health": {
+        "value": "Health",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_health_hospital": {
+        "value": "Hospital",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_health_pharmacy": {
+        "value": "Pharmacy",
+        "type": "text"
+      }
+    },
+    "Outdoor / Sports": {
+      "fo_locale_poiCategories_outdoorSports": {
+        "value": "Outdoor / Sports",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_beach": {
+        "value": "Beach",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_parkRecreationalArea": {
+        "value": "Park & recreation area",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_restArea": {
+        "value": "Rest area",
+        "type": "text"
+      }
+    },
+    "Parking": {
+      "fo_locale_poiCategories_parking": {
+        "value": "Parking",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_parking_parking": {
+        "value": "Parking",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_parking_parkingGarage": {
+        "value": "Parking garage",
+        "type": "text"
+      }
+    },
+    "Public": {
+      "fo_locale_poiCategories_public": {
+        "value": "Public",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_building": {
+        "value": "Building",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_placeOfWorship": {
+        "value": "Place of worship",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_policeStation": {
+        "value": "Police Station",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_publicAuthority": {
+        "value": "Public authority",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_restroom": {
+        "value": "Restroom",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_publicRestroom": {
+        "value": "Public restroom",
+        "type": "text"
+      }
+    },
+    "Transport": {
+      "fo_locale_poiCategories_transport": {
+        "value": "Transport",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_trainStation": {
+        "value": "Train station",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_busStop": {
+        "value": "Bus stop",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_airport": {
+        "value": "Airport",
+        "type": "text"
+      }
+    }
+  },
+  "Quick Settings": {
+    "fo_locale_quickSettings": {
+      "value": "Quick settings",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_fullSettingsButtons": {
+      "value": "Full settings",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_drivingMode": {
+      "value": "Driving mode -",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_drivingMode_3D": {
+      "value": "3D",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_soundsAlerts": {
+      "value": "Sounds & Alerts -",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_soundsAlerts_allOn": {
+      "value": "All on",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map": {
+      "value": "Map",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map_default": {
+      "value": "Default",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map_satellite": {
+      "value": "Satellite",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays": {
+      "value": "Overlays",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays_evRange": {
+      "value": "EV range",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays_weather": {
+      "value": "Weather",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings": {
+      "value": "Map settings",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_3DBuildings": {
+      "value": "3D buildings",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_3DBuildingsBody": {
+      "value": "Show buildings in 3D on the map",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_trafficFlow": {
+      "value": "Traffic flow",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_trafficFlowBody": {
+      "value": "Show the traffic flow on the street",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_laneLevelVisualisation": {
+      "value": "Show the traffic flow on the street",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_laneLevelVisualisationBody": {
+      "value": "Show high definition road geometry",
+      "type": "text"
+    }
+  }
+}

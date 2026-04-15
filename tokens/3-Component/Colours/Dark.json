@@ -1,0 +1,3918 @@
+{
+  "Buttons": {
+    "Contained": {
+      "Primary": {
+        "tt_cmp_color_containedButton_primary_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_primary_label": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_containedButton_primary_surface_pressed": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_containedButton_primary_icon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_containedButton_primary_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      },
+      "Secondary": {
+        "tt_cmp_color_containedButton_secondary_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_secondary_surface_pressed": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primarySelected_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_secondary_label": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_secondary_icon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_secondary_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "Tertiary": {
+          "tt_cmp_color_containedButton_tertiary_surface": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+            "type": "color"
+          },
+          "tt_cmp_color_containedButton_tertiary_surface_pressed": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primarySelected_pressed}",
+            "type": "color"
+          },
+          "tt_cmp_color_containedButton_tertiary_label": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_containedButton_tertiary_icon": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_containedButton_tertiary_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          }
+        }
+      },
+      "Chip": {
+        "Chip Inactive": {
+          "tt_cmp_color_chip_inactive_surface": {
+            "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_chip_inactive_label": {
+            "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_chip_inactive_icon": {
+            "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_chip_inactive_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          }
+        },
+        "Chip Active": {
+          "tt_cmp_color_chip_active_surface": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+            "type": "color"
+          },
+          "tt_cmp_color_chip_active_label": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_chip_active_icon": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_chip_active_stroke": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+            "type": "color"
+          }
+        }
+      },
+      "Decline": {
+        "tt_cmp_color_containedButton_decline_surface": {
+          "value": "{Actions.tt_sys_color_decline}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_decline_label": {
+          "value": "{Actions.tt_sys_color_onDecline}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_decline_surface_pressed": {
+          "value": "{Actions.tt_sys_color_decline_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_decline_icon": {
+          "value": "{Actions.tt_sys_color_onDecline}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_decline_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      },
+      "Accept": {
+        "tt_cmp_color_containedButton_accept_surface": {
+          "value": "{Actions.tt_sys_color_accept}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_accept_label": {
+          "value": "{Actions.tt_sys_color_onAccept}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_accept_surface_pressed": {
+          "value": "{Actions.tt_sys_color_accept_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_accept_icon": {
+          "value": "{Actions.tt_sys_color_onAccept}",
+          "type": "color"
+        },
+        "tt_cmp_color_containedButton_accept_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      }
+    },
+    "Quick Action": {
+      "Primary": {
+        "tt_cmp_color_quickActionButton_primary_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_quickActionButton_primary_surface_pressed": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_quickActionButton_primary_icon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_quickActionButton_primary_label": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_quickActionButton_primary_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      },
+      "Secondary": {
+        "tt_cmp_color_quickActionButton_secondary_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+          "type": "color"
+        },
+        "tt_cmp_color_quickActionButton_secondary_surface_pressed": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primarySelected_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_quickActionButton_secondary_icon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_quickActionButton_secondary_label": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_quickActionButton_secondary_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      }
+    },
+    "Grid Toggle Button": {
+      "Selected": {
+        "tt_cmp_color_gridToggleButton_selected_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+          "type": "color"
+        },
+        "tt_cmp_color_gridToggleButton_selected_label": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_gridToggleButton_selected_icon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_gridToggleButton_selected_stroke": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+          "type": "color"
+        }
+      },
+      "Unselected": {
+        "tt_cmp_color_gridToggleButton_unselected_surface": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_gridToggleButton_unselected_label": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_gridToggleButton_unselected_icon": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_gridToggleButton_unselected_stroke": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary_stroke}",
+          "type": "color"
+        },
+        "tt_cmp_color_gridToggleButton_unselected_body": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_secondary}",
+          "type": "color"
+        }
+      }
+    },
+    "Grid Button": {
+      "tt_cmp_color_gridButton_surface": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_gridButton_surface_pressed": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_gridButton_label": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_gridButton_icon": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_gridButton_stroke": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary_stroke}",
+        "type": "color"
+      },
+      "tt_cmp_color_gridButton_body": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_secondary}",
+        "type": "color"
+      }
+    },
+    "List Item": {
+      "tt_cmp_color_listItemButton_surface": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_listItemButton_surface_pressed": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary_pressed}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_listItemButton_label": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_listItemButton_icon": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_listItemButton_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    },
+    "Uncontained": {
+      "tt_cmp_color_uncontainedButton_label": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_uncontainedButton_leftIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_uncontainedButton_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_uncontainedButton_rightIcon": {
+        "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_uncontainedButton_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color"
+      }
+    },
+    "FABs": {
+      "FAB": {
+        "Button": {
+          "tt_cmp_color_fabButton_surface": {
+            "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+            "type": "color",
+            "description": ""
+          },
+          "tt_cmp_color_fabButton_surface_pressed": {
+            "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+            "type": "color",
+            "description": ""
+          },
+          "tt_cmp_color_fabButton_icon": {
+            "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+            "type": "color",
+            "description": ""
+          },
+          "tt_cmp_color_fabButton_label": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabButton_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          }
+        },
+        "Group": {
+          "tt_cmp_color_fabButtonGroup_surface": {
+            "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabButtonGroup_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          }
+        }
+      },
+      "FAB Charge Finder": {
+        "Unselected": {
+          "tt_cmp_color_fabChargeFinderButton_unselected_surface": {
+            "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+            "type": "color",
+            "description": ""
+          },
+          "tt_cmp_color_fabChargeFinderButton_unselected_icon": {
+            "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+            "type": "color",
+            "description": ""
+          },
+          "tt_cmp_color_fabChargeFinderButton_unselected_stroke": {
+            "value": "{POI Categories.tt_sys_color_ev}",
+            "type": "color"
+          }
+        },
+        "Selected": {
+          "tt_cmp_color_fabChargeFinderButton_selected_surface": {
+            "value": "{POI Categories.tt_sys_color_ev_pressed}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabChargeFinderButton_selected_icon": {
+            "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+            "type": "color",
+            "description": ""
+          },
+          "tt_cmp_color_fabChargeFinderButton_selected_stroke": {
+            "value": "{POI Categories.tt_sys_color_ev}",
+            "type": "color"
+          }
+        }
+      },
+      "FAB Toggle": {
+        "Unselected": {
+          "tt_cmp_color_fabToggleButton_unselected_surface": {
+            "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabToggleButton_unselected_icon": {
+            "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabToggleButton_unselected_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          }
+        },
+        "Selected": {
+          "tt_cmp_color_fabToggleButton_selected_surface": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabToggleButton_selected_icon": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabToggleButton_selected_stroke": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+            "type": "color"
+          }
+        }
+      },
+      "FAB Multi Toggle": {
+        "Unselected": {
+          "tt_cmp_color_fabMultiToggleButton_unselected_surface": {
+            "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+            "type": "color",
+            "description": ""
+          },
+          "tt_cmp_color_fabMultiToggleButton_unselected_icon": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabMultiToggleButton_unselected_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          }
+        },
+        "Selected": {
+          "tt_cmp_color_fabMultiToggleButton_selected_surface": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabMultiToggleButton_selected_icon": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabMultiToggleButton_selected_stroke": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+            "type": "color"
+          }
+        },
+        "Group": {
+          "tt_cmp_color_fabMultiToggleButtonGroup_surface": {
+            "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_fabMultiToggleButtonGroup_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          }
+        }
+      },
+      "FAB Auto Confirm": {
+        "tt_cmp_color_fabAutoConfirmButton_surface": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_fabAutoConfirmButton_surface_pressed": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_fabAutoConfirmButton_icon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_fabAutoConfirmButton_label": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_fabAutoConfirmButton_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color",
+          "description": ""
+        }
+      }
+    },
+    "Suggestion": {
+      "tt_cmp_color_suggestionsButton_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_suggestionsButton_stroke": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+        "type": "color"
+      },
+      "tt_cmp_color_suggestionsButton_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_suggestionsButton_label": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_suggestionsButton_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_suggestionsButton_unconfigured_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_suggestionsButton_unconfigured_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_suggestionsButton_unconfigured_stroke": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color"
+      },
+      "tt_cmp_color_suggestionsButton_unconfigured_label": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_suggestionsButton_unconfigured_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      }
+    },
+    "Quick Routing": {
+      "tt_cmp_color_quickRoutingButton_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_quickRoutingButton_stroke": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+        "type": "color"
+      },
+      "tt_cmp_color_quickRoutingButton_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_quickRoutingButton_label": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_quickRoutingButton_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      }
+    },
+    "Routing": {
+      "Selected Route": {
+        "tt_cmp_color_routeOptionButton_selected_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_selected_surface_pressed": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_selected_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_selected_label": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_selected_unit": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_selected_routeIndicatorSurface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_selected_routeIndicatorIcon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        }
+      },
+      "Unselected Route": {
+        "tt_cmp_color_routeOptionButton_unselected_surface": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_routeOptionButton_unselected_surface_pressed": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_unselected_stroke": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_unselected_label": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_unselected_unit": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_unselected_routeIndicatorSurface": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_routeOptionButton_unselected_routeIndicatorIcon": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+          "type": "color"
+        }
+      }
+    },
+    "End Route": {
+      "tt_cmp_color_endRouteButton_surface": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_endRouteButton_surface_pressed": {
+        "value": "{Actions.tt_sys_color_decline_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_endRouteButton_icon": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_endRouteButton_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    },
+    "Filters": {
+      "Unselected": {
+        "tt_cmp_color_filtersButton_unselected_surface": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_filtersButton_unselected_leftIcon": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_filtersButton_unselected_rightIcon": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_filtersButton_unselected_rightIcon_active": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_filtersButton_unselected_stroke": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary_stroke}",
+          "type": "color"
+        }
+      },
+      "Selected": {
+        "tt_cmp_color_filtersButton_selected_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_filtersButton_selected_leftIcon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_filtersButton_selected_rightIcon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_filtersButton_selected_stroke": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+          "type": "color"
+        }
+      }
+    },
+    "List Group": {
+      "tt_cmp_color_listGroupButton_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_listGroupButton_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_listGroupButton_label": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_listGroupButton_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_listGroupButton_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    },
+    "Image Card": {
+      "Selected": {
+        "tt_cmp_color_imageCardButton_selected_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+          "type": "color"
+        },
+        "tt_cmp_color_imageCardButton_selected_label": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_imageCardButton_selected_stroke": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+          "type": "color"
+        }
+      },
+      "Unselected": {
+        "tt_cmp_color_imageCardButton_unselected_surface": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_imageCardButton_unselected_label": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_imageCardButton_unselected_stroke": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary_stroke}",
+          "type": "color"
+        }
+      }
+    },
+    "Map Layer Button": {
+      "tt_cmp_color_mapLayerButton_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_mapLayerButton_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_mapLayerButton_stroke": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      }
+    }
+  },
+  "Figma Only": {
+    "Guidance": {
+      "Chevron": {
+        "Active": {
+          "fo_cmp_color_chevron_active_surface": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+            "type": "color"
+          },
+          "fo_cmp_color_chevron_active_surface_pressed": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+            "type": "color"
+          },
+          "fo_cmp_color_chevron_active_stroke": {
+            "value": "{Black&White.tt_glb_color_white}",
+            "type": "color"
+          }
+        },
+        "Inactive": {
+          "fo_cmp_color_chevron_inactive_surface": {
+            "value": "{Grey.tt_glb_color_grey_200}",
+            "type": "color"
+          },
+          "fo_cmp_color_chevron_inactive_stroke": {
+            "value": "{Black&White.tt_glb_color_white}",
+            "type": "color"
+          },
+          "fo_cmp_color_chevron_inactive_surface_pressed": {
+            "value": "{Grey.tt_glb_color_grey_200}",
+            "type": "color"
+          }
+        }
+      },
+      "Pins": {
+        "Single Point Location": {
+          "fo_cmp_color_singlePointLocationPins_surface": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+            "type": "color"
+          },
+          "fo_cmp_color_singlePointLocationPins_stroke": {
+            "value": "{Black&White.tt_glb_color_black_a3}",
+            "type": "color"
+          },
+          "fo_cmp_color_singlePointLocationPins_icon": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "fo_cmp_color_singlePointLocationPins_openingStroke": {
+            "value": "{Black&White.tt_glb_color_white}",
+            "type": "color"
+          },
+          "fo_cmp_color_singlePointLocationPins_shadow": {
+            "value": "{Black&White.tt_glb_color_black}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "Routing": {
+      "Route Lines": {
+        "Primary": {
+          "fo_cmp_color_route_primary_route": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+            "type": "color"
+          },
+          "fo_cmp_color_route_primary_outline": {
+            "value": "{Blue.tt_glb_color_blue_500}",
+            "type": "color"
+          }
+        },
+        "Secondary": {
+          "fo_cmp_color_route_secondary_route": {
+            "value": "{Grey.tt_glb_color_grey_300}",
+            "type": "color"
+          },
+          "fo_cmp_color_route_secondary_outline": {
+            "value": "{Grey.tt_glb_color_grey_400}",
+            "type": "color"
+          }
+        },
+        "Tertiary": {
+          "fo_cmp_color_route_tertiary_route": {
+            "value": "{Grey.tt_glb_color_grey_300}",
+            "type": "color"
+          },
+          "fo_cmp_color_route_tertiary_outline": {
+            "value": "{Grey.tt_glb_color_grey_400}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  },
+  "Guidance": {
+    "Upcoming Event Pins": {
+      "tt_cmp_color_upcomingEventPins_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_upcomingEventPins_surface": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_upcomingEventPins_icon": {
+        "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+        "type": "color"
+      }
+    },
+    "Lane Guidance": {
+      "World": {
+        "tt_cmp_color_laneGuidance_world_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_laneGuidance_world_lane_highlighted": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_laneGuidanceWorld_lane_lowlighted": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_tertiary}",
+          "type": "color"
+        }
+      },
+      "USA": {
+        "tt_cmp_color_laneGuidance_usa_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_laneGuidance_usa_lane_highlighted": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_laneGuidance_usa_lane_lowlighted": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_tertiary}",
+          "type": "color"
+        }
+      }
+    },
+    "NIP": {
+      "World": {
+        "tt_cmp_color_nip_world_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_nip_world_surface_pressed": {
+          "value": "{Guidance.World.tt_sys_color_worldGuidance_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_nip_world_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_nip_world_title": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_nip_world_body": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_nip_world_manoeuvreIcon": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_nip_world_surface_loading": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_nip_world_divider": {
+          "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_subtle}",
+          "type": "color"
+        }
+      },
+      "USA": {
+        "tt_cmp_color_nip_usa_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_nip_usa_surface_pressed": {
+          "value": "{Guidance.USA.tt_sys_color_usaGuidance_primary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_nip_usa_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_nip_usa_title": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_nip_usa_body": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_nip_usa_manoeuvreIcon": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_nip_usa_surface_loading": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_nip_usa_divider": {
+          "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_subtle}",
+          "type": "color"
+        }
+      }
+    },
+    "ETA": {
+      "tt_cmp_color_eta_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_surface_pressed": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_arrivalIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_eta_batteryIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_stopsIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_surface_loading": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_eta_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_titleUnit": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_noDelay": {
+        "value": "{Actions.tt_sys_color_accept}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_bodyUnit": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_delay": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eta_batteryAlert": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      }
+    },
+    "Then Instruction": {
+      "USA": {
+        "tt_cmp_color_thenInstruction_usa_surface": {
+          "value": "{Guidance.USA.tt_sys_color_usaGuidance_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_thenInstruction_usa_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_thenInstruction_usa_surface_pressed": {
+          "value": "{Guidance.USA.tt_sys_color_usaGuidance_secondary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_thenInstruction_usa_title": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidanceSecondary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_thenInstruction_usa_manoeuvreIcon": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidanceSecondary_primary}",
+          "type": "color"
+        }
+      },
+      "World": {
+        "tt_cmp_color_thenInstruction_world_surface": {
+          "value": "{Guidance.World.tt_sys_color_worldGuidance_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_thenInstruction_world_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_thenInstruction_world_surface_pressed": {
+          "value": "{Guidance.World.tt_sys_color_worldGuidance_secondary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_thenInstruction_world_title": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidanceSecondary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_thenInstruction_world_manoeuvreIcon": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidanceSecondary_primary}",
+          "type": "color"
+        }
+      }
+    },
+    "Compass": {
+      "tt_cmp_color_compass_surface": {
+        "value": "{Grey.tt_glb_color_grey_800_a8}",
+        "type": "color"
+      },
+      "tt_cmp_color_compassButton_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_compass_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_compass_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_compass_scale": {
+        "value": "{Black&White.tt_glb_color_white_a3}",
+        "type": "color"
+      },
+      "tt_cmp_color_compass_needleIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_compass_needleNorthIcon": {
+        "value": "{Red.tt_glb_color_red_200}",
+        "type": "color"
+      }
+    },
+    "Current Street": {
+      "tt_cmp_color_currentStreet_surface": {
+        "value": "{Grey.tt_glb_color_grey_800_a8}",
+        "type": "color"
+      },
+      "tt_cmp_color_currentStreet_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_currentStreet_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      }
+    },
+    "Activating Route Event": {
+      "tt_cmp_color_routeActivateEvent_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_routeActivateEvent_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_routeActivateEvent_surface_pressed": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    },
+    "Rerouting Event": {
+      "tt_cmp_color_routeUpdateEvent_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_routeUpdateEvent_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_routeUpdateEvent_surface_pressed": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_routeUpdateEvent_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_routeUpdateEvent_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_routeUpdateEvent_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      }
+    },
+    "Event Details": {
+      "tt_cmp_color_eventDetails_surface": {
+        "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_surface_pressed": {
+        "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_title": {
+        "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_primaryBody": {
+        "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_primaryUnit": {
+        "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_secondaryBody": {
+        "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_secondaryUnit": {
+        "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_primaryIcon": {
+        "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_secondaryIcon": {
+        "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_forwardIcon": {
+        "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetails_negative": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_eventDetails_positive": {
+        "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+        "type": "color",
+        "description": ""
+      }
+    },
+    "Speed Shields": {
+      "Neutral": {
+        "tt_cmp_color_speedShield_neutral_surface": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_speedShield_neutral_surface_pressed": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_speedShield_neutral_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_speedShield_neutral_title": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_speedShield_neutral_body": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        }
+      },
+      "Slightly Speeding": {
+        "tt_cmp_color_speedShield_slightlySpeeding_surface": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_warning_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_speedShield_slightlySpeeding_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_speedShield_slightlySpeeding_surface_pressed": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_warning_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_speedShield_slightlySpeeding_title": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_speedShield_slightlySpeeding_body": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        }
+      },
+      "Speeding": {
+        "tt_cmp_color_speedShield_speeding_surface": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_speedShield_speeding_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_speedShield_speeding_surface_pressed": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_speedShield_speeding_title": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_speedShield_speeding_body": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        }
+      }
+    },
+    "Zone Progress Bar": {
+      "Neutral": {
+        "tt_cmp_color_zoneProgressBar_neutral_track": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_zoneProgressBar_neutral_progress": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_zoneProgressBar_neutral_chevron": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_zoneProgressBarNeutral_chevronStroke": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+          "type": "color",
+          "description": ""
+        }
+      },
+      "Slightly Speeding": {
+        "tt_cmp_color_zoneProgressBar_slightlySpeeding_track": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color"
+        },
+        "tt_cmp_color_zoneProgressBar_slightlySpeeding_progress": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_zoneProgressBar_slightlySpeeding_chevron": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_zoneProgressBar_slightlySpeeding_chevronStroke": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_warning_primary}",
+          "type": "color",
+          "description": ""
+        }
+      },
+      "Speeding": {
+        "tt_cmp_color_zoneProgressBar_speeding_track": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color"
+        },
+        "tt_cmp_color_zoneProgressBar_speeding_progress": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_zoneProgressBar_speeding_chevron": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_zoneProgressBar_speeding_chevronStroke": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color",
+          "description": ""
+        }
+      }
+    },
+    "Instruction Events Group": {
+      "tt_cmp_color_instructionEventsGroup_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      }
+    },
+    "Upcoming Events Group": {
+      "tt_cmp_color_upcomingEventsGroup_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      }
+    },
+    "Instruction Events": {
+      "tt_cmp_color_instructionEvents_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_instructionEvents_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_instructionEvents_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_instructionEvents_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_instructionEvents_distance": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_instructionEvents_distanceUnit": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_instructionEvents_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      }
+    },
+    "Upcoming Events": {
+      "Neutral": {
+        "tt_cmp_color_upcomingEvents_neutral_surface": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_neutral_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_upcomingEvents_neutral_surface_pressed": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_neutral_distance": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_neutral_distanceUnit": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_neutral_body": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_upcomingEvents_neutral_bodyUnit": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_upcomingEvents_neutral_battery": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_neutral_batteryUnit": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_neutral_batteryIcon": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_neutral_amenitiesIcon": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_upcomingEvents_neutral_amenitiesBody": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_upcomingEvents_neutral_negative": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color"
+        }
+      },
+      "Slightly Speeding": {
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_surface": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_warning_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_surface_pressed": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_warning_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_distance": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_distanceUnit": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_body": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_bodyUnit": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_battery": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_batteryUnit": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_batteryIcon": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_amenitiesIcon": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_amenitiesBody": {
+          "value": "{Alerts & Warnings.Warning.tt_sys_color_onWarningPrimary}",
+          "type": "color"
+        },
+        "tt_cmp_color_upcomingEvents_slightlySpeeding_negative": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color"
+        }
+      },
+      "Speeding": {
+        "tt_cmp_color_upcomingEvents_speeding_surface": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_upcomingEvents_speeding_surface_pressed": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary_pressed}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_distance": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_distanceUnit": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_body": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_bodyUnit": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_battery": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_batteryUnit": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_batteryIcon": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_amenitiesIcon": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_upcomingEvents_speeding_amenitiesBody": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color"
+        },
+        "tt_cmp_color_upcomingEvents_speeding_negative": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color"
+        }
+      }
+    },
+    "Speed Limit": {
+      "tt_cmp_color_speedLimit_world_title": {
+        "value": "{Road Signage.tt_sys_color_signageDarkGrey}",
+        "type": "color"
+      },
+      "tt_cmp_color_speedLimit_usa_title": {
+        "value": "{Road Signage.tt_sys_color_signageDarkGrey}",
+        "type": "color"
+      },
+      "tt_cmp_color_speedLimit_apac_title": {
+        "value": "{Road Signage.tt_sys_color_signageDeepBlue}",
+        "type": "color"
+      }
+    },
+    "HOV Lane Restriction": {
+      "USA": {
+        "tt_cmp_color_hovLaneRestriction_surface": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_hovLaneRestriction_title": {
+          "value": "{Guidance.USA.tt_sys_color_usaGuidance_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_hovLaneRestriction_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      },
+      "World": {
+        "tt_cmp_color_hovLaneRestriction_surface": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_hovLaneRestriction_title": {
+          "value": "{Guidance.World.tt_sys_color_worldGuidance_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_hovLaneRestriction_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      }
+    },
+    "Roundabout Exit": {
+      "USA": {
+        "tt_cmp_color_roundaboutExit_usa_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_roundaboutExit_usa_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_roundaboutExit_usa_title": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_roundaboutExit_usa_unit": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_roundaboutExit_usa_icon": {
+          "value": "{Guidance.USA.tt_sys_color_onUsaGuidancePrimary_primary}",
+          "type": "color"
+        }
+      },
+      "World": {
+        "tt_cmp_color_roundaboutExit_world_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_roundaboutExit_world_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_roundaboutExit_world_title": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_roundaboutExit_world_unit": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_roundaboutExit_world_icon": {
+          "value": "{Guidance.World.tt_sys_color_onWorldGuidancePrimary_primary}",
+          "type": "color"
+        }
+      }
+    },
+    "Junction View": {
+      "tt_cmp_color_junctionView_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    },
+    "Toll Guidance": {
+      "tt_cmp_color_tollGuidance_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_tollGuidance_laneHighlighted_surface": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_tollGuidance_laneHighlighted_icon": {
+        "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_tollGuidance_laneLowlighted_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color"
+      },
+      "tt_cmp_color_tollGuidance_laneLowlighted_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      }
+    },
+    "Current Street Group": {
+      "tt_cmp_color_currentStreetGroup_surface": {
+        "value": "{Grey.tt_glb_color_grey_800_a8}",
+        "type": "color"
+      },
+      "tt_cmp_color_currentStreetGroup_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    }
+  },
+  "General UI": {
+    "Pagination": {
+      "tt_cmp_color_paginationSelected": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_paginationUnselected": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color",
+        "description": ""
+      }
+    },
+    "Cursor": {
+      "tt_cmp_color_cursor_surface": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      }
+    },
+    "Progress Bar": {
+      "tt_cmp_color_progressBar_progress": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_progressBar_track": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color",
+        "description": ""
+      }
+    },
+    "Overlay": {
+      "tt_cmp_color_overlay_surface": {
+        "value": "{Black&White.tt_glb_color_black_a5}",
+        "type": "color"
+      }
+    },
+    "Input Fields": {
+      "Inactive": {
+        "tt_cmp_color_input_inactive_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_input_inactive_underline": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_input_inactive_label": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_input_inactive_clear": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_input_inactive_body": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color",
+          "description": ""
+        }
+      },
+      "Active": {
+        "tt_cmp_color_input_active_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_input_active_underline": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_input_active_label": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_input_active_body": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_input_active_clear": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+          "type": "color",
+          "description": ""
+        }
+      },
+      "Typing": {
+        "tt_cmp_color_input_typing_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_input_typing_underline": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_input_typing_label": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_input_typing_body": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_input_typing_clear": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+          "type": "color",
+          "description": ""
+        }
+      }
+    },
+    "Spinner Message": {
+      "Applying": {
+        "tt_cmp_color_spinnerMessage_applying_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_applying_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_applying_spinnerIndicator": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_applying_spinnerTrack": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_applying_title": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color"
+        }
+      },
+      "Applied": {
+        "tt_cmp_color_spinnerMessage_applied_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_applied_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_applied_icon": {
+          "value": "{Actions.tt_sys_color_accept}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_applied_title": {
+          "value": "{Actions.tt_sys_color_accept}",
+          "type": "color"
+        }
+      },
+      "Error": {
+        "tt_cmp_color_spinnerMessage_error_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_error_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_error_icon": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_spinnerMessage_error_title": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "Headers": {
+    "Header": {
+      "tt_cmp_color_header_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_header_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_header_titleLowlight": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_header_leftIcon": {
+        "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_header_rightIcon": {
+        "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_header_offlineIcon": {
+        "value": "{Alerts & Warnings.Warning.tt_sys_color_warning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_header_label": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_header_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      }
+    },
+    "Search Input": {
+      "Inactive": {
+        "tt_cmp_color_searchInput_inactive_surface": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_inactive_stroke": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_stroke}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_inactive_label": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_inactive_leftOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_inactive_rightOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_inactive_leftInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_inactive_rightInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color"
+        }
+      },
+      "Active": {
+        "tt_cmp_color_searchInput_active_surface": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_active_stroke": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_active_label": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_active_leftOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_active_rightOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_active_leftInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_active_rightInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_active_cursor": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color",
+          "description": ""
+        }
+      },
+      "Quick Link POI": {
+        "tt_cmp_color_searchInput_poi_surface": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_poi_stroke": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_stroke}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_poi_label": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_poi_leftOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_poi_rightOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_poi_leftInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_poi_rightInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color"
+        }
+      },
+      "Typing": {
+        "tt_cmp_color_searchInput_typing_surface": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_typing_stroke": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_typing_label": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_typing_additionLabel": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_typing_leftOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_typing_rightOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_typing_leftInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_typing_rightInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_searchInput_typing_cursor": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color",
+          "description": ""
+        }
+      },
+      "Idle": {
+        "tt_cmp_color_searchInput_idle_surface": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_idle_stroke": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_stroke}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_idle_label": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_idle_leftOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_idle_rightOuterIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_idle_leftInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_searchInput_idle_rightInnerIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color"
+        }
+      }
+    },
+    "Arrival Header": {
+      "tt_cmp_color_arrivalHeader_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_arrivalHeader_arrows": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_arrivalHeader_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      }
+    },
+    "Event Details Header": {
+      "tt_cmp_color_eventDetailsHeader_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_eventDetailsHeader_unit": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_eventDetailsHeader_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_eventDetailsHeader_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    }
+  },
+  "Subheadings": {
+    "Subheader": {
+      "tt_cmp_color_subheader_subtitle": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_subheader_selected": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_subheader_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color"
+      },
+      "tt_cmp_color_subheader_leftIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color"
+      },
+      "tt_cmp_color_subheader_rightIcon": {
+        "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_subheader_divider": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color"
+      }
+    },
+    "Feed Forward": {
+      "tt_cmp_color_feedForward_subtitle": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_feedForward_icon": {
+        "value": "{Alerts & Warnings.Warning.tt_sys_color_warning_primary}",
+        "type": "color"
+      }
+    }
+  },
+  "Dividers": {
+    "Horizontal": {
+      "tt_cmp_color_divider_horizontal": {
+        "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_subtle}",
+        "type": "color"
+      }
+    },
+    "Panel": {
+      "tt_cmp_color_divider_panel": {
+        "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_subtle}",
+        "type": "color"
+      }
+    },
+    "Vertical": {
+      "tt_cmp_color_divider_vertical": {
+        "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_medium}",
+        "type": "color"
+      }
+    }
+  },
+  "List Items": {
+    "Search Results Item": {
+      "tt_cmp_color_searchResultsItem_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_title_empty": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_suggestion": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_suggestionIcon": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_bodyUnit": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_plugTypeIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_icon_empty": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_rightIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_listNumber": {
+        "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_listNumberSurface": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_categoryIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_directionalIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_direction": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_chargeSpeedIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_surface_pressed": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_surface_loading": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_distance": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_positive": {
+        "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_searchResultsItem_negative": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      }
+    },
+    "Menu & Settings": {
+      "Settings Item": {
+        "tt_cmp_color_settingsItem_surface": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsItem_surface_pressed": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsItem_title": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsItem_body": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsItem_unit": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_settingsItem_leftIcon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsItem_rightIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        }
+      },
+      "Settings Group": {
+        "tt_cmp_color_settingsGroup_icon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsGroup_title": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsGroup_body": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsGroup_label": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsGroup_active": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsGroup_idle": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsGroup_error": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsGroup_divider": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_settingsGroup_track": {
+          "value": "{Grey.tt_glb_color_grey_500}",
+          "type": "color"
+        }
+      },
+      "Menu Item": {
+        "tt_cmp_color_menuItem_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_menuItem_surface_pressed": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_menuItem_title": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_menuItem_leftIcon": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_menuItem_rightIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color",
+          "description": ""
+        }
+      }
+    },
+    "Routing": {
+      "Route Overview Items": {
+        "Start Item": {
+          "tt_cmp_color_routingStartItem_surface": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingStartItem_surface_pressed": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingStartItem_title": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingStartItem_body": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingStartItem_unit": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingStartItem_icon": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingStartItem_batteryIcon": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingStartItem_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          }
+        },
+        "Route Item": {
+          "tt_cmp_color_routingLocationItem_surface": {
+            "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_iconSurface": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_surface_pressed": {
+            "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_pressed}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_title": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_icon": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_endIcon": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_body": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_iconOnSurface": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_journeyInformationIcons": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_firstLineBody": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_criticalBody": {
+            "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_criticalIcon": {
+            "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_secondLineBody": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_iconSurfaceStroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_firstLineUnit": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingLocationItem_secondLineUnit": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+            "type": "color"
+          }
+        },
+        "Connection Item": {
+          "tt_cmp_color_routingConnectionItem_surface": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingConnectionItem_stroke": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingConnectionItem_surface_pressed": {
+            "value": "{Black&White.tt_glb_color_null}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingConnectionItem_body": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingConnectionItem_connectionIcon": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingConnectionItem_label": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+            "type": "color",
+            "description": ""
+          },
+          "tt_cmp_color_routingConnectionItem_unit": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routingConnectionItem_helper": {
+            "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+            "type": "color"
+          }
+        },
+        "Editing Route Item": {
+          "Unselected": {
+            "tt_cmp_color_routingEditItem_unselected_surface": {
+              "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+              "type": "color"
+            },
+            "tt_cmp_color_routingEditItem_unselected_stroke": {
+              "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_stroke}",
+              "type": "color"
+            },
+            "tt_cmp_color_routingEditItem_unselected_title": {
+              "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+              "type": "color"
+            },
+            "tt_cmp_color_routingEditItem_unselected_startIcon": {
+              "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+              "type": "color"
+            },
+            "tt_cmp_color_routingEditItem_unselected_endIcon": {
+              "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+              "type": "color"
+            }
+          },
+          "Selected": {
+            "tt_cmp_color_routingEditItem_selected_surface": {
+              "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+              "type": "color"
+            },
+            "tt_cmp_color_routingEditItem_selected_stroke": {
+              "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+              "type": "color"
+            },
+            "tt_cmp_color_routingEditItem_selected_title": {
+              "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+              "type": "color"
+            },
+            "tt_cmp_color_routingEditItem_selected_startIcon": {
+              "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+              "type": "color"
+            },
+            "tt_cmp_color_routingEditItem_selected_endIcon": {
+              "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "Route Option Items": {
+        "Selected": {
+          "tt_cmp_color_routeOptionItem_selected_surface": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_stroke": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_indicatorSurface": {
+            "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+            "type": "color",
+            "description": ""
+          },
+          "tt_cmp_color_routeOptionItem_selected_indicatorIcon": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_icon": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_title": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_titleUnit": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_body": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_bodyUnit": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_label": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_labelIcon": {
+            "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_divider": {
+            "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_subtle}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_positive": {
+            "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_negative": {
+            "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+            "type": "color"
+          }
+        },
+        "Unselected": {
+          "tt_cmp_color_routeOptionItem_unselected_surface": {
+            "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_unselected_stroke": {
+            "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_stroke}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_indicatorSurface": {
+            "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_selected_indicatorIcon": {
+            "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_unselected_icon": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_unselected_title": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_unselected_titleUnit": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_unselected_body": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_unselected_bodyUnit": {
+            "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_secondary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_unselected_divider": {
+            "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_subtle}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_unselected_positive": {
+            "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+            "type": "color"
+          },
+          "tt_cmp_color_routeOptionItem_unselected_negative": {
+            "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+            "type": "color"
+          }
+        },
+        "APAC Indicators": {
+          "Selected": {
+            "tt_cmp_color_routeOptionIndicator_selected_indicatorSurface": {
+              "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+              "type": "color"
+            },
+            "tt_cmp_color_routeOptionIndicator_selected_indicatorIcon": {
+              "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+              "type": "color"
+            }
+          },
+          "First Position": {
+            "tt_cmp_color_routeOptionIndicator_firstPosition_indicatorSurface": {
+              "value": "{Localised.tt_glb_color_apacPurple_100}",
+              "type": "color"
+            },
+            "tt_cmp_color_routeOptionIndicator_firstPosition_indicatorIcon": {
+              "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+              "type": "color"
+            }
+          },
+          "Second Position": {
+            "tt_cmp_color_routeOptionIndicator_secondPosition_indicatorSurface": {
+              "value": "{Localised.tt_glb_color_apacPink_100}",
+              "type": "color"
+            },
+            "tt_cmp_color_routeOptionIndicator_secondPosition_indicatorIcon": {
+              "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+              "type": "color"
+            }
+          },
+          "Third Position": {
+            "tt_cmp_color_routeOptionIndicator_thirdPosition_indicatorSurface": {
+              "value": "{Localised.tt_glb_color_apacAqua_100}",
+              "type": "color"
+            },
+            "tt_cmp_color_routeOptionIndicator_thirdPosition_indicatorIcon": {
+              "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+              "type": "color"
+            }
+          },
+          "Forth Position": {
+            "tt_cmp_color_routeOptionIndicator_forthPosition_indicatorSurface": {
+              "value": "{Localised.tt_glb_color_apacOlive_100}",
+              "type": "color"
+            },
+            "tt_cmp_color_routeOptionIndicator_forthPosition_indicatorIcon": {
+              "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+              "type": "color"
+            }
+          }
+        }
+      }
+    },
+    "Location": {
+      "EV Availability Items": {
+        "tt_cmp_color_evAvailabilityItem_surface": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_evAvailabilityItem_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_evAvailabilityItem_icon": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_evAvailabilityItem_title": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_evAvailabilityItem_body": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_evAvailabilityItem_positive": {
+          "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_evAvailabilityItem_negative": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_evAvailabilityItem_unit": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_evAvailabilityItem_informationIcons": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+          "type": "color",
+          "description": ""
+        }
+      }
+    },
+    "Expandable content": {
+      "Opening Hours": {
+        "tt_cmp_color_openingHoursItem_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_openingHoursItem_surface_pressed": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_openingHoursItem_body": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_openingHoursItem_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_openingHoursItem_icon": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_openingHoursItem_dropDownIcon": {
+          "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_openingHoursItem_title": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        }
+      }
+    },
+    "Information Item": {
+      "tt_cmp_color_informationItem_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationItem_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationItem_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationItem_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationItem_surface_loading": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationItem_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    }
+  },
+  "Notification Content": {
+    "Search Messages": {
+      "tt_cmp_color_searchMessage_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_searchMessage_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_searchMessage_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      }
+    },
+    "Dialog Text": {
+      "tt_cmp_color_dialogText_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_dialogText_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color"
+      }
+    },
+    "Routing Messages": {
+      "tt_cmp_color_routingMessage_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_routingMessage_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      }
+    },
+    "Banner": {
+      "Regular": {
+        "tt_cmp_color_banner_surface": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_pressed": {
+          "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_title": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_label": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_body": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_icon": {
+          "value": "{Surfaces.Secondary.tt_sys_color_onSecondarySurface_primary}",
+          "type": "color"
+        }
+      },
+      "Alert": {
+        "tt_cmp_color_banner_alert_surface": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_alert_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_alert_pressed": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_alert_title": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_alert_label": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_alert_body": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color"
+        },
+        "tt_cmp_color_banner_alert_icon": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningPrimary}",
+          "type": "color"
+        }
+      }
+    },
+    "Snack Bar": {
+      "Regular": {
+        "tt_cmp_color_snackBar_surface": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_pressed": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_title": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_label": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_body": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_icon": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        }
+      },
+      "Highlight": {
+        "tt_cmp_color_snackBar_highlight_surface": {
+          "value": "{Grey.tt_glb_color_grey_100}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_highlight_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_highlight_pressed": {
+          "value": "{Grey.tt_glb_color_grey_200}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_highlight_title": {
+          "value": "{Grey.tt_glb_color_grey_600}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_highlight_label": {
+          "value": "{Grey.tt_glb_color_grey_600}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_highlight_body": {
+          "value": "{Grey.tt_glb_color_grey_400}",
+          "type": "color"
+        },
+        "tt_cmp_color_snackBar_highlight_icon": {
+          "value": "{Grey.tt_glb_color_grey_600}",
+          "type": "color"
+        }
+      }
+    },
+    "Carousel Text": {
+      "tt_cmp_color_carouselText_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_carouselText_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_carouselText_hyperlink": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_carouselText_icon": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color",
+        "description": ""
+      }
+    }
+  },
+  "Location": {
+    "Location Details": {
+      "tt_cmp_color_locationDetails_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_locationDetails_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_locationDetails_surface_pressed": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_locationDetails_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_locationDetails_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_locationDetails_distance": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_locationDetails_journeyTime": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_locationDetails_openingHoursLabel": {
+        "value": "{Actions.tt_sys_color_accept}",
+        "type": "color"
+      },
+      "tt_cmp_color_locationDetails_amenitiesIcons": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_locationDetails_chargeTimeIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_locationDetails_chargeTime": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      }
+    },
+    "Information Pill": {
+      "tt_cmp_color_informationPill_surface": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationPill_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationPill_surface_pressed": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationPill_title": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationPill_body": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationPill_amenitiesIcons": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationPill_icon": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationPill_positive": {
+        "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_informationPill_negative": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      }
+    },
+    "Status Pill": {
+      "Positive": {
+        "tt_cmp_color_statusPill_positive_surface": {
+          "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_statusPill_positive_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_statusPill_positive_icon": {
+          "value": "{Alerts & Warnings.Positive.tt_sys_color_onPositiveSecondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_statusPill_positive_title": {
+          "value": "{Alerts & Warnings.Positive.tt_sys_color_onPositiveSecondary}",
+          "type": "color"
+        }
+      },
+      "Alert": {
+        "tt_cmp_color_statusPill_alert_surface": {
+          "value": "{Alerts & Warnings.Alert.tt_sys_color_alert_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_statusPill_alert_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_statusPill_alert_icon": {
+          "value": "{Alerts & Warnings.Alert.tt_sys_color_onAlertSecondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_statusPill_alert_title": {
+          "value": "{Alerts & Warnings.Alert.tt_sys_color_onAlertSecondary}",
+          "type": "color"
+        }
+      },
+      "Critical Warning": {
+        "tt_cmp_color_statusPill_criticalWarning_surface": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_statusPill_criticalWarning_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_statusPill_criticalWarning_icon": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningSecondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_statusPill_criticalWarning_title": {
+          "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_onCriticalWarningSecondary}",
+          "type": "color"
+        }
+      }
+    },
+    "Parking Availability": {
+      "tt_cmp_color_parkingAvailability_parkingLow": {
+        "value": "{Alerts & Warnings.Warning.tt_sys_color_warning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingAvailability_parkingFair": {
+        "value": "{Alerts & Warnings.Alert.tt_sys_color_alert_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingAvailability_parkingGood": {
+        "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+        "type": "color"
+      }
+    },
+    "Footer": {
+      "tt_cmp_color_footerContainedButton_surface": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerContainedButton_surface_pressed": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary_pressed}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_footerContainedButton_label": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_footerContainedButton_icon": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerContainedButton_stroke": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerSuggestionsButton_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_footerSuggestionsButton_stroke": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerSuggestionsButton_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_footerSuggestionsButton_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_footerSubheader_subtitle": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerSubheader_rightIcon": {
+        "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_footerSubheader_divider": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_tertiary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerInformation_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerInformation_icon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerInformation_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerInformation_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerInformation_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerParkingAvailability_parkingLow": {
+        "value": "{Alerts & Warnings.Warning.tt_sys_color_warning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerParkingAvailability_parkingFair": {
+        "value": "{Yellow.tt_glb_color_yellow_200}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerParkingAvailability_parkingGood": {
+        "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerQuickActionButton_surface": {
+        "value": "{Grey.tt_glb_color_grey_700}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerQuickActionButton_surface_pressed": {
+        "value": "{Grey.tt_glb_color_grey_900}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerQuickActionButton_icon": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color"
+      },
+      "tt_cmp_color_footerQuickActionButton_stroke": {
+        "value": "{Grey.tt_glb_color_grey_500}",
+        "type": "color"
+      }
+    },
+    "Parking Trend": {
+      "tt_cmp_color_parkingTrend_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_availability_positive": {
+        "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_trendIcon_positive": {
+        "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_trend_positive": {
+        "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_availability_negative": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_trendIcon_negative": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_trend_negative": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_availability_unknown": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_trendIcon_unknown": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_parkingTrend_trend_unknown": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      }
+    }
+  },
+  "Controls": {
+    "Switches": {
+      "Unselected": {
+        "tt_cmp_color_switch_unselected_surface": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_switch_unselected_stroke": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary_stroke}",
+          "type": "color"
+        },
+        "tt_cmp_color_switch_unselected_handle": {
+          "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+          "type": "color"
+        }
+      },
+      "Selected": {
+        "tt_cmp_color_switch_selected_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_switch_selected_handle": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_switch_selected_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      }
+    },
+    "Slider": {
+      "tt_cmp_color_slider_track": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_slider_progress": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_slider_handle": {
+        "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_slider_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_slider_title": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_slider_unit": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      }
+    },
+    "Checkbox": {
+      "Unselected": {
+        "tt_cmp_color_checkbox_unselected_surface": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_checkbox_unselected_stroke": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary_stroke}",
+          "type": "color"
+        }
+      },
+      "Selected": {
+        "tt_cmp_color_checkbox_selected_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_checkbox_selected_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_checkbox_selected_icon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color",
+          "description": ""
+        }
+      }
+    },
+    "Radio": {
+      "Unselected": {
+        "tt_cmp_color_radio_unselected_surface": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+          "type": "color"
+        },
+        "tt_cmp_color_radio_unselected_stroke": {
+          "value": "{Brand.Secondary.tt_sys_color_brand_secondary_stroke}",
+          "type": "color"
+        }
+      },
+      "Selected": {
+        "tt_cmp_color_radio_selected_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color",
+          "description": ""
+        },
+        "tt_cmp_color_radio_selected_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_radio_selected_icon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color",
+          "description": ""
+        }
+      }
+    },
+    "Scroll Bar": {
+      "Inactive": {
+        "tt_cmp_color_scrollBar_inactive_handle": {
+          "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_medium}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_inactive_handleStroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_inactive_track": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_inactive_trackStroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_inactive_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_inactive_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      },
+      "Active": {
+        "tt_cmp_color_scrollBar_active_handle": {
+          "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_strong}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_active_handleStroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_active_track": {
+          "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_subtle}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_active_trackStroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_active_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_active_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_active_popoutSurface": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_active_popoutStroke": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary_stroke}",
+          "type": "color"
+        },
+        "tt_cmp_color_scrollBar_active_popoutTitle": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        }
+      }
+    },
+    "SegmentedControl": {
+      "Selected": {
+        "tt_cmp_color_segmentedControl_selected_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+          "type": "color"
+        },
+        "tt_cmp_color_segmentedControl_selected_stroke": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary_stroke}",
+          "type": "color"
+        },
+        "tt_cmp_color_segmentedControl_selected_icon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_segmentedControl_selected_label": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        }
+      },
+      "Unselected": {
+        "tt_cmp_color_segmentedControl_unselected_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_segmentedControl_unselected_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_segmentedControl_unselected_icon": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_segmentedControl_unselected_label": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        }
+      },
+      "Group": {
+        "tt_cmp_color_segmentedControl_group_surface": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_segmentedControl_group_stroke": {
+          "value": "{Surfaces.Primary.tt_sys_color_surface_primary_stroke}",
+          "type": "color"
+        }
+      }
+    },
+    "Tab Bar": {
+      "Selected": {
+        "tt_cmp_color_tab_selected_surface": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primarySelected}",
+          "type": "color"
+        },
+        "tt_cmp_color_tab_selected_indicator": {
+          "value": "{Brand.Primary.tt_sys_color_brand_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_tab_selected_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_tab_selected_icon": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_tab_selected_label": {
+          "value": "{Brand.Primary.tt_sys_color_onBrandPrimary_primary}",
+          "type": "color"
+        }
+      },
+      "Unselected": {
+        "tt_cmp_color_tab_unselected_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_tab_unselected_indicator": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_tab_unselected_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_tab_unselected_icon": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        },
+        "tt_cmp_color_tab_unselected_label": {
+          "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+          "type": "color"
+        }
+      },
+      "Group": {
+        "tt_cmp_color_tabGroup_surface": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        },
+        "tt_cmp_color_tabGroup_stroke": {
+          "value": "{Black&White.tt_glb_color_null}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "Panels": {
+    "Neutral": {
+      "tt_cmp_color_panel_neutral_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_panel_neutral_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_panel_neutral_handle": {
+        "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_medium}",
+        "type": "color"
+      },
+      "tt_cmp_color_panel_neutral_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color",
+        "description": ""
+      }
+    },
+    "USA": {
+      "tt_cmp_color_panel_usa_surface": {
+        "value": "{Guidance.USA.tt_sys_color_usaGuidance_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_panel_usa_surface_pressed": {
+        "value": "{Guidance.USA.tt_sys_color_usaGuidance_primary_pressed}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_panel_usa_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_panel_usa_handle": {
+        "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_medium}",
+        "type": "color"
+      }
+    },
+    "Modals": {
+      "tt_cmp_color_modals_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_modals_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_modals_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    },
+    "Dialog": {
+      "tt_cmp_color_dialog_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_dialog_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_dialog_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    },
+    "World": {
+      "tt_cmp_color_panel_world_surface": {
+        "value": "{Guidance.World.tt_sys_color_worldGuidance_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_panel_world_surface_pressed": {
+        "value": "{Guidance.World.tt_sys_color_worldGuidance_primary_pressed}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_panel_world_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_panel_world_handle": {
+        "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_medium}",
+        "type": "color"
+      }
+    },
+    "Fullscreen": {
+      "tt_cmp_color_fullscreen_surface": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_fullscreen_surface_pressed": {
+        "value": "{Surfaces.Primary.tt_sys_color_surface_primary_pressed}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_cmp_color_fullscreen_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    },
+    "Footer": {
+      "tt_cmp_color_panel_footer_surface": {
+        "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_panel_footer_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_panel_footer_handle": {
+        "value": "{User Interface Controls.Structure.tt_sys_color_uiControls_structure_medium}",
+        "type": "color"
+      },
+      "tt_cmp_color_panel_footer_surface_pressed": {
+        "value": "{Surfaces.Secondary.tt_sys_color_surface_secondary_pressed}",
+        "type": "color"
+      }
+    },
+    "Container": {
+      "tt_cmp_color_panelContainer_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      }
+    }
+  },
+  "Routing": {
+    "Journey Summary": {
+      "tt_cmp_color_route_journeySummary_surface": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_body": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_units": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_infoIcons": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_delay": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_noDelay": {
+        "value": "{Alerts & Warnings.Positive.tt_sys_color_positive_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_outOfRangeBody": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_outOfRangeIcon": {
+        "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_unavailableBody": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_journeySummary_unavailableIcon": {
+        "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_secondary}",
+        "type": "color"
+      }
+    },
+    "Restricted Route Information": {
+      "tt_cmp_color_route_restrictedRouteInformation_surface": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_restrictedRouteInformation_surface_pressed": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_restrictedRouteInformation_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_restrictedRouteInformation_title": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_restrictedRouteInformation_rightIcon": {
+        "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+        "type": "color"
+      }
+    },
+    "Route Includes": {
+      "tt_cmp_color_route_routeIncludes_surface": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_routeIncludes_surface_pressed": {
+        "value": "{Brand.Secondary.tt_sys_color_brand_secondary_pressed}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_routeIncludes_title": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_routeIncludes_avoidIcons": {
+        "value": "{Brand.Secondary.tt_sys_color_onBrandSecondary_primary}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_routeIncludes_stroke": {
+        "value": "{Black&White.tt_glb_color_null}",
+        "type": "color"
+      },
+      "tt_cmp_color_route_routeIncludes_rightIcon": {
+        "value": "{User Interface Controls.Navigation.tt_sys_color_uiControls_navigation_primary}",
+        "type": "color"
+      }
+    }
+  },
+  "Screens": {
+    "Map View": {
+      "tt_cmp_color_mapView_surface": {
+        "value": "{Grey.tt_glb_color_grey_700}",
+        "type": "color"
+      }
+    }
+  },
+  "Feedback Plugin": {
+    "tt_cmp_color_feedbackPlugin_surface": {
+      "value": "{Surfaces.Primary.tt_sys_color_surface_primary}",
+      "type": "color"
+    },
+    "tt_cmp_color_feedbackPlugin_stroke": {
+      "value": "{Black&White.tt_glb_color_null}",
+      "type": "color"
+    },
+    "tt_cmp_color_feedbackPlugin_body": {
+      "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+      "type": "color"
+    },
+    "tt_cmp_color_feedbackPlugin_rightIcon": {
+      "value": "{Surfaces.Primary.tt_sys_color_onPrimarySurface_primary}",
+      "type": "color"
+    },
+    "tt_cmp_color_feedbackPlugin_recordingIconInnerCircle": {
+      "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_primary}",
+      "type": "color"
+    },
+    "tt_cmp_color_feedbackPlugin_recordingIconBackgroundCircle": {
+      "value": "{Alerts & Warnings.Critical Warning.tt_sys_color_criticalWarning_secondary}",
+      "type": "color"
+    },
+    "tt_cmp_color_feedbackPlugin_tickIcon": {
+      "value": "{Actions.tt_sys_color_accept}",
+      "type": "color"
+    },
+    "tt_cmp_color_feedbackPlugin_emailIcon": {
+      "value": "{Actions.tt_sys_color_accept}",
+      "type": "color"
+    }
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "tt_glb_size_null": {
+    "value": "0",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_05": {
+    "value": "0.5",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_1": {
+    "value": "1",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_2": {
+    "value": "2",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_3": {
+    "value": "3",
+    "type": "number"
+  },
+  "tt_glb_size_4": {
+    "value": "4",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_6": {
+    "value": "6",
+    "type": "number"
+  },
+  "tt_glb_size_8": {
+    "value": "8",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_12": {
+    "value": "12",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_16": {
+    "value": "16",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_18": {
+    "value": "18",
+    "type": "number"
+  },
+  "tt_glb_size_20": {
+    "value": "20",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_24": {
+    "value": "24",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_28": {
+    "value": "28",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_32": {
+    "value": "32",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_36": {
+    "value": "36",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_40": {
+    "value": "40",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_44": {
+    "value": "44",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_48": {
+    "value": "48",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_52": {
+    "value": "52",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_56": {
+    "value": "56",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_60": {
+    "value": "60",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_64": {
+    "value": "64",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_68": {
+    "value": "68",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_72": {
+    "value": "72",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_76": {
+    "value": "76",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_80": {
+    "value": "80",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_84": {
+    "value": "84",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_88": {
+    "value": "88",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_92": {
+    "value": "92",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_96": {
+    "value": "96",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_100": {
+    "value": "100",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_104": {
+    "value": "104",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_108": {
+    "value": "108",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_112": {
+    "value": "112",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_116": {
+    "value": "116",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_120": {
+    "value": "120",
+    "type": "number",
+    "description": ""
+  },
+  "tt_glb_size_124": {
+    "value": "124",
+    "type": "number"
+  },
+  "tt_glb_size_128": {
+    "value": "128",
+    "type": "number"
+  },
+  "tt_glb_size_132": {
+    "value": "132",
+    "type": "number"
+  },
+  "tt_glb_size_136": {
+    "value": "136",
+    "type": "number"
+  },
+  "tt_glb_size_140": {
+    "value": "140",
+    "type": "number"
+  },
+  "tt_glb_size_144": {
+    "value": "144",
+    "type": "number"
+  },
+  "tt_glb_size_148": {
+    "value": "148",
+    "type": "number"
+  },
+  "tt_glb_size_152": {
+    "value": "152",
+    "type": "number"
+  },
+  "tt_glb_size_156": {
+    "value": "156",
+    "type": "number"
+  },
+  "tt_glb_size_160": {
+    "value": "160",
+    "type": "number"
+  },
+  "tt_glb_size_164": {
+    "value": "164",
+    "type": "number"
+  },
+  "tt_glb_size_168": {
+    "value": "168",
+    "type": "number"
+  },
+  "tt_glb_size_172": {
+    "value": "172",
+    "type": "number"
+  },
+  "tt_glb_size_176": {
+    "value": "176",
+    "type": "number"
+  },
+  "tt_glb_size_180": {
+    "value": "180",
+    "type": "number"
+  },
+  "tt_glb_size_184": {
+    "value": "184",
+    "type": "number"
+  },
+  "tt_glb_size_188": {
+    "value": "188",
+    "type": "number"
+  },
+  "tt_glb_size_192": {
+    "value": "192",
+    "type": "number"
+  },
+  "tt_glb_size_196": {
+    "value": "196",
+    "type": "number"
+  },
+  "tt_glb_size_200": {
+    "value": "200",
+    "type": "number"
+  },
+  "tt_glb_size_224": {
+    "value": "224",
+    "type": "number"
+  },
+  "tt_glb_size_280": {
+    "value": "280",
+    "type": "number"
+  },
+  "tt_glb_size_300": {
+    "value": "300",
+    "type": "number"
+  },
+  "tt_glb_size_320": {
+    "value": "320",
+    "type": "number"
+  },
+  "tt_glb_size_360": {
+    "value": "360",
+    "type": "number"
+  },
+  "tt_glb_size_375": {
+    "value": "375",
+    "type": "number"
+  },
+  "tt_glb_size_400": {
+    "value": "400",
+    "type": "number"
+  },
+  "tt_glb_size_440": {
+    "value": "440",
+    "type": "number"
+  },
+  "tt_glb_size_470": {
+    "value": "470",
+    "type": "number"
+  },
+  "tt_glb_size_480": {
+    "value": "480",
+    "type": "number"
+  },
+  "tt_glb_size_520": {
+    "value": "520",
+    "type": "number"
+  },
+  "tt_glb_size_528": {
+    "value": "528",
+    "type": "number"
+  },
+  "tt_glb_size_540": {
+    "value": "540",
+    "type": "number"
+  },
+  "tt_glb_size_560": {
+    "value": "560",
+    "type": "number"
+  },
+  "tt_glb_size_580": {
+    "value": "580",
+    "type": "number"
+  },
+  "tt_glb_size_600": {
+    "value": "600",
+    "type": "number"
+  },
+  "tt_glb_size_608": {
+    "value": "608",
+    "type": "number"
+  },
+  "tt_glb_size_640": {
+    "value": "640",
+    "type": "number"
+  },
+  "tt_glb_size_680": {
+    "value": "680",
+    "type": "number"
+  },
+  "tt_glb_size_688": {
+    "value": "688",
+    "type": "number"
+  },
+  "tt_glb_size_700": {
+    "value": "700",
+    "type": "number"
+  },
+  "tt_glb_size_720": {
+    "value": "720",
+    "type": "number"
+  },
+  "tt_glb_size_770": {
+    "value": "770",
+    "type": "number"
+  },
+  "tt_glb_size_800": {
+    "value": "800",
+    "type": "number"
+  },
+  "tt_glb_size_812": {
+    "value": "812",
+    "type": "number"
+  },
+  "tt_glb_size_850": {
+    "value": "850",
+    "type": "number"
+  },
+  "tt_glb_size_900": {
+    "value": "900",
+    "type": "number"
+  },
+  "tt_glb_size_950": {
+    "value": "950",
+    "type": "number"
+  },
+  "tt_glb_size_1000": {
+    "value": "1000",
+    "type": "number"
+  },
+  "tt_glb_size_1080": {
+    "value": "1080",
+    "type": "number"
+  },
+  "tt_glb_size_1100": {
+    "value": "1100",
+    "type": "number"
+  },
+  "tt_glb_size_1280": {
+    "value": "1280",
+    "type": "number"
+  },
+  "tt_glb_size_1500": {
+    "value": "1500",
+    "type": "number"
+  },
+  "tt_glb_size_1600": {
+    "value": "1600",
+    "type": "number"
+  },
+  "tt_glb_size_1920": {
+    "value": "1920",
+    "type": "number"
+  },
+  "tt_glb_size_full": {
+    "value": "10000",
+    "type": "number",
+    "description": ""
+  }
+}

@@ -1,0 +1,2838 @@
+{
+  "fo_locale_unit_distance_long": {
+    "value": "km",
+    "type": "text"
+  },
+  "fo_locale_unit_distance_short": {
+    "value": "m",
+    "type": "text"
+  },
+  "fo_locale_unit_speed": {
+    "value": "km/h",
+    "type": "text"
+  },
+  "fo_locale_unit_temperature": {
+    "value": "°C",
+    "type": "text"
+  },
+  "fo_locale_unit_currency": {
+    "value": "₩",
+    "type": "text"
+  },
+  "fo_locale_unit_price_decimal_separator": {
+    "value": ".",
+    "type": "text"
+  },
+  "fo_locale_unit_time_hr": {
+    "value": "시간",
+    "type": "text"
+  },
+  "fo_locale_unit_time_min": {
+    "value": "분",
+    "type": "text"
+  },
+  "fo_content_eu": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "fo_content_us": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "fo_content_japan": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "fo_content_korea": {
+    "value": "true",
+    "type": "boolean"
+  },
+  "Buttons": {
+    "fo_locale_containedButton_cancel": {
+      "value": "취소",
+      "type": "text"
+    },
+    "fo_locale_containedButton_delete": {
+      "value": "삭제",
+      "type": "text"
+    },
+    "fo_locale_containedButton_save": {
+      "value": "저장",
+      "type": "text"
+    },
+    "fo_locale_containedButton_confirm": {
+      "value": "확인",
+      "type": "text"
+    },
+    "fo_locale_containedButton_done": {
+      "value": "완료",
+      "type": "text"
+    },
+    "fo_locale_containedButton_no": {
+      "value": "아니요",
+      "type": "text"
+    },
+    "fo_locale_containedButton_yes": {
+      "value": "예",
+      "type": "text"
+    },
+    "fo_locale_containedButton_dismiss": {
+      "value": "닫기",
+      "type": "text"
+    },
+    "fo_locale_containedButton_accept": {
+      "value": "수락",
+      "type": "text"
+    },
+    "fo_locale_containedButton_drive": {
+      "value": "안내 시작",
+      "type": "text"
+    },
+    "fo_locale_containedButton_more": {
+      "value": "더 보기",
+      "type": "text"
+    },
+    "fo_locale_containedButton_showMore": {
+      "value": "더 보기",
+      "type": "text"
+    },
+    "fo_locale_uncontainedButton_readMore": {
+      "value": "자세히 보기",
+      "type": "text"
+    },
+    "fo_locale_uncontainedButton_showLess": {
+      "value": "간단히 보기",
+      "type": "text"
+    }
+  },
+  "General UI": {
+    "fo_locale_spinnerMessage_loading": {
+      "value": "로딩 중",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_applying": {
+      "value": "적용 중",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_applied": {
+      "value": "적용됨",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_error": {
+      "value": "오류",
+      "type": "text"
+    },
+    "fo_locale_errorMessage_connection": {
+      "value": "문제가 발생했습니다. 연결 상태를 확인한 후 다시 시도해 주세요.",
+      "type": "text"
+    }
+  },
+  "Guidance": {
+    "NIP": {
+      "fo_locale_nip_firstRow_address": {
+        "value": "테헤란로",
+        "type": "text"
+      },
+      "fo_locale_nip_firstRow_city": {
+        "value": "서울",
+        "type": "text"
+      },
+      "fo_locale_nip_secondRow_address": {
+        "value": "올림픽대로",
+        "type": "text"
+      },
+      "fo_locale_nip_secondRow_city": {
+        "value": "서울",
+        "type": "text"
+      },
+      "fo_locale_nip_distance": {
+        "value": "2.4 {fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    },
+    "Current Street": {
+      "fo_locale_currentStreet_address": {
+        "value": "세종대로",
+        "type": "text"
+      },
+      "fo_locale_currentStreetEmpty": {
+        "value": "신고",
+        "type": "text"
+      }
+    },
+    "ETA": {
+      "fo_locale_eta_distanceValue": {
+        "value": "452",
+        "type": "text"
+      },
+      "fo_locale_eta_endRoute": {
+        "value": "경로를 종료하시겠습니까?",
+        "type": "text"
+      }
+    },
+    "Arrival": {
+      "fo_locale_arrival_header_destinationRight": {
+        "value": "목적지는 오른쪽에 있습니다",
+        "type": "text"
+      },
+      "fo_locale_arrival_header_destinationLeft": {
+        "value": "왼쪽에 목적지가 있습니다",
+        "type": "text"
+      },
+      "fo_locale_arrival_destination_title": {
+        "value": "코엑스 몰",
+        "type": "text"
+      },
+      "fo_locale_arrival_destination_address": {
+        "value": "서울특별시 강남구 영동대로 513",
+        "type": "text"
+      },
+      "fo_locale_arrival_waypoint_title": {
+        "value": "스타벅스 리저브 더종로",
+        "type": "text"
+      },
+      "fo_locale_arrival_waypoint_address": {
+        "value": "서울특별시 종로구 종로 51",
+        "type": "text"
+      },
+      "fo_locale_arrival_destinationWithCharger_title": {
+        "value": "롯데월드타워",
+        "type": "text"
+      },
+      "fo_locale_arrival_destinationWithCharger_address": {
+        "value": "서울특별시 송파구 올림픽로 300",
+        "type": "text"
+      },
+      "fo_locale_arrival_chargingStation_title": {
+        "value": "환경부 EV 충전소",
+        "type": "text"
+      },
+      "fo_locale_arrival_chargingStation_address": {
+        "value": "서울특별시 강남구 테헤란로 152",
+        "type": "text"
+      },
+      "fo_locale_arrival_finishButton": {
+        "value": "운행종료",
+        "type": "text"
+      },
+      "fo_locale_arrival_findAlternativeButton": {
+        "value": "대안 찾기",
+        "type": "text"
+      },
+      "fo_locale_arrival_continueDrivingButton": {
+        "value": "계속 주행",
+        "type": "text"
+      }
+    },
+    "Upcoming Events": {
+      "fo_locale_upcomingEvents_item1_value": {
+        "value": "250",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item1_body": {
+        "value": "고정식 과속 단속 카메라",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item2_value": {
+        "value": "350",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item2_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_value": {
+        "value": "750",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_body": {
+        "value": "미끄러운 도로",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_value": {
+        "value": "800",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_body": {
+        "value": "역주행 차량",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_body": {
+        "value": "고장 차량",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_body": {
+        "value": "더 빠른 경로",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_time": {
+        "value": "9{fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_body": {
+        "value": "정체",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_time": {
+        "value": "2{fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_body": {
+        "value": "정체",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_time": {
+        "value": "10{fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item9_value": {
+        "value": "11",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item9_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item10_value": {
+        "value": "16",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item10_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_value": {
+        "value": "21",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_body": {
+        "value": "정체",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_time": {
+        "value": "35{fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_neutral_speed": {
+        "value": "평균 50 {fo_locale_unit_speed}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_slightlySpeeding_speed": {
+        "value": "평균 55 {fo_locale_unit_speed}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_speeding_speed": {
+        "value": "평균 60 {fo_locale_unit_speed}",
+        "type": "text"
+      }
+    },
+    "Rerouting": {
+      "fo_locale_routeUpdateEvent_routeDeviation": {
+        "value": "경로 이탈",
+        "type": "text"
+      },
+      "fo_locale_routeUpdateEvent_updatingRoute": {
+        "value": "경로 업데이트 중",
+        "type": "text"
+      }
+    },
+    "Event Details": {
+      "fo_locale_eventDetails_address": {
+        "value": "서울특별시 중구 세종대로 110",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_city": {
+        "value": "서울",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_streetType": {
+        "value": "대로",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_streetName": {
+        "value": "세종대로",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_time": {
+        "value": "16:23",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_distanceSaved": {
+        "value": "2 km 단축",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_betterRoute": {
+        "value": "더 나은 경로",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_nextStop": {
+        "value": "다음 경유지",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_accident": {
+        "value": "사고",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_fewerChargingStops": {
+        "value": "충전 정차 횟수 감소",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_avoidsTunnels": {
+        "value": "터널 회피",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_via": {
+        "value": "경유",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_and": {
+        "value": "및",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_reportedOn": {
+        "value": "신고 위치",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_lastUpdated": {
+        "value": "마지막 업데이트:",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_ago": {
+        "value": "전",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_charge": {
+        "value": "충전",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_removeStopButton": {
+        "value": "경유지 삭제",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_minFaster": {
+        "value": "9{fo_locale_unit_time_min} 단축",
+        "type": "text"
+      }
+    },
+    "Instruction Events": {
+      "fo_locale_instructionEvents_item1_value": {
+        "value": "150",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item1_unit": {
+        "value": "m",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item1_address": {
+        "value": "세종대로를 따라 직진",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_value": {
+        "value": "300",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_unit": {
+        "value": "m",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_address": {
+        "value": "우회전하여 테헤란로 진입",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_value": {
+        "value": "1.2",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_address": {
+        "value": "왼쪽 출구로 나가세요",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_value": {
+        "value": "800",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_unit": {
+        "value": "m",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_address": {
+        "value": "다음 교차로에서 우회전",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_value": {
+        "value": "2.5",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_address": {
+        "value": "순환도로로 합류",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_value": {
+        "value": "120",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_unit": {
+        "value": "m",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_address": {
+        "value": "목적지는 오른쪽에 있습니다",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_value": {
+        "value": "450",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_unit": {
+        "value": "m",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_address": {
+        "value": "다음 신호에서 좌회전",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_value": {
+        "value": "3.0",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_address": {
+        "value": "요금소를 통과",
+        "type": "text"
+      }
+    }
+  },
+  "List Items": {
+    "Search Results Item Group": {
+      "fo_locale_searchResult_chargepoint": {
+        "value": "충전 지점",
+        "type": "text"
+      },
+      "EV": {
+        "fo_locale_searchResultEv_item1_value": {
+          "value": "140",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item1_address": {
+          "value": "서울특별시 강남구 테헤란로 152",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_value": {
+          "value": "370",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_address": {
+          "value": "서울특별시 송파구 올림픽로 300",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_value": {
+          "value": "600",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_address": {
+          "value": "서울특별시 중구 세종대로 110",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_value": {
+          "value": "700",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_address": {
+          "value": "서울특별시 강남구 영동대로 513",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_value": {
+          "value": "800",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_address": {
+          "value": "서울특별시 용산구 한강대로 405",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_value": {
+          "value": "900",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_address": {
+          "value": "서울특별시 종로구 종로 51",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_value": {
+          "value": "1.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_address": {
+          "value": "서울특별시 마포구 어울마당로 68",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_value": {
+          "value": "2",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_address": {
+          "value": "인천광역시 중구 공항로 272",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_value": {
+          "value": "2.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_address": {
+          "value": "경기도 성남시 분당구 불정로 6",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_value": {
+          "value": "3",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_address": {
+          "value": "부산광역시 해운대구 해운대해변로 264",
+          "type": "text"
+        }
+      },
+      "Mixed": {
+        "fo_locale_searchResult_houseNumber": {
+          "value": "번지",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_title": {
+          "value": "인천국제공항",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_address": {
+          "value": "인천광역시 중구 공항로 272",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_value": {
+          "value": "27",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_title": {
+          "value": "서울역",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_address": {
+          "value": "서울특별시 용산구 한강대로 405",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_value": {
+          "value": "6.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_title": {
+          "value": "강남역",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_address": {
+          "value": "서울특별시 강남구 강남대로 396",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_value": {
+          "value": "36",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_title": {
+          "value": "광화문",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_address": {
+          "value": "서울특별시 종로구 세종대로 175",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_value": {
+          "value": "2.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_title": {
+          "value": "롯데월드타워",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_address": {
+          "value": "서울특별시 송파구 올림픽로 300",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_value": {
+          "value": "4",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_title": {
+          "value": "코엑스 몰",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_address": {
+          "value": "서울특별시 강남구 영동대로 513",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_value": {
+          "value": "5.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_title": {
+          "value": "DDP",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_address": {
+          "value": "서울특별시 중구 을지로 281",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_value": {
+          "value": "6.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_title": {
+          "value": "남산서울타워",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_address": {
+          "value": "서울특별시 용산구 남산공원길 105",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_value": {
+          "value": "295",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_title": {
+          "value": "홍대입구",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_address": {
+          "value": "서울특별시 마포구",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_value": {
+          "value": "4.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_title": {
+          "value": "해운대",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_address": {
+          "value": "부산광역시 해운대구",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_value": {
+          "value": "88",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Restaurant": {
+        "fo_locale_searchResultRestaurant_item1_title": {
+          "value": "명동교자",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_address": {
+          "value": "서울특별시 중구 명동10길 29",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_value": {
+          "value": "2.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_title": {
+          "value": "광장시장 빈대떡",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_address": {
+          "value": "서울특별시 종로구 창경궁로 88",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_value": {
+          "value": "2.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_title": {
+          "value": "새마을식당",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_address": {
+          "value": "서울특별시 강남구 테헤란로 152",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_title": {
+          "value": "마포갈매기",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_address": {
+          "value": "서울특별시 마포구 어울마당로 68",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_title": {
+          "value": "본죽 & 비빔밥 카페",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_address": {
+          "value": "서울특별시 강남구 강남대로 390",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_title": {
+          "value": "교촌치킨",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_address": {
+          "value": "서울특별시 종로구 종로 1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_title": {
+          "value": "곰탕집",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_address": {
+          "value": "서울특별시 중구 세종대로 110",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_title": {
+          "value": "삼겹살집",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_address": {
+          "value": "서울특별시 송파구 올림픽로 300",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_value": {
+          "value": "3.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_title": {
+          "value": "스타벅스 리저브 더종로",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_address": {
+          "value": "서울특별시 종로구 종로 51",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_value": {
+          "value": "3.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_title": {
+          "value": "카페 노티드",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_address": {
+          "value": "서울특별시 강남구 도산대로 53",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_value": {
+          "value": "3.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Parking": {
+        "fo_locale_searchResultParking_item1_title": {
+          "value": "강남역 공영주차장",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_address": {
+          "value": "서울특별시 강남구 강남대로 396",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_value": {
+          "value": "150",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_title": {
+          "value": "코엑스 주차장",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_address": {
+          "value": "서울특별시 강남구 영동대로 513",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_value": {
+          "value": "480",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_title": {
+          "value": "아이파킹 강남역",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_address": {
+          "value": "서울특별시 강남구 강남대로 390",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_value": {
+          "value": "600",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_title": {
+          "value": "종로 공영주차장",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_address": {
+          "value": "서울특별시 종로구 종로 1",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_value": {
+          "value": "900",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_title": {
+          "value": "명동 주차장",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_address": {
+          "value": "서울특별시 중구 명동10길 29",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_value": {
+          "value": "1.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_title": {
+          "value": "잠실 주차장",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_address": {
+          "value": "서울특별시 송파구 올림픽로 300",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_value": {
+          "value": "1.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_title": {
+          "value": "홍대 공영주차장",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_address": {
+          "value": "서울특별시 마포구",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_value": {
+          "value": "2.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_title": {
+          "value": "서울역 주차장",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_address": {
+          "value": "서울특별시 용산구 한강대로 405",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_value": {
+          "value": "2.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_title": {
+          "value": "여의도 주차장",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_address": {
+          "value": "서울특별시 영등포구 여의대로",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_title": {
+          "value": "인천공항 주차장",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_address": {
+          "value": "인천광역시 중구 공항로 272",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_value": {
+          "value": "3.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Petrol Station": {
+        "fo_locale_searchResultPetrolStation_item1_title": {
+          "value": "이용 가능",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_address": {
+          "value": "서울특별시 강남구 테헤란로 152",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_value": {
+          "value": "600",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_title": {
+          "value": "GS칼텍스",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_address": {
+          "value": "서울특별시 중구 세종대로 110",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_value": {
+          "value": "800",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_title": {
+          "value": "S-OIL",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_address": {
+          "value": "서울특별시 용산구 한강대로 405",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_value": {
+          "value": "1.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_title": {
+          "value": "현대오일뱅크",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_address": {
+          "value": "서울특별시 송파구 올림픽로 300",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_value": {
+          "value": "1.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_title": {
+          "value": "SK에너지",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_address": {
+          "value": "서울특별시 강남구 강남대로 396",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_value": {
+          "value": "2.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_title": {
+          "value": "GS칼텍스",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_address": {
+          "value": "서울특별시 종로구 종로 1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_value": {
+          "value": "2.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_title": {
+          "value": "S-OIL",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_address": {
+          "value": "서울특별시 마포구 어울마당로 68",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_value": {
+          "value": "2.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_title": {
+          "value": "현대오일뱅크",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_address": {
+          "value": "서울특별시 강남구 영동대로 513",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_title": {
+          "value": "SK에너지",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_address": {
+          "value": "서울특별시 용산구 남산공원길 105",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_value": {
+          "value": "3.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_title": {
+          "value": "GS칼텍스",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_address": {
+          "value": "인천광역시 중구 공항로 272",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_value": {
+          "value": "3.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      }
+    },
+    "Recents": {
+      "fo_locale_recents": {
+        "value": "최근 기록",
+        "type": "text"
+      },
+      "fo_locale_recents_today": {
+        "value": "오늘",
+        "type": "text"
+      },
+      "fo_locale_recents_empty": {
+        "value": "최근 목적지 없음",
+        "type": "text"
+      },
+      "fo_locale_recents_smart": {
+        "value": "추천",
+        "type": "text"
+      },
+      "fo_locale_recents_message": {
+        "value": "주소나 장소(충전소, 레스토랑, 주차장 등)를 검색할 수 있습니다.",
+        "type": "text"
+      },
+      "fo_locale_recents_clearAllButton": {
+        "value": "모두 지우기",
+        "type": "text"
+      },
+      "fo_locale_recents_clearHistory_title": {
+        "value": "최근 기록 삭제",
+        "type": "text"
+      },
+      "fo_locale_recents_clearHistory_body": {
+        "value": "최근 기록이 모두 삭제됩니다.",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_title": {
+        "value": "서울신라호텔 라연",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_address": {
+        "value": "서울특별시 종로구 사직로 161",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_value": {
+        "value": "1.7",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_title": {
+        "value": "GS칼텍스",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_address": {
+        "value": "서울특별시 강남구 테헤란로 152",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_value": {
+        "value": "800",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_title": {
+        "value": "DDP",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_address": {
+        "value": "서울특별시 중구 을지로 281",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_value": {
+        "value": "2",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_title": {
+        "value": "SFC몰",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_address": {
+        "value": "서울특별시 중구 세종대로 136",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_value": {
+        "value": "1.9",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_title": {
+        "value": "서울월드컵경기장",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_address": {
+        "value": "서울특별시 마포구 월드컵로 240",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_value": {
+        "value": "3.5",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_title": {
+        "value": "광안리",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_address": {
+        "value": "부산광역시 수영구",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_value": {
+        "value": "2.4",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    },
+    "Favourites": {
+      "fo_locale_favourites": {
+        "value": "즐겨찾기",
+        "type": "text"
+      },
+      "fo_locale_favourites_addButton": {
+        "value": "즐겨찾기에 추가",
+        "type": "text"
+      },
+      "fo_locale_favourites_message": {
+        "value": "저장한 위치는 여기에 표시됩니다.",
+        "type": "text"
+      },
+      "fo_locale_favourites_item1_title": {
+        "value": "집",
+        "type": "text"
+      },
+      "fo_locale_favourites_item1_address": {
+        "value": "서울특별시 마포구 연남동",
+        "type": "text"
+      },
+      "fo_locale_favourites_item2_title": {
+        "value": "회사",
+        "type": "text"
+      },
+      "fo_locale_favourites_item2_address": {
+        "value": "서울특별시 강남구 테헤란로 152",
+        "type": "text"
+      },
+      "fo_locale_favourites_item3_title": {
+        "value": "해운대",
+        "type": "text"
+      },
+      "fo_locale_favourites_item3_address": {
+        "value": "부산광역시 해운대구",
+        "type": "text"
+      },
+      "fo_locale_favourites_item4_title": {
+        "value": "가족",
+        "type": "text"
+      },
+      "fo_locale_favourites_item4_address": {
+        "value": "경기도 고양시",
+        "type": "text"
+      },
+      "fo_locale_favourites_item5_title": {
+        "value": "카페 노티드",
+        "type": "text"
+      },
+      "fo_locale_favourites_item5_address": {
+        "value": "서울특별시 강남구 도산대로 53",
+        "type": "text"
+      },
+      "fo_locale_favourites_item6_title": {
+        "value": "GS칼텍스",
+        "type": "text"
+      },
+      "fo_locale_favourites_item6_address": {
+        "value": "서울특별시 강남구 테헤란로 152",
+        "type": "text"
+      },
+      "fo_locale_favourites_item7_title": {
+        "value": "롯데월드 아이스링크",
+        "type": "text"
+      },
+      "fo_locale_favourites_item7_address": {
+        "value": "서울특별시 송파구 올림픽로 240",
+        "type": "text"
+      }
+    },
+    "Routing": {
+      "Route Overview Items": {
+        "fo_locale_routing_connectionItem1_value": {
+          "value": "84",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem2_value": {
+          "value": "72",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem3_value": {
+          "value": "58",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem1_time": {
+          "value": "22:30",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem2_time": {
+          "value": "23:56",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem3_time": {
+          "value": "01:18",
+          "type": "text"
+        },
+        "Start Item": {
+          "fo_locale_routingStartItem_currentLocation": {
+            "value": "현재 위치",
+            "type": "text"
+          }
+        },
+        "Routing Location Item": {
+          "fo_locale_routingLocationItem_charge": {
+            "value": "충전",
+            "type": "text"
+          }
+        }
+      },
+      "Route Option Items": {
+        "fo_locale_routeOptionItem_overview": {
+          "value": "개요",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_title": {
+          "value": "최소 시간",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_value": {
+          "value": "588",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_price": {
+          "value": "18,500",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_title": {
+          "value": "최단 거리",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_value": {
+          "value": "595",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_price": {
+          "value": "12,900",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_title": {
+          "value": "무료도로",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_value": {
+          "value": "708",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_price": {
+          "value": "24,000",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_title": {
+          "value": "에코",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_value": {
+          "value": "740",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_price": {
+          "value": "86,600",
+          "type": "text"
+        }
+      }
+    },
+    "Location": {
+      "EV Availability Item": {
+        "fo_locale_evAvailabilityCard1_item1": {
+          "value": "420",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard1_item2": {
+          "value": "390",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard1_item3": {
+          "value": "350",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item1": {
+          "value": "330",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item2": {
+          "value": "310",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item3": {
+          "value": "280",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item1": {
+          "value": "400",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item2": {
+          "value": "360",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item3": {
+          "value": "320",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "Location": {
+    "EV Availability": {
+      "fo_locale_evAvailability_available": {
+        "value": "사용 가능",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_slot": {
+        "value": "슬롯",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_slots": {
+        "value": "슬롯",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_plugs": {
+        "value": "플러그",
+        "type": "text"
+      }
+    },
+    "Location Details": {
+      "fo_locale_locationDetails_routesButton": {
+        "value": "경로 옵션",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_chargeHere": {
+        "value": "여기에서 충전할 수 있습니다",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_skipChargingStopsMessage": {
+        "value": "이 목적지로 이동할 때 불필요한 충전 정차를 건너뜁니다.",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_details": {
+        "value": "세부 정보",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_rating": {
+        "value": "평점",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_priceRange": {
+        "value": "가격대",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_findNearby": {
+        "value": "주변 검색",
+        "type": "text"
+      },
+      "Opening Hours": {
+        "fo_locale_locationDetails_openingHours_list": {
+          "value": "10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_until": {
+          "value": "18:00까지",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_open": {
+          "value": "영업 중",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_openAlways": {
+          "value": "24시간 영업",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_closed": {
+          "value": "영업 종료",
+          "type": "text"
+        }
+      },
+      "Parking Trend": {
+        "fo_locale_locationDetails_parking_parkingSpaces": {
+          "value": "주차 공간",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_free": {
+          "value": "무료",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_vacant": {
+          "value": "빈자리 있음",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_almostFull": {
+          "value": "거의 만차",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_full": {
+          "value": "만차",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_busy": {
+          "value": "혼잡",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_unknown": {
+          "value": "알 수 없음",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_emptying": {
+          "value": "여유 증가 중",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_fillingUp": {
+          "value": "혼잡 중",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_closed": {
+          "value": "영업 종료",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_total": {
+          "value": "합계",
+          "type": "text"
+        }
+      },
+      "Services": {
+        "fo_locale_locationDetails_services_services": {
+          "value": "서비스",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_services_truckAccessible": {
+          "value": "트럭 접근 가능",
+          "type": "text"
+        }
+      },
+      "Single Point": {
+        "fo_locale_locationDetails_singlePoint_title": {
+          "value": "서울역",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_address": {
+          "value": "서울특별시 용산구",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_distance_value": {
+          "value": "885",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "EV POI": {
+        "fo_locale_locationDetails_EV_title": {
+          "value": "Greenspot",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_address": {
+          "value": "서울특별시 강남구 테헤란로 152",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_distance_value": {
+          "value": "6.7",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_phone": {
+          "value": "+82 2-1234-5678",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_website": {
+          "value": "charge.example.kr",
+          "type": "text"
+        }
+      },
+      "Parking": {
+        "fo_locale_locationDetails_parking_title": {
+          "value": "아이파킹 강남역",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_address": {
+          "value": "서울특별시 강남구 강남대로 396",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_distance_value": {
+          "value": "800",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_distance_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_phone": {
+          "value": "+82 2-2345-6789",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_website": {
+          "value": "iparking.co.kr",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_price": {
+          "value": "₩ 2,000/30분",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_lowChanceOnStreet": {
+          "value": "노상 주차 가능성 낮음",
+          "type": "text"
+        }
+      },
+      "Petrol Station": {
+        "fo_locale_locationDetails_petrolStation_title": {
+          "value": "SK에너지",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_address": {
+          "value": "서울특별시 강남구 테헤란로 152",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_distance_value": {
+          "value": "1.5",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_phone": {
+          "value": "+82 2-3456-7890",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_website": {
+          "value": "skenergy.com",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_fuelPrices": {
+          "value": "연료 가격",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceDiesel": {
+          "value": "경유 - ₩1,650",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceCommercialDiesel": {
+          "value": "업무용 경유 - ₩1,750",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceBioDiesel": {
+          "value": "바이오디젤 - ₩1,630",
+          "type": "text"
+        }
+      },
+      "Restaurant": {
+        "fo_locale_locationDetails_restaurant_title": {
+          "value": "명동교자",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_address": {
+          "value": "서울특별시 중구 명동10길 29",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_distance_value": {
+          "value": "6.5",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_phone": {
+          "value": "+82 2-4567-8901",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_website": {
+          "value": "myeongdongkyoja.co.kr",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_priceRange": {
+          "value": "$$",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_w3w": {
+          "value": "early.pulse.credit",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_about": {
+          "value": "이 텍스트는 디자인 및 레이아웃을 확인하기 위한 예시 문구이며, 실제 내용은 추후 제공됩니다.",
+          "type": "text"
+        }
+      },
+      "Charge Points": {
+        "fo_locale_locationDetails_chargePoints_compatibleTitle": {
+          "value": "호환 충전 지점",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_incompatibleTitle": {
+          "value": "호환되지 않는 충전 지점",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_pricesShownMessage": {
+          "value": "요금은 kWh당 표시됩니다.",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_additionalFeesMessage": {
+          "value": "추가 요금 및 주차 비용이 부과될 수 있습니다.",
+          "type": "text"
+        }
+      },
+      "Payment": {
+        "fo_locale_locationDetails_payment_payment": {
+          "value": "결제",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_paymentProviders": {
+          "value": "결제 제공업체",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_paymentMethods": {
+          "value": "결제 수단",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_inNetwork": {
+          "value": "네트워크 내",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_creditDebit": {
+          "value": "신용카드, 체크카드",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_creditDebitCash": {
+          "value": "신용카드, 체크카드, 현금",
+          "type": "text"
+        }
+      }
+    },
+    "State Of Charge": {
+      "fo_locale_soc_atArrival": {
+        "value": "도착 시",
+        "type": "text"
+      },
+      "fo_locale_soc_onArrival": {
+        "value": "도착 시",
+        "type": "text"
+      },
+      "fo_locale_soc_includes": {
+        "value": "포함 항목",
+        "type": "text"
+      },
+      "fo_locale_soc_batteryLevelReached": {
+        "value": "배터리 잔량 도달",
+        "type": "text"
+      },
+      "fo_locale_soc_outOfRange": {
+        "value": "주행 가능 범위 밖",
+        "type": "text"
+      }
+    }
+  },
+  "Routing": {
+    "fo_locale_routing_manageStopsButton": {
+      "value": "경유지 관리",
+      "type": "text"
+    },
+    "fo_locale_routing_alternativeRoutesButton": {
+      "value": "대체 경로",
+      "type": "text"
+    },
+    "fo_locale_routing_addStopButton": {
+      "value": "경유지 추가",
+      "type": "text"
+    },
+    "fo_locale_routing_routePreferencesButton": {
+      "value": "경로 기본 설정",
+      "type": "text"
+    },
+    "fo_locale_routing_noRoute": {
+      "value": "이용 가능한 경로가 없습니다",
+      "type": "text"
+    },
+    "fo_locale_routing_outOfRangeAlert": {
+      "value": "목적지가 주행 가능 범위를 벗어났습니다",
+      "type": "text"
+    },
+    "EV Planning": {
+      "fo_locale_routing_evPlanning_planEvRouteButton": {
+        "value": "EV 경로 계획",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_currentBatteryLevel": {
+        "value": "현재 배터리 잔량",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_batteryOnArrival": {
+        "value": "도착 시 배터리 잔량",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_planningTitle": {
+        "value": "BMW i4로 경로 계획",
+        "type": "text"
+      }
+    },
+    "Stops": {
+      "fo_locale_routing_stops_stopAddress": {
+        "value": "서울특별시 강남구 테헤란로 152",
+        "type": "text"
+      },
+      "fo_locale_routing_removeStopAddress": {
+        "value": "서울특별시 강남구 테헤란로 152, 서울",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_manageStops": {
+        "value": "경유지 관리",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_message": {
+        "value": "자동으로 계획된 충전 정차 지점은 관리할 수 없습니다",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_removeStop": {
+        "value": "이 경유지를 삭제할까요?",
+        "type": "text"
+      }
+    },
+    "Journey Summary": {
+      "fo_locale_journeySummary_charges": {
+        "value": "충전",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance1_value": {
+        "value": "100",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance2_value": {
+        "value": "55",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance2_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_price": {
+        "value": "18,500",
+        "type": "text"
+      }
+    },
+    "Routes": {
+      "fo_locale_routing_routes": {
+        "value": "경로",
+        "type": "text"
+      },
+      "fo_locale_routing_routes_containsRestrictedRoads": {
+        "value": "이 경로에는 법적으로 제한된 도로가 포함되어 있습니다",
+        "type": "text"
+      },
+      "fo_locale_routing_routes_planCharging": {
+        "value": "충전 자동 계획",
+        "type": "text"
+      }
+    },
+    "Preferences": {
+      "fo_locale_routing_preferences": {
+        "value": "환경설정",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_minBattery": {
+        "value": "도착 시 최소 배터리 잔량",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_planChargingBanner": {
+        "value": "도착 시 배터리 잔량을 변경하려면 ‘충전 자동 계획’을 켜세요",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_atChargingStop": {
+        "value": "충전 지점",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryAtChargingStop": {
+        "value": "충전 지점에서의 배터리 잔량",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_atDestination": {
+        "value": "목적지",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryAtDestination": {
+        "value": "목적지에서의 배터리 잔량",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_bodyUnit": {
+        "value": "차량 기준",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryMessage": {
+        "value": "높은 배터리 잔량으로는 일부 위치에 도달할 수 없을 수도 있습니다",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType": {
+        "value": "현재 경로 유형",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_fastest": {
+        "value": "최단 시간",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_eco": {
+        "value": "에코",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_shortest": {
+        "value": "최단 거리",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_winding": {
+        "value": "굴곡진 경로",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid": {
+        "value": "이 경로에서 회피",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_tolls": {
+        "value": "유료 도로",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_unpavedRoads": {
+        "value": "비포장 도로",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_motorways": {
+        "value": "고속도로",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_lowEmissionZones": {
+        "value": "저배출 구역",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_ferries": {
+        "value": "페리",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_tunnels": {
+        "value": "터널",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_borderCrossings": {
+        "value": "국경 통과",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_hovLanes": {
+        "value": "다인승 전용 차로",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_autoRerouting": {
+        "value": "자동 재탐색",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_changesMessage": {
+        "value": "여기에서 변경한 내용은 현재 경로에만 적용됩니다",
+        "type": "text"
+      }
+    }
+  },
+  "Filters": {
+    "fo_locale_filters": {
+      "value": "필터",
+      "type": "text"
+    },
+    "fo_locale_filters_resultsShown": {
+      "value": "결과 10개 표시됨",
+      "type": "text"
+    },
+    "fo_locale_filters_chargingSpeed": {
+      "value": "충전 속도",
+      "type": "text"
+    },
+    "fo_locale_filters_services": {
+      "value": "서비스",
+      "type": "text"
+    },
+    "fo_locale_filters_myPreferredOperators": {
+      "value": "선호하는 운영사",
+      "type": "text"
+    },
+    "fo_locale_filters_popularOperators": {
+      "value": "한국에서 인기 있는 운영사",
+      "type": "text"
+    },
+    "fo_locale_filters_myChargingCards": {
+      "value": "내 충전 카드",
+      "type": "text"
+    },
+    "fo_locale_filters_plugChargeCompatible": {
+      "value": "Plug&Charge 지원",
+      "type": "text"
+    },
+    "fo_locale_filters_editPreferences": {
+      "value": "환경설정 편집",
+      "type": "text"
+    },
+    "Search Area": {
+      "fo_locale_filters_searchArea": {
+        "value": "검색 영역",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_alongRoute": {
+        "value": "경로 주변",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_nearYou": {
+        "value": "내 주변",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_nearDestination": {
+        "value": "목적지 근처",
+        "type": "text"
+      }
+    },
+    "Preferences": {
+      "fo_locale_filters_preferences": {
+        "value": "환경설정",
+        "type": "text"
+      },
+      "fo_locale_filters_preferences_none": {
+        "value": "없음",
+        "type": "text"
+      },
+      "fo_locale_filters_preferences_adblue": {
+        "value": "AdBlue",
+        "type": "text"
+      }
+    },
+    "Charging Stations": {
+      "fo_locale_filters_chargingStations": {
+        "value": "충전소",
+        "type": "text"
+      },
+      "fo_locale_filters_chargingStations_availableNow": {
+        "value": "현재 이용 가능",
+        "type": "text"
+      }
+    }
+  },
+  "Headers": {
+    "Search Input": {
+      "fo_locale_searchInput_inactive": {
+        "value": "어디로 갈까요?",
+        "type": "text"
+      },
+      "fo_locale_searchInput_activeTyping": {
+        "value": "강남",
+        "type": "text"
+      },
+      "fo_locale_searchInput_street": {
+        "value": "강남대로",
+        "type": "text"
+      },
+      "fo_locale_searchInput_houseNumber": {
+        "value": "12",
+        "type": "text"
+      },
+      "fo_locale_searchInput_idle": {
+        "value": "광화",
+        "type": "text"
+      },
+      "fo_locale_searchInput_poi": {
+        "value": "전기차 충전기",
+        "type": "text"
+      }
+    },
+    "Event Details Header": {
+      "fo_locale_eventDetailsHeader_distance_value": {
+        "value": "286",
+        "type": "text"
+      },
+      "fo_locale_eventDetailsHeader_distance_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    }
+  },
+  "Subheadings": {
+    "Feed Forward": {
+      "fo_locale_feedForward_offlineResults": {
+        "value": "오프라인 결과",
+        "type": "text"
+      },
+      "fo_locale_feedForward_offline": {
+        "value": "오프라인",
+        "type": "text"
+      },
+      "fo_locale_feedForward_alongRoute": {
+        "value": "경로 주변",
+        "type": "text"
+      }
+    }
+  },
+  "Weather": {
+    "fo_locale_weather_currentTemperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_maxTemperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_minTemperature": {
+      "value": "15°",
+      "type": "text"
+    },
+    "fo_locale_weather_currentWeatherDescription": {
+      "value": "구름이 조금 낀 맑은 날씨",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem1_time": {
+      "value": "10:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem1_temperature": {
+      "value": "23°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem2_time": {
+      "value": "11:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem2_temperature": {
+      "value": "20°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem3_time": {
+      "value": "12:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem3_temperature": {
+      "value": "18°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem4_time": {
+      "value": "13:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem4_temperature": {
+      "value": "16°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem5_time": {
+      "value": "14:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem5_temperature": {
+      "value": "18°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem6_time": {
+      "value": "15:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem6_temperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_chanceOfSun": {
+      "value": "일조 확률",
+      "type": "text"
+    },
+    "fo_locale_weather_windSpeed": {
+      "value": "풍속",
+      "type": "text"
+    },
+    "fo_locale_weather_windSpeed_value": {
+      "value": "8 {fo_locale_unit_speed}",
+      "type": "text"
+    },
+    "fo_locale_weather_chanceOfRain": {
+      "value": "강수 확률",
+      "type": "text"
+    },
+    "fo_locale_weather_uvIndex": {
+      "value": "자외선 지수",
+      "type": "text"
+    },
+    "fo_locale_weather_direction": {
+      "value": "풍향",
+      "type": "text"
+    },
+    "fo_locale_weather_precipitation": {
+      "value": "강수량",
+      "type": "text"
+    },
+    "fo_locale_weather_precipitation_value": {
+      "value": "1 mm",
+      "type": "text"
+    },
+    "fo_locale_weather_locationCurrent_city": {
+      "value": "서울",
+      "type": "text"
+    },
+    "fo_locale_weather_locationCurrent_temperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop1_city": {
+      "value": "인천",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop1_temperature": {
+      "value": "23°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop2_city": {
+      "value": "수원",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop2_temperature": {
+      "value": "20°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationDestination_city": {
+      "value": "성남",
+      "type": "text"
+    },
+    "fo_locale_weather_locationDestination_temperature": {
+      "value": "16°",
+      "type": "text"
+    }
+  },
+  "POI Categories": {
+    "fo_locale_poiCategories_moreCategories": {
+      "value": "더 많은 카테고리",
+      "type": "text"
+    },
+    "Accomodation": {
+      "fo_locale_poiCategories_accomodation": {
+        "value": "숙박",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_accomodation_campsite": {
+        "value": "캠핑장",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_accomodation_hotelMotel": {
+        "value": "호텔 / 모텔",
+        "type": "text"
+      }
+    },
+    "Car": {
+      "fo_locale_poiCategories_car": {
+        "value": "자동차",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_carDealer": {
+        "value": "자동차 판매점",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_carWash": {
+        "value": "세차장",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_fuel": {
+        "value": "주유소",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_evChargingStation": {
+        "value": "충전소",
+        "type": "text"
+      }
+    },
+    "Commercial": {
+      "fo_locale_poiCategories_commercial": {
+        "value": "상업",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_company": {
+        "value": "회사",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_shop": {
+        "value": "店舗",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_groceryStore": {
+        "value": "식료품점",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_repairFacility": {
+        "value": "수리소",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_vehicleRepairShop": {
+        "value": "자동차 수리소",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_cashDispenser": {
+        "value": "현금인출기",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_postOffice": {
+        "value": "우체국",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_market": {
+        "value": "시장",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_supermarket": {
+        "value": "슈퍼마켓",
+        "type": "text"
+      }
+    },
+    "Education": {
+      "fo_locale_poiCategories_education": {
+        "value": "교육",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_education_education": {
+        "value": "교육 기관",
+        "type": "text"
+      }
+    },
+    "Entertainment": {
+      "fo_locale_poiCategories_entertainment": {
+        "value": "엔터테인먼트",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_entertainment_importantTouristAttraction": {
+        "value": "주요 관광지",
+        "type": "text"
+      }
+    },
+    "Food & Drink": {
+      "fo_locale_poiCategories_foodDrink": {
+        "value": "음식 및 음료",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_pubBar": {
+        "value": "펍 / 바",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_restaurant": {
+        "value": "레스토랑",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_hamburgerRestaurant": {
+        "value": "햄버거 전문점",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_fastFood": {
+        "value": "패스트푸드",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_cafe": {
+        "value": "카페",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_coffeeshopBar": {
+        "value": "카페 / 바",
+        "type": "text"
+      }
+    },
+    "Health": {
+      "fo_locale_poiCategories_health": {
+        "value": "의료",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_health_hospital": {
+        "value": "병원",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_health_pharmacy": {
+        "value": "약국",
+        "type": "text"
+      }
+    },
+    "Outdoor / Sports": {
+      "fo_locale_poiCategories_outdoorSports": {
+        "value": "야외 / 스포츠",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_beach": {
+        "value": "해변",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_parkRecreationalArea": {
+        "value": "공원 및 휴양 지역",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_restArea": {
+        "value": "휴게소",
+        "type": "text"
+      }
+    },
+    "Parking": {
+      "fo_locale_poiCategories_parking": {
+        "value": "주차",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_parking_parking": {
+        "value": "주차장",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_parking_parkingGarage": {
+        "value": "주차 타워",
+        "type": "text"
+      }
+    },
+    "Public": {
+      "fo_locale_poiCategories_public": {
+        "value": "공공",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_building": {
+        "value": "건물",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_placeOfWorship": {
+        "value": "종교 시설",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_policeStation": {
+        "value": "경찰서",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_publicAuthority": {
+        "value": "공공 기관",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_restroom": {
+        "value": "화장실",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_publicRestroom": {
+        "value": "공중 화장실",
+        "type": "text"
+      }
+    },
+    "Transport": {
+      "fo_locale_poiCategories_transport": {
+        "value": "교통",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_trainStation": {
+        "value": "기차역",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_busStop": {
+        "value": "버스 정류장",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_airport": {
+        "value": "공항",
+        "type": "text"
+      }
+    }
+  },
+  "Quick Settings": {
+    "fo_locale_quickSettings": {
+      "value": "빠른 설정",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_fullSettingsButtons": {
+      "value": "전체 설정",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_drivingMode": {
+      "value": "운전 중 시야 - ",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_drivingMode_3D": {
+      "value": "3D",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_soundsAlerts": {
+      "value": "소리 - ",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_soundsAlerts_allOn": {
+      "value": "음소거",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map": {
+      "value": "지도",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map_default": {
+      "value": "기본",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map_satellite": {
+      "value": "위성",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays": {
+      "value": "오버레이",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays_evRange": {
+      "value": "EV 주행 가능 범위",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays_weather": {
+      "value": "날씨",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings": {
+      "value": "지도 설정",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_3DBuildings": {
+      "value": "3D 건물",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_3DBuildingsBody": {
+      "value": "지도에서 건물을 3D로 표시합니다",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_trafficFlow": {
+      "value": "교통 흐름",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_trafficFlowBody": {
+      "value": "도로의 교통 흐름을 표시",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_laneLevelVisualisation": {
+      "value": "차로 수준 시각화",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_laneLevelVisualisationBody": {
+      "value": "차로 수준 시각화",
+      "type": "text"
+    }
+  }
+}

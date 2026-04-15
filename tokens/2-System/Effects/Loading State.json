@@ -1,0 +1,6 @@
+{
+  "tt_sys_effect_loading_opacity": {
+    "value": "{tt_glb_effect_opacity_50}",
+    "type": "opacity"
+  }
+}

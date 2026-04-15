@@ -1,0 +1,2838 @@
+{
+  "fo_locale_unit_distance_long": {
+    "value": "km",
+    "type": "text"
+  },
+  "fo_locale_unit_distance_short": {
+    "value": "m",
+    "type": "text"
+  },
+  "fo_locale_unit_speed": {
+    "value": "km/h",
+    "type": "text"
+  },
+  "fo_locale_unit_temperature": {
+    "value": "°C",
+    "type": "text"
+  },
+  "fo_locale_unit_currency": {
+    "value": "€",
+    "type": "text"
+  },
+  "fo_locale_unit_price_decimal_separator": {
+    "value": ",",
+    "type": "text"
+  },
+  "fo_locale_unit_time_hr": {
+    "value": "hr",
+    "type": "text"
+  },
+  "fo_locale_unit_time_min": {
+    "value": "min",
+    "type": "text"
+  },
+  "fo_content_eu": {
+    "value": "true",
+    "type": "boolean"
+  },
+  "fo_content_us": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "fo_content_japan": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "fo_content_korea": {
+    "value": "false",
+    "type": "boolean"
+  },
+  "Buttons": {
+    "fo_locale_containedButton_cancel": {
+      "value": "Cancel",
+      "type": "text"
+    },
+    "fo_locale_containedButton_delete": {
+      "value": "Delete",
+      "type": "text"
+    },
+    "fo_locale_containedButton_save": {
+      "value": "Save",
+      "type": "text"
+    },
+    "fo_locale_containedButton_confirm": {
+      "value": "Confirm",
+      "type": "text"
+    },
+    "fo_locale_containedButton_done": {
+      "value": "Done",
+      "type": "text"
+    },
+    "fo_locale_containedButton_no": {
+      "value": "No",
+      "type": "text"
+    },
+    "fo_locale_containedButton_yes": {
+      "value": "Yes",
+      "type": "text"
+    },
+    "fo_locale_containedButton_dismiss": {
+      "value": "Dismiss",
+      "type": "text"
+    },
+    "fo_locale_containedButton_accept": {
+      "value": "Accept",
+      "type": "text"
+    },
+    "fo_locale_containedButton_drive": {
+      "value": "Drive",
+      "type": "text"
+    },
+    "fo_locale_containedButton_more": {
+      "value": "More",
+      "type": "text"
+    },
+    "fo_locale_containedButton_showMore": {
+      "value": "Show more",
+      "type": "text"
+    },
+    "fo_locale_uncontainedButton_readMore": {
+      "value": "Read more",
+      "type": "text"
+    },
+    "fo_locale_uncontainedButton_showLess": {
+      "value": "Show less",
+      "type": "text"
+    }
+  },
+  "General UI": {
+    "fo_locale_spinnerMessage_loading": {
+      "value": "Loading",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_applying": {
+      "value": "Applying",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_applied": {
+      "value": "Applied",
+      "type": "text"
+    },
+    "fo_locale_spinnerMessage_error": {
+      "value": "Error",
+      "type": "text"
+    },
+    "fo_locale_errorMessage_connection": {
+      "value": "Something went wrong. Please, check your connection and try again.",
+      "type": "text"
+    }
+  },
+  "Guidance": {
+    "NIP": {
+      "fo_locale_nip_firstRow_address": {
+        "value": "Nieuwe Haagseweg",
+        "type": "text"
+      },
+      "fo_locale_nip_firstRow_city": {
+        "value": "Amsterdam",
+        "type": "text"
+      },
+      "fo_locale_nip_secondRow_address": {
+        "value": "Nieuwe Haagseweg",
+        "type": "text"
+      },
+      "fo_locale_nip_secondRow_city": {
+        "value": "Amsterdam",
+        "type": "text"
+      },
+      "fo_locale_nip_distance": {
+        "value": "2.4 {fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    },
+    "Current Street": {
+      "fo_locale_currentStreet_address": {
+        "value": "Rue de Rivoli",
+        "type": "text"
+      },
+      "fo_locale_currentStreetEmpty": {
+        "value": "Report",
+        "type": "text"
+      }
+    },
+    "ETA": {
+      "fo_locale_eta_distanceValue": {
+        "value": "452",
+        "type": "text"
+      },
+      "fo_locale_eta_endRoute": {
+        "value": "End route?",
+        "type": "text"
+      }
+    },
+    "Arrival": {
+      "fo_locale_arrival_header_destinationRight": {
+        "value": "Destination on the right",
+        "type": "text"
+      },
+      "fo_locale_arrival_header_destinationLeft": {
+        "value": "Destination on the left",
+        "type": "text"
+      },
+      "fo_locale_arrival_destination_title": {
+        "value": "Burger Company Leiden",
+        "type": "text"
+      },
+      "fo_locale_arrival_destination_address": {
+        "value": "Nieuwe Beestenmarkt 6, 2312 CH Leiden",
+        "type": "text"
+      },
+      "fo_locale_arrival_waypoint_title": {
+        "value": "Coffee Fellows",
+        "type": "text"
+      },
+      "fo_locale_arrival_waypoint_address": {
+        "value": "Keurmeesterstraat 41, 2408 AP Alphen aan den Rijn",
+        "type": "text"
+      },
+      "fo_locale_arrival_destinationWithCharger_title": {
+        "value": "McDonald’s restaurant Leiderdorp",
+        "type": "text"
+      },
+      "fo_locale_arrival_destinationWithCharger_address": {
+        "value": "Persent Snoepweg 10, 2353 KA Leiderdorp",
+        "type": "text"
+      },
+      "fo_locale_arrival_chargingStation_title": {
+        "value": "Fastned charging station",
+        "type": "text"
+      },
+      "fo_locale_arrival_chargingStation_address": {
+        "value": "Bijlmerplein 508, 1102 DP Amsterdam",
+        "type": "text"
+      },
+      "fo_locale_arrival_finishButton": {
+        "value": "Finish",
+        "type": "text"
+      },
+      "fo_locale_arrival_findAlternativeButton": {
+        "value": "Find alternative",
+        "type": "text"
+      },
+      "fo_locale_arrival_continueDrivingButton": {
+        "value": "Continue driving",
+        "type": "text"
+      }
+    },
+    "Upcoming Events": {
+      "fo_locale_upcomingEvents_item1_value": {
+        "value": "250",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item1_body": {
+        "value": "Fixed speed camera",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item2_value": {
+        "value": "350",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item2_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_value": {
+        "value": "750",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item3_body": {
+        "value": "Slippery road",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_value": {
+        "value": "800",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item4_body": {
+        "value": "Wrong-way driver",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item5_body": {
+        "value": "Broken-down vehicle",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_body": {
+        "value": "Faster route",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item6_time": {
+        "value": "9 {fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_body": {
+        "value": "Traffic",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item7_time": {
+        "value": "2 {fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_body": {
+        "value": "Traffic",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item8_time": {
+        "value": "10 {fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item9_value": {
+        "value": "11",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item9_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item10_value": {
+        "value": "16",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item10_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_value": {
+        "value": "21",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_body": {
+        "value": "Traffic",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_item11_time": {
+        "value": "35 {fo_locale_unit_time_min}",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_neutral_speed": {
+        "value": "50 {fo_locale_unit_speed} avg.",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_slightlySpeeding_speed": {
+        "value": "55 {fo_locale_unit_speed} avg.",
+        "type": "text"
+      },
+      "fo_locale_upcomingEvents_speeding_speed": {
+        "value": "60 {fo_locale_unit_speed} avg.",
+        "type": "text"
+      }
+    },
+    "Rerouting": {
+      "fo_locale_routeUpdateEvent_routeDeviation": {
+        "value": "Route deviation",
+        "type": "text"
+      },
+      "fo_locale_routeUpdateEvent_updatingRoute": {
+        "value": "Updating route",
+        "type": "text"
+      }
+    },
+    "Event Details": {
+      "fo_locale_eventDetails_address": {
+        "value": "276 Av. du President Wilson",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_city": {
+        "value": "Paris",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_streetType": {
+        "value": "Blvd",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_streetName": {
+        "value": "Peripherique",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_time": {
+        "value": "16:23",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_distanceSaved": {
+        "value": "Shorter by 2 km",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_betterRoute": {
+        "value": "Better route",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_nextStop": {
+        "value": "Next stop",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_accident": {
+        "value": "Accident",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_fewerChargingStops": {
+        "value": "Fewer charging stops",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_avoidsTunnels": {
+        "value": "Avoids tunnels",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_via": {
+        "value": "Via",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_and": {
+        "value": "and",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_reportedOn": {
+        "value": "Reported on",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_lastUpdated": {
+        "value": "Last updated:",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_ago": {
+        "value": "ago.",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_charge": {
+        "value": "charge",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_removeStopButton": {
+        "value": "Remove stop",
+        "type": "text"
+      },
+      "fo_locale_eventDetails_minFaster": {
+        "value": "9 {fo_locale_unit_time_min} faster",
+        "type": "text"
+      }
+    },
+    "Instruction Events": {
+      "fo_locale_instructionEvents_item1_value": {
+        "value": "250",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item1_address": {
+        "value": "Nieuwe Haagseweg",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_value": {
+        "value": "900",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item2_address": {
+        "value": "Nieuwe Haagseweg/Ringweg-Zuid",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_value": {
+        "value": "1.2",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item3_address": {
+        "value": "A10 Zuid",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_value": {
+        "value": "1.6",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item4_address": {
+        "value": "A4 Den Haag",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_value": {
+        "value": "2.1",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item5_address": {
+        "value": "A4 Schiphol",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_value": {
+        "value": "11",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item6_address": {
+        "value": "A4 Rotterdam",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_value": {
+        "value": "16",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item7_address": {
+        "value": "A4 Leiden",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_value": {
+        "value": "22",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_instructionEvents_item8_address": {
+        "value": "A44 Noord",
+        "type": "text"
+      }
+    }
+  },
+  "List Items": {
+    "Search Results Item Group": {
+      "fo_locale_searchResult_chargepoint": {
+        "value": "Chargepoint",
+        "type": "text"
+      },
+      "EV": {
+        "fo_locale_searchResultEv_item1_value": {
+          "value": "140",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item1_address": {
+          "value": "5 Place du Commerce, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_value": {
+          "value": "370",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item2_address": {
+          "value": "143 Avenue Émile Zola, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_value": {
+          "value": "600",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item3_address": {
+          "value": "Rue Frémicourt, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_value": {
+          "value": "700",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item4_address": {
+          "value": "79 Rue de Lourmel, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_value": {
+          "value": "800",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item5_address": {
+          "value": "26 Place Étienne Pernet, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_value": {
+          "value": "900",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item6_address": {
+          "value": "43 Rue du Docteur Finlay, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_value": {
+          "value": "1.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item7_address": {
+          "value": "8 Rue du 4 Septembre, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_value": {
+          "value": "2",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item8_address": {
+          "value": "9 Rue Paul Barruel, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_value": {
+          "value": "2.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item9_address": {
+          "value": "68 Avenue du Maine, 75014 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_value": {
+          "value": "3",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultEv_item10_address": {
+          "value": "Rue Valpeau, 75007 Paris",
+          "type": "text"
+        }
+      },
+      "Mixed": {
+        "fo_locale_searchResult_houseNumber": {
+          "value": "House number",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_title": {
+          "value": "Paris - Charles de Gaulle Airport",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_address": {
+          "value": "Aéroport Charles de Gaulle, 77990 Le Mesnil-Amelot",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_value": {
+          "value": "27",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_title": {
+          "value": "Charm Residence Villa",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_address": {
+          "value": "114 Avenue Émile Zola, 75015 Paris, Ile-de-France",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_value": {
+          "value": "6.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_title": {
+          "value": "Chamarande",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_address": {
+          "value": "Ile-de-France",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_value": {
+          "value": "36",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_title": {
+          "value": "Champs-Elysees",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_address": {
+          "value": "Avenue des Champs Elysees, 75008 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_value": {
+          "value": "2.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_title": {
+          "value": "Rue Chabanais",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_address": {
+          "value": "Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_value": {
+          "value": "4",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_title": {
+          "value": "ChargePoint",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_address": {
+          "value": "5 Place du Commerce, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_value": {
+          "value": "5.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_title": {
+          "value": "Chanel - Bureaux",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_address": {
+          "value": "135 Avenue Charles de Gaulle, 92200 Neuilly-su-Seine",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_value": {
+          "value": "6.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_title": {
+          "value": "Charleroi",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_address": {
+          "value": "Walloon Region, Belgium",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_value": {
+          "value": "295",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_title": {
+          "value": "Hôtel Charlemagne",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_address": {
+          "value": "1 Place des Victoires, 75001 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_value": {
+          "value": "4.9",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_title": {
+          "value": "Charleval",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_address": {
+          "value": "Normandy",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_value": {
+          "value": "88",
+          "type": "text"
+        },
+        "fo_locale_searchResultMixed_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Restaurant": {
+        "fo_locale_searchResultRestaurant_item1_title": {
+          "value": "New Jawad Longchamp",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_address": {
+          "value": "30 Rue de Longchamp, 75116 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_value": {
+          "value": "2.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_title": {
+          "value": "Ciel de paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_address": {
+          "value": "Avenue du Maine, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_value": {
+          "value": "2.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_title": {
+          "value": "La Coupole",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_address": {
+          "value": "102 Boulevard du Montparnasse, 75014 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_title": {
+          "value": "Le Relais de l’Entrecôte",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_address": {
+          "value": "101 Boulevard du Montparnasse, 75014 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_title": {
+          "value": "Brasserie Lpp",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_address": {
+          "value": "151 Boulevard Saint-Germain, 75006 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_title": {
+          "value": "Café de Flore",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_address": {
+          "value": "172 Boulevard Saint-Germain, 75006 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_title": {
+          "value": "Les Deux Magots",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_address": {
+          "value": "6 Place Saint-Germain-des-Prés, 75006 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_title": {
+          "value": "Angelina Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_address": {
+          "value": "226 Rue de Rivoli, 75001 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_value": {
+          "value": "3.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_title": {
+          "value": "Café Procope",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_address": {
+          "value": "13 Rue de l’Ancienne Comédie, 75006 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_value": {
+          "value": "3.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_title": {
+          "value": "Arrivederci Pizzeria",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_address": {
+          "value": "47 Rue Gay-Lussac, 75005 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_value": {
+          "value": "3.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultRestaurant_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Parking": {
+        "fo_locale_searchResultParking_item1_title": {
+          "value": "104 Rue du Théâtre Garage",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_address": {
+          "value": "104 Rue du Théâtre, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_value": {
+          "value": "150",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_title": {
+          "value": "Parking Keller",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_address": {
+          "value": "27 Rue de L’Ingénieur Rober Keller, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_value": {
+          "value": "480",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item2_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_title": {
+          "value": "Beaugrenelle Saint-Charles Tour Eiffel",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_address": {
+          "value": "72 Rue Saint-Charles, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_value": {
+          "value": "600",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item3_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_title": {
+          "value": "Porte de Versailles",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_address": {
+          "value": "32 Rue du Hameau, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_value": {
+          "value": "900",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item4_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_title": {
+          "value": "Général Beuret",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_address": {
+          "value": "31 Rue du Général Beuret, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_value": {
+          "value": "1.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_title": {
+          "value": "37 Boulevard Garibaldi Parking",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_address": {
+          "value": "37 Boulevard Garibaldi, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_value": {
+          "value": "1.4",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_title": {
+          "value": "186 Rue de Javel Garage",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_address": {
+          "value": "186 Rue de Javel, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_value": {
+          "value": "2.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_title": {
+          "value": "Parking Hôpital Saint-Joseph",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_address": {
+          "value": "185 Rue Raymond Losserand, 75014 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_value": {
+          "value": "2.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_title": {
+          "value": "Picard",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_address": {
+          "value": "16 Rue Castagnary, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_value": {
+          "value": "2.7",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_title": {
+          "value": "Centre Sportif Didot",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_address": {
+          "value": "18 Av. Marc Sangnier, 75014 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_value": {
+          "value": "3.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultParking_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "Petrol Station": {
+        "fo_locale_searchResultPetrolStation_item1_title": {
+          "value": "Relais ge Grenelle",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_address": {
+          "value": "34 Boulevard de Grenelle, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_value": {
+          "value": "600",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item1_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_title": {
+          "value": "Station Bonvin Lecurbe-Automobiles",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_address": {
+          "value": "28 rue Françios Bonvin, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_value": {
+          "value": "800",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item2_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_title": {
+          "value": "Avia",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_address": {
+          "value": "12 Pl. de Brazzaville, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_value": {
+          "value": "1.2",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_title": {
+          "value": "Relais TotalEnergies Alesia",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_address": {
+          "value": "154 Rue d’Alésia, 75014 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_value": {
+          "value": "1.6",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_title": {
+          "value": "Garage Elite",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_address": {
+          "value": "15 Avenue Duquesne, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_value": {
+          "value": "2.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item5_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_title": {
+          "value": "Garage du Maines",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_address": {
+          "value": "12 Avenue du Maine, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_value": {
+          "value": "2.3",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item6_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_title": {
+          "value": "Station Montparnasse",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_address": {
+          "value": "47 Boulevard de Vaugirard, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_value": {
+          "value": "2.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item7_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_title": {
+          "value": "Relais des Invalides",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_address": {
+          "value": "37 Rue Fabert, 75017 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_value": {
+          "value": "3.1",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item8_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_title": {
+          "value": "Avia",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_address": {
+          "value": "70 Avenue Kléber, 75016 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_value": {
+          "value": "3.5",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item9_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_title": {
+          "value": "BP",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_address": {
+          "value": "151 Rue de la Convencion, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_value": {
+          "value": "3.8",
+          "type": "text"
+        },
+        "fo_locale_searchResultPetrolStation_item10_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      }
+    },
+    "Recents": {
+      "fo_locale_recents": {
+        "value": "Recents",
+        "type": "text"
+      },
+      "fo_locale_recents_today": {
+        "value": "Today",
+        "type": "text"
+      },
+      "fo_locale_recents_empty": {
+        "value": "No recent destinations",
+        "type": "text"
+      },
+      "fo_locale_recents_smart": {
+        "value": "Suggested",
+        "type": "text"
+      },
+      "fo_locale_recents_message": {
+        "value": "You can search for an address or a place, like a charge station, restaurant, or parking garage.",
+        "type": "text"
+      },
+      "fo_locale_recents_clearAllButton": {
+        "value": "Clear all",
+        "type": "text"
+      },
+      "fo_locale_recents_clearHistory_title": {
+        "value": "Clear recent history",
+        "type": "text"
+      },
+      "fo_locale_recents_clearHistory_body": {
+        "value": "You are about to delete your entire recent history.",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_title": {
+        "value": "Aux Artistes",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_address": {
+        "value": "63 Rue Falguière, 75015 Paris, Ile-de-France",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_value": {
+        "value": "1.7",
+        "type": "text"
+      },
+      "fo_locale_recents_item1_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_title": {
+        "value": "Total Energies",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_address": {
+        "value": "5 Place du Commerce, 75015 Paris, Ile-de-France",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_value": {
+        "value": "800",
+        "type": "text"
+      },
+      "fo_locale_recents_item2_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_title": {
+        "value": "8 Rue Fondary",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_address": {
+        "value": "8 Rue Fondary, 75015 Paris, Ile-de-France",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_value": {
+        "value": "2",
+        "type": "text"
+      },
+      "fo_locale_recents_item3_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_title": {
+        "value": "Pingel Rare Books",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_address": {
+        "value": "67 Avenue de Suffren, 75007 Paris, Ile-de-France",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_value": {
+        "value": "1.9",
+        "type": "text"
+      },
+      "fo_locale_recents_item4_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_title": {
+        "value": "CrossFit Factory Boulogne-Billancourt",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_address": {
+        "value": "34 Rue Émile Landrin, 92100 Boulogne-Billancourt",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_value": {
+        "value": "3.5",
+        "type": "text"
+      },
+      "fo_locale_recents_item5_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_title": {
+        "value": "La Parisienne Saint-Germain",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_address": {
+        "value": "52 Boulevard Saint-Germain, 75005 Paris",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_value": {
+        "value": "2.4",
+        "type": "text"
+      },
+      "fo_locale_recents_item6_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    },
+    "Favourites": {
+      "fo_locale_favourites": {
+        "value": "Favourites",
+        "type": "text"
+      },
+      "fo_locale_favourites_addButton": {
+        "value": "Add favourite",
+        "type": "text"
+      },
+      "fo_locale_favourites_message": {
+        "value": "Any locations you save will be shown here.",
+        "type": "text"
+      },
+      "fo_locale_favourites_item1_title": {
+        "value": "Home",
+        "type": "text"
+      },
+      "fo_locale_favourites_item1_address": {
+        "value": "25 Rue Violet, 75015 Paris, Île-de-France",
+        "type": "text"
+      },
+      "fo_locale_favourites_item2_title": {
+        "value": "Work",
+        "type": "text"
+      },
+      "fo_locale_favourites_item2_address": {
+        "value": "27 Avenue Aristide Briand, 94110 Arcueil, Île-de-France",
+        "type": "text"
+      },
+      "fo_locale_favourites_item3_title": {
+        "value": "Alexanderplatz",
+        "type": "text"
+      },
+      "fo_locale_favourites_item3_address": {
+        "value": "Alexanderplatz, 10178 Berlin, Germany",
+        "type": "text"
+      },
+      "fo_locale_favourites_item4_title": {
+        "value": "Mom & Dad",
+        "type": "text"
+      },
+      "fo_locale_favourites_item4_address": {
+        "value": "54 Rue Fonfrède, 33800 Bordeaux",
+        "type": "text"
+      },
+      "fo_locale_favourites_item5_title": {
+        "value": "Café de Mars",
+        "type": "text"
+      },
+      "fo_locale_favourites_item5_address": {
+        "value": "11 Rue Augereau, 75007 Paris, Île-de-France",
+        "type": "text"
+      },
+      "fo_locale_favourites_item6_title": {
+        "value": "Electra",
+        "type": "text"
+      },
+      "fo_locale_favourites_item6_address": {
+        "value": "21 Rue de la Fédération, 75015 Paris",
+        "type": "text"
+      },
+      "fo_locale_favourites_item7_title": {
+        "value": "Patinoire",
+        "type": "text"
+      },
+      "fo_locale_favourites_item7_address": {
+        "value": "8 Boulevard de Bercy, 75012 Paris",
+        "type": "text"
+      }
+    },
+    "Routing": {
+      "Route Overview Items": {
+        "fo_locale_routing_connectionItem1_value": {
+          "value": "84",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem2_value": {
+          "value": "72",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem3_value": {
+          "value": "58",
+          "type": "text"
+        },
+        "fo_locale_routing_connectionItem3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem1_time": {
+          "value": "22:30",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem2_time": {
+          "value": "23:56",
+          "type": "text"
+        },
+        "fo_locale_routing_locationItem3_time": {
+          "value": "01:18",
+          "type": "text"
+        },
+        "Start Item": {
+          "fo_locale_routingStartItem_currentLocation": {
+            "value": "Current location",
+            "type": "text"
+          }
+        },
+        "Routing Location Item": {
+          "fo_locale_routingLocationItem_charge": {
+            "value": "charge",
+            "type": "text"
+          }
+        }
+      },
+      "Route Option Items": {
+        "fo_locale_routeOptionItem_overview": {
+          "value": "Overview",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_title": {
+          "value": "Fast",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_value": {
+          "value": "588",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem1_price": {
+          "value": "41,80",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_title": {
+          "value": "Eco",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_value": {
+          "value": "595",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem2_price": {
+          "value": "32,40",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_title": {
+          "value": "Thrilling",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_value": {
+          "value": "708",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem3_price": {
+          "value": "54,20",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_title": {
+          "value": "Fast",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_value": {
+          "value": "742",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_routeOptionItem4_price": {
+          "value": "52,30",
+          "type": "text"
+        }
+      }
+    },
+    "Location": {
+      "EV Availability Item": {
+        "fo_locale_evAvailabilityCard1_item1": {
+          "value": "0{fo_locale_unit_price_decimal_separator}69",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard1_item2": {
+          "value": "0{fo_locale_unit_price_decimal_separator}65",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard1_item3": {
+          "value": "0{fo_locale_unit_price_decimal_separator}55",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item1": {
+          "value": "0{fo_locale_unit_price_decimal_separator}39",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item2": {
+          "value": "0{fo_locale_unit_price_decimal_separator}35",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard2_item3": {
+          "value": "0{fo_locale_unit_price_decimal_separator}29",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item1": {
+          "value": "0{fo_locale_unit_price_decimal_separator}65",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item2": {
+          "value": "0{fo_locale_unit_price_decimal_separator}55",
+          "type": "text"
+        },
+        "fo_locale_evAvailabilityCard3_item3": {
+          "value": "0{fo_locale_unit_price_decimal_separator}45",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "Location": {
+    "EV Availability": {
+      "fo_locale_evAvailability_available": {
+        "value": "available",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_slot": {
+        "value": "slot",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_slots": {
+        "value": "slots",
+        "type": "text"
+      },
+      "fo_locale_evAvailability_plugs": {
+        "value": "plugs",
+        "type": "text"
+      }
+    },
+    "Location Details": {
+      "fo_locale_locationDetails_routesButton": {
+        "value": "Routes",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_chargeHere": {
+        "value": "I can charge here",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_skipChargingStopsMessage": {
+        "value": "Skip unnecessary charging stops when driving to this destination.",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_details": {
+        "value": "Details",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_rating": {
+        "value": "Rating",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_priceRange": {
+        "value": "Price range",
+        "type": "text"
+      },
+      "fo_locale_locationDetails_findNearby": {
+        "value": "Find nearby",
+        "type": "text"
+      },
+      "Opening Hours": {
+        "fo_locale_locationDetails_openingHours_list": {
+          "value": "10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00\n10:00 - 18:00",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_until": {
+          "value": "Until 18:00",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_open": {
+          "value": "Open",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_openAlways": {
+          "value": "Open 24/7",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_openingHours_closed": {
+          "value": "Closed",
+          "type": "text"
+        }
+      },
+      "Parking Trend": {
+        "fo_locale_locationDetails_parking_parkingSpaces": {
+          "value": "Parking spaces",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_free": {
+          "value": "Free",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_vacant": {
+          "value": "Vacant",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_almostFull": {
+          "value": "Almost full",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_full": {
+          "value": "Full",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_busy": {
+          "value": "Busy",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_unknown": {
+          "value": "Unknown",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_emptying": {
+          "value": "Emptying",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_fillingUp": {
+          "value": "Filling up",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_closed": {
+          "value": "Closed",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_total": {
+          "value": "Total",
+          "type": "text"
+        }
+      },
+      "Services": {
+        "fo_locale_locationDetails_services_services": {
+          "value": "Services",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_services_truckAccessible": {
+          "value": "Accessible by truck",
+          "type": "text"
+        }
+      },
+      "Single Point": {
+        "fo_locale_locationDetails_singlePoint_title": {
+          "value": "Alexanderplatz",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_address": {
+          "value": "Berlin, Germany",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_distance_value": {
+          "value": "885",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_singlePoint_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        }
+      },
+      "EV POI": {
+        "fo_locale_locationDetails_EV_title": {
+          "value": "Greenspot",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_address": {
+          "value": "172 Rue Jules Ferry, 33200 Bordeaux",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_distance_value": {
+          "value": "6.7",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_phone": {
+          "value": "+33 5 56 99 45 12",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_EV_website": {
+          "value": "charge.com",
+          "type": "text"
+        }
+      },
+      "Parking": {
+        "fo_locale_locationDetails_parking_title": {
+          "value": "Parking Keller",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_address": {
+          "value": "27 Rue de l’Ingénieur Robert Keller, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_distance_value": {
+          "value": "800",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_distance_unit": {
+          "value": "{fo_locale_unit_distance_short}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_phone": {
+          "value": "+33 1 45 33 28 55",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_website": {
+          "value": "parkingkeller.com",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_price": {
+          "value": "€ 2,50/h",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_parking_lowChanceOnStreet": {
+          "value": "Low chance of on-street parking",
+          "type": "text"
+        }
+      },
+      "Petrol Station": {
+        "fo_locale_locationDetails_petrolStation_title": {
+          "value": "Avia",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_address": {
+          "value": "11 Boulevard Garibaldi, 75015 Paris",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_distance_value": {
+          "value": "1.5",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_phone": {
+          "value": "+33 1 47 34 11 21",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_website": {
+          "value": "avia.com",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_fuelPrices": {
+          "value": "Fuel prices",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceDiesel": {
+          "value": "Diesel - €1,80",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceCommercialDiesel": {
+          "value": "Commercial Diesel - €2,20",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_petrolStation_priceBioDiesel": {
+          "value": "Bio Diesel - €1,79",
+          "type": "text"
+        }
+      },
+      "Restaurant": {
+        "fo_locale_locationDetails_restaurant_title": {
+          "value": "Bouillon Chartier Grands Boulevards",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_address": {
+          "value": "7 Rue du Faubourg Montmartre, 75009 Paris",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_distance_value": {
+          "value": "6.5",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_distance_unit": {
+          "value": "{fo_locale_unit_distance_long}",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_phone": {
+          "value": "+33 1 47 70 86 29",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_website": {
+          "value": "bouillon-chartier.com",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_priceRange": {
+          "value": "$$",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_w3w": {
+          "value": "behind.draw.takeover",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_restaurant_about": {
+          "value": "Stirred by starlight across the centuries, Cambrian explosion Sea of Tranquility, realm of galaxies prime number...",
+          "type": "text"
+        }
+      },
+      "Charge Points": {
+        "fo_locale_locationDetails_chargePoints_compatibleTitle": {
+          "value": "Compatible charge points",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_incompatibleTitle": {
+          "value": "Incompatible charge points",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_pricesShownMessage": {
+          "value": "Prices shown per kWh.",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_chargePoints_additionalFeesMessage": {
+          "value": "Additional fees and parking costs may apply.",
+          "type": "text"
+        }
+      },
+      "Payment": {
+        "fo_locale_locationDetails_payment_payment": {
+          "value": "Payment",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_paymentProviders": {
+          "value": "Payment providers",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_paymentMethods": {
+          "value": "Payment methods",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_inNetwork": {
+          "value": "In network",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_creditDebit": {
+          "value": "Credit cards, Debit cards",
+          "type": "text"
+        },
+        "fo_locale_locationDetails_payment_creditDebitCash": {
+          "value": "Credit cards, Debit cards, Cash",
+          "type": "text"
+        }
+      }
+    },
+    "State Of Charge": {
+      "fo_locale_soc_atArrival": {
+        "value": "at arrival",
+        "type": "text"
+      },
+      "fo_locale_soc_onArrival": {
+        "value": "on arrival",
+        "type": "text"
+      },
+      "fo_locale_soc_includes": {
+        "value": "Includes",
+        "type": "text"
+      },
+      "fo_locale_soc_batteryLevelReached": {
+        "value": "Battery level reached",
+        "type": "text"
+      },
+      "fo_locale_soc_outOfRange": {
+        "value": "Out of range",
+        "type": "text"
+      }
+    }
+  },
+  "Routing": {
+    "fo_locale_routing_manageStopsButton": {
+      "value": "Manage stops",
+      "type": "text"
+    },
+    "fo_locale_routing_alternativeRoutesButton": {
+      "value": "Alternative routes",
+      "type": "text"
+    },
+    "fo_locale_routing_addStopButton": {
+      "value": "Add stop",
+      "type": "text"
+    },
+    "fo_locale_routing_routePreferencesButton": {
+      "value": "Route preferences",
+      "type": "text"
+    },
+    "fo_locale_routing_noRoute": {
+      "value": "No available route",
+      "type": "text"
+    },
+    "fo_locale_routing_outOfRangeAlert": {
+      "value": "Destination out of range",
+      "type": "text"
+    },
+    "EV Planning": {
+      "fo_locale_routing_evPlanning_planEvRouteButton": {
+        "value": "Plan EV route",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_currentBatteryLevel": {
+        "value": "Current battery level",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_batteryOnArrival": {
+        "value": "Battery level on arrival",
+        "type": "text"
+      },
+      "fo_locale_routing_evPlanning_planningTitle": {
+        "value": "Planning with BMW i4",
+        "type": "text"
+      }
+    },
+    "Stops": {
+      "fo_locale_routing_stops_stopAddress": {
+        "value": "66 Av. de la Motte-Picquet",
+        "type": "text"
+      },
+      "fo_locale_routing_removeStopAddress": {
+        "value": "66 Av. de la Motte-Picquet, Paris",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_manageStops": {
+        "value": "Manage stops",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_message": {
+        "value": "Auto-planned charging stops cannot be managed.",
+        "type": "text"
+      },
+      "fo_locale_routing_stops_removeStop": {
+        "value": "Remove this stop?",
+        "type": "text"
+      }
+    },
+    "Journey Summary": {
+      "fo_locale_journeySummary_charges": {
+        "value": "charges",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance1_value": {
+        "value": "100",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance1_unit": {
+        "value": "{fo_locale_unit_distance_short}",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance2_value": {
+        "value": "55",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_distance2_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      },
+      "fo_locale_journeySummary_price": {
+        "value": "41,80",
+        "type": "text"
+      }
+    },
+    "Routes": {
+      "fo_locale_routing_routes": {
+        "value": "Routes",
+        "type": "text"
+      },
+      "fo_locale_routing_routes_containsRestrictedRoads": {
+        "value": "Route contains legally restricted roads",
+        "type": "text"
+      },
+      "fo_locale_routing_routes_planCharging": {
+        "value": "Plan charging automatically",
+        "type": "text"
+      }
+    },
+    "Preferences": {
+      "fo_locale_routing_preferences": {
+        "value": "Preferences",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_minBattery": {
+        "value": "Minimum battery on arrival",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_planChargingBanner": {
+        "value": "Turn on Plan charging automatically to edit arrival battery",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_atChargingStop": {
+        "value": "At charging stop",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryAtChargingStop": {
+        "value": "Battery at charging station",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_atDestination": {
+        "value": "At destination",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryAtDestination": {
+        "value": "Battery at destination",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_bodyUnit": {
+        "value": "Body Unit",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_batteryMessage": {
+        "value": "Reaching certain locations with high battery percentage is not always possible",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType": {
+        "value": "Current route type",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_fastest": {
+        "value": "Fastest",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_eco": {
+        "value": "Eco",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_shortest": {
+        "value": "Shortest",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_routeType_winding": {
+        "value": "Winding",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid": {
+        "value": "Avoid on this route",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_tolls": {
+        "value": "Tolls",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_unpavedRoads": {
+        "value": "Unpaved Roads",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_motorways": {
+        "value": "Motorways",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_lowEmissionZones": {
+        "value": "Low Emission Zones",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_ferries": {
+        "value": "Ferries",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_tunnels": {
+        "value": "Tunnels",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_borderCrossings": {
+        "value": "Border Crossings",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_avoid_hovLanes": {
+        "value": "HOV Lanes",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_autoRerouting": {
+        "value": "Auto rerouting",
+        "type": "text"
+      },
+      "fo_locale_routing_preferences_changesMessage": {
+        "value": "Changes made here are applied to the current route only.",
+        "type": "text"
+      }
+    }
+  },
+  "Filters": {
+    "fo_locale_filters": {
+      "value": "Filters",
+      "type": "text"
+    },
+    "fo_locale_filters_resultsShown": {
+      "value": "10 results shown",
+      "type": "text"
+    },
+    "fo_locale_filters_chargingSpeed": {
+      "value": "Charging speed",
+      "type": "text"
+    },
+    "fo_locale_filters_services": {
+      "value": "Services",
+      "type": "text"
+    },
+    "fo_locale_filters_myPreferredOperators": {
+      "value": "My preferred operators",
+      "type": "text"
+    },
+    "fo_locale_filters_popularOperators": {
+      "value": "Popular operators in the Netherlands",
+      "type": "text"
+    },
+    "fo_locale_filters_myChargingCards": {
+      "value": "My charging cards",
+      "type": "text"
+    },
+    "fo_locale_filters_plugChargeCompatible": {
+      "value": "Plug&Charge compatible",
+      "type": "text"
+    },
+    "fo_locale_filters_editPreferences": {
+      "value": "Edit preferences",
+      "type": "text"
+    },
+    "Search Area": {
+      "fo_locale_filters_searchArea": {
+        "value": "Search area",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_alongRoute": {
+        "value": "Along route",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_nearYou": {
+        "value": "Near you",
+        "type": "text"
+      },
+      "fo_locale_filters_searchArea_nearDestination": {
+        "value": "Near destination",
+        "type": "text"
+      }
+    },
+    "Preferences": {
+      "fo_locale_filters_preferences": {
+        "value": "Preferences",
+        "type": "text"
+      },
+      "fo_locale_filters_preferences_none": {
+        "value": "None",
+        "type": "text"
+      },
+      "fo_locale_filters_preferences_adblue": {
+        "value": "AdBlue",
+        "type": "text"
+      }
+    },
+    "Charging Stations": {
+      "fo_locale_filters_chargingStations": {
+        "value": "Charging Stations",
+        "type": "text"
+      },
+      "fo_locale_filters_chargingStations_availableNow": {
+        "value": "Available now",
+        "type": "text"
+      }
+    }
+  },
+  "Headers": {
+    "Search Input": {
+      "fo_locale_searchInput_inactive": {
+        "value": "Where to?",
+        "type": "text"
+      },
+      "fo_locale_searchInput_activeTyping": {
+        "value": "Cha",
+        "type": "text"
+      },
+      "fo_locale_searchInput_street": {
+        "value": "Charleroi",
+        "type": "text"
+      },
+      "fo_locale_searchInput_houseNumber": {
+        "value": "12",
+        "type": "text"
+      },
+      "fo_locale_searchInput_idle": {
+        "value": "Charle",
+        "type": "text"
+      },
+      "fo_locale_searchInput_poi": {
+        "value": "EV Chargers",
+        "type": "text"
+      }
+    },
+    "Event Details Header": {
+      "fo_locale_eventDetailsHeader_distance_value": {
+        "value": "286",
+        "type": "text"
+      },
+      "fo_locale_eventDetailsHeader_distance_unit": {
+        "value": "{fo_locale_unit_distance_long}",
+        "type": "text"
+      }
+    }
+  },
+  "Subheadings": {
+    "Feed Forward": {
+      "fo_locale_feedForward_offlineResults": {
+        "value": "Offline results",
+        "type": "text"
+      },
+      "fo_locale_feedForward_offline": {
+        "value": "Offline",
+        "type": "text"
+      },
+      "fo_locale_feedForward_alongRoute": {
+        "value": "Along route",
+        "type": "text"
+      }
+    }
+  },
+  "Weather": {
+    "fo_locale_weather_currentTemperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_maxTemperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_minTemperature": {
+      "value": "15°",
+      "type": "text"
+    },
+    "fo_locale_weather_currentWeatherDescription": {
+      "value": "Sunny with scattered clouds",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem1_time": {
+      "value": "10:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem1_temperature": {
+      "value": "23°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem2_time": {
+      "value": "11:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem2_temperature": {
+      "value": "20°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem3_time": {
+      "value": "12:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem3_temperature": {
+      "value": "18°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem4_time": {
+      "value": "13:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem4_temperature": {
+      "value": "16°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem5_time": {
+      "value": "14:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem5_temperature": {
+      "value": "18°",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem6_time": {
+      "value": "15:00",
+      "type": "text"
+    },
+    "fo_locale_weather_hourlyItem6_temperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_chanceOfSun": {
+      "value": "Chance of sun",
+      "type": "text"
+    },
+    "fo_locale_weather_windSpeed": {
+      "value": "Wind speed",
+      "type": "text"
+    },
+    "fo_locale_weather_windSpeed_value": {
+      "value": "8 {fo_locale_unit_speed}",
+      "type": "text"
+    },
+    "fo_locale_weather_chanceOfRain": {
+      "value": "Chance of rain",
+      "type": "text"
+    },
+    "fo_locale_weather_uvIndex": {
+      "value": "UV index",
+      "type": "text"
+    },
+    "fo_locale_weather_direction": {
+      "value": "Direction",
+      "type": "text"
+    },
+    "fo_locale_weather_precipitation": {
+      "value": "Precipitation",
+      "type": "text"
+    },
+    "fo_locale_weather_precipitation_value": {
+      "value": "1 mm",
+      "type": "text"
+    },
+    "fo_locale_weather_locationCurrent_city": {
+      "value": "Amsterdam",
+      "type": "text"
+    },
+    "fo_locale_weather_locationCurrent_temperature": {
+      "value": "25°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop1_city": {
+      "value": "Antwerp",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop1_temperature": {
+      "value": "23°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop2_city": {
+      "value": "Lille",
+      "type": "text"
+    },
+    "fo_locale_weather_locationStop2_temperature": {
+      "value": "20°",
+      "type": "text"
+    },
+    "fo_locale_weather_locationDestination_city": {
+      "value": "Paris",
+      "type": "text"
+    },
+    "fo_locale_weather_locationDestination_temperature": {
+      "value": "16°",
+      "type": "text"
+    }
+  },
+  "POI Categories": {
+    "fo_locale_poiCategories_moreCategories": {
+      "value": "More categories",
+      "type": "text"
+    },
+    "Accomodation": {
+      "fo_locale_poiCategories_accomodation": {
+        "value": "Accomodation",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_accomodation_campsite": {
+        "value": "Campsite",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_accomodation_hotelMotel": {
+        "value": "Hotel / Motel",
+        "type": "text"
+      }
+    },
+    "Car": {
+      "fo_locale_poiCategories_car": {
+        "value": "Car",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_carDealer": {
+        "value": "Automotive dealer",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_carWash": {
+        "value": "Car wash",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_fuel": {
+        "value": "Gas station",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_car_evChargingStation": {
+        "value": "Charging station",
+        "type": "text"
+      }
+    },
+    "Commercial": {
+      "fo_locale_poiCategories_commercial": {
+        "value": "Commercial",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_company": {
+        "value": "Company",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_shop": {
+        "value": "Shop",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_groceryStore": {
+        "value": "Grocery store",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_repairFacility": {
+        "value": "Repair facility",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_vehicleRepairShop": {
+        "value": "Vehicle repair shop",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_cashDispenser": {
+        "value": "ATM",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_postOffice": {
+        "value": "Post office",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_market": {
+        "value": "Market",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_commercial_supermarket": {
+        "value": "Supermarket",
+        "type": "text"
+      }
+    },
+    "Education": {
+      "fo_locale_poiCategories_education": {
+        "value": "Education",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_education_education": {
+        "value": "Education",
+        "type": "text"
+      }
+    },
+    "Entertainment": {
+      "fo_locale_poiCategories_entertainment": {
+        "value": "Entertainment",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_entertainment_importantTouristAttraction": {
+        "value": "Important tourist attraction",
+        "type": "text"
+      }
+    },
+    "Food & Drink": {
+      "fo_locale_poiCategories_foodDrink": {
+        "value": "Food & Drink",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_pubBar": {
+        "value": "Pub / Bar",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_restaurant": {
+        "value": "Restaurant",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_hamburgerRestaurant": {
+        "value": "Hamburger restaurant",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_fastFood": {
+        "value": "Fast food",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_cafe": {
+        "value": "Cafe",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_foodDrink_coffeeshopBar": {
+        "value": "Coffeeshop / Bar",
+        "type": "text"
+      }
+    },
+    "Health": {
+      "fo_locale_poiCategories_health": {
+        "value": "Health",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_health_hospital": {
+        "value": "Hospital",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_health_pharmacy": {
+        "value": "Pharmacy",
+        "type": "text"
+      }
+    },
+    "Outdoor / Sports": {
+      "fo_locale_poiCategories_outdoorSports": {
+        "value": "Outdoor / Sports",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_beach": {
+        "value": "Beach",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_parkRecreationalArea": {
+        "value": "Park & recreation area",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_outdoorSports_restArea": {
+        "value": "Rest area",
+        "type": "text"
+      }
+    },
+    "Parking": {
+      "fo_locale_poiCategories_parking": {
+        "value": "Parking",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_parking_parking": {
+        "value": "Parking",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_parking_parkingGarage": {
+        "value": "Parking garage",
+        "type": "text"
+      }
+    },
+    "Public": {
+      "fo_locale_poiCategories_public": {
+        "value": "Public",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_building": {
+        "value": "Building",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_placeOfWorship": {
+        "value": "Place of worship",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_policeStation": {
+        "value": "Police Station",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_publicAuthority": {
+        "value": "Public authority",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_restroom": {
+        "value": "Restroom",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_public_publicRestroom": {
+        "value": "Public restroom",
+        "type": "text"
+      }
+    },
+    "Transport": {
+      "fo_locale_poiCategories_transport": {
+        "value": "Transport",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_trainStation": {
+        "value": "Train station",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_busStop": {
+        "value": "Bus stop",
+        "type": "text"
+      },
+      "fo_locale_poiCategories_transport_airport": {
+        "value": "Airport",
+        "type": "text"
+      }
+    }
+  },
+  "Quick Settings": {
+    "fo_locale_quickSettings": {
+      "value": "Quick settings",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_fullSettingsButtons": {
+      "value": "Full settings",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_drivingMode": {
+      "value": "Driving mode -",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_drivingMode_3D": {
+      "value": "3D",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_soundsAlerts": {
+      "value": "Sounds & Alerts -",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_soundsAlerts_allOn": {
+      "value": "All on",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map": {
+      "value": "Map",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map_default": {
+      "value": "Default",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_map_satellite": {
+      "value": "Satellite",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays": {
+      "value": "Overlays",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays_evRange": {
+      "value": "EV range",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_overlays_weather": {
+      "value": "Weather",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings": {
+      "value": "Map settings",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_3DBuildings": {
+      "value": "3D buildings",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_3DBuildingsBody": {
+      "value": "Show buildings in 3D on the map",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_trafficFlow": {
+      "value": "Traffic flow",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_trafficFlowBody": {
+      "value": "Show the traffic flow on the street",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_laneLevelVisualisation": {
+      "value": "Lane level visualisation",
+      "type": "text"
+    },
+    "fo_locale_quickSettings_mapSettings_laneLevelVisualisationBody": {
+      "value": "Show high definition road geometry",
+      "type": "text"
+    }
+  }
+}

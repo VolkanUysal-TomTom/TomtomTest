@@ -1,0 +1,334 @@
+{
+  "Buttons": {
+    "Contained": {
+      "tt_cmp_effect_containedButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_containedButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      },
+      "Tertiary": {
+        "tt_cmp_effect_containedButton_tertiary_opacity_disabled": {
+          "value": "{tt_sys_effect_disabled_opacity}",
+          "type": "opacity"
+        },
+        "tt_cmp_effect_containedButton_tertiary_shadow_disabled": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Chip": {
+        "tt_cmp_effect_chip_opacity_disabled": {
+          "value": "{tt_sys_effect_disabled_opacity}",
+          "type": "opacity"
+        },
+        "tt_cmp_effect_chip_shadow_disabled": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "Icon": {
+      "tt_cmp_effect_iconButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_iconButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "List Item": {
+      "tt_cmp_effect_listItemButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_listItemButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "List Group": {
+      "tt_cmp_effect_listIGroupButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_listGroupButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Quick Action": {
+      "tt_cmp_effect_quickActionButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_quickActionButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "FAB": {
+      "tt_cmp_effect_fabButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_fabButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Grid Toggle": {
+      "tt_cmp_effect_gridToggleButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_gridToggleButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Grid": {
+      "tt_cmp_effect_gridButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_gridButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Image Card": {
+      "tt_cmp_effect_imageCardButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_imageCardButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Suggestions": {
+      "tt_cmp_effect_suggestionButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_suggestionButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Quick Routing": {
+      "tt_cmp_effect_quickRoutingButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_quickRoutingButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Uncontained": {
+      "tt_cmp_effect_uncontainedButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "End Route": {
+      "tt_cmp_effect_endRouteButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      },
+      "tt_cmp_effect_endRouteButton_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Filter": {
+      "tt_cmp_effect_filterButton_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    }
+  },
+  "List Items": {
+    "Routing Items": {
+      "Editing": {
+        "tt_cmp_effect_routeEditItem_opacity_disabled": {
+          "value": "{tt_sys_effect_disabled_opacity}",
+          "type": "opacity"
+        },
+        "tt_cmp_effect_routeEditItem_shadow_disabled": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "Information Item": {
+      "tt_cmp_effect_informationItem_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      },
+      "tt_cmp_effect_informationItem_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Menu & Settings": {
+      "Menu Item": {
+        "tt_cmp_effect_menuItem_shadow_disabled": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Settings Item": {
+        "tt_cmp_effect_settingsItem_shadow_disabled": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    }
+  },
+  "Route": {
+    "Restricted Route Information": {
+      " tt_cmp_effect_routeIncludes_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_restrictedRouteInformation_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_routeIncludes_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Restricted Route": {
+      "tt_cmp_effect_restrictedRouteInformation_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    }
+  },
+  "Headers": {
+    "Search Input": {
+      "tt_cmp_effect_searchInput_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Search": {
+      "tt_cmp_effect_searchInput_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    }
+  },
+  "General UI": {
+    "Input Fields": {
+      "tt_cmp_effect_inputField_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_inputField_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    }
+  },
+  "Controls": {
+    "Slider": {
+      "tt_cmp_effect_slider_shadow_handle_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_slider_shadow_track_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_slider_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Switches": {
+      "tt_cmp_effect_switches_shadow_handle_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_switches_shadow_surface_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_switches_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Checkbox": {
+      "tt_cmp_effect_checkbox_shadow_icon_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_checkbox_shadow_surface_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_checkbox_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Radio": {
+      "tt_cmp_effect_radio_shadow_icon_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_radio_shadow_surface_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_radio_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Segmented Control": {
+      "tt_cmp_effect_segmentedControl_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_segmentedControl_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Tab": {
+      "tt_cmp_effect_tab_shadow_disabled": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_tab_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    }
+  },
+  "Menu & Settings": {
+    "Menu Item": {
+      "tt_cmp_effect_menuItem_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    },
+    "Settings Item": {
+      "tt_cmp_effect_settingsItem_opacity_disabled": {
+        "value": "{tt_sys_effect_disabled_opacity}",
+        "type": "opacity"
+      }
+    }
+  }
+}

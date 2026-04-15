@@ -1,0 +1,10 @@
+{
+  "tt_sys_effect_disabled_opacity": {
+    "value": "{tt_glb_effect_opacity_40}",
+    "type": "opacity"
+  },
+  "tt_sys_effect_disabled_shadow": {
+    "value": "{tt_sys_effect_shadow_null}",
+    "type": "boxShadow"
+  }
+}

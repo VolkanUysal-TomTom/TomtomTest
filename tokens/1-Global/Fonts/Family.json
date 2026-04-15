@@ -1,0 +1,14 @@
+{
+  "tt_glb_font_family": {
+    "value": "Noto Sans",
+    "type": "fontFamilies"
+  },
+  "tt_glb_font_weight_bold": {
+    "value": "Display Medium",
+    "type": "fontWeights"
+  },
+  "tt_glb_font_weight_regular": {
+    "value": "Display Regular",
+    "type": "fontWeights"
+  }
+}

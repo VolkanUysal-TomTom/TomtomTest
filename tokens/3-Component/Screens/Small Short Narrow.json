@@ -1,0 +1,5382 @@
+{
+  "Buttons": {
+    "Icon": {
+      "tt_cmp_size_iconButtonHitArea": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Uncontained": {
+      "Large": {
+        "tt_cmp_size_uncontainedButton_l_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_l_iconTextSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_uncontainedButton_l_titleBodySpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_l_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_l_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_l_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_l_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_l_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        }
+      },
+      "Small": {
+        "tt_cmp_size_uncontainedButton_s_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_s_iconTextSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_uncontainedButton_s_titleBodySpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_s_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_uncontainedButton_s_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_uncontainedButton_s_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_s_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_uncontainedButton_s_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        }
+      }
+    },
+    "Contained": {
+      "Primary and Secondary": {
+        "tt_cmp_size_containedButton_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_containedButton_iconTextSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_containedButton_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_containedButton_radius": {
+          "value": "{Radius.tt_sys_size_radius_full}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_containedButton_height": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_containedButton_collapsed_width": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_containedButton_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_containedButton_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_containedButton_minWidth": {
+          "value": "{Scale.tt_sys_size_scale_xxxl}",
+          "type": "number",
+          "description": ""
+        },
+        "Tertiary": {
+          "tt_cmp_size_containedButton_tertiary_icon": {
+            "value": "{Icon.tt_sys_size_icon_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_containedButton_tertiary_iconTextSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+            "type": "number"
+          },
+          "tt_cmp_size_containedButton_tertiary_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_containedButton_tertiary_radius": {
+            "value": "{Radius.tt_sys_size_radius_full}",
+            "type": "number"
+          },
+          "tt_cmp_size_containedButton_tertiary_height": {
+            "value": "{Scale.tt_sys_size_scale_l}",
+            "type": "number"
+          },
+          "tt_cmp_size_containedButton_tertiary_startPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_containedButton_tertiary_endPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_containedButton_tertiary_minWidth": {
+            "value": "{Scale.tt_sys_size_scale_xxl}",
+            "type": "number"
+          }
+        }
+      },
+      "Chip": {
+        "tt_cmp_size_chip_icon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_chip_iconTextSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_chip_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_chip_radius": {
+          "value": "{Radius.tt_sys_size_radius_full}",
+          "type": "number"
+        },
+        "tt_cmp_size_chip_height": {
+          "value": "{Scale.tt_sys_size_scale_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_chip_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_chip_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number"
+        }
+      }
+    },
+    "List Item": {
+      "tt_cmp_size_listItemButton_icon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_listItemButton_iconTextSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_listItemButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_listItemButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_listItemButton_height": {
+        "value": "{Scale.tt_sys_size_scale_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_listItemButton_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_listItemButton_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Quick Action": {
+      "tt_cmp_size_quickActionButton_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_quickActionButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_quickActionButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_quickActionButton_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_quickActionButton_width": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      }
+    },
+    "Grid Toggle Button": {
+      "Vertical": {
+        "tt_cmp_size_gridToggleButton_vertical_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridToggleButton_vertical_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridToggleButton_vertical_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_vertical_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_vertical_iconLabelSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_vertical_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_vertical_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_vertical_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_vertical_minWidth": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridToggleButton_vertical_minHeight": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        }
+      },
+      "Horizontal": {
+        "tt_cmp_size_gridToggleButton_horizontal_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_horizontal_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridToggleButton_horizontal_iconLabelSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_horizontal_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_horizontal_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_horizontal_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_horizontal_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_horizontal_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridToggleButton_horizontal_minWidth": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridToggleButton_horizontal_minHeight": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        }
+      }
+    },
+    "Grid Button": {
+      "Vertical": {
+        "tt_cmp_size_gridButton_vertical_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridButton_vertical_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridButton_vertical_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_vertical_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_vertical_iconLabelSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_vertical_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_vertical_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_vertical_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_vertical_minWidth": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridButton_vertical_minHeight": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        }
+      },
+      "Horizontal": {
+        "tt_cmp_size_gridButton_horizontal_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_horizontal_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridButton_horizontal_iconLabelSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridButton_horizontal_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_horizontal_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridButton_horizontal_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridButton_horizontal_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_horizontal_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_gridButton_horizontal_minWidth": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_gridButton_horizontal_minHeight": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        }
+      }
+    },
+    "Groups": {
+      "Of Two": {
+        "tt_cmp_size_twoButtonGroup_Spacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        }
+      },
+      "Of Three": {
+        "tt_cmp_size_threeButtonGroup_Spacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        }
+      },
+      "Route Options": {
+        "tt_cmp_size_routeOptionGroup_spacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        }
+      },
+      "One and Grid": {
+        "tt_cmp_size_oneGridButtonGroup_gridSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_oneGridButtonGroup_gridButtonSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+          "type": "number",
+          "description": ""
+        }
+      },
+      "FABs": {
+        "tt_cmp_size_fabGroup_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_fabGroup_verticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+          "type": "number",
+          "description": ""
+        }
+      },
+      "Suggestions": {
+        "tt_cmp_size_suggestionsButtonGroup_buttonSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_suggestionsButtonGroup_buttonMinSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_suggestionsButtonGroup_buttonMaxSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xxl}",
+          "type": "number"
+        },
+        "tt_cmp_size_suggestionsButtonGroup_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_suggestionsButtonGroup_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number"
+        }
+      },
+      "POI Quick Links": {
+        "tt_cmp_size_poiQuickLinksButtonGroup_buttonSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        }
+      },
+      "Grid": {
+        "Vertical": {
+          "tt_cmp_size_gridButtonGroup_vertical_spacing": {
+            "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+            "type": "number",
+            "description": ""
+          }
+        },
+        "Horizontal": {
+          "tt_cmp_size_gridButtonGroup_horizontal_spacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+            "type": "number",
+            "description": ""
+          }
+        }
+      },
+      "Filters": {
+        "tt_cmp_size_filtersButtonGroup_buttonSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_filtersButtonGroup_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_filtersButtonGroup_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number"
+        }
+      },
+      "Chip": {
+        "tt_cmp_size_chipButtonGroup_buttonSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number"
+        }
+      },
+      "RoutePreviewControl": {
+        "tt_cmp_size_routePreviewControlGroup_spacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number"
+        }
+      },
+      "Image Card": {
+        "tt_cmp_size_imageCardButtonGroup_spacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+          "type": "number"
+        }
+      },
+      "Quick Action": {
+        "tt_cmp_size_quickActionGroup_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_quickActionGroup_verticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+          "type": "number"
+        }
+      }
+    },
+    "Suggestion": {
+      "tt_cmp_size_suggestionsButton_iconLabelSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_suggestionsButton_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_suggestionsButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_suggestionsButton_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_suggestionsButton_width": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_suggestionsButton_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_suggestionsButton_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_suggestionsButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "POI Quick Link": {
+      "tt_cmp_size_poiQuickLinkButton_iconLabelSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_poiQuickLinkButton_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_poiQuickLinkButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_poiQuickLinkButton_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_poiQuickLinkButton_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_poiQuickLinkButton_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_poiQuickLinkButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_poiQuickLinkButton_width": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Quick Routing": {
+      "tt_cmp_size_quickRoutingButton_iconLabelSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_quickRoutingButton_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_quickRoutingButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_quickRoutingButton_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_quickRoutingButton_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_quickRoutingButton_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_quickRoutingButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "FABs": {
+      "FAB": {
+        "tt_cmp_size_fab_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_fab_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_fab_radius": {
+          "value": "{Radius.tt_sys_size_radius_full}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_fab_height": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_fab_width": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_fab_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_fab_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_fab_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+          "type": "number",
+          "description": ""
+        }
+      }
+    },
+    "Routing": {
+      "tt_cmp_size_routeOptionButton_routeIndicator": {
+        "value": "{Icon.tt_sys_size_icon_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeOptionButton_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeOptionButton_labelUnitSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeOptionButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeOptionButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeOptionButton_height": {
+        "value": "{Scale.tt_sys_size_scale_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeOptionButton_minWidth": {
+        "value": "{Scale.tt_sys_size_scale_xxl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeOptionButton_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeOptionButton_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeOptionButton_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      }
+    },
+    "End Route": {
+      "tt_cmp_size_endRouteButton_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_endRouteButton_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_endRouteButton_width": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_endRouteButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_endRouteButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number"
+      }
+    },
+    "Filters": {
+      "tt_cmp_size_filtersButton_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_filtersButton_leftIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_filtersButton_rightIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_filtersButton_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_filtersButton_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_filtersButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_filtersButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_filtersButton_spacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      }
+    },
+    "List Group": {
+      "tt_cmp_size_listGroupButton_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_listGroupButton_iconTextSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_listGroupButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_listGroupButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_listGroupButton_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_listGroupButton_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_listGroupButton_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      }
+    },
+    "Image Card Button": {
+      "tt_cmp_size_imageCardButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_labelTopPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_labelBottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_labelStartPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_labelEndPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_imageCardButton_imageHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxl}",
+        "type": "number"
+      },
+      "tt_cmp_size_imageCardButton_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_null}",
+        "type": "number"
+      }
+    },
+    "Map Layer Button": {
+      "tt_cmp_size_mapLayerButton_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapLayerButton_height": {
+        "value": "{Scale.tt_sys_size_scale_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapLayerButton_width": {
+        "value": "{Scale.tt_sys_size_scale_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapLayerButton_radius": {
+        "value": "{Radius.tt_sys_size_radius_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapLayerButton_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapLayerButton_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapLayerButton_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapLayerButton_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      }
+    }
+  },
+  "General UI": {
+    "Pagination": {
+      "tt_cmp_size_pagination_icon": {
+        "value": "{Icon.tt_sys_size_icon_xs}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_pagination_minimumSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_pagination_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_pagination_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Content Faders": {
+      "Vertical": {
+        "tt_cmp_size_contentFader_vertical_width": {
+          "value": "{Scale.tt_sys_size_scale_s}",
+          "type": "number"
+        }
+      },
+      "Horizontal": {
+        "tt_cmp_size_contentFader_horizontal_height": {
+          "value": "{Scale.tt_sys_size_scale_s}",
+          "type": "number"
+        }
+      }
+    },
+    "Spacers": {
+      "Vertical": {
+        "tt_cmp_size_spacer_vertical_height": {
+          "value": "{tt_glb_size_null}",
+          "type": "number"
+        }
+      }
+    },
+    "Progress Bar": {
+      "tt_cmp_size_progressBar_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_progressBar_weight": {
+        "value": "{Weight.tt_sys_size_weight_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_progressBar_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_progressBar_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_progressBar_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_progressBar_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      }
+    },
+    "Input Fields": {
+      "tt_cmp_size_inputField_clearIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_inputField_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_inputField_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_inputField_cursorSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_inputField_inputStartPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_inputField_inputEndPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_inputField_inputRadius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_inputField_underlineWeight": {
+        "value": "{Weight.tt_sys_size_weight_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_inputField_inputHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_inputField_minWidth": {
+        "value": "{tt_glb_size_300}",
+        "type": "number"
+      }
+    },
+    "Spinner Message": {
+      "tt_cmp_size_spinnerMessage_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_spinnerMessage_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_spinnerMessage_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_spinnerMessage_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_spinnerMessage_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_spinnerMessage_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_spinnerMessage_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_spinnerMessage_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      }
+    }
+  },
+  "Headers": {
+    "Header": {
+      "tt_cmp_size_header_leftIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_header_rightIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_header_offlineIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_header_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_header_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_header_outerActionSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_header_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_header_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_header_labelStartPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_header_labelEndPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_header_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_header_informationSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_header_titleSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      }
+    },
+    "Search Input": {
+      "tt_cmp_size_searchInput_leftInnerIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_searchInput_inputStartPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchInput_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchInput_width": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_searchInput_innerSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_searchInput_inputEndPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchInput_inputStrokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_searchInput_rightInnerIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_searchInput_inputRadius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Arrival Header": {
+      "tt_cmp_size_arrivalHeader_arrowHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_arrivalHeader_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_arrivalHeader_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_arrivalHeader_titleStartPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_arrivalHeader_titleEndPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_arrivalHeader_height": {
+        "value": "{Scale.tt_sys_size_scale_xxl}",
+        "type": "number"
+      }
+    },
+    "Event Details Header": {
+      "tt_cmp_size_eventDetailsHeader_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetailsHeader_eventPin": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetailsHeader_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetailsHeader_bodyUnitSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetailsHeader_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetailsHeader_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetailsHeader_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetailsHeader_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetailsHeader_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetailsHeader_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eventDetailsHeader_eventPinWrapper": {
+        "value": "{Icon.tt_sys_size_icon_xxl}",
+        "type": "number"
+      }
+    }
+  },
+  "Subheadings": {
+    "Subheader": {
+      "tt_cmp_size_subheader_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_subheader_subheaderDividerspacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_subheader_dividerIconSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_subheader_subheaderHorizontalspacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+        "type": "number"
+      }
+    },
+    "Feed Forward": {
+      "tt_cmp_size_feedForward_icon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_feedForward_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_feedForward_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_feedForward_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_feedForward_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_feedForward_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      }
+    }
+  },
+  "Dividers": {
+    "Horizontal": {
+      "tt_cmp_size_divider_horizontal_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_divider_horizontal_dividerWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_divider_horizontal_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_divider_horizontal_height": {
+        "value": "{Weight.tt_sys_size_weight_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_divider_horizontal_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Vertical": {
+      "tt_cmp_size_divider_vertical_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_divider_vertical_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_divider_vertical_height": {
+        "value": "{Weight.tt_sys_size_weight_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_divider_vertical_dividerWeight": {
+        "value": "{Weight.tt_sys_size_weight_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_divider_vertical_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Panel": {
+      "tt_cmp_size_divider_panel_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_divider_panel_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_divider_panel_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_divider_panel_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_divider_panel_dividerWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_divider_panel_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      }
+    }
+  },
+  "List Items": {
+    "Search Results Item": {
+      "Inactive": {
+        "tt_cmp_size_searchResultsItem_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_plugTypeIcon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_rightIcon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_listNumber": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_categoryIcon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_suggestionIcon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_trendIcon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_infoVerticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_infoInfoPillSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_iconInfoSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_titleDistanceSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_directionalIcon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_infoHorizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_bodyDirectionSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_iconBodySpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_iconTitleSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_bodyUnitSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_radius": {
+          "value": "{Radius.tt_sys_size_radius_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_listNumberRadius": {
+          "value": "{Radius.tt_sys_size_radius_full}",
+          "type": "number"
+        },
+        "tt_cmp_size_searchResultsItem_infoListButtonSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_xxs}",
+          "type": "number"
+        }
+      },
+      "Swiped": {
+        "tt_cmp_size_searchResultsItem_swiped_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_searchResultsItem_swiped_spacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        }
+      }
+    },
+    "Location": {
+      "EV Availability Item": {
+        " tt_cmp_size_evAvailabilityItem_chargeSpeedIcon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_evAvailabilityItem_icon": {
+          "value": "{Icon.tt_sys_size_icon_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailabilityItem_iconInfoSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailabilityItem_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailabilityItem_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailabilityItem_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_evAvailabilityItem_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_evAvailabilityItem_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_evAvailabilityItem_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailabilityItem_infoVerticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailabilityItem_infoPillSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailabilityItem_infoHorizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailabilityItem_bodyUnitSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+          "type": "number"
+        },
+        " tt_cmp_size_evAvailabilityItem_iconBodySpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailabilityItem_speedIcon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number"
+        }
+      }
+    },
+    "Search Results Item Group": {
+      "tt_cmp_size_searchResultsGroup_spacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchResultsGroup_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchResultsGroup_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchResultsGroup_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchResultsGroup_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchResultsGroup_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Expandable Content": {
+      "Opening Hours": {
+        "tt_cmp_size_openingHoursItem_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_openingHoursItem_dropDownIcon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_openingHoursItem_verticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_openingHoursItem_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_openingHoursItem_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_openingHoursItem_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_openingHoursItem_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_openingHoursItem_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_openingHoursItem_StrokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_openingHoursItem_columnSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_openingHoursItem_radius": {
+          "value": "{Radius.tt_sys_size_radius_null}",
+          "type": "number",
+          "description": ""
+        }
+      }
+    },
+    "Routing": {
+      "Route Overview Items": {
+        "Start Item": {
+          "tt_cmp_size_routingStartItem_icon": {
+            "value": "{Icon.tt_sys_size_icon_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingStartItem_iconLabelSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingStartItem_startPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingStartItem_endPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingStartItem_topPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingStartItem_bottomPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingStartItem_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_null}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingStartItem_radius": {
+            "value": "{Radius.tt_sys_size_radius_r}",
+            "type": "number"
+          }
+        },
+        "Routing Location Item": {
+          "tt_cmp_size_routingLocationItem_icon": {
+            "value": "{Icon.tt_sys_size_icon_s}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_iconSurface": {
+            "value": "{Icon.tt_sys_size_icon_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_iconInfoSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingLocationItem_startPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_endPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_topPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingLocationItem_bottomPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingLocationItem_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_null}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingLocationItem_iconSurfaceStrokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_null}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_radius": {
+            "value": "{Radius.tt_sys_size_radius_r}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingLocationItem_iconSurfaceRadius": {
+            "value": "{Radius.tt_sys_size_radius_full}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_infoVerticalSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingLocationItem_verticalSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_vertical_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_infoHorizontalSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_iconBodySpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_bodyLabelSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingLocationItem_bodyUnitSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_infoIcons": {
+            "value": "{Icon.tt_sys_size_icon_s}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingLocationItem_currentBatteryIcon": {
+            "value": "{Icon.tt_sys_size_icon_s}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingLocationItem_titleIconSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+            "type": "number"
+          }
+        },
+        "Connection Item": {
+          "tt_cmp_size_routingConnectionItem_icon": {
+            "value": "{Icon.tt_sys_size_icon_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingConnectionItem_infoSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingConnectionItem_startPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingConnectionItem_endPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingConnectionItem_topPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingConnectionItem_bottomPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingConnectionItem_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_null}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingConnectionItem_radius": {
+            "value": "{Radius.tt_sys_size_radius_null}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingConnectionItem_iconInfoSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingConnectionItem_iconLabelSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingConnectionItem_infoIconSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingConnectionItem_horizontalSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingConnectionItem_iconBodySpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingConnectionItem_bodyUnitSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+            "type": "number"
+          }
+        },
+        "Editing": {
+          "tt_cmp_size_routingEditItem_deleteIcon": {
+            "value": "{Icon.tt_sys_size_icon_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingEditItem_startIcon": {
+            "value": "{Icon.tt_sys_size_icon_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingEditItem_endIcon": {
+            "value": "{Icon.tt_sys_size_icon_s}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingEditItem_iconInfoSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingEditItem_startPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingEditItem_endPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingEditItem_topPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingEditItem_bottomPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_routingEditItem_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_routingEditItem_radius": {
+            "value": "{Radius.tt_sys_size_radius_r}",
+            "type": "number",
+            "description": ""
+          }
+        },
+        "Group": {
+          "tt_cmp_size_routingLocationGroup_verticalSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+            "type": "number"
+          }
+        }
+      },
+      "Route Option Items": {
+        "tt_cmp_size_routeOptionItem_indicator": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_indicatorInfoSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_routeOptionItem_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_routeOptionItem_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_routeOptionItem_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_routeOptionItem_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_infoStartPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_routeOptionItem_infoEndPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_routeOptionItem_infoTopPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_xxs}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_infoBottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_routeOptionItem_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_infoVerticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_routeOptionItem_verticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_infoHorizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_iconBodySpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_labelIconSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_routeOptionItem_bodyUnitSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_titleUnitSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_routeOptionItem_infoIcons": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number",
+          "description": ""
+        }
+      }
+    },
+    "Menu & Settings": {
+      "Menu Item": {
+        "tt_cmp_size_menuItem_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_menuItem_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_menuItem_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_menuItem_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_menuItem_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_menuItem_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_menuItem_radius": {
+          "value": "{Weight.tt_sys_size_weight_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_menuItem_rightIcon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        }
+      },
+      "Settings Item": {
+        "tt_cmp_size_settingsItem_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_settingsItem_rightIcon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_settingsItem_qrCode": {
+          "value": "{Graphic.tt_sys_size_graphic_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_qrCodeRadius": {
+          "value": "{Radius.tt_sys_size_radius_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_verticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_xxs}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_infoDividerSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_settingsItem_minHeight": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_settingsItem_titleSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        }
+      }
+    },
+    "Settings Group": {
+      "tt_cmp_size_settingsGroup_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_settingsGroup_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_settingsGroup_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_settingsGroup_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_settingsGroup_radius": {
+        "value": "{Radius.tt_sys_size_radius_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_settingsGroup_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_settingsGroup_groupVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_settingsGroup_itemStartPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_settingsGroup_itemEndPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      }
+    },
+    "Information Item": {
+      "tt_cmp_size_informationItem_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationItem_statusIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationItem_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationItem_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationItem_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationItem_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationItem_iconInfoSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationItem_infoVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationItem_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationItem_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      }
+    }
+  },
+  "Notification Content": {
+    "Search Messages": {
+      "tt_cmp_size_searchMessage_icon": {
+        "value": "{Icon.tt_sys_size_icon_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchMessage_spacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchMessage_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchMessage_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchMessage_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_searchMessage_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Dialog Text": {
+      "tt_cmp_size_dialogText_spacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_dialogText_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_dialogText_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_dialogText_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_dialogText_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Routing Messages": {
+      "tt_cmp_size_routingMessage_icon": {
+        "value": "{Icon.tt_sys_size_icon_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routingMessage_spacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routingMessage_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routingMessage_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routingMessage_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routingMessage_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Banner": {
+      "tt_cmp_size_banner_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_banner_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_banner_contentButtonSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_banner_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_banner_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_banner_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_banner_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_banner_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_banner_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_banner_radius": {
+        "value": "{Radius.tt_sys_size_radius_r}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Snack Bar": {
+      "tt_cmp_size_snackBar_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_snackBar_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_snackBar_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_snackBar_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_snackBar_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_snackBar_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_snackBar_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_snackBar_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_snackBar_radius": {
+        "value": "{Radius.tt_sys_size_radius_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_snackBar_maxWidth": {
+        "value": "{tt_glb_size_600}",
+        "type": "number"
+      }
+    },
+    "Carousel Text": {
+      "tt_cmp_size_carouselText_spacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_carouselText_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_carouselText_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_carouselText_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_carouselText_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_carouselText_Icon": {
+        "value": "{Icon.tt_sys_size_icon_xxl}",
+        "type": "number",
+        "description": ""
+      }
+    }
+  },
+  "Location": {
+    "Location Details": {
+      "tt_cmp_size_locationDetails_poiIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_locationDetails_closeIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_locationDetails_poiIconLabelSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_locationDetails_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_locationDetails_infoHorizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_locationDetails_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_locationDetails_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_locationDetails_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_locationDetails_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_locationDetails_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_locationDetails_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_locationDetails_iconInfoSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+        "type": "number"
+      }
+    },
+    "Information Pill": {
+      "tt_cmp_size_informationPill_icon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_tripAdvisorIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_tripAdvisorRatingIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_amenitiesIcons": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_iconTextSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_amenitiesSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_informationPill_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_s}",
+        "type": "number"
+      }
+    },
+    "Status Pill": {
+      "tt_cmp_size_statusPill_icon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_statusPill_iconTextSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_statusPill_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_statusPill_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number"
+      },
+      "tt_cmp_size_statusPill_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_statusPill_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_statusPill_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_s}",
+        "type": "number"
+      }
+    },
+    "Parking Trend": {
+      "tt_cmp_size_parkingTrend_trendIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_parkingTrend_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_parkingTrend_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_parkingTrend_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_parkingTrend_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_parkingTrend_iconBodySpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_parkingTrend_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_parkingTrend_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_parkingTrend_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      }
+    }
+  },
+  "Guidance": {
+    "NIP": {
+      "tt_cmp_size_nip_manoeuvreIcon": {
+        "value": "{Icon.tt_sys_size_icon_xxl}",
+        "type": "number"
+      },
+      "tt_cmp_size_nip_manoeuvreIconTopPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_nip_manoeuvreIconBottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_nip_manoeuvreIconInfoSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_nip_instructionVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_nip_instructionHorizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_nip_instructionStartPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_nip_instructionEndPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_nip_instructionTopPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_nip_instructionBottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_nip_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_nip_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_nip_instructionLaneGuidanceSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_nip_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_nip_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_nip_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_nip_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Lane Guidance": {
+      "tt_cmp_size_laneGuidance_manoeuvreLowlightIcon": {
+        "value": "{Icon.tt_sys_size_icon_xxl}",
+        "type": "number"
+      },
+      "tt_cmp_size_laneGuidance_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_laneGuidance_groupSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_laneGuidance_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_laneGuidance_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_laneGuidance_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_laneGuidance_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_laneGuidance_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_laneGuidance_manoeuvreHighlightIcon": {
+        "value": "{Icon.tt_sys_size_icon_xxl}",
+        "type": "number"
+      }
+    },
+    "Road Shield Group": {
+      "tt_cmp_size_roadShieldGroup_spacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_roadShieldGroup_roadShieldTowardsSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      }
+    },
+    "ETA": {
+      "tt_cmp_size_eta_arrivalIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_eta_iconLabelSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_eta_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_eta_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_batteryIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_jamIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_infoButtonSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_endRouteIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_endRouteSurfaceRadius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eta_endRouteSurfaceHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_eta_endRouteSurfaceWidth": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_eta_iconBodySpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_eta_bodyUnitSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+        "type": "number"
+      }
+    },
+    "Then Instruction": {
+      "tt_cmp_size_thenInstruction_manoeuvreIcon": {
+        "value": "{Icon.tt_sys_size_icon_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_thenInstruction_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_thenInstruction_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_thenInstruction_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_thenInstruction_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_thenInstruction_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_thenInstruction_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_thenInstruction_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_thenInstruction_iconWrapper": {
+        "value": "{Icon.tt_sys_size_icon_xxl}",
+        "type": "number"
+      }
+    },
+    "Activating Route Event": {
+      "tt_cmp_size_routeActivateEvent_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xxs}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeActivateEvent_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeActivateEvent_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeActivateEvent_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeActivateEvent_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeActivateEvent_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeActivateEvent_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Rerouting Event": {
+      "tt_cmp_size_routeUpdateEvent_icon": {
+        "value": "{Icon.tt_sys_size_icon_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeUpdateEvent_iconWrapper": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeUpdateEvent_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeUpdateEvent_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xxs}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeUpdateEvent_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeUpdateEvent_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeUpdateEvent_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeUpdateEvent_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeUpdateEvent_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_routeUpdateEvent_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Event Details": {
+      "tt_cmp_size_eventDetails_icon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetails_forwardIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetails_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetails_iconBodySpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetails_bodyUnitSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetails_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eventDetails_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eventDetails_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eventDetails_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eventDetails_radius": {
+        "value": "{Radius.tt_sys_size_radius_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetails_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_eventDetails_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_eventDetails_sectionSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number"
+      }
+    },
+    "Event Details Title": {
+      "tt_cmp_size_eventDetailsTitle_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number"
+      }
+    },
+    "HOV Lane Restriction": {
+      "tt_cmp_size_hovLaneRestriction_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_hovLaneRestriction_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_hovLaneRestriction_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_hovLaneRestriction_radius": {
+        "value": "{Radius.tt_sys_size_radius_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_hovLaneRestriction_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Exit Number": {
+      "tt_cmp_size_exitNumber_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      }
+    },
+    "Exit Roundabout": {
+      "tt_cmp_size_exitRoundabout_icon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_exitRoundabout_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_exitRoundabout_spacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_exitRoundabout_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_exitRoundabout_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_exitRoundabout_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_exitRoundabout_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Road Speed": {
+      "Large": {
+        "USA": {
+          "tt_cmp_size_roadSpeed_usa_l_height": {
+            "value": "{Scale.tt_sys_size_scale_l}",
+            "type": "number"
+          },
+          "tt_cmp_size_roadSpeed_usa_l_width": {
+            "value": "{Scale.tt_sys_size_scale_l}",
+            "type": "number"
+          },
+          "tt_cmp_size_roadSpeed_usa_l_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_l}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_roadSpeed_usa_l_radius": {
+            "value": "{Radius.tt_sys_size_radius_r}",
+            "type": "number",
+            "description": ""
+          }
+        },
+        "World": {
+          "tt_cmp_size_roadSpeed_world_l_height": {
+            "value": "{Scale.tt_sys_size_scale_l}",
+            "type": "number"
+          },
+          "tt_cmp_size_roadSpeed_world_l_width": {
+            "value": "{Scale.tt_sys_size_scale_l}",
+            "type": "number"
+          },
+          "tt_cmp_size_roadSpeed_world_l_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_l}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_roadSpeed_world_l_radius": {
+            "value": "{Radius.tt_sys_size_radius_full}",
+            "type": "number",
+            "description": ""
+          }
+        }
+      },
+      "Small": {
+        "USA": {
+          "tt_cmp_size_roadSpeed_usa_s_height": {
+            "value": "{Scale.tt_sys_size_scale_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_roadSpeed_usa_s_width": {
+            "value": "{Scale.tt_sys_size_scale_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_roadSpeed_usa_s_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_roadSpeed_usa_s_radius": {
+            "value": "{Radius.tt_sys_size_radius_s}",
+            "type": "number",
+            "description": ""
+          }
+        },
+        "World": {
+          "tt_cmp_size_roadSpeed_world_s_height": {
+            "value": "{Scale.tt_sys_size_scale_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_roadSpeed_world_s_width": {
+            "value": "{Scale.tt_sys_size_scale_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_roadSpeed_world_s_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_roadSpeed_world_s_radius": {
+            "value": "{Radius.tt_sys_size_radius_full}",
+            "type": "number",
+            "description": ""
+          }
+        }
+      }
+    },
+    "Pins": {
+      "Incidents": {
+        "tt_cmp_size_incidentPins_height": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_incidentPins_width": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_incidentPins_incidentIcon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_incidentPins_topPadding": {
+          "value": "{tt_glb_size_6}",
+          "type": "number"
+        }
+      },
+      "Location": {
+        "Persistent POI": {
+          "tt_cmp_size_persistentPoiPins_height": {
+            "value": "{Scale.tt_sys_size_scale_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_persistentPoiPins_width": {
+            "value": "{Scale.tt_sys_size_scale_m}",
+            "type": "number",
+            "description": ""
+          }
+        },
+        "SinglePoint": {
+          "tt_cmp_size_singlePointLocationPins_height": {
+            "value": "{Scale.tt_sys_size_scale_l}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_singlePointLocationPins_width": {
+            "value": "{Scale.tt_sys_size_scale_m}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_singlePointLocationPins_startPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_singlePointLocationPins_endPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_singlePointLocationPins_topPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_r}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_singlePointLocationPins_bottomPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_l}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_singlePointLocationPins_icon": {
+            "value": "{Icon.tt_sys_size_icon_m}",
+            "type": "number"
+          }
+        }
+      },
+      "Upcoming Events": {
+        "tt_cmp_size_upcomingEventPins_height": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_upcomingEventPins_width": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_upcomingEventPins_incidentIcon": {
+          "value": "{Icon.tt_sys_size_icon_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_upcomingEventPins_eventIcon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_upcomingEventPins_topPadding": {
+          "value": "{tt_glb_size_6}",
+          "type": "number"
+        }
+      }
+    },
+    "Instruction Events Group": {
+      "tt_cmp_size_instructionEventsGroup_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_null}",
+        "type": "number"
+      }
+    },
+    "Upcoming Events Group": {
+      "tt_cmp_size_upcomingEventsGroup_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_null}",
+        "type": "number"
+      }
+    },
+    "Road Shields": {
+      "tt_cmp_size_roadShields_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_roadShields_width": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      }
+    },
+    "Chevron": {
+      "2D": {
+        "tt_cmp_size_chevron_2D_height": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_chevron_2D_width": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_chevron_2D_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_xl}",
+          "type": "number",
+          "description": ""
+        }
+      },
+      "3D": {
+        "tt_cmp_size_chevron_3D_height": {
+          "value": "{Scale.tt_sys_size_scale_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_chevron_3D_width": {
+          "value": "{Scale.tt_sys_size_scale_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_chevron_3D_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_xl}",
+          "type": "number",
+          "description": ""
+        }
+      }
+    },
+    "Instruction Events": {
+      "tt_cmp_size_instructionEvents_iconInfoSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_instructionEvents_infoVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_instructionEvents_infoHorizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_instructionEvents_distanceUnitSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_instructionEvents_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_instructionEvents_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_instructionEvents_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_instructionEvents_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_instructionEvents_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_instructionEvents_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_instructionEvents_eventIconWrapper": {
+        "value": "{Icon.tt_sys_size_icon_xxl}",
+        "type": "number"
+      }
+    },
+    "Upcoming Events": {
+      "tt_cmp_size_upcomingEvents_batteryIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_upcomingEvents_amenitiesIcon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_upcomingEvents_iconInfoSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_infoVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_infoHorizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_distanceUnitSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_batteryUnitSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_amenitiesSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_upcomingEvents_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_upcomingEvents_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_upcomingEvents_eventPinWrapper": {
+        "value": "{Icon.tt_sys_size_icon_xxl}",
+        "type": "number"
+      }
+    },
+    "Speed Shield": {
+      "Vertical": {
+        "USA": {
+          "tt_cmp_size_speedShield_usaVertical_verticalSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_speedShield_usaVertical_topPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_usaVertical_bottomPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_s}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_speedShield_usaVertical_radius": {
+            "value": "{Radius.tt_sys_size_radius_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_usaVertical_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_null}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_speedShield_usaVertical_width": {
+            "value": "{Scale.tt_sys_size_scale_xl}",
+            "type": "number"
+          }
+        },
+        "World": {
+          "tt_cmp_size_speedShield_worldVertical_verticalSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_worldVertical_topPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_worldVertical_bottomPadding": {
+            "value": "{Padding.tt_sys_size_padding_vertical_s}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_worldVertical_radius": {
+            "value": "{Radius.tt_sys_size_radius_full}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_speedShield_worldVertical_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_null}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_speedShield_worldVertical_width": {
+            "value": "{Scale.tt_sys_size_scale_xl}",
+            "type": "number"
+          }
+        }
+      },
+      "Horizontal": {
+        "USA": {
+          "tt_cmp_size_speedShield_usaHorizontal_horizontalSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_speedShield_usaHorizontal_startPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_usaHorizontal_endPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_usaHorizontal_radius": {
+            "value": "{Radius.tt_sys_size_radius_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_usaHorizontal_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_null}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_speedShield_usaHorizontal_speedDetailsWidth": {
+            "value": "{Scale.tt_sys_size_scale_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_usaHorizontal_height": {
+            "value": "{Scale.tt_sys_size_scale_xl}",
+            "type": "number"
+          }
+        },
+        "World": {
+          "tt_cmp_size_speedShield_worldHorizontal_horizontalSpacing": {
+            "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_worldHorizontal_startPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_worldHorizontal_endPadding": {
+            "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_worldHorizontal_radius": {
+            "value": "{Radius.tt_sys_size_radius_full}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_speedShield_worldHorizontal_strokeWeight": {
+            "value": "{Weight.tt_sys_size_weight_null}",
+            "type": "number",
+            "description": ""
+          },
+          "tt_cmp_size_speedShield_worldHorizontal_speedDetailsWidth": {
+            "value": "{Scale.tt_sys_size_scale_m}",
+            "type": "number"
+          },
+          "tt_cmp_size_speedShield_worldHorizontal_height": {
+            "value": "{Scale.tt_sys_size_scale_xl}",
+            "type": "number"
+          }
+        }
+      }
+    },
+    "Zone Progress Bar": {
+      "tt_cmp_size_zoneProgressBar_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_zoneProgressBar_chevron": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      }
+    },
+    "Speed Limit": {
+      "tt_cmp_size_speedLimit_l_width": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_speedLimit_l_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_speedLimit_twoLineTopPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_speedLimit_oneLineTopPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_speedLimit_s_width": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_speedLimit_s_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      }
+    },
+    "EV": {
+      "State Of Charge": {
+        "tt_cmp_size_stateOfCharge_icon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_stateOfCharge_iconBodySpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_stateOfCharge_bodyUnitSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+          "type": "number"
+        },
+        "tt_cmp_size_stateOfCharge_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        }
+      },
+      "EV Availability": {
+        "tt_cmp_size_evAvailability_icon": {
+          "value": "{Icon.tt_sys_size_icon_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailability_iconBodySpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailability_bodyUnitSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+          "type": "number"
+        },
+        "tt_cmp_size_evAvailability_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+          "type": "number"
+        }
+      }
+    },
+    "Junction View": {
+      "tt_cmp_size_junctionView_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_junctionView_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_junctionView_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_junctionView_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_junctionView_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      }
+    },
+    "Toll Guidance": {
+      "tt_cmp_size_tollGuidance_minimumHorizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_maximumHorizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_height": {
+        "value": "{Scale.tt_sys_size_scale_xxl}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_minimumWidth": {
+        "value": "{tt_glb_size_12}",
+        "type": "number"
+      },
+      "tt_cmp_size_tollGuidance_maximumWidth": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      }
+    },
+    "Compass": {
+      "tt_cmp_size_compass_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_compass_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_compass_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_compass_width": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_compass_scaleHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_compass_scaleWidth": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_compass_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number"
+      },
+      "tt_cmp_size_compass_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_compass_needleIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_compass_needleNorthIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      }
+    },
+    "Current Street": {
+      "tt_cmp_size_currentStreet_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreet_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreet_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreet_minHeight": {
+        "value": "{Scale.tt_sys_size_scale_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreet_minWidth": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreet_shieldHeight": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreet_shieldSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreet_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreet_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreet_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      }
+    },
+    "Current Street Group": {
+      "tt_cmp_size_currentStreetGroup_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_currentStreetGroup_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number"
+      }
+    }
+  },
+  "Figma Only": {
+    "fo_cmp_size_locationPins_height": {
+      "value": "{Scale.tt_sys_size_scale_m}",
+      "type": "number",
+      "description": ""
+    },
+    "fo_cmp_size_singlePointPins_width": {
+      "value": "{Scale.tt_sys_size_scale_m}",
+      "type": "number",
+      "description": ""
+    },
+    "fo_cmp_size_singlePointLocationPins_openingDot": {
+      "value": "{tt_glb_size_12}",
+      "type": "number"
+    },
+    "Personal Location Pins": {
+      "fo_cmp_size_personalLocationPins_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number",
+        "description": ""
+      },
+      "fo_cmp_size_personalLocationPins_width": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number",
+        "description": ""
+      },
+      "fo_cmp_size_personalLocationPins_icon": {
+        "value": "{Icon.tt_sys_size_icon_xs}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Buttons": {
+      "Groups": {
+        "Suggestions": {
+          "fo_cmp_size_suggestionsButtonGroup_buttonSpacing": {
+            "value": "{Buttons.Groups.Suggestions.tt_cmp_size_suggestionsButtonGroup_buttonSpacing}",
+            "type": "number"
+          }
+        }
+      },
+      "fo_config_suggestionsButtonGroup_item4": {
+        "value": "true",
+        "type": "boolean"
+      },
+      "fo_config_suggestionsButtonGroup_item5": {
+        "value": "true",
+        "type": "boolean"
+      }
+    },
+    "Includes": {
+      "fo_cmp_size_includes_spacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+        "type": "number",
+        "description": ""
+      },
+      "fo_cmp_size_includes_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "fo_cmp_size_includes_icon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number",
+        "description": ""
+      },
+      "fo_cmp_size_includes_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number",
+        "description": ""
+      },
+      "fo_cmp_size_includes_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      },
+      "fo_cmp_size_includes_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Header": {
+      "fo_cmp_size_header_hitAreaOffset": {
+        "value": 12,
+        "type": "number"
+      },
+      "fo_cmp_header_hitAreaSpacing": {
+        "value": 4,
+        "type": "number"
+      }
+    },
+    "Modal": {
+      "fo_cmp_size_modal_menuspacer_width": {
+        "value": 228,
+        "type": "number"
+      },
+      "fo_cmp_size_modal_panelMaxHeight": {
+        "value": 780,
+        "type": "number"
+      }
+    },
+    "Location Details": {
+      "fo_cmp_size_locationDetails_hitAreaTopOffset": {
+        "value": 12,
+        "type": "number"
+      },
+      "fo_cmp_size_locationDetails_hitAreaRightOffset": {
+        "value": 12,
+        "type": "number"
+      }
+    },
+    "Template": {
+      "fo_cmp_size_fullApp_screenWidth": {
+        "value": "{tt_glb_size_375}",
+        "type": "number"
+      },
+      "fo_cmp_size_fullApp_screenHeight": {
+        "value": "{tt_glb_size_812}",
+        "type": "number"
+      },
+      "fo_cmp_size_fullApp_panelWidth": {
+        "value": "{tt_glb_size_375}",
+        "type": "number"
+      },
+      "fo_cmp_size_miniApp_screenWidth": {
+        "value": "{tt_glb_size_375}",
+        "type": "number"
+      },
+      "fo_cmp_size_miniApp_screenHeight": {
+        "value": "{tt_glb_size_812}",
+        "type": "number"
+      },
+      "fo_cmp_size_miniApp_panelWidth": {
+        "value": "{tt_glb_size_375}",
+        "type": "number"
+      },
+      "fo_cmp_size_microApp_screenWidth": {
+        "value": "{tt_glb_size_375}",
+        "type": "number"
+      },
+      "fo_cmp_size_microApp_screenHeight": {
+        "value": "{tt_glb_size_812}",
+        "type": "number"
+      },
+      "fo_cmp_size_microAppNarrow_screenWidth": {
+        "value": "{tt_glb_size_375}",
+        "type": "number"
+      },
+      "fo_cmp_size_microAppNarrow_screenHeight": {
+        "value": "{tt_glb_size_812}",
+        "type": "number"
+      },
+      "fo_cmp_size_microAppTiny_screenWidth": {
+        "value": "{tt_glb_size_360}",
+        "type": "number"
+      },
+      "fo_cmp_size_microAppTiny_screenHeight": {
+        "value": "{tt_glb_size_320}",
+        "type": "number"
+      },
+      "fo_cmp_size_microApp_panelWidth": {
+        "value": "{tt_glb_size_375}",
+        "type": "number"
+      },
+      "fo_cmp_size_microAppNarrow_panelWidth": {
+        "value": "{tt_glb_size_375}",
+        "type": "number"
+      },
+      "fo_cmp_size_microAppNarrow_container_maxHeight": {
+        "value": "{Figma Only.Template.fo_cmp_size_microAppNarrow_screenHeight}*0.6",
+        "type": "number"
+      },
+      "fo_cmp_size_microAppNarrow_topContainer_maxHeight": {
+        "value": "{Figma Only.Template.fo_cmp_size_microAppNarrow_screenHeight}*0.5",
+        "type": "number"
+      },
+      "fo_cmp_size_cluster_screenWidth": {
+        "value": "{tt_glb_size_1280}",
+        "type": "number"
+      },
+      "fo_cmp_size_cluster_screenHeight": {
+        "value": "{tt_glb_size_540}",
+        "type": "number"
+      },
+      "fo_cmp_size_cluster_panelWidth": {
+        "value": "{tt_glb_size_440}",
+        "type": "number"
+      },
+      "fo_cmp_size_hud_screenWidth": {
+        "value": "{tt_glb_size_700}",
+        "type": "number"
+      },
+      "fo_cmp_size_hud_screenHeight": {
+        "value": "{tt_glb_size_360}",
+        "type": "number"
+      },
+      "fo_cmp_size_hud_panelWidth": {
+        "value": "{tt_glb_size_360}",
+        "type": "number"
+      },
+      "fo_cmp_size_mapButtons": {
+        "value": "{Buttons.FABs.FAB.tt_cmp_size_fab_width}",
+        "type": "number"
+      },
+      "fo_cmp_size_mapButtons_hidden": {
+        "value": "{tt_glb_size_null}",
+        "type": "number"
+      },
+      "fo_cmp_size_mapBrowsing_width": {
+        "value": 375,
+        "type": "number"
+      },
+      "fo_cmp_size_mapBrowsing_height": {
+        "value": 812,
+        "type": "number"
+      },
+      "fo_config_mapLandscape": {
+        "value": "true",
+        "type": "boolean"
+      },
+      "fo_config_mapPortrait": {
+        "value": "false",
+        "type": "boolean"
+      }
+    }
+  },
+  "Controls": {
+    "Slider": {
+      "Large": {
+        "tt_cmp_size_slider_l_trackRadius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_progressRadius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_handleRadius": {
+          "value": "{Radius.tt_sys_size_radius_full}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_progressHeight": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_handleHeight": {
+          "value": "{Scale.tt_sys_size_scale_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_trackHeight": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_handleWidth": {
+          "value": "{Scale.tt_sys_size_scale_xs}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_barTextSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_titleUnitSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_l_radius": {
+          "value": "{Radius.tt_sys_size_radius_null}",
+          "type": "number"
+        }
+      },
+      "Small": {
+        "tt_cmp_size_slider_s_trackRadius": {
+          "value": "{Radius.tt_sys_size_radius_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_progressRadius": {
+          "value": "{Radius.tt_sys_size_radius_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_handleRadius": {
+          "value": "{Radius.tt_sys_size_radius_full}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_progressHeight": {
+          "value": "{Scale.tt_sys_size_scale_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_handleHeight": {
+          "value": "{Scale.tt_sys_size_scale_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_trackHeight": {
+          "value": "{Scale.tt_sys_size_scale_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_handleWidth": {
+          "value": "{Scale.tt_sys_size_scale_xxs}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_barTextSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_titleUnitSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_radius": {
+          "value": "{Radius.tt_sys_size_radius_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_slider_s_titleWidth": {
+          "value": "{Scale.tt_sys_size_scale_m}",
+          "type": "number"
+        }
+      }
+    },
+    "Switches": {
+      "tt_cmp_size_switch_handle": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_switch_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_switch_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_switch_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_switch_handleRadius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_switch_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_switch_width": {
+        "value": "{Scale.tt_sys_size_scale_xl}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_switch_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      }
+    },
+    "Handle": {
+      "tt_cmp_size_handle_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_handle_width": {
+        "value": "{Scale.tt_sys_size_scale_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_indicatorHandle_height": {
+        "value": "{Scale.tt_sys_size_scale_s} {Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_interactiveLargeHandle_height": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_handle_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Checkbox": {
+      "tt_cmp_size_checkbox_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_checkbox_width": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_checkbox_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_checkbox_radius": {
+        "value": "{Radius.tt_sys_size_radius_s}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_checkbox_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      }
+    },
+    "Radio": {
+      "tt_cmp_size_radio_height": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_radio_width": {
+        "value": "{Scale.tt_sys_size_scale_r}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_radio_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_radio_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_radio_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      }
+    },
+    "Scroll Bar": {
+      "tt_cmp_size_scrollBar_handleHeight": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_handleWidth": {
+        "value": "{Weight.tt_sys_size_weight_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_handleStroke": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_handleRadius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_trackWidth": {
+        "value": "{Weight.tt_sys_size_weight_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_trackStroke": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_trackRadius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_popoutHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxxl}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_popoutWidth": {
+        "value": "{Scale.tt_sys_size_scale_xxxl}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_popoutStroke": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_scrollBar_radius": {
+        "value": "{Radius.tt_sys_size_radius_l}",
+        "type": "number"
+      }
+    },
+    "SegmentedControl": {
+      "tt_cmp_size_segmentedControl_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_segmentedControl_iconTextSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_segmentedControl_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_segmentedControl_group_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_segmentedControl_radius": {
+        "value": "{Radius.tt_sys_size_radius_full}",
+        "type": "number"
+      },
+      "tt_cmp_size_segmentedControl_height": {
+        "value": "{Scale.tt_sys_size_scale_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_segmentedControl_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_segmentedControl_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      }
+    },
+    "Tab": {
+      "Horizontal": {
+        "tt_cmp_size_tab_horizontal_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_spacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_indicatorWeight": {
+          "value": "{Weight.tt_sys_size_weight_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_height": {
+          "value": "{Scale.tt_sys_size_scale_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_horizontal_indicatorHeight": {
+          "value": "{Scale.tt_sys_size_scale_r}",
+          "type": "number"
+        }
+      },
+      "Vertical": {
+        "tt_cmp_size_tab_vertical_icon": {
+          "value": "{Icon.tt_sys_size_icon_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_vertical_spacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_vertical_indicatorWeight": {
+          "value": "{Weight.tt_sys_size_weight_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_vertical_indicatorWidth": {
+          "value": "{Scale.tt_sys_size_scale_xl}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_tab_vertical_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_vertical_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_vertical_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_vertical_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_vertical_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_tab_vertical_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number"
+        }
+      },
+      "Group": {
+        "tt_cmp_size_tabGroup_spacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_tabGroup_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_tabGroup_radius": {
+          "value": "{Radius.tt_sys_size_radius_r}",
+          "type": "number"
+        },
+        "tt_cmp_size_tabGroup_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_tabGroup_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_tabGroup_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_tabGroup_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_null}",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "Panels": {
+    "Top": {
+      "tt_cmp_size_panel_top_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_panel_top_dockedRadius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_panel_top_floatingRadius": {
+        "value": "{Radius.tt_sys_size_radius_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_panel_top_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_handleTopContainer_interactiveLargeHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_handleTopContainer_interactiveHeight": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_handleTopContainer_interactiveTopPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_handleTopContainer_indicatorHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_handleBottomContainer_interactiveLargeHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_handleBottomContainer_interactiveHeight": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_handleBottomContainer_interactiveBottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_handleBottomContainer_indicatorHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_handleWidth": {
+        "value": "{Scale.tt_sys_size_scale_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_columnSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_contentVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_top_contentGroupVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number"
+      }
+    },
+    "Bottom": {
+      "tt_cmp_size_panel_bottom_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_panel_bottom_dockedRadius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_panel_bottom_floatingRadius": {
+        "value": "{Radius.tt_sys_size_radius_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_panel_bottom_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_handleTopContainer_interactiveLargeHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_handleTopContainer_interactiveHeight": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_handleTopContainer_interactiveTopPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_handleTopContainer_indicatorHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_handleBottomContainer_interactiveLargeHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_handleBottomContainer_interactiveHeight": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_handleBottomContainer_interactiveBottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_handleBottomContainer_indicatorHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_handleWidth": {
+        "value": "{Scale.tt_sys_size_scale_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_columnSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_contentVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottom_contentGroupVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number"
+      }
+    },
+    "Guidance": {
+      "tt_cmp_size_panel_guidance_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_panel_guidance_dockedRadius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_panel_guidance_floatingRadius": {
+        "value": "{Radius.tt_sys_size_radius_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_panel_guidance_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_handleTopContainer_interactiveLargeHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_handleTopContainer_interactiveHeight": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_handleTopContainer_interactiveTopPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_handleTopContainer_indicatorHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_handleBottomContainer_interactiveLargeHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_handleBottomContainer_interactiveHeight": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_handleBottomContainer_interactiveBottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_handleBottomContainer_indicatorHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_handleWidth": {
+        "value": "{Scale.tt_sys_size_scale_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_columnSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_contentVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_guidance_contentGroupVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number"
+      }
+    },
+    "Modal": {
+      "tt_cmp_size_modal_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_modal_floatingRadius": {
+        "value": "{Radius.tt_sys_size_radius_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_modal_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_modal_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_modal_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_modal_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_modal_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_modal_maxWidth": {
+        "value": "{tt_glb_size_1600}",
+        "type": "number"
+      },
+      "tt_cmp_size_modal_dockedRadius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_modal_columnSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xxl}",
+        "type": "number"
+      }
+    },
+    "Dialog": {
+      "Horizontal": {
+        "tt_cmp_size_dialog_horizontal_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_dialog_horizontal_floatingRadius": {
+          "value": "{Radius.tt_sys_size_radius_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_horizontal_verticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_dialog_horizontal_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_horizontal_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_horizontal_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_horizontal_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_horizontal_horizontalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_dialog_horizontal_dockedRadius": {
+          "value": "{Radius.tt_sys_size_radius_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_horizontal_maxWidth": {
+          "value": "{tt_glb_size_360}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_horizontal_minHeight": {
+          "value": "{tt_glb_size_224}",
+          "type": "number"
+        }
+      },
+      "Vertical": {
+        "tt_cmp_size_dialog_vertical_strokeWeight": {
+          "value": "{Weight.tt_sys_size_weight_null}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_dialog_vertical_floatingRadius": {
+          "value": "{Radius.tt_sys_size_radius_l}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_vertical_dockedRadius": {
+          "value": "{Radius.tt_sys_size_radius_null}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_vertical_startPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_vertical_endPadding": {
+          "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_vertical_topPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_vertical_bottomPadding": {
+          "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_vertical_verticalSpacing": {
+          "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+          "type": "number",
+          "description": ""
+        },
+        "tt_cmp_size_dialog_vertical_maxWidth": {
+          "value": "{tt_glb_size_360}",
+          "type": "number"
+        },
+        "tt_cmp_size_dialog_vertical_minHeight": {
+          "value": "{tt_glb_size_224}",
+          "type": "number"
+        }
+      }
+    },
+    "Full Screen": {
+      "tt_cmp_size_fullScreen_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_fullScreen_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_fullScreen_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_fullScreen_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_fullScreen_contentVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_fullScreen_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number",
+        "description": ""
+      },
+      "tt_cmp_size_fullScreen_contentGroupVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number",
+        "description": ""
+      }
+    },
+    "Footer": {
+      "tt_cmp_size_panel_footer_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_dockedRadius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_floatingRadius": {
+        "value": "{Radius.tt_sys_size_radius_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_handleTopContainer_interactiveLargeHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_handleTopContainer_interactiveHeight": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_handleTopContainer_interactiveTopPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_handleTopContainer_indicatorHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_handleBottomContainer_interactiveLargeHeight": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_handleBottomContainer_interactiveHeight": {
+        "value": "{Scale.tt_sys_size_scale_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_handleBottomContainer_interactiveBottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_handleBottomContainer_indicatorHeight": {
+        "value": "{Scale.tt_sys_size_scale_xxxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_handleWidth": {
+        "value": "{Scale.tt_sys_size_scale_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_contentVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_footer_contentGroupVerticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_s}",
+        "type": "number"
+      }
+    },
+    "Container": {
+      "tt_cmp_size_panel_container_width": {
+        "value": "{tt_glb_size_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_container_maxHeight": {
+        "value": "{tt_glb_size_1000}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_topContainer_maxHeight": {
+        "value": "{tt_glb_size_850}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_topContainer_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottomContainer_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_topContainer_dockedRadius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_topContainer_floatingRadius": {
+        "value": "{Radius.tt_sys_size_radius_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottomContainer_dockedRadius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_panel_bottomContainer_floatingRadius": {
+        "value": "{Radius.tt_sys_size_radius_l}",
+        "type": "number"
+      }
+    }
+  },
+  "Screens": {
+    "Map View": {
+      "tt_cmp_size_mapView_withFloatingPanel_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_withFloatingPanel_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_withFloatingPanel_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_withFloatingPanel_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_mapUiArea_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_mapUiArea_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_mapUiArea_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_mapUiArea_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_uiSafeArea_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_uiSafeArea_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_uiSafeArea_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_uiSafeArea_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_redZoneButtons_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_redZoneButtons_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_redZoneButtons_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_redZoneButtons_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_snackBar_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_snackBar_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_snackBar_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_snackBar_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xl}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_watermarkHeight": {
+        "value": "{Icon.tt_sys_size_icon_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_withWatermark_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_withWatermark_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_mapView_withWatermark_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_xxs}",
+        "type": "number"
+      }
+    }
+  },
+  "ACI": {
+    "Pins": {
+      "tt_cmp_size_aciPins_height": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_aciPins_width": {
+        "value": "{Scale.tt_sys_size_scale_l}",
+        "type": "number"
+      },
+      "tt_cmp_size_aciPins_icon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      }
+    }
+  },
+  "Routing": {
+    "Journey Summary": {
+      "tt_cmp_size_journeySummary_icon": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_bodyUnitSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xxs}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_infoHorizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_radius": {
+        "value": "{Radius.tt_sys_size_radius_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_journeySummary_iconInfoSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_xs}",
+        "type": "number"
+      }
+    },
+    "Restricted Route Information": {
+      "tt_cmp_size_restrictedRouteInformation_rightIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_restrictedRouteInformation_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_restrictedRouteInformation_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_restrictedRouteInformation_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_restrictedRouteInformation_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_restrictedRouteInformation_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_restrictedRouteInformation_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_restrictedRouteInformation_radius": {
+        "value": "{Radius.tt_sys_size_radius_r}",
+        "type": "number"
+      }
+    },
+    "Route Includes": {
+      "tt_cmp_size_routeIncludes_rightIcon": {
+        "value": "{Icon.tt_sys_size_icon_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeIncludes_includeIcons": {
+        "value": "{Icon.tt_sys_size_icon_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeIncludes_horizontalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeIncludes_iconSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeIncludes_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeIncludes_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_m}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeIncludes_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeIncludes_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_s}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeIncludes_strokeWeight": {
+        "value": "{Weight.tt_sys_size_weight_null}",
+        "type": "number"
+      },
+      "tt_cmp_size_routeIncludes_radius": {
+        "value": "{Radius.tt_sys_size_radius_r}",
+        "type": "number"
+      }
+    }
+  },
+  "Feedback Plugin": {
+    "tt_cmp_size_feedbackPlugin_width": {
+      "value": "{tt_glb_size_360}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_height": {
+      "value": "{Scale.tt_sys_size_scale_xl}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_leftIcon": {
+      "value": "{Icon.tt_sys_size_icon_m}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_rightIcon": {
+      "value": "{Icon.tt_sys_size_icon_m}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_startPadding": {
+      "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_endPadding": {
+      "value": "{Padding.tt_sys_size_padding_horizontal_xl}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_horizontalSpacing": {
+      "value": "{Spacing.tt_sys_size_spacing_horizontal_xl}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_iconTextSpacing": {
+      "value": "{Spacing.tt_sys_size_spacing_horizontal_r}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_iconsSpacing": {
+      "value": "{Spacing.tt_sys_size_spacing_horizontal_l}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_radius": {
+      "value": "{Radius.tt_sys_size_radius_l}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_strokeWeight": {
+      "value": "{Weight.tt_sys_size_weight_s}",
+      "type": "number"
+    },
+    "tt_cmp_size_feedbackPlugin_dividerHeight": {
+      "value": "{Scale.tt_sys_size_scale_r}",
+      "type": "number"
+    }
+  },
+  "Panel Position": {
+    "tt_cmp_config_panelPosition_docked": {
+      "value": "true",
+      "type": "boolean"
+    }
+  }
+}

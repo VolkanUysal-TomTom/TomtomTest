@@ -1,0 +1,246 @@
+{
+  "Panels": {
+    "Top": {
+      "fo_cmp_size_panel_top_topPadding": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_topPadding}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_bottomPadding": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_bottomPadding}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_topLeftRadius": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_topRightRadius": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_bottomLeftRadius": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_bottomRightRadius": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_floatingRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_topAttached_topLeftRadius": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_topAttached_topRightRadius": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_topAttached_bottomLeftRadius": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_topAttached_bottomRightRadius": {
+        "value": "{Panels.Top.tt_cmp_size_panel_top_dockedRadius}",
+        "type": "number"
+      }
+    },
+    "Bottom": {
+      "fo_cmp_size_panel_bottom_topPadding": {
+        "value": "{Panels.Bottom.tt_cmp_size_panel_bottom_topPadding}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_bottom_bottomPadding": {
+        "value": "{Panels.Bottom.tt_cmp_size_panel_bottom_bottomPadding}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_bottom_topLeftRadius": {
+        "value": "{Panels.Bottom.tt_cmp_size_panel_bottom_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_bottom_topRightRadius": {
+        "value": "{Panels.Bottom.tt_cmp_size_panel_bottom_floatingRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_bottom_bottomLeftRadius": {
+        "value": "{Panels.Bottom.tt_cmp_size_panel_bottom_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_bottom_bottomRightRadius": {
+        "value": "{Panels.Bottom.tt_cmp_size_panel_bottom_dockedRadius}",
+        "type": "number"
+      }
+    },
+    "Guidance": {
+      "fo_cmp_size_panel_guidance_topPadding": {
+        "value": "{Panels.Guidance.tt_cmp_size_panel_guidance_topPadding}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_guidance_bottomPadding": {
+        "value": "{Panels.Guidance.tt_cmp_size_panel_guidance_bottomPadding}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_topLeftRadius": {
+        "value": "{Panels.Guidance.tt_cmp_size_panel_guidance_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_topRightRadius": {
+        "value": "{Panels.Guidance.tt_cmp_size_panel_guidance_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_bottomLeftRadius": {
+        "value": "{Panels.Guidance.tt_cmp_size_panel_guidance_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_bottomRightRadius": {
+        "value": "{Panels.Guidance.tt_cmp_size_panel_guidance_floatingRadius}",
+        "type": "number"
+      }
+    },
+    "Modal": {
+      "fo_cmp_size_panel_top_topLeftRadius": {
+        "value": "{Panels.Modal.tt_cmp_size_modal_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_topRightRadius": {
+        "value": "{Panels.Modal.tt_cmp_size_modal_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_bottomLeftRadius": {
+        "value": "{Panels.Modal.tt_cmp_size_modal_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_top_bottomRightRadius": {
+        "value": "{Panels.Modal.tt_cmp_size_modal_dockedRadius}",
+        "type": "number"
+      }
+    },
+    "Dialog": {
+      "Horizontal": {
+        "fo_cmp_size_panel_top_topLeftRadius": {
+          "value": "{Panels.Dialog.Horizontal.tt_cmp_size_dialog_horizontal_dockedRadius}",
+          "type": "number"
+        },
+        "fo_cmp_size_panel_top_topRightRadius": {
+          "value": "{Panels.Dialog.Horizontal.tt_cmp_size_dialog_horizontal_dockedRadius}",
+          "type": "number"
+        },
+        "fo_cmp_size_panel_top_bottomLeftRadius": {
+          "value": "{Panels.Dialog.Horizontal.tt_cmp_size_dialog_horizontal_dockedRadius}",
+          "type": "number"
+        },
+        "fo_cmp_size_panel_top_bottomRightRadius": {
+          "value": "{Panels.Dialog.Horizontal.tt_cmp_size_dialog_horizontal_dockedRadius}",
+          "type": "number"
+        }
+      },
+      "Vertical": {
+        "fo_cmp_size_panel_top_topLeftRadius": {
+          "value": "{Panels.Dialog.Vertical.tt_cmp_size_dialog_vertical_dockedRadius}",
+          "type": "number"
+        },
+        "fo_cmp_size_panel_top_topRightRadius": {
+          "value": "{Panels.Dialog.Vertical.tt_cmp_size_dialog_vertical_dockedRadius}",
+          "type": "number"
+        },
+        "fo_cmp_size_panel_top_bottomLeftRadius": {
+          "value": "{Panels.Dialog.Vertical.tt_cmp_size_dialog_vertical_dockedRadius}",
+          "type": "number"
+        },
+        "fo_cmp_size_panel_top_bottomRightRadius": {
+          "value": "{Panels.Dialog.Vertical.tt_cmp_size_dialog_vertical_dockedRadius}",
+          "type": "number"
+        }
+      }
+    },
+    "Full Screen": {
+      "fo_cmp_size_fullScreen_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "fo_cmp_size_fullScreen_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "fo_cmp_size_fullScreen_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "fo_cmp_size_fullScreen_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      }
+    },
+    "Footer": {
+      "fo_cmp_size_panel_footer_topPadding": {
+        "value": "{Panels.Footer.tt_cmp_size_panel_footer_topPadding}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_footer_bottomPadding": {
+        "value": "{Panels.Footer.tt_cmp_size_panel_footer_bottomPadding}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_bottom_topLeftRadius": {
+        "value": "{Panels.Footer.tt_cmp_size_panel_footer_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_bottom_topRightRadius": {
+        "value": "{Panels.Footer.tt_cmp_size_panel_footer_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_bottom_bottomLeftRadius": {
+        "value": "{Panels.Footer.tt_cmp_size_panel_footer_dockedRadius}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_bottom_bottomRightRadius": {
+        "value": "{Panels.Footer.tt_cmp_size_panel_footer_floatingRadius}",
+        "type": "number"
+      }
+    },
+    "Container": {
+      "fo_cmp_size_panel_container_maxHeight": {
+        "value": "{Panels.Container.tt_cmp_size_panel_container_maxHeight}",
+        "type": "number"
+      },
+      "fo_cmp_size_panel_topContainer_maxHeight": {
+        "value": "{Panels.Container.tt_cmp_size_panel_topContainer_maxHeight}",
+        "type": "number"
+      }
+    }
+  },
+  "Screens": {
+    "Map View": {
+      "fo_cmp_size_mapView_withFloatingPanel_startPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "fo_cmp_size_mapView_withFloatingPanel_endPadding": {
+        "value": "{Screens.Map View.tt_cmp_size_mapView_withFloatingPanel_endPadding}",
+        "type": "number"
+      },
+      "fo_cmp_size_mapView_withFloatingPanel_topPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "fo_cmp_size_mapView_withFloatingPanel_bottomPadding": {
+        "value": "{Padding.tt_sys_size_padding_vertical_null}",
+        "type": "number"
+      },
+      "fo_cmp_size_mapView_withStretchedFloatingPanel_endPadding": {
+        "value": "{Padding.tt_sys_size_padding_horizontal_null}",
+        "type": "number"
+      },
+      "fo_cmp_size_mapView_attachedPanels_verticalSpacing": {
+        "value": "{Spacing.tt_sys_size_spacing_vertical_null}",
+        "type": "number"
+      }
+    }
+  },
+  "Panel Position": {
+    "fo_config_collapsiblePanel": {
+      "value": "true",
+      "type": "boolean"
+    },
+    "fo_config_collapsiblePanel_content": {
+      "value": "true",
+      "type": "boolean"
+    }
+  }
+}

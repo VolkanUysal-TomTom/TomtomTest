@@ -1,0 +1,644 @@
+{
+  "Buttons": {
+    "Contained": {
+      "tt_cmp_effect_containedButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "Tertiary": {
+        "tt_cmp_effect_containedButton_tertiary_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Chip": {
+        "tt_cmp_effect_chip_unselected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        },
+        "tt_cmp_effect_chip_selected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "Map Layer Button": {
+      "tt_cmp_effect_mapLayerButton_shadow": {
+        "value": "{tt_sys_effect_shadow_heavy}",
+        "type": "boxShadow"
+      }
+    },
+    "List Item": {
+      "tt_cmp_effect_listItemButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "List Group": {
+      "tt_cmp_effect_listGroupButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Quick Action": {
+      "tt_cmp_effect_quickActionButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "FABs": {
+      "FAB": {
+        "tt_cmp_effect_fabButton_shadow": {
+          "value": "{tt_sys_effect_shadow_regular}",
+          "type": "boxShadow"
+        },
+        "tt_cmp_effect_fabButtonGroup_shadow": {
+          "value": "{tt_sys_effect_shadow_regular}",
+          "type": "boxShadow"
+        }
+      },
+      "FAB Toggle": {
+        "Unselected": {
+          "tt_cmp_effect_fabToggleButton_unselected_shadow": {
+            "value": "{tt_sys_effect_shadow_regular}",
+            "type": "boxShadow"
+          }
+        },
+        "Selected": {
+          "tt_cmp_effect_fabButton_selected_shadow": {
+            "value": "{tt_sys_effect_shadow_glow}",
+            "type": "boxShadow"
+          }
+        }
+      },
+      "FAB Multi Toggle": {
+        "Unselected": {
+          "tt_cmp_effect_fabMultiToggleButton_unselected_shadow": {
+            "value": "{tt_sys_effect_shadow_regular}",
+            "type": "boxShadow"
+          }
+        },
+        "Selected": {
+          "tt_cmp_effect_fabMultiButton_selected_shadow": {
+            "value": "{tt_sys_effect_shadow_regular}",
+            "type": "boxShadow"
+          }
+        }
+      },
+      "FAB Charge Finder": {
+        "Unselected": {
+          "tt_cmp_effect_fabChargeFinderButton_unselected_shadow": {
+            "value": "{tt_sys_effect_shadow_regular}",
+            "type": "boxShadow"
+          }
+        },
+        "Selected": {
+          "tt_cmp_effect_fabChargeFinderButton_selected_shadow": {
+            "value": "{tt_sys_effect_shadow_evGlow}",
+            "type": "boxShadow"
+          }
+        }
+      }
+    },
+    "Route": {
+      "tt_cmp_effect_routeOptionButton_selected_shadow": {
+        "value": "{tt_sys_effect_shadow_regular}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_routeOptionButton_unselected_shadow": {
+        "value": "{tt_sys_effect_shadow_regular}",
+        "type": "boxShadow"
+      }
+    },
+    "Grid Toggle": {
+      "tt_cmp_effect_gridToggleButton_selected_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_gridToggleButton_unselected_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Grid": {
+      "tt_cmp_effect_gridButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Image Card": {
+      "tt_cmp_effect_imageCardButton_selected_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_imageCardButton_unselected_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Suggestions": {
+      "tt_cmp_effect_suggestionButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Quick Routing": {
+      "tt_cmp_effect_quickRoutingButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "End Route": {
+      "tt_cmp_effect_endRouteButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Filters": {
+      "tt_cmp_effect_filterButton_unselected_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_filterButton_selected_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    }
+  },
+  "List Items": {
+    "Menu & Settings": {
+      "Menu Item": {
+        "tt_cmp_effect_menuItem_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Settings Item": {
+        "tt_cmp_effect_settingsItem_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "Search Results Item": {
+      "tt_cmp_effect_searchResultsItem_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Information Item": {
+      "tt_cmp_effect_informationItem_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Location": {
+      "EV Availability": {
+        "tt_cmp_effect_evAvailabilityItem_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "Routing": {
+      "Route Overview Items": {
+        "tt_cmp_effect_routingStartItem_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        },
+        "tt_cmp_effect_routingLocationItem_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        },
+        "tt_cmp_effect_routingConnectionItem_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        },
+        "tt_cmp_effect_routingEditItem_unselected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        },
+        "tt_cmp_effect_routingEditItem_selected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Route Option Items": {
+        "tt_cmp_effect_routeOptionItem_selected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        },
+        "tt_cmp_effect_routeOptionItem_unselected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "Expandable Content": {
+      "Opening Hours": {
+        "tt_cmp_effect_openingHoursItem_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    }
+  },
+  "Headers": {
+    "Search Input": {
+      "tt_cmp_effect_searchInput_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Header": {
+      "tt_cmp_effect_header_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Arrival Header": {
+      "tt_cmp_effect_arrivalHeader_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Event Details Header": {
+      "tt_cmp_effect_eventDetailsHeader_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    }
+  },
+  "Guidance": {
+    "NIP": {
+      "tt_cmp_effect_nip_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Lane Guidance": {
+      "tt_cmp_effect_laneGuidance_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Then Instructions": {
+      "tt_cmp_effect_thenInstruction_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Current Street": {
+      "tt_cmp_effect_currentStreet_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Compass": {
+      "tt_cmp_effect_compass_shadow": {
+        "value": "{tt_sys_effect_shadow_regular}",
+        "type": "boxShadow"
+      }
+    },
+    "Toll Guidance": {
+      "tt_cmp_effect_tollGuidance_surface_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_tollGuidance_highlightedLane_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_tollGuidance_lowlightedLane_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "ETA": {
+      "tt_cmp_effect_eta_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Activating Route Event": {
+      "tt_cmp_effect_routeActivateEvent_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Rerouting Event": {
+      "tt_cmp_effect_routeUpdateEvent_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Event Details": {
+      "tt_cmp_effect_eventDetails_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Speed Shield": {
+      "tt_cmp_effect_speedShield_shadow": {
+        "value": "{tt_sys_effect_shadow_heavy}",
+        "type": "boxShadow"
+      }
+    },
+    "Instruction Events": {
+      "tt_cmp_effect_instructionEvents_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Upcoming Events": {
+      "Slightly Speeding": {
+        "tt_cmp_effect_upcomingEvents_slightlySpeeding_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Speeding": {
+        "tt_cmp_effect_upcomingEvents_speeding_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Neutral": {
+        "tt_cmp_effect_upcomingEvents_neutral_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "Zone Progress": {
+      "tt_cmp_effect_zoneProgressBar_shadow_track": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_zoneProgressBar_shadow_chevron": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Chevron": {
+      "tt_cmp_effect_chevron_shadow": {
+        "value": "{tt_sys_effect_shadow_heavy}",
+        "type": "boxShadow"
+      }
+    },
+    "Speed Limit": {
+      "tt_cmp_size_speedLimit_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Junction View": {
+      "tt_cmp_effect_junctionView_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    }
+  },
+  "General UI": {
+    "Input Fields": {
+      "tt_cmp_effect_inputField_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Spinner Message": {
+      "tt_cmp_effect_spinnerMessage_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    }
+  },
+  "Notification Content": {
+    "Banner": {
+      "tt_cmp_effect_banner_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_bannerAlert_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Snack Bar": {
+      "tt_cmp_effect_snackBar_shadow": {
+        "value": "{tt_sys_effect_shadow_heavy}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_snackBarHighlight_shadow": {
+        "value": "{tt_sys_effect_shadow_heavy}",
+        "type": "boxShadow"
+      }
+    }
+  },
+  "Location": {
+    "Location Details": {
+      "tt_cmp_effect_locationDetails_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Information Pill": {
+      "tt_cmp_effect_informationPill_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Status Pill": {
+      "tt_cmp_effect_statusPill_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Parking Trend": {
+      "tt_cmp_effect_parkingTrend_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Footer": {
+      "tt_cmp_effect_footerInformation_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_footerContainedButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_footerQuickActionButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_footerSuggestionButton_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    }
+  },
+  "Controls": {
+    "Slider": {
+      "tt_cmp_effect_slider_shadow_handle": {
+        "value": "{tt_sys_effect_shadow_light}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_slider_shadow_track": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Switches": {
+      "tt_cmp_effect_switches_shadow_handle": {
+        "value": "{tt_sys_effect_shadow_light}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_switches_shadow_surface": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Checkbox": {
+      "tt_cmp_effect_checkbox_shadow_icon": {
+        "value": "{tt_sys_effect_shadow_light}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_checkbox_shadow_surface": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Radio": {
+      "tt_cmp_effect_radio_shadow_icon": {
+        "value": "{tt_sys_effect_shadow_light}",
+        "type": "boxShadow"
+      },
+      "tt_cmp_effect_radio_shadow_surface": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Scroll Bar": {
+      "Inactive": {
+        "tt_cmp_effect_scrollBar_inactive_handle_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        },
+        "tt_cmp_effect_scrollBar_inactive_track_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Active": {
+        "tt_cmp_effect_scrollBar_active_handle_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        },
+        "tt_cmp_effect_scrollBar_active_track_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "Segmented Controls": {
+      "Selected": {
+        "tt_cmp_effect_segmentedControl_selected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Unselected": {
+        "tt_cmp_effect_segmentedControl_unselected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Group": {
+        "tt_cmp_effect_segmentedControl_group_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    },
+    "Tab": {
+      "Selected": {
+        "tt_cmp_effect_tab_selected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Unselected": {
+        "tt_cmp_effect_tab_unselected_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      },
+      "Group": {
+        "tt_cmp_effect_tabGroup_shadow": {
+          "value": "{tt_sys_effect_shadow_null}",
+          "type": "boxShadow"
+        }
+      }
+    }
+  },
+  "Panels": {
+    "Top": {
+      "tt_cmp_effect_panel_shadow_top": {
+        "value": "{tt_sys_effect_shadow_heavy}",
+        "type": "boxShadow"
+      }
+    },
+    "Bottom": {
+      "tt_cmp_effect_panel_shadow_bottom": {
+        "value": "{tt_sys_effect_shadow_heavy}",
+        "type": "boxShadow"
+      }
+    },
+    "Footer": {
+      "tt_cmp_effect_panel_shadow_footer": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Modal": {
+      "tt_cmp_effect_panel_shadow_modal": {
+        "value": "{tt_sys_effect_shadow_heavy}",
+        "type": "boxShadow"
+      }
+    },
+    "Dialog": {
+      "tt_cmp_effect_panel_shadow_dialog": {
+        "value": "{tt_sys_effect_shadow_heavy}",
+        "type": "boxShadow"
+      }
+    }
+  },
+  "Route": {
+    "Journey Summary": {
+      "tt_cmp_effect_journeySummary_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Restricted Route Information": {
+      "tt_cmp_effect_restrictedRouteInformation_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    },
+    "Route Includes": {
+      "tt_cmp_effect_routeIncludes_shadow": {
+        "value": "{tt_sys_effect_shadow_null}",
+        "type": "boxShadow"
+      }
+    }
+  },
+  "Feedback Plugin": {
+    "tt_cmp_effect_feedbackPlugin_shadow": {
+      "value": "{tt_sys_effect_shadow_heavy}",
+      "type": "boxShadow"
+    }
+  }
+}

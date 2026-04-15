@@ -1,0 +1,95 @@
+{
+  "Spacing": {
+    "tt_sys_size_spacing_vertical_null": {
+      "value": "{tt_glb_size_null}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_xxxs": {
+      "value": "{tt_glb_size_2}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_xxs": {
+      "value": "{tt_glb_size_4}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_xs": {
+      "value": "{tt_glb_size_8}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_s": {
+      "value": "{tt_glb_size_12}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_r": {
+      "value": "{tt_glb_size_16}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_m": {
+      "value": "{tt_glb_size_20}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_l": {
+      "value": "{tt_glb_size_24}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_xl": {
+      "value": "{tt_glb_size_32}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_xxl": {
+      "value": "{tt_glb_size_40}",
+      "type": "number"
+    },
+    "tt_sys_size_spacing_vertical_xxxl": {
+      "value": "{tt_glb_size_52}",
+      "type": "number"
+    }
+  },
+  "Padding": {
+    "tt_sys_size_padding_vertical_null": {
+      "value": "{tt_glb_size_null}",
+      "type": "number",
+      "description": ""
+    },
+    "tt_sys_size_padding_vertical_xxxs": {
+      "value": "{tt_glb_size_2}",
+      "type": "number"
+    },
+    "tt_sys_size_padding_vertical_xxs": {
+      "value": "{tt_glb_size_4}",
+      "type": "number"
+    },
+    "tt_sys_size_padding_vertical_xs": {
+      "value": "{tt_glb_size_8}",
+      "type": "number"
+    },
+    "tt_sys_size_padding_vertical_s": {
+      "value": "{tt_glb_size_12}",
+      "type": "number"
+    },
+    "tt_sys_size_padding_vertical_r": {
+      "value": "{tt_glb_size_16}",
+      "type": "number"
+    },
+    "tt_sys_size_padding_vertical_m": {
+      "value": "{tt_glb_size_20}",
+      "type": "number"
+    },
+    "tt_sys_size_padding_vertical_l": {
+      "value": "{tt_glb_size_24}",
+      "type": "number"
+    },
+    "tt_sys_size_padding_vertical_xl": {
+      "value": "{tt_glb_size_32}",
+      "type": "number"
+    },
+    "tt_sys_size_padding_vertical_xxl": {
+      "value": "{tt_glb_size_40}",
+      "type": "number"
+    },
+    "tt_sys_size_padding_vertical_xxxl": {
+      "value": "{tt_glb_size_52}",
+      "type": "number"
+    }
+  }
+}

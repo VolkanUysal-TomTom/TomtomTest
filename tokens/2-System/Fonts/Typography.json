@@ -1,0 +1,148 @@
+{
+  "Display": {
+    "tt_sys_font_display_xxxl": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xxl}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_display_xxl": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xl}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_display_l": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_l}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_display_m": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_m}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_display_r": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_r}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_display_s": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_s}"
+      },
+      "type": "typography"
+    }
+  },
+  "Title": {
+    "tt_sys_font_title_m": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_r}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_title_r": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xs}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_title_s": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xxs}"
+      },
+      "type": "typography"
+    }
+  },
+  "Subtitle": {
+    "tt_sys_font_subtitle_r": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xs}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_subtitle_s": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xxs}"
+      },
+      "type": "typography"
+    }
+  },
+  "Body": {
+    "tt_sys_font_body_l": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_regular}",
+        "fontSize": "{Font Size.tt_sys_fontSize_s}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_body_m": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_regular}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xs}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_body_r": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_regular}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xxs}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_body_s": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_regular}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xxxs}"
+      },
+      "type": "typography"
+    }
+  },
+  "Label": {
+    "tt_sys_font_label_r": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_s}"
+      },
+      "type": "typography"
+    },
+    "tt_sys_font_label_s": {
+      "value": {
+        "fontFamily": "{tt_glb_font_family}",
+        "fontWeight": "{tt_glb_font_weight_bold}",
+        "fontSize": "{Font Size.tt_sys_fontSize_xs}"
+      },
+      "type": "typography"
+    }
+  }
+}

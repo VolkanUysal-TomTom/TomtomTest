@@ -1,0 +1,832 @@
+{
+  "Guidance": {
+    "NIP": {
+      "tt_cmp_font_nip_distance": {
+        "value": "{Display.tt_sys_font_display_l}",
+        "type": "typography"
+      },
+      "tt_cmp_font_nip_label": {
+        "value": "{Display.tt_sys_font_display_l}",
+        "type": "typography"
+      },
+      "tt_cmp_font_nip_towards": {
+        "value": "{Display.tt_sys_font_display_s}",
+        "type": "typography"
+      },
+      "tt_cmp_font_nip_body": {
+        "value": "{Body.tt_sys_font_body_l}",
+        "type": "typography"
+      }
+    },
+    "ETA": {
+      "tt_cmp_font_eta_title": {
+        "value": "{Display.tt_sys_font_display_l}",
+        "type": "typography"
+      },
+      "tt_cmp_font_eta_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_eta_label": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_eta_unit": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Then Instruction": {
+      "tt_cmp_font_thenInstruction_title": {
+        "value": "{Title.tt_sys_font_title_m}",
+        "type": "typography"
+      }
+    },
+    "Toll Guidance": {
+      "tt_cmp_font_tollGuidance_body": {
+        "value": "{Body.tt_sys_font_body_r}",
+        "type": "typography"
+      }
+    },
+    "Rerouting Event": {
+      "tt_cmp_font_routeUpdateEvent_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_routeUpdateEvent_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Event Details": {
+      "tt_cmp_font_eventDetails_title": {
+        "value": "{Title.tt_sys_font_title_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_eventDetails_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_eventDetails_unit": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Event Details Title": {
+      "tt_cmp_font_eventDetailsTitle_title": {
+        "value": "{Display.tt_sys_font_display_l}",
+        "type": "typography"
+      }
+    },
+    "Instruction Events": {
+      "tt_cmp_font_instructionEvents_distance": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_instructionEvents_distanceUnit": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_instructionEvents_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Upcoming Events": {
+      "tt_cmp_font_upcomingEvents_distance": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_upcomingEvents_distanceUnit": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_upcomingEvents_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_upcomingEvents_bodyUnit": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_upcomingEvents_battery": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_upcomingEvents_batteryUnit": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_upcomingEvents_amenities": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Road Speed": {
+      "tt_cmp_font_roadSpeed_l_title": {
+        "value": "{Display.tt_sys_font_display_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_roadSpeed_s_title": {
+        "value": "{Display.tt_sys_font_display_s}",
+        "type": "typography"
+      }
+    },
+    "Speed Shield": {
+      "tt_cmp_font_speedShield_vertical_title": {
+        "value": "{Display.tt_sys_font_display_l}",
+        "type": "typography"
+      },
+      "tt_cmp_font_speedShield_vertical_body": {
+        "value": "{Body.tt_sys_font_body_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_speedShield_horizontal_title": {
+        "value": "{Display.tt_sys_font_display_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_speedShield_horizontal_body": {
+        "value": "{Body.tt_sys_font_body_s}",
+        "type": "typography"
+      }
+    },
+    "HOV Lane Restriction": {
+      "tt_cmp_font_hovLaneRestriction_title": {
+        "value": "{Display.tt_sys_font_display_s}",
+        "type": "typography"
+      }
+    },
+    "Exit Numbers": {
+      "tt_cmp_font_exitNumber_unit": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_exitNumber_title": {
+        "value": "{Display.tt_sys_font_display_s}",
+        "type": "typography"
+      }
+    },
+    "Exit Roundabout": {
+      "tt_cmp_font_exitRoundabout_unit": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_exitRoundabout_title": {
+        "value": "{Display.tt_sys_font_display_s}",
+        "type": "typography"
+      }
+    },
+    "Compass": {
+      "tt_cmp_font_compass_title": {
+        "value": "{Display.tt_sys_font_display_s}",
+        "type": "typography"
+      }
+    },
+    "Current Street": {
+      "tt_cmp_font_currentStreet_title": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Road Shields": {
+      "tt_cmp_font_roadShield_label": {
+        "value": "{Display.tt_sys_font_display_s}",
+        "type": "typography"
+      }
+    },
+    "Speed Limit": {
+      "tt_cmp_font_speedLimit_title": {
+        "value": "{Display.tt_sys_font_display_m}",
+        "type": "typography"
+      }
+    },
+    "EV": {
+      "State Of Charge": {
+        "tt_cmp_font_stateOfCharge_body": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        },
+        "tt_cmp_font_stateOfCharge_unit": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        }
+      },
+      "EV Availability": {
+        "tt_cmp_font_evAvailability_body": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        },
+        "tt_cmp_font_evAvailability_unit": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        }
+      }
+    }
+  },
+  "Figma Only": {
+    "tt_cmp_font_speedLimit_3digitsTitle": {
+      "value": "{Display.tt_sys_font_display_r}",
+      "type": "typography"
+    }
+  },
+  "Buttons": {
+    "Uncontained": {
+      "tt_cmp_font_uncontainedButton_l_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_uncontainedButton_l_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_uncontainedButton_s_label": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      },
+      "tt_cmp_font_uncontainedButton_s_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Contained": {
+      "tt_cmp_font_containedButton_primary_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_containedButton_secondary_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_containedButton_decline_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_containedButton_accept_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      },
+      "Tertiary": {
+        "tt_cmp_font_containedButton_tertiary_label": {
+          "value": "{Label.tt_sys_font_label_r}",
+          "type": "typography"
+        }
+      },
+      "Chip": {
+        "tt_cmp_font_chip_label": {
+          "value": "{Label.tt_sys_font_label_s}",
+          "type": "typography"
+        }
+      }
+    },
+    "FABs": {
+      "Auto Confirm": {
+        "tt_cmp_font_fabAutoConfirmButton_label": {
+          "value": "{Label.tt_sys_font_label_s}",
+          "type": "typography"
+        }
+      },
+      "FAB": {
+        "tt_cmp_font_fabButton_label": {
+          "value": "{Label.tt_sys_font_label_s}",
+          "type": "typography"
+        }
+      }
+    },
+    "Quick Routing": {
+      "tt_cmp_font_quickRoutingButton_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      }
+    },
+    "Quick Action": {
+      "tt_cmp_font_quickActionButton_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      }
+    },
+    "List Item": {
+      "tt_cmp_font_listItemButton_label": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      }
+    },
+    "List Group": {
+      "tt_cmp_font_listGroupButton_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      }
+    },
+    "Route": {
+      "tt_cmp_font_routeOptionButton_selected_label": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      },
+      "tt_cmp_font_routeOptionButton_selected_unit": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      },
+      "tt_cmp_font_routeOptionButton_unselected_label": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      },
+      "tt_cmp_font_routeOptionButton_unselected_unit": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      }
+    },
+    "Grid Toggle": {
+      "tt_cmp_font_gridToggleButton_horizontal_label": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      },
+      "tt_cmp_font_gridToggleButton_vertical_label": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      }
+    },
+    "Grid": {
+      "tt_cmp_font_gridButton_horizontal_label": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      },
+      "tt_cmp_font_gridButton_vertical_label": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      }
+    },
+    "Image Card": {
+      "tt_cmp_font_imageCardButton_label": {
+        "value": "{Label.tt_sys_font_label_s}",
+        "type": "typography"
+      }
+    },
+    "Suggestions": {
+      "tt_cmp_font_suggestionsButton_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      }
+    }
+  },
+  "Headers": {
+    "Search Input": {
+      "tt_cmp_font_searchInput_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_searchInput_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_searchInput_addition": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      }
+    },
+    "Header": {
+      "tt_cmp_font_header_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_header_body": {
+        "value": "{Body.tt_sys_font_body_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_header_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      }
+    },
+    "Arrival Header": {
+      "tt_cmp_font_arrivalHeader_title": {
+        "value": "{Display.tt_sys_font_display_r}",
+        "type": "typography"
+      }
+    },
+    "Event Details Header": {
+      "tt_cmp_font_eventDetailsHeader_title": {
+        "value": "{Display.tt_sys_font_display_s}",
+        "type": "typography"
+      },
+      "tt_cmp_font_eventDetailsHeader_unit": {
+        "value": "{Display.tt_sys_font_display_s}",
+        "type": "typography"
+      }
+    }
+  },
+  "Subheadings": {
+    "Subheaders": {
+      "tt_cmp_font_subheader_subtitle": {
+        "value": "{Subtitle.tt_sys_font_subtitle_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_subheader_selected": {
+        "value": "{Subtitle.tt_sys_font_subtitle_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_subheader_body": {
+        "value": "{Subtitle.tt_sys_font_subtitle_r}",
+        "type": "typography"
+      }
+    },
+    "Feed Forward": {
+      "tt_cmp_font_feedForward_subtitle": {
+        "value": "{Subtitle.tt_sys_font_subtitle_s}",
+        "type": "typography"
+      }
+    }
+  },
+  "List Items": {
+    "Search Results Item": {
+      "tt_cmp_font_searchResultsItem_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_searchResultsItem_listNumber": {
+        "value": "{Title.tt_sys_font_title_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_searchResultsItem_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_searchResultsItem_bodyUnit": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_searchResultsItem_direction": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_searchResultsItem_distance": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_searchResultsItem_distanceUnit": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Expandable Content": {
+      "Opening Hours": {
+        "tt_cmp_font_openingHoursItem_title": {
+          "value": "{Title.tt_sys_font_title_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_openingHoursItem_body": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        }
+      }
+    },
+    "Routing": {
+      "Route Overview Items": {
+        "tt_cmp_font_routingStartItem_title": {
+          "value": "{Title.tt_sys_font_title_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingLocationItem_title": {
+          "value": "{Title.tt_sys_font_title_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingEditItem_title": {
+          "value": "{Title.tt_sys_font_title_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingLocationItem_body": {
+          "value": "{Title.tt_sys_font_title_s}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingLocationItem_label": {
+          "value": "{Body.tt_sys_font_body_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingConnectionItem_body": {
+          "value": "{Title.tt_sys_font_title_s}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingConnectionItem_label": {
+          "value": "{Body.tt_sys_font_body_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingLocationItem_batteryLevel": {
+          "value": "{Title.tt_sys_font_title_s}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingLocationItem_unit": {
+          "value": "{Title.tt_sys_font_title_s}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingLocationItem_batteryUnit": {
+          "value": "{Subtitle.tt_sys_font_subtitle_s}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routingLocationItem_helper": {
+          "value": "{Body.tt_sys_font_body_r}",
+          "type": "typography"
+        }
+      },
+      "Route Option Items": {
+        "tt_cmp_font_routeOptionItem_title": {
+          "value": "{Title.tt_sys_font_title_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routeOptionItem_titleUnit": {
+          "value": "{Title.tt_sys_font_title_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routeOptionItem_body": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routeOptionItem_bodyUnit": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        },
+        "tt_cmp_font_routeOptionItem_label": {
+          "value": "{Label.tt_sys_font_label_s}",
+          "type": "typography"
+        }
+      }
+    },
+    "Location": {
+      "EV Availability": {
+        "tt_cmp_font_evAvailabilityItem_title": {
+          "value": "{Title.tt_sys_font_title_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_evAvailabilityItem_body": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        },
+        "tt_cmp_font_evAvailabilityItem_label": {
+          "value": "{Body.tt_sys_font_body_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_evAvailabilityItem_unit": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        }
+      }
+    },
+    "Menu & Settings": {
+      "Menu Item": {
+        "tt_cmp_font_menuItem_title": {
+          "value": "{Title.tt_sys_font_title_r}",
+          "type": "typography"
+        }
+      },
+      "Settings Item": {
+        "tt_cmp_font_settingsItem_title": {
+          "value": "{Title.tt_sys_font_title_r}",
+          "type": "typography"
+        },
+        "tt_cmp_font_settingsItem_body": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        },
+        "tt_cmp_font_settingsItem_unit": {
+          "value": "{Body.tt_sys_font_body_m}",
+          "type": "typography"
+        },
+        "tt_cmp_size_settingsItem_bodySelectedSpacing": {
+          "value": "{Body.tt_sys_font_body_r}",
+          "type": "typography"
+        }
+      }
+    },
+    "Information Item": {
+      "tt_cmp_font_informationItem_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_informationItem_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    }
+  },
+  "Location": {
+    "Information Pill": {
+      "tt_cmp_font_informationPill_title": {
+        "value": "{Title.tt_sys_font_title_s}",
+        "type": "typography"
+      },
+      "tt_cmp_font_informationPill_body": {
+        "value": "{Title.tt_sys_font_title_s}",
+        "type": "typography"
+      }
+    },
+    "Location Details": {
+      "tt_cmp_font_locationDetails_subtitle": {
+        "value": "{Body.tt_sys_font_body_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_locationDetails_title": {
+        "value": "{Title.tt_sys_font_title_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_locationDetails_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_locationDetails_distance": {
+        "value": "{Subtitle.tt_sys_font_subtitle_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_locationDetails_openingHoursLabel": {
+        "value": "{Body.tt_sys_font_body_r}",
+        "type": "typography"
+      }
+    },
+    "Status Pill": {
+      "tt_cmp_font_statusPill_title": {
+        "value": "{Title.tt_sys_font_title_s}",
+        "type": "typography"
+      }
+    },
+    "Parking Trend": {
+      "tt_cmp_font_parkingTrend_availability": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_parkingTrend_trend": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      }
+    }
+  },
+  "Notification Content": {
+    "Banner": {
+      "tt_cmp_font_banner_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_banner_body": {
+        "value": "{Body.tt_sys_font_body_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_banner_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      }
+    },
+    "Snack Bar": {
+      "tt_cmp_font_snackBar_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_snackBar_body": {
+        "value": "{Body.tt_sys_font_body_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_snackBar_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      }
+    },
+    "Search Message": {
+      "tt_cmp_font_searchMessage_body": {
+        "value": "{Body.tt_sys_font_body_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_searchMessage_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      }
+    },
+    "Route Message": {
+      "tt_cmp_font_routeMessage_body": {
+        "value": "{Body.tt_sys_font_body_r}",
+        "type": "typography"
+      }
+    },
+    "Rating": {
+      "tt_cmp_font_rating_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      }
+    },
+    "Dialog Text": {
+      "tt_cmp_font_dialogText_title": {
+        "value": "{Title.tt_sys_font_title_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_dialogText_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Carousel Text": {
+      "tt_cmp_font_carouselText_title": {
+        "value": "{Title.tt_sys_font_title_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_carouselText_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_carouselText_hyperlink": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    }
+  },
+  "General UI": {
+    "Input Fields": {
+      "tt_cmp_font_input_label": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      },
+      "tt_cmp_font_input_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Spinner Message": {
+      "tt_cmp_font_spinnerMessage_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      }
+    }
+  },
+  "Controls": {
+    "Slider": {
+      "Large": {
+        "tt_cmp_font_slider_l_title": {
+          "value": "{Display.tt_sys_font_display_xxl}",
+          "type": "typography"
+        },
+        "tt_cmp_font_slider_l_unit": {
+          "value": "{Display.tt_sys_font_display_xxl}",
+          "type": "typography"
+        }
+      },
+      "Regular": {
+        "tt_cmp_font_slider_r_title": {
+          "value": "{Display.tt_sys_font_display_s}",
+          "type": "typography"
+        },
+        "tt_cmp_font_slider_r_unit": {
+          "value": "{Display.tt_sys_font_display_s}",
+          "type": "typography"
+        }
+      }
+    },
+    "Scroll Bar": {
+      "tt_cmp_scrollBar_title": {
+        "value": "{Display.tt_sys_font_display_l}",
+        "type": "typography"
+      }
+    },
+    "SegmentedControl": {
+      "tt_cmp_font_segmentedControl_label": {
+        "value": "{Label.tt_sys_font_label_r}",
+        "type": "typography"
+      }
+    },
+    "Tab": {
+      "Horizontal": {
+        "tt_cmp_font_tab_horizontal_label": {
+          "value": "{Label.tt_sys_font_label_r}",
+          "type": "typography"
+        }
+      },
+      "Vertical": {
+        "tt_cmp_font_tab_vertical_label": {
+          "value": "{Label.tt_sys_font_label_r}",
+          "type": "typography"
+        }
+      }
+    }
+  },
+  "Route": {
+    "Journey Summary": {
+      "tt_cmp_font_journeySummary_body": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      },
+      "tt_cmp_font_journeySummary_units": {
+        "value": "{Body.tt_sys_font_body_m}",
+        "type": "typography"
+      }
+    },
+    "Restricted Route Information": {
+      "tt_cmp_font_restrictedRouteInformation_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      }
+    },
+    "Route Includes": {
+      "tt_cmp_font_routeIncludes_title": {
+        "value": "{Title.tt_sys_font_title_r}",
+        "type": "typography"
+      }
+    }
+  },
+  "Feedback Plugin": {
+    "tt_cmp_font_feedbackPlugin_body": {
+      "value": "{Display.tt_sys_font_display_s}",
+      "type": "typography"
+    }
+  }
+}

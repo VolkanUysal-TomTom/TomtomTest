@@ -1,0 +1,46 @@
+{
+  "tt_glb_effect_opacity_null": {
+    "value": "0%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_10": {
+    "value": "10%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_20": {
+    "value": "20%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_30": {
+    "value": "30%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_40": {
+    "value": "40%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_50": {
+    "value": "50%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_60": {
+    "value": "60%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_70": {
+    "value": "70%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_80": {
+    "value": "80%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_90": {
+    "value": "90%",
+    "type": "opacity"
+  },
+  "tt_glb_effect_opacity_full": {
+    "value": "100%",
+    "type": "opacity"
+  }
+}

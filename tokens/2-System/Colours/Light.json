@@ -1,0 +1,824 @@
+{
+  "Surfaces": {
+    "Primary": {
+      "tt_sys_color_surface_primary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color",
+        "description": "tt_color_surface_primary"
+      },
+      "tt_sys_color_surface_primary_pressed": {
+        "value": "{Grey.tt_glb_color_grey_100}",
+        "type": "color",
+        "description": "tt_color_surface_primary"
+      },
+      "tt_sys_color_onPrimarySurface_primary": {
+        "value": "{Grey.tt_glb_color_grey_800}",
+        "type": "color",
+        "description": "tt_color_onPrimarySurface_primary"
+      },
+      "tt_sys_color_onPrimarySurface_secondary": {
+        "value": "{Grey.tt_glb_color_grey_400}",
+        "type": "color",
+        "description": "tt_color_onPrimarySurface_secondary"
+      },
+      "tt_sys_color_onPrimarySurface_tertiary": {
+        "value": "{Grey.tt_glb_color_grey_300}",
+        "type": "color",
+        "description": "tt_color_onPrimarySurface_tertiary"
+      },
+      "tt_sys_color_surface_primary_stroke": {
+        "value": "{Black&White.tt_glb_color_black_a15}",
+        "type": "color"
+      }
+    },
+    "Secondary": {
+      "tt_sys_color_surface_secondary": {
+        "value": "{Grey.tt_glb_color_grey_100}",
+        "type": "color",
+        "description": "tt_color_surface_secondary"
+      },
+      "tt_sys_color_surface_secondary_pressed": {
+        "value": "{Grey.tt_glb_color_grey_200}",
+        "type": "color",
+        "description": "tt_color_surface_secondary_focused"
+      },
+      "tt_sys_color_onSecondarySurface_primary": {
+        "value": "{Grey.tt_glb_color_grey_800}",
+        "type": "color",
+        "description": "tt_color_onSecondarySurface_primary"
+      },
+      "tt_sys_color_onSecondarySurface_secondary": {
+        "value": "{Grey.tt_glb_color_grey_400}",
+        "type": "color",
+        "description": "tt_color_onSecondarySurface_secondary"
+      },
+      "tt_sys_color_onSecondarySurface_tertiary": {
+        "value": "{Grey.tt_glb_color_grey_300}",
+        "type": "color",
+        "description": "tt_color_onTertiarySurface_tertiary"
+      },
+      "tt_sys_color_surface_secondary_stroke": {
+        "value": "{Black&White.tt_glb_color_black_a15}",
+        "type": "color"
+      }
+    }
+  },
+  "Brand": {
+    "Primary": {
+      "tt_sys_color_brand_primary": {
+        "value": "{Blue.tt_glb_color_blue_400}",
+        "type": "color",
+        "description": "tt_color_brand_primary"
+      },
+      "tt_sys_color_brand_primary_pressed": {
+        "value": "{Blue.tt_glb_color_blue_500}",
+        "type": "color",
+        "description": "tt_color_brand_primary_focused"
+      },
+      "tt_sys_color_brand_primarySelected": {
+        "value": "{Blue.tt_glb_color_blue_200}",
+        "type": "color",
+        "description": "tt_color_brand_primaryDeep"
+      },
+      "tt_sys_color_brand_primarySelected_pressed": {
+        "value": "{Blue.tt_glb_color_blue_300}",
+        "type": "color",
+        "description": "tt_color_brand_primaryDeep_focused"
+      },
+      "tt_sys_color_onBrandPrimary_primary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color",
+        "description": "tt_color_onBrand_primary"
+      },
+      "tt_sys_color_onBrandPrimary_secondary": {
+        "value": "{Grey.tt_glb_color_grey_800}",
+        "type": "color",
+        "description": "tt_color_onBrand_secondary"
+      },
+      "tt_sys_color_brand_primary_stroke": {
+        "value": "{Blue.tt_glb_color_blue_400}",
+        "type": "color"
+      }
+    },
+    "Secondary": {
+      "tt_sys_color_brand_secondary": {
+        "value": "{Grey.tt_glb_color_grey_150}",
+        "type": "color",
+        "description": "tt_color_brand_secondary"
+      },
+      "tt_sys_color_brand_secondary_pressed": {
+        "value": "{Grey.tt_glb_color_grey_300}",
+        "type": "color",
+        "description": "tt_color_brand_secondary_focused"
+      },
+      "tt_sys_color_onBrandSecondary_primary": {
+        "value": "{Grey.tt_glb_color_grey_800}",
+        "type": "color",
+        "description": "tt_color_onBrandSecondary_primary"
+      },
+      "tt_sys_color_onBrandSecondary_secondary": {
+        "value": "{Grey.tt_glb_color_grey_400}",
+        "type": "color",
+        "description": "tt_color_onBrandSecondary_secondary"
+      },
+      "tt_sys_color_brand_secondary_stroke": {
+        "value": "{Black&White.tt_glb_color_black_a15}",
+        "type": "color"
+      }
+    }
+  },
+  "Guidance": {
+    "World": {
+      "tt_sys_color_worldGuidance_primary": {
+        "value": "{Localised.tt_glb_color_euBlue_200}",
+        "type": "color"
+      },
+      "tt_sys_color_worldGuidance_primary_pressed": {
+        "value": "{Localised.tt_glb_color_euBlue_300}",
+        "type": "color"
+      },
+      "tt_sys_color_onWorldGuidancePrimary_primary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_sys_color_onWorldGuidancePrimary_secondary": {
+        "value": "{Grey.tt_glb_color_grey_100}",
+        "type": "color"
+      },
+      "tt_sys_color_onWorldGuidancePrimary_tertiary": {
+        "value": "{Black&White.tt_glb_color_white_a4}",
+        "type": "color"
+      },
+      "tt_sys_color_worldGuidance_primary_stroke": {
+        "value": "{Localised.tt_glb_color_euBlue_200}",
+        "type": "color"
+      },
+      "tt_sys_color_worldGuidance_secondary": {
+        "value": "{Localised.tt_glb_color_euBlue_100}",
+        "type": "color"
+      },
+      "tt_sys_color_worldGuidance_secondary_pressed": {
+        "value": "{Localised.tt_glb_color_euBlue_100}",
+        "type": "color"
+      },
+      "tt_sys_color_onWorldGuidanceSecondary_primary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color"
+      },
+      "tt_sys_color_onWorldGuidanceSecondary_secondary": {
+        "value": "{Grey.tt_glb_color_grey_100}",
+        "type": "color"
+      },
+      "tt_sys_color_onWorldGuidanceSecondary_tertiary": {
+        "value": "{Black&White.tt_glb_color_white_a4}",
+        "type": "color"
+      },
+      "tt_sys_color_worldGuidance_secondary_stroke": {
+        "value": "{Localised.tt_glb_color_euBlue_200}",
+        "type": "color"
+      }
+    },
+    "USA": {
+      "tt_sys_color_usaGuidance_primary": {
+        "value": "{Localised.tt_glb_color_usaGreen_200}",
+        "type": "color"
+      },
+      "tt_sys_color_usaGuidance_primary_pressed": {
+        "value": "{Localised.tt_glb_color_usaGreen_300}",
+        "type": "color"
+      },
+      "tt_sys_color_onUsaGuidancePrimary_primary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_sys_color_onUsaGuidancePrimary_secondary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color",
+        "description": ""
+      },
+      "tt_sys_color_onUsaGuidancePrimary_tertiary": {
+        "value": "{Black&White.tt_glb_color_white_a4}",
+        "type": "color"
+      },
+      "tt_sys_color_usaGuidance_primary_stroke": {
+        "value": "{Localised.tt_glb_color_usaGreen_200}",
+        "type": "color"
+      },
+      "tt_sys_color_usaGuidance_secondary": {
+        "value": "{Localised.tt_glb_color_usaGreen_100}",
+        "type": "color"
+      },
+      "tt_sys_color_usaGuidance_secondary_pressed": {
+        "value": "{Localised.tt_glb_color_usaGreen_100}",
+        "type": "color"
+      },
+      "tt_sys_color_onUsaGuidanceSecondary_primary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color"
+      },
+      "tt_sys_color_onUsaGuidanceSecondary_secondary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color"
+      },
+      "tt_sys_color_onUsaGuidanceSecondary_tertiary": {
+        "value": "{Black&White.tt_glb_color_white_a4}",
+        "type": "color"
+      },
+      "tt_sys_color_usaGuidance_secondary_stroke": {
+        "value": "{Localised.tt_glb_color_usaGreen_200}",
+        "type": "color"
+      }
+    }
+  },
+  "Alerts & Warnings": {
+    "Alert": {
+      "tt_sys_color_alert_primary": {
+        "value": "{Yellow.tt_glb_color_yellow_400}",
+        "type": "color"
+      },
+      "tt_sys_color_alert_primary_pressed": {
+        "value": "{Yellow.tt_glb_color_yellow_500}",
+        "type": "color"
+      },
+      "tt_sys_color_onAlertPrimary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color"
+      },
+      "tt_sys_color_alert_primary_stroke": {
+        "value": "{Yellow.tt_glb_color_yellow_300}",
+        "type": "color"
+      },
+      "tt_sys_color_alert_secondary": {
+        "value": "{Yellow.tt_glb_color_yellow_100}",
+        "type": "color"
+      },
+      "tt_sys_color_alert_secondary_pressed": {
+        "value": "{Yellow.tt_glb_color_yellow_200}",
+        "type": "color"
+      },
+      "tt_sys_color_onAlertSecondary": {
+        "value": "{Yellow.tt_glb_color_yellow_400}",
+        "type": "color"
+      },
+      "tt_sys_color_alert_secondary_stroke": {
+        "value": "{Yellow.tt_glb_color_yellow_100}",
+        "type": "color"
+      }
+    },
+    "Warning": {
+      "tt_sys_color_warning_primary": {
+        "value": "{Orange.tt_glb_color_orange_300}",
+        "type": "color"
+      },
+      "tt_sys_color_warning_primary_pressed": {
+        "value": "{Orange.tt_glb_color_orange_400}",
+        "type": "color"
+      },
+      "tt_sys_color_onWarningPrimary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color"
+      },
+      "tt_sys_color_warning_primary_stroke": {
+        "value": "{Orange.tt_glb_color_orange_200}",
+        "type": "color"
+      },
+      "tt_sys_color_warning_secondary": {
+        "value": "{Orange.tt_glb_color_orange_100}",
+        "type": "color"
+      },
+      "tt_sys_color_warning_secondary_pressed": {
+        "value": "{Orange.tt_glb_color_orange_200}",
+        "type": "color"
+      },
+      "tt_sys_color_onWarningSecondary": {
+        "value": "{Orange.tt_glb_color_orange_300}",
+        "type": "color"
+      },
+      "tt_sys_color_warning_secondary_stroke": {
+        "value": "{Orange.tt_glb_color_orange_100}",
+        "type": "color"
+      }
+    },
+    "Critical Warning": {
+      "tt_sys_color_criticalWarning_primary": {
+        "value": "{Red.tt_glb_color_red_300}",
+        "type": "color"
+      },
+      "tt_sys_color_criticalWarning_primary_pressed": {
+        "value": "{Red.tt_glb_color_red_400}",
+        "type": "color"
+      },
+      "tt_sys_color_onCriticalWarningPrimary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color"
+      },
+      "tt_sys_color_criticalWarning_primary_stroke": {
+        "value": "{Red.tt_glb_color_red_300}",
+        "type": "color"
+      },
+      "tt_sys_color_criticalWarning_secondary": {
+        "value": "{Red.tt_glb_color_red_100}",
+        "type": "color"
+      },
+      "tt_sys_color_criticalWarning_secondary_pressed": {
+        "value": "{Red.tt_glb_color_red_200}",
+        "type": "color"
+      },
+      "tt_sys_color_onCriticalWarningSecondary": {
+        "value": "{Red.tt_glb_color_red_400}",
+        "type": "color"
+      },
+      "tt_sys_color_criticalWarning_secondary_stroke": {
+        "value": "{Red.tt_glb_color_red_100}",
+        "type": "color"
+      }
+    },
+    "Positive": {
+      "tt_sys_color_positive_primary": {
+        "value": "{Green.tt_glb_color_green_300}",
+        "type": "color"
+      },
+      "tt_sys_color_positive_primary_pressed": {
+        "value": "{Green.tt_glb_color_green_400}",
+        "type": "color"
+      },
+      "tt_sys_color_onPositivePrimary": {
+        "value": "{Black&White.tt_glb_color_white}",
+        "type": "color"
+      },
+      "tt_sys_color_positive_primary_stroke": {
+        "value": "{Green.tt_glb_color_green_300}",
+        "type": "color"
+      },
+      "tt_sys_color_positive_secondary": {
+        "value": "{Green.tt_glb_color_green_100}",
+        "type": "color"
+      },
+      "tt_sys_color_positive_secondary_pressed": {
+        "value": "{Green.tt_glb_color_green_200}",
+        "type": "color"
+      },
+      "tt_sys_color_onPositiveSecondary": {
+        "value": "{Green.tt_glb_color_green_300}",
+        "type": "color"
+      },
+      "tt_sys_color_positive_secondary_stroke": {
+        "value": "{Green.tt_glb_color_green_100}",
+        "type": "color"
+      }
+    }
+  },
+  "Actions": {
+    "tt_sys_color_accept": {
+      "value": "{Green.tt_glb_color_green_300}",
+      "type": "color"
+    },
+    "tt_sys_color_accept_pressed": {
+      "value": "{Green.tt_glb_color_green_300}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onAccept": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_accept_stroke": {
+      "value": "{Black&White.tt_glb_color_black_a15}",
+      "type": "color"
+    },
+    "tt_sys_color_decline": {
+      "value": "{Red.tt_glb_color_red_300}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_decline_pressed": {
+      "value": "{Red.tt_glb_color_red_400}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onDecline": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_decline_stroke": {
+      "value": "{Black&White.tt_glb_color_black_a15}",
+      "type": "color"
+    },
+    "tt_sys_color_favorite": {
+      "value": "{Yellow.tt_glb_color_yellow_300}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_favorite_pressed": {
+      "value": "{Yellow.tt_glb_color_yellow_400}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onFavorite": {
+      "value": "{Grey.tt_glb_color_grey_800}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_favorite_stroke": {
+      "value": "{Black&White.tt_glb_color_black_a15}",
+      "type": "color"
+    }
+  },
+  "Road Signage": {
+    "tt_sys_color_signageWhite": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_signageBlack": {
+      "value": "{Black&White.tt_glb_color_black}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_signageRed": {
+      "value": "{Red.tt_glb_color_red_300}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_signageYellow": {
+      "value": "{Yellow.tt_glb_color_yellow_200}",
+      "type": "color"
+    },
+    "tt_sys_color_signageGreen": {
+      "value": "{Green.tt_glb_color_green_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_signageOrange": {
+      "value": "{Orange.tt_glb_color_orange_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_signageDeepRed": {
+      "value": "{Red.tt_glb_color_red_400}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_signageLightRed": {
+      "value": "{Red.tt_glb_color_red_200}",
+      "type": "color"
+    },
+    "tt_sys_color_signageDeepBlue": {
+      "value": "{Blue.tt_glb_color_blue_500}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_signageDarkGrey": {
+      "value": "{Grey.tt_glb_color_grey_500}",
+      "type": "color"
+    },
+    "tt_sys_color_signageDeepGrey": {
+      "value": "{Grey.tt_glb_color_grey_600}",
+      "type": "color"
+    }
+  },
+  "User Interface Controls": {
+    "Navigation": {
+      "tt_sys_color_uiControls_navigation_primary": {
+        "value": "{Grey.tt_glb_color_grey_800}",
+        "type": "color"
+      },
+      "tt_sys_color_uiControls_navigation_secondary": {
+        "value": "{Grey.tt_glb_color_grey_500}",
+        "type": "color"
+      },
+      "tt_sys_color_uiControls_navigation_pressed": {
+        "value": "{Grey.tt_glb_color_grey_900}",
+        "type": "color"
+      }
+    },
+    "Structure": {
+      "tt_sys_color_uiControls_structure_strong": {
+        "value": "{Grey.tt_glb_color_grey_400}",
+        "type": "color"
+      },
+      "tt_sys_color_uiControls_structure_medium": {
+        "value": "{Grey.tt_glb_color_grey_800_a4}",
+        "type": "color"
+      },
+      "tt_sys_color_uiControls_structure_subtle": {
+        "value": "{Black&White.tt_glb_color_black_a2}",
+        "type": "color"
+      }
+    }
+  },
+  "POI Categories": {
+    "tt_sys_color_accommodation": {
+      "value": "{Extended Colour Collection.tt_glb_color_lavender_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_accommodation_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_lavender_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onAccommodation": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_car": {
+      "value": "{Extended Colour Collection.tt_glb_color_cobalt_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_car_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_cobalt_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onCar": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_commercial": {
+      "value": "{Extended Colour Collection.tt_glb_color_orchid_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_commercial_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_orchid_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onCommercial": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_education": {
+      "value": "{Extended Colour Collection.tt_glb_color_driftwood_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_education_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_driftwood_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onEducation": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_entertainment": {
+      "value": "{Extended Colour Collection.tt_glb_color_wayfarer_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_entertainment_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_wayfarer_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onEntertainment": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_ev": {
+      "value": "{Extended Colour Collection.tt_glb_color_evergreen_100}",
+      "type": "color"
+    },
+    "tt_sys_color_ev_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_evergreen_300}",
+      "type": "color"
+    },
+    "tt_sys_color_onEv": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color"
+    },
+    "tt_sys_color_foodDrink": {
+      "value": "{Extended Colour Collection.tt_glb_color_tangerine_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_foodDrink_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_tangerine_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onFoodDrink": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_general": {
+      "value": "{Extended Colour Collection.tt_glb_color_silverstone_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_general_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_silverstone_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onGeneral": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_health": {
+      "value": "{Extended Colour Collection.tt_glb_color_coral_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_health_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_coral_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onHealth": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_highway": {
+      "value": "{Extended Colour Collection.tt_glb_color_silverstone_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_highway_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_silverstone_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onHighway": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_industry": {
+      "value": "{Extended Colour Collection.tt_glb_color_periwinkle_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_industry_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_periwinkle_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onIndustry": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_outdoor": {
+      "value": "{Extended Colour Collection.tt_glb_color_teal_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_outdoor_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_teal_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onOutdoor": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_parking": {
+      "value": "{Extended Colour Collection.tt_glb_color_azure_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_parking_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_azure_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onParking": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_public": {
+      "value": "{Extended Colour Collection.tt_glb_color_granite_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_public_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_granite_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onPublic": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_sport": {
+      "value": "{Extended Colour Collection.tt_glb_color_teal_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_sport_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_teal_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onSport": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_tourism": {
+      "value": "{Extended Colour Collection.tt_glb_color_wayfarer_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_tourism_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_wayfarer_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onTourism": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_transport": {
+      "value": "{Extended Colour Collection.tt_glb_color_cobalt_100}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_transport_pressed": {
+      "value": "{Extended Colour Collection.tt_glb_color_cobalt_200}",
+      "type": "color",
+      "description": ""
+    },
+    "tt_sys_color_onTransport": {
+      "value": "{Black&White.tt_glb_color_white}",
+      "type": "color",
+      "description": ""
+    }
+  },
+  "Figma Only": {
+    "Placeholder": {
+      "value": "{Figma Only.Blossom_100}",
+      "type": "color",
+      "description": ""
+    },
+    "Home Button": {
+      "value": "#000000",
+      "type": "color",
+      "description": ""
+    },
+    "Notch": {
+      "value": "#000000",
+      "type": "color",
+      "description": ""
+    },
+    "Status bar content": {
+      "value": "#000000",
+      "type": "color",
+      "description": ""
+    },
+    "Dark Map": {
+      "value": "false",
+      "type": "boolean"
+    },
+    "Light Map": {
+      "value": "true",
+      "type": "boolean"
+    },
+    "Third-party": {
+      "tt_sys_color_w3w": {
+        "value": "{Figma Only.Third-party.tt_glb_color_w3w}",
+        "type": "color"
+      },
+      "Trip Advisor": {
+        "tt_sys_color_tripAdvisor_green": {
+          "value": "{Figma Only.Third-party.tt_glb_color_tripAdvisor_lightGreen}",
+          "type": "color"
+        },
+        "tt_sys_color_tripAdvisor_white": {
+          "value": "{Figma Only.Third-party.tt_glb_color_tripAdvisor_white}",
+          "type": "color"
+        },
+        "tt_sys_color_tripAdvisor_black": {
+          "value": "{Figma Only.Third-party.tt_glb_color_tripAdvisor_black}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "Shadows": {
+    "tt_sys_color_shadow": {
+      "value": "{Black&White.tt_glb_color_black_a2}",
+      "type": "color"
+    }
+  }
+}
