@@ -1,0 +1,55 @@
+{
+  "version": "1.1.0",
+  "released": "2026-04-15",
+  "description": "Token migration manifest for TomTom Navigation Design System v1.1.",
+  "changes": {
+    "added": [
+      {
+        "token": "tt_sys_color_evCharging_available",
+        "layer": "2-System",
+        "type": "color",
+        "description": "Semantic colour for an EV charging station that has available connectors.",
+        "modes": {
+          "Light": { "value": "#03bf95", "description": "Mint 300 — vivid teal on light backgrounds" },
+          "Dark":  { "value": "#027c61", "description": "Mint 400 — darker teal for dark map surfaces" }
+        }
+      },
+      {
+        "token": "tt_sys_spacing_panel_safeArea_bottom",
+        "layer": "2-System",
+        "type": "number",
+        "description": "Bottom safe-area inset for floating and docked panels. Clears gesture-navigation bars on Android and iOS.",
+        "modes": {
+          "Large":  { "value": "48", "description": "Large screen — full gesture bar height" },
+          "Medium": { "value": "48", "description": "Medium screen — full gesture bar height" },
+          "Small":  { "value": "40", "description": "Small screen — compact gesture zone" }
+        }
+      }
+    ],
+    "renamed": [
+      {
+        "oldToken": "tt_sys_color_nip_accent",
+        "newToken": "tt_sys_color_guidance_accent",
+        "layer": "2-System",
+        "type": "color",
+        "description": "Accent colour for active guidance UI — NIP, lane guidance, speed shields, ETA panel.",
+        "modes": {
+          "Light": { "value": "#1988cf", "description": "Blue 400" },
+          "Dark":  { "value": "#53A5DD", "description": "Blue 350 — lighter for dark surfaces" }
+        },
+        "migration": "Replace all references to 'tt_sys_color_nip_accent' with 'tt_sys_color_guidance_accent'. No value change — swap is safe."
+      }
+    ],
+    "deprecated": [
+      {
+        "token": "tt_cmp_color_routeMessage_warningLegacy",
+        "layer": "3-Component",
+        "type": "color",
+        "replacedBy": "tt_sys_color_feedback_warning",
+        "removalVersion": "2.0.0",
+        "description": "Legacy warning colour on route-message banners. Predates the system-level feedback palette.",
+        "migration": "Replace with 'tt_sys_color_feedback_warning'. Verify visual parity in both Light and Dark themes."
+      }
+    ]
+  }
+}
