@@ -1,0 +1,9 @@
+{
+  "_comment": "Add your brand overrides here. Use token names from tomtom-base and set your own values.",
+  "_example": {
+    "tt_sys_color_brand_primary": {
+      "value": "#YOUR_BRAND_COLOUR",
+      "type": "color"
+    }
+  }
+}

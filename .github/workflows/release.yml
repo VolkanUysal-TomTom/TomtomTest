@@ -48,6 +48,7 @@ jobs:
           echo "Packaged token files for v$VERSION"
 
       - name: Create GitHub Release
+        id: release
         uses: softprops/action-gh-release@v2
         with:
           name: "v${{ steps.version.outputs.VERSION }}"
@@ -58,3 +59,41 @@ jobs:
           fail_on_unmatched_files: false
           draft: false
           prerelease: false
+
+      - name: Dispatch sync event to client repos
+        env:
+          VERSION:    ${{ steps.version.outputs.VERSION }}
+          ZIP_URL:    ${{ fromJson(steps.release.outputs.assets)[0].browser_download_url }}
+          # Add each client repo below in the format OWNER/REPO
+          # Requires a secret CLIENT_DISPATCH_TOKEN with repo scope on each client repo
+        run: |
+          REVIEW_BASE="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          PAYLOAD=$(jq -n \
+            --arg version    "$VERSION" \
+            --arg zip_url    "$ZIP_URL" \
+            --arg review_url "$REVIEW_BASE" \
+            --arg tt_owner   "${{ github.repository_owner }}" \
+            --arg tt_repo    "${{ github.event.repository.name }}" \
+            '{
+              event_type: "tomtom-token-release",
+              client_payload: {
+                version:      $version,
+                zip_url:      $zip_url,
+                review_url:   $review_url,
+                tomtom_owner: $tt_owner,
+                tomtom_repo:  $tt_repo
+              }
+            }')
+
+          # List of client repos to notify — add one curl per client
+          # Example (uncomment and replace with real repo):
+          # curl -s -X POST \
+          #   -H "Authorization: Bearer ${{ secrets.CLIENT_DISPATCH_TOKEN }}" \
+          #   -H "Accept: application/vnd.github+json" \
+          #   -H "Content-Type: application/json" \
+          #   "https://api.github.com/repos/VolkanUysal-TomTom/client-navkit-tokens/dispatches" \
+          #   -d "$PAYLOAD"
+
+          echo "Dispatch payload ready for v$VERSION"
+          echo "Review tool base URL: $REVIEW_BASE"
+          echo "Add client repo dispatch curl commands above when client repos are created."

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TomTom Token Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- Auth screen -->
+    <div id="auth-screen" class="screen">
+      <div class="brand">TomTom DS</div>
+      <h1>Token Review</h1>
+      <p class="subtitle">Sign in with a GitHub Personal Access Token to review and accept token changes for your product.</p>
+      <div class="pat-box">
+        <label for="pat-input">GitHub Personal Access Token</label>
+        <input id="pat-input" type="password" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off">
+        <p class="pat-hint">
+          Needs <code>repo</code> scope.
+          <a href="https://github.com/settings/tokens/new?scopes=repo&description=TomTom+Token+Review" target="_blank">Generate one here ↗</a>
+        </p>
+      </div>
+      <button id="signin-btn" class="btn btn-primary">Continue</button>
+      <div id="auth-error" class="error-msg hidden"></div>
+    </div>
+
+    <!-- Loading screen -->
+    <div id="loading-screen" class="screen hidden">
+      <div class="spinner large"></div>
+      <p class="loading-text">Loading token changes…</p>
+    </div>
+
+    <!-- Review screen -->
+    <div id="review-screen" class="screen screen-review hidden">
+      <header class="review-header">
+        <div class="header-left">
+          <span class="brand-small">TomTom DS</span>
+          <span class="version-badge" id="version-badge"></span>
+          <span class="client-badge" id="client-badge"></span>
+        </div>
+        <div class="header-right">
+          <span class="reviewer-label">Reviewing as <strong id="reviewer-name"></strong></span>
+          <button id="submit-btn" class="btn btn-primary">Submit Review</button>
+        </div>
+      </header>
+      <main class="review-main">
+        <div id="summary-bar"></div>
+        <div id="sections"></div>
+      </main>
+    </div>
+
+    <!-- Done screen -->
+    <div id="done-screen" class="screen hidden">
+      <div class="done-check">✓</div>
+      <h1>Review submitted</h1>
+      <p id="done-message"></p>
+      <a id="pr-link" class="btn btn-secondary" target="_blank">View Pull Request →</a>
+    </div>
+
+    <!-- Error screen -->
+    <div id="error-screen" class="screen hidden">
+      <div class="error-icon">!</div>
+      <h1>Something went wrong</h1>
+      <p id="error-message"></p>
+      <button class="btn btn-secondary" onclick="location.reload()">Try again</button>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
