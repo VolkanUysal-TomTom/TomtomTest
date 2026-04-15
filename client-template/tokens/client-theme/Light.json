@@ -1,0 +1,13 @@
+{
+  "_info": "JLR brand overrides — Light mode. Add only tokens you want to override. Everything else resolves from tomtom-base.",
+  "tt_sys_color_brand_primary": {
+    "value": "#005A2B",
+    "type": "color",
+    "description": "JLR Racing Green — primary brand colour, light mode"
+  },
+  "tt_sys_color_brand_secondary": {
+    "value": "#B8A87A",
+    "type": "color",
+    "description": "JLR Gold — secondary brand colour, light mode"
+  }
+}

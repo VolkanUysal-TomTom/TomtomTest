@@ -1,26 +1,29 @@
 {
   "version": "1.1.0",
   "released": "2026-04-15",
-  "description": "Token migration manifest for TomTom Navigation Design System v1.1. Apply these changes to any consumer that references base tokens directly.",
+  "description": "Token migration manifest for TomTom Navigation Design System v1.1.",
   "changes": {
     "added": [
       {
         "token": "tt_sys_color_evCharging_available",
         "layer": "2-System",
-        "file": "tokens/2-System/Colours/Light.json",
         "type": "color",
-        "value": "{tt_glb_color_mint_300}",
-        "description": "Semantic colour for an EV charging station that has available connectors. Use on EV availability indicators and map pins.",
-        "rationale": "New EV availability map layer required a dedicated 'available' state colour distinct from the existing green success token."
+        "description": "Semantic colour for an EV charging station that has available connectors.",
+        "modes": {
+          "Light": { "value": "#03bf95", "description": "Mint 300 — vivid teal on light backgrounds" },
+          "Dark":  { "value": "#027c61", "description": "Mint 400 — darker teal for dark map surfaces" }
+        }
       },
       {
         "token": "tt_sys_spacing_panel_safeArea_bottom",
         "layer": "2-System",
-        "file": "tokens/2-System/Spacing/Vertical/Tall.json",
         "type": "number",
-        "value": "{tt_glb_size_48}",
-        "description": "Bottom safe-area inset for floating and docked panels. Accounts for gesture-navigation bars on Android and iOS home-indicator zones.",
-        "rationale": "Bottom-docked panels were clipping the system gesture bar on newer device form factors. A dedicated spacing token makes overrides per screen size straightforward."
+        "description": "Bottom safe-area inset for floating and docked panels. Clears gesture-navigation bars on Android and iOS.",
+        "modes": {
+          "Large":  { "value": "48", "description": "Large screen — full gesture bar height" },
+          "Medium": { "value": "48", "description": "Medium screen — full gesture bar height" },
+          "Small":  { "value": "40", "description": "Small screen — compact gesture zone" }
+        }
       }
     ],
     "renamed": [
@@ -28,11 +31,12 @@
         "oldToken": "tt_sys_color_nip_accent",
         "newToken": "tt_sys_color_guidance_accent",
         "layer": "2-System",
-        "file": "tokens/2-System/Colours/Light.json",
         "type": "color",
-        "value": "{tt_glb_color_blue_400}",
-        "description": "Accent colour for the active guidance NIP (Next Instruction Panel) and all related guidance-state UI.",
-        "rationale": "The token was scoped too narrowly to 'nip' while it was already being reused by lane guidance, speed shields, and the ETA panel. Renamed to 'guidance' to reflect the broader semantic scope.",
+        "description": "Accent colour for active guidance UI — NIP, lane guidance, speed shields, ETA panel.",
+        "modes": {
+          "Light": { "value": "#1988cf", "description": "Blue 400" },
+          "Dark":  { "value": "#53A5DD", "description": "Blue 350 — lighter for dark surfaces" }
+        },
         "migration": "Replace all references to 'tt_sys_color_nip_accent' with 'tt_sys_color_guidance_accent'. No value change — swap is safe."
       }
     ],
@@ -40,14 +44,11 @@
       {
         "token": "tt_cmp_color_routeMessage_warningLegacy",
         "layer": "3-Component",
-        "file": "tokens/3-Component/Colours/Light.json",
         "type": "color",
-        "currentValue": "{tt_glb_color_orange_200}",
         "replacedBy": "tt_sys_color_feedback_warning",
         "removalVersion": "2.0.0",
-        "description": "Legacy warning colour applied directly to route-message banners. Predates the system-level feedback palette introduced in v1.0.",
-        "rationale": "Component tokens should reference system-level semantic tokens rather than global raws. This token creates a maintenance burden when orange brand values change.",
-        "migration": "Replace with 'tt_sys_color_feedback_warning'. Verify visual parity in both Light and Dark themes before removing."
+        "description": "Legacy warning colour on route-message banners. Predates the system-level feedback palette.",
+        "migration": "Replace with 'tt_sys_color_feedback_warning'. Verify visual parity in both Light and Dark themes."
       }
     ]
   }
