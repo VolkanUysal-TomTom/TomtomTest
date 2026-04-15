@@ -1,0 +1,18 @@
+{
+  "version": "1.2.0",
+  "changes": {
+    "added": [
+      {
+        "token": "tt_sys_color_parking_available",
+        "type": "color",
+        "description": "Indicates available parking spots on the map",
+        "modes": {
+          "Light": { "value": "{Extended Colour Collection.tt_glb_color_mint_300}", "description": "Mint 300" },
+          "Dark":  { "value": "{Extended Colour Collection.tt_glb_color_mint_400}", "description": "Mint 400" }
+        }
+      }
+    ],
+    "renamed": [],
+    "deprecated": []
+  }
+}
