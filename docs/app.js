@@ -255,6 +255,7 @@ function renderAdded(token) {
         row.className = action === 'reject' ? 'mode-row is-rejected'
                       : action === 'modify' ? 'mode-row is-modified'
                       : 'mode-row';
+        updateConfirmBtn(token.token, modeKeys);
       });
     });
 
@@ -265,6 +266,7 @@ function renderAdded(token) {
       decisions[token.token][mk] = { action: 'modify', value: v };
       const preview = document.getElementById(`preview-${safeId(token.token)}-${mk}`);
       if (preview) preview.style.background = v;
+      updateConfirmBtn(token.token, modeKeys);
     });
 
     // Restore existing state if already has a decision
@@ -284,12 +286,30 @@ function renderAdded(token) {
     next();
   });
 
+  // "Confirm choices" button — appears when any mode is manually set
+  wireBtn('btn-confirm', () => {
+    addReviewed(token.token, buildModeLabels(modeKeys, 'accept'));
+    next();
+  });
+
   // "Reject" button
   wireBtn('btn-reject', () => {
     modeKeys.forEach(mk => { decisions[token.token][mk] = { action: 'reject', value: null }; });
     addReviewed(token.token, [{ label: 'rejected', cls: 'badge-rejected' }]);
     next();
   });
+}
+
+function updateConfirmBtn(tokenName, modeKeys) {
+  const confirmBtn = document.getElementById('btn-confirm');
+  const acceptBtn  = document.getElementById('btn-accept');
+  if (!confirmBtn || !acceptBtn) return;
+  const hasCustom = modeKeys.some(mk => {
+    const a = decisions[tokenName]?.[mk]?.action;
+    return a === 'modify' || a === 'reject';
+  });
+  confirmBtn.style.display = hasCustom ? '' : 'none';
+  acceptBtn.style.display  = hasCustom ? 'none' : '';
 }
 
 function buildModeLabels(modeKeys, defaultAction) {
