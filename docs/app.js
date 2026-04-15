@@ -1,268 +1,345 @@
 /* ─────────────────────────────────────────────────────
    TomTom Token Review App
-   Reads URL params → loads migration manifest + client theme
-   → renders review UI → commits decisions to client repo
+   Step-by-step token review: Accept / Modify / Reject
+   Writes decisions to client-theme.json on PR branch
    ───────────────────────────────────────────────────── */
 
 const TOMTOM_OWNER = 'VolkanUysal-TomTom';
 const TOMTOM_REPO  = 'TomtomTest';
 
-// URL params passed by the bot comment link
-const params      = new URLSearchParams(location.search);
-const VERSION     = params.get('version');   // e.g. 1.1.0
-const PR_NUMBER   = params.get('pr');        // e.g. 3
-const CLIENT_OWNER = params.get('owner');    // e.g. VolkanUysal-TomTom
-const CLIENT_REPO  = params.get('repo');     // e.g. client-navkit-tokens
+// URL params injected by the bot's PR comment link
+const params       = new URLSearchParams(location.search);
+const VERSION      = params.get('version');  // e.g. 1.1.0
+const PR_NUMBER    = params.get('pr');
+const CLIENT_OWNER = params.get('owner');
+const CLIENT_REPO  = params.get('repo');
 const BRANCH       = params.get('branch');   // e.g. sync/v1.1.0
 
-// State
-let ghToken       = sessionStorage.getItem('gh_token') || '';
-let reviewer      = null;
-let migrationData = null;
-let clientTheme   = {};
-const decisions   = {};   // { tokenName: { action, value, type } }
+// App state
+let ghToken      = sessionStorage.getItem('gh_token') || '';
+let reviewer     = null;
+let allTokens    = [];   // flat ordered list of all items to review
+let currentIndex = 0;
+let clientTheme  = {};
+const decisions  = {};   // { tokenName: { action, value, type } }
 
 /* ── Screens ──────────────────────────────────────── */
 function show(id) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.add('hidden'));
+  document.querySelectorAll('.screen, .modal-overlay').forEach(el => el.classList.add('hidden'));
   document.getElementById(id).classList.remove('hidden');
 }
 
-/* ── Validate params ──────────────────────────────── */
+/* ── Guard: missing URL params ────────────────────── */
 if (!VERSION || !PR_NUMBER || !CLIENT_REPO) {
-  // Opened without params — show a friendly placeholder
   document.getElementById('auth-screen').innerHTML = `
-    <div class="brand">TomTom DS</div>
-    <h1 style="margin-top:12px">Token Review Tool</h1>
-    <p class="subtitle" style="margin-top:8px">
-      Open this page from the pull request comment link — it includes the
-      version, repository, and PR details needed to load the review.
-    </p>
-  `;
+    <div class="auth-card">
+      <div class="brand">TomTom DS</div>
+      <h1>Token Review</h1>
+      <p class="subtitle">Open this page from the pull request comment link —
+      it includes the version, repository, and PR details needed to load the review.</p>
+    </div>`;
 }
 
-/* ── Auth ─────────────────────────────────────────── */
-document.getElementById('signin-btn').addEventListener('click', () => {
-  const pat = document.getElementById('pat-input').value.trim();
-  if (!pat) return showAuthError('Please enter your GitHub Personal Access Token.');
-  ghToken = pat;
-  sessionStorage.setItem('gh_token', pat);
-  loadReview();
+/* ── Auth: GitHub OAuth (opens popup) ─────────────── */
+// OAuth App client ID — create one at github.com/settings/developers
+// Redirect URI must point to this page (GitHub Pages URL)
+const OAUTH_CLIENT_ID  = 'YOUR_GITHUB_OAUTH_CLIENT_ID';
+// Tiny proxy (e.g. Cloudflare Worker) that exchanges code → token
+// See: docs/oauth-proxy/README.md for setup instructions
+const OAUTH_PROXY_URL  = 'YOUR_OAUTH_PROXY_URL';
+
+let oauthPollTimer = null;
+
+document.getElementById('signin-btn')?.addEventListener('click', startOAuth);
+document.getElementById('cancel-oauth')?.addEventListener('click', () => {
+  clearInterval(oauthPollTimer);
+  document.getElementById('oauth-modal').classList.add('hidden');
 });
 
-document.getElementById('pat-input').addEventListener('keydown', e => {
-  if (e.key === 'Enter') document.getElementById('signin-btn').click();
-});
+function startOAuth() {
+  // If no OAuth app configured yet, fall back to a PAT prompt for development
+  if (OAUTH_CLIENT_ID === 'YOUR_GITHUB_OAUTH_CLIENT_ID') {
+    const pat = prompt('Development mode: paste your GitHub Personal Access Token\n(Set up OAuth App to remove this step)');
+    if (!pat) return;
+    ghToken = pat.trim();
+    sessionStorage.setItem('gh_token', ghToken);
+    loadReview();
+    return;
+  }
 
-function showAuthError(msg) {
-  const el = document.getElementById('auth-error');
-  el.textContent = msg;
-  el.classList.remove('hidden');
+  const state    = Math.random().toString(36).slice(2);
+  const redirect = encodeURIComponent(location.origin + location.pathname);
+  const oauthUrl = `https://github.com/login/oauth/authorize?client_id=${OAUTH_CLIENT_ID}&scope=repo&state=${state}&redirect_uri=${redirect}`;
+
+  sessionStorage.setItem('oauth_state', state);
+  document.getElementById('oauth-modal').classList.remove('hidden');
+
+  const popup = window.open(oauthUrl, 'github-oauth', 'width=600,height=700,left=200,top=100');
+
+  // Poll for the popup to redirect back with ?code=
+  oauthPollTimer = setInterval(async () => {
+    try {
+      const popupUrl = popup.location.href;
+      if (popupUrl.includes('code=')) {
+        clearInterval(oauthPollTimer);
+        popup.close();
+        const code = new URLSearchParams(new URL(popupUrl).search).get('code');
+        await exchangeCodeForToken(code);
+      }
+    } catch {
+      // Cross-origin — popup not yet redirected back, keep polling
+    }
+    if (popup.closed) {
+      clearInterval(oauthPollTimer);
+      document.getElementById('oauth-modal').classList.add('hidden');
+    }
+  }, 500);
 }
 
-/* ── Load review data ─────────────────────────────── */
+async function exchangeCodeForToken(code) {
+  document.getElementById('oauth-modal').classList.remove('hidden');
+  try {
+    const res  = await fetch(`${OAUTH_PROXY_URL}?code=${code}`);
+    const data = await res.json();
+    if (data.access_token) {
+      ghToken = data.access_token;
+      sessionStorage.setItem('gh_token', ghToken);
+      document.getElementById('oauth-modal').classList.add('hidden');
+      loadReview();
+    } else {
+      throw new Error(data.error_description || 'OAuth failed');
+    }
+  } catch (err) {
+    document.getElementById('oauth-modal').classList.add('hidden');
+    alert('Sign-in failed: ' + err.message);
+  }
+}
+
+/* ── Load data ────────────────────────────────────── */
 async function loadReview() {
   show('loading-screen');
   try {
-    // Verify token + get reviewer identity
+    // Verify token + fetch reviewer profile
     const userRes = await gh('https://api.github.com/user');
-    if (!userRes.ok) { show('auth-screen'); return showAuthError('Invalid token — please check and try again.'); }
+    if (!userRes.ok) { show('auth-screen'); return; }
     reviewer = await userRes.json();
 
     // Fetch migration manifest from TomTom repo
-    const manifestRes = await gh(
+    const mRes = await gh(
       `https://api.github.com/repos/${TOMTOM_OWNER}/${TOMTOM_REPO}/contents/migration/v${VERSION}.json`
     );
-    if (!manifestRes.ok) throw new Error(`Migration manifest for v${VERSION} not found in ${TOMTOM_REPO}.`);
-    const manifestFile = await manifestRes.json();
-    migrationData = JSON.parse(atob(manifestFile.content.replace(/\n/g, '')));
+    if (!mRes.ok) throw new Error(`Migration manifest v${VERSION} not found.`);
+    const mFile = await mRes.json();
+    const manifest = JSON.parse(atob(mFile.content.replace(/\n/g, '')));
 
-    // Fetch client's current client-theme.json from the PR branch
+    // Fetch client's current client-theme from PR branch
     try {
-      const themeRes = await gh(
+      const tRes = await gh(
         `https://api.github.com/repos/${CLIENT_OWNER}/${CLIENT_REPO}/contents/tokens/client-theme.json?ref=${BRANCH}`
       );
-      if (themeRes.ok) {
-        const themeFile = await themeRes.json();
-        clientTheme = JSON.parse(atob(themeFile.content.replace(/\n/g, '')));
+      if (tRes.ok) {
+        const tFile = await tRes.json();
+        clientTheme = JSON.parse(atob(tFile.content.replace(/\n/g, '')));
       }
-    } catch {
-      clientTheme = {}; // New client — no overrides yet
-    }
+    } catch { clientTheme = {}; }
 
-    renderReview();
+    // Build flat ordered token list: added → renamed → deprecated
+    const { changes } = manifest;
+    allTokens = [
+      ...(changes.added      || []).map(t => ({ ...t, kind: 'added' })),
+      ...(changes.renamed    || []).map(t => ({ ...t, kind: 'renamed' })),
+      ...(changes.deprecated || []).map(t => ({ ...t, kind: 'deprecated' })),
+    ];
+
+    // Populate topbar
+    document.getElementById('version-chip').textContent = `v${VERSION}`;
+    document.getElementById('repo-label').textContent   = CLIENT_REPO;
+    document.getElementById('avatar').src = reviewer.avatar_url;
+    document.getElementById('username').textContent = reviewer.login;
+
     show('review-screen');
+    renderCurrent();
   } catch (err) {
     document.getElementById('error-message').textContent = err.message;
     show('error-screen');
   }
 }
 
-// Auto-load if token already in session and params are present
+// Auto-load if session token exists and params are present
 if (ghToken && VERSION && PR_NUMBER && CLIENT_REPO) loadReview();
 
-/* ── Render review UI ─────────────────────────────── */
-function renderReview() {
-  const { changes } = migrationData;
+/* ── Step renderer ────────────────────────────────── */
+function renderCurrent() {
+  updateProgress();
 
-  document.getElementById('version-badge').textContent = `v${VERSION}`;
-  document.getElementById('client-badge').textContent  = CLIENT_REPO;
-  document.getElementById('reviewer-name').textContent = reviewer.login;
-
-  // Summary pills
-  const pills = [];
-  if (changes.added?.length)      pills.push(`<div class="summary-pill pill-added">● ${changes.added.length} new token${changes.added.length !== 1 ? 's' : ''}</div>`);
-  if (changes.renamed?.length)    pills.push(`<div class="summary-pill pill-renamed">● ${changes.renamed.length} renamed</div>`);
-  if (changes.deprecated?.length) pills.push(`<div class="summary-pill pill-deprecated">● ${changes.deprecated.length} deprecated</div>`);
-  document.getElementById('summary-bar').innerHTML = `<div class="summary-bar">${pills.join('')}</div>`;
-
-  // Sections
-  const container = document.getElementById('sections');
-  container.innerHTML = '';
-
-  if (changes.added?.length) {
-    container.appendChild(
-      buildSection('New tokens — assign your values', 'added', 'count-added', changes.added, buildAddedCard)
-    );
+  if (currentIndex >= allTokens.length) {
+    showCard('card-done');
+    return;
   }
-  if (changes.renamed?.length) {
-    container.appendChild(
-      buildSection('Renamed tokens — update your references', 'renamed', 'count-renamed', changes.renamed, buildRenamedCard)
-    );
-  }
-  if (changes.deprecated?.length) {
-    container.appendChild(
-      buildSection('Deprecated tokens — migrate before removal', 'deprecated', 'count-deprecated', changes.deprecated, buildDeprecatedCard)
-    );
-  }
+
+  const item = allTokens[currentIndex];
+  hideAllCards();
+
+  if (item.kind === 'added')      renderAdded(item);
+  if (item.kind === 'renamed')    renderRenamed(item);
+  if (item.kind === 'deprecated') renderDeprecated(item);
 }
 
-function buildSection(title, type, countClass, items, cardFn) {
-  const section = document.createElement('div');
-  section.className = 'section';
-  section.innerHTML = `
-    <div class="section-header">
-      <span class="section-title">${title}</span>
-      <span class="section-count ${countClass}">${items.length}</span>
-    </div>
-  `;
-  items.forEach(item => section.appendChild(cardFn(item)));
-  return section;
+function hideAllCards() {
+  ['card-added', 'card-renamed', 'card-deprecated', 'card-done']
+    .forEach(id => document.getElementById(id).classList.add('hidden'));
+}
+function showCard(id) {
+  hideAllCards();
+  document.getElementById(id).classList.remove('hidden');
 }
 
-/* ── Added token card ─────────────────────────────── */
-function buildAddedCard(token) {
-  const isColor      = token.type === 'color';
-  const defaultVal   = displayValue(token.value);
-  const existingVal  = clientTheme[token.token]?.value || null;
-  const tokenId      = safeId(token.token);
+/* ── Progress ─────────────────────────────────────── */
+function updateProgress() {
+  const total   = allTokens.length;
+  const done    = currentIndex;
+  const pct     = total ? Math.round((done / total) * 100) : 100;
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-label').textContent =
+    total ? `${done} / ${total}` : 'Done';
+}
 
-  // Initial decision
-  decisions[token.token] = existingVal
-    ? { action: 'custom', value: existingVal, type: token.type }
-    : { action: 'accept', value: defaultVal,  type: token.type };
+/* ── Added token ──────────────────────────────────── */
+function renderAdded(token) {
+  showCard('card-added');
 
-  const card = document.createElement('div');
-  card.className = 'token-card';
-  card.innerHTML = `
-    <div class="card-header">
-      <div class="token-name">${token.token}</div>
-      ${token.description ? `<div class="token-desc">${token.description}</div>` : ''}
-    </div>
-    <div class="card-body">
-      <div class="default-value">
-        <span class="default-label">TomTom default</span>
-        ${isColor ? `<div class="color-swatch" style="background:${defaultVal}"></div>` : ''}
-        <span class="default-val">${defaultVal}</span>
-      </div>
-      <div class="action-group">
-        <button class="action-btn accept-btn ${!existingVal ? 'active' : ''}" data-token="${token.token}" data-action="accept">
-          Accept default
-        </button>
-        <button class="action-btn custom-btn ${existingVal ? 'active' : ''}" data-token="${token.token}" data-action="custom">
-          Custom value
-        </button>
-      </div>
-    </div>
-    <div class="custom-row ${existingVal ? '' : 'hidden'}" id="custom-row-${tokenId}">
-      ${isColor ? `<div class="custom-preview" id="preview-${tokenId}" style="background:${existingVal || defaultVal}"></div>` : ''}
-      <input
-        class="custom-input"
-        type="text"
-        placeholder="${isColor ? '#hex or rgba(r,g,b,a)' : 'Enter value'}"
-        value="${existingVal || ''}"
-        data-token="${token.token}"
-        data-type="${token.type}"
-      >
-    </div>
-  `;
+  const isColor  = token.type === 'color';
+  const defVal   = token.value || '';
+  const existing = clientTheme[token.token]?.value || null;
 
-  // Action buttons
-  card.querySelectorAll('.action-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      card.querySelectorAll('.action-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const row = document.getElementById(`custom-row-${tokenId}`);
-      if (btn.dataset.action === 'custom') {
-        row.classList.remove('hidden');
-        decisions[token.token].action = 'custom';
-      } else {
-        row.classList.add('hidden');
-        decisions[token.token] = { action: 'accept', value: defaultVal, type: token.type };
-      }
-    });
+  document.getElementById('added-name').textContent = token.token;
+  document.getElementById('added-hex').textContent  = defVal;
+  document.getElementById('added-desc').textContent = token.description || '';
+
+  const swatch = document.getElementById('added-swatch');
+  swatch.style.display = isColor ? '' : 'none';
+  if (isColor) swatch.style.background = defVal;
+
+  // Reset modify row
+  const modRow   = document.getElementById('modify-row');
+  const modInput = document.getElementById('modify-input');
+  const modPrev  = document.getElementById('modify-preview');
+  modRow.classList.add('hidden');
+  modInput.value = existing || '';
+  if (isColor) { modPrev.style.display = ''; modPrev.style.background = existing || defVal; }
+  else modPrev.style.display = 'none';
+
+  modInput.oninput = () => {
+    const v = modInput.value.trim();
+    if (isColor) modPrev.style.background = v;
+    decisions[token.token] = { action: 'modify', value: v, type: token.type };
+  };
+
+  // Wire action buttons
+  wireActionBtn('btn-accept', () => {
+    decisions[token.token] = { action: 'accept', value: defVal, type: token.type };
+    addReviewedItem(token.token, 'accepted', defVal, isColor);
+    next();
   });
+  wireActionBtn('btn-modify', () => {
+    modRow.classList.remove('hidden');
+    modInput.focus();
+    // Confirm on Enter or second click of Modify while value is filled
+    wireActionBtn('btn-modify', () => {
+      const v = modInput.value.trim();
+      if (!v) { modInput.focus(); return; }
+      decisions[token.token] = { action: 'modify', value: v, type: token.type };
+      addReviewedItem(token.token, 'modified', v, isColor);
+      next();
+    }, true);
+  });
+  wireActionBtn('btn-reject', () => {
+    decisions[token.token] = { action: 'reject', type: token.type };
+    addReviewedItem(token.token, 'rejected', null, isColor);
+    next();
+  });
+}
 
-  // Custom input
-  const input = card.querySelector('.custom-input');
-  if (input) {
-    input.addEventListener('input', () => {
-      const val = input.value.trim();
-      decisions[input.dataset.token] = { action: 'custom', value: val, type: input.dataset.type };
-      const preview = document.getElementById(`preview-${tokenId}`);
-      if (preview) preview.style.background = val;
-    });
+/* ── Renamed token ────────────────────────────────── */
+function renderRenamed(token) {
+  showCard('card-renamed');
+  document.getElementById('renamed-old').textContent  = token.oldToken;
+  document.getElementById('renamed-new').textContent  = token.newToken;
+  document.getElementById('renamed-note').textContent = token.migration || 'No value change — update references only.';
+
+  wireActionBtn('btn-rename-ack', () => {
+    decisions[token.oldToken] = { action: 'ack-rename' };
+    addReviewedItem(token.newToken, 'ack', null, false, 'acknowledged');
+    next();
+  });
+}
+
+/* ── Deprecated token ─────────────────────────────── */
+function renderDeprecated(token) {
+  showCard('card-deprecated');
+  document.getElementById('deprecated-name').textContent = token.token;
+  document.getElementById('dep-version').textContent     = token.removalVersion || '2.0';
+  document.getElementById('dep-replacement').textContent = token.replacedBy || '—';
+  document.getElementById('dep-note').textContent        = token.migration || '';
+
+  wireActionBtn('btn-dep-ack', () => {
+    decisions[token.token] = { action: 'ack-deprecated' };
+    addReviewedItem(token.token, 'ack', null, false, 'acknowledged');
+    next();
+  });
+}
+
+/* ── Reviewed so far list ─────────────────────────── */
+function addReviewedItem(name, action, value, isColor, labelOverride) {
+  const list  = document.getElementById('reviewed-list');
+  const item  = document.createElement('div');
+  item.className = 'reviewed-item';
+
+  const dotClass   = { accepted: 'dot-accepted', modified: 'dot-modified', rejected: 'dot-rejected', ack: 'dot-ack' }[action];
+  const badgeClass = { accepted: 'badge-accepted', modified: 'badge-modified', rejected: 'badge-rejected', ack: 'badge-ack' }[action];
+  const label      = labelOverride || action;
+
+  let valueHtml = '';
+  if (value && isColor) {
+    valueHtml = `<span class="reviewed-value" style="display:flex;align-items:center;gap:5px">
+      <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${value};border:1px solid rgba(0,0,0,0.1)"></span>
+      ${value}
+    </span>`;
+  } else if (value) {
+    valueHtml = `<span class="reviewed-value">${value}</span>`;
   }
 
-  return card;
+  item.innerHTML = `
+    <div class="reviewed-dot ${dotClass}"></div>
+    <span class="reviewed-token-name" title="${name}">${shortName(name)}</span>
+    <span class="reviewed-badge ${badgeClass}">${label}</span>
+    ${valueHtml}
+  `;
+  list.prepend(item); // newest at top
 }
 
-/* ── Renamed token card ───────────────────────────── */
-function buildRenamedCard(token) {
-  const card = document.createElement('div');
-  card.className = 'token-card border-renamed';
-  card.innerHTML = `
-    <div class="info-row">
-      <div class="rename-row">
-        <span class="old-token">${token.oldToken}</span>
-        <span class="arrow">→</span>
-        <span class="new-token">${token.newToken}</span>
-      </div>
-      <div class="migration-note">${token.migration || 'Value unchanged — update references to the new token name.'}</div>
-    </div>
-  `;
-  return card;
+function shortName(name) {
+  // Show last 2 segments for readability: tt_sys_color_brand_primary → brand_primary
+  const parts = name.split('_');
+  return parts.length > 3 ? parts.slice(-2).join('_') : name;
 }
 
-/* ── Deprecated token card ────────────────────────── */
-function buildDeprecatedCard(token) {
-  const card = document.createElement('div');
-  card.className = 'token-card border-deprecated';
-  card.innerHTML = `
-    <div class="info-row">
-      <div class="token-name">${token.token}</div>
-      <div class="deprecation-warning">
-        ⚠ Removed in v${token.removalVersion} — replace with
-        <span class="replacement-token">${token.replacedBy}</span>
-      </div>
-      ${token.migration ? `<div class="migration-note" style="margin-top:6px">${token.migration}</div>` : ''}
-    </div>
-  `;
-  return card;
+/* ── Navigation ───────────────────────────────────── */
+function next() {
+  currentIndex++;
+  renderCurrent();
+}
+
+function wireActionBtn(id, handler, replace = false) {
+  const btn = document.getElementById(id);
+  if (!btn) return;
+  const fresh = btn.cloneNode(true); // remove old listeners
+  btn.parentNode.replaceChild(fresh, btn);
+  fresh.addEventListener('click', handler);
 }
 
 /* ── Submit ───────────────────────────────────────── */
-document.getElementById('submit-btn').addEventListener('click', submitReview);
+document.getElementById('submit-btn')?.addEventListener('click', submitReview);
 
 async function submitReview() {
   const btn = document.getElementById('submit-btn');
@@ -270,30 +347,30 @@ async function submitReview() {
   btn.textContent = 'Submitting…';
 
   try {
-    // Build updated client-theme: merge existing overrides with new decisions
+    // Build updated client-theme
     const newTheme = { ...clientTheme };
 
-    for (const [tokenName, decision] of Object.entries(decisions)) {
-      if (decision.action === 'custom' && decision.value) {
-        newTheme[tokenName] = { value: decision.value, type: decision.type };
-      } else if (decision.action === 'accept') {
-        // Remove override — let it resolve from tomtom-base
+    for (const [tokenName, d] of Object.entries(decisions)) {
+      if (d.action === 'modify' && d.value) {
+        newTheme[tokenName] = { value: d.value, type: d.type };
+      } else if (d.action === 'accept' || d.action === 'reject') {
+        // Accept = use TomTom default (no override needed)
+        // Reject = explicitly remove from theme
         delete newTheme[tokenName];
       }
+      // ack-rename / ack-deprecated = no file change needed
     }
 
-    // Get current SHA (needed for file update)
+    // Get SHA if file exists
     let sha = null;
-    const existingRes = await gh(
+    const existRes = await gh(
       `https://api.github.com/repos/${CLIENT_OWNER}/${CLIENT_REPO}/contents/tokens/client-theme.json?ref=${BRANCH}`
     );
-    if (existingRes.ok) {
-      sha = (await existingRes.json()).sha;
-    }
+    if (existRes.ok) sha = (await existRes.json()).sha;
 
-    // Commit updated client-theme.json to the PR branch
+    // Commit client-theme.json to PR branch
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(newTheme, null, 2))));
-    const commitRes = await gh(
+    const putRes  = await gh(
       `https://api.github.com/repos/${CLIENT_OWNER}/${CLIENT_REPO}/contents/tokens/client-theme.json`,
       {
         method: 'PUT',
@@ -305,34 +382,33 @@ async function submitReview() {
         })
       }
     );
-    if (!commitRes.ok) {
-      const err = await commitRes.json();
-      throw new Error(err.message || 'Failed to commit client-theme.json');
-    }
+    if (!putRes.ok) throw new Error((await putRes.json()).message);
 
-    // Post summary comment on the PR
+    // Tally decisions for PR comment
     const accepted = Object.values(decisions).filter(d => d.action === 'accept').length;
-    const custom   = Object.values(decisions).filter(d => d.action === 'custom' && d.value).length;
+    const modified = Object.values(decisions).filter(d => d.action === 'modify').length;
+    const rejected = Object.values(decisions).filter(d => d.action === 'reject').length;
 
+    // Post summary comment on PR
     await gh(
       `https://api.github.com/repos/${CLIENT_OWNER}/${CLIENT_REPO}/issues/${PR_NUMBER}/comments`,
       {
         method: 'POST',
         body: JSON.stringify({
           body:
-            `✅ **Token review complete** — by @${reviewer.login}\n\n` +
+            `## ✅ Token review complete — @${reviewer.login}\n\n` +
             `| Decision | Count |\n|---|---|\n` +
-            `| Accepted TomTom default | ${accepted} |\n` +
-            `| Set custom value | ${custom} |\n\n` +
-            `\`client-theme.json\` has been updated on this branch. ` +
-            `Merge the PR and pull from Token Studio to sync.`
+            `| ✓ Accepted TomTom default | ${accepted} |\n` +
+            `| ✏ Modified with custom value | ${modified} |\n` +
+            `| ✗ Rejected | ${rejected} |\n\n` +
+            `\`tokens/client-theme.json\` has been updated on this branch.\n` +
+            `Merge the PR, then pull from Token Studio to sync.`
         })
       }
     );
 
-    // Done screen
     document.getElementById('done-message').textContent =
-      `${accepted + custom} tokens reviewed. The PR branch is updated — merge it, then pull in Token Studio.`;
+      `${accepted + modified + rejected} tokens reviewed. Merge the PR and pull in Token Studio.`;
     document.getElementById('pr-link').href =
       `https://github.com/${CLIENT_OWNER}/${CLIENT_REPO}/pull/${PR_NUMBER}`;
     show('done-screen');
@@ -343,7 +419,7 @@ async function submitReview() {
   }
 }
 
-/* ── Helpers ──────────────────────────────────────── */
+/* ── GitHub API helper ────────────────────────────── */
 function gh(url, options = {}) {
   return fetch(url, {
     ...options,
@@ -354,15 +430,4 @@ function gh(url, options = {}) {
       ...(options.headers || {})
     }
   });
-}
-
-// Strip Token Studio alias syntax for display: {Group.token_name} → token_name
-function displayValue(val) {
-  if (!val) return '';
-  if (val.startsWith('{') && val.endsWith('}')) return val;
-  return val;
-}
-
-function safeId(name) {
-  return name.replace(/[^a-zA-Z0-9]/g, '_');
 }
