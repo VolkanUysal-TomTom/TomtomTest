@@ -1,0 +1,8 @@
+{
+  "_info": "JLR brand overrides — Screen size (Medium). Adjust size and spacing tokens here. Switch this file to Large.json or Small.json if your target screen differs.",
+  "tt_sys_spacing_panel_safeArea_bottom": {
+    "value": "48",
+    "type": "number",
+    "description": "JLR head unit — standard bottom inset for medium screens"
+  }
+}

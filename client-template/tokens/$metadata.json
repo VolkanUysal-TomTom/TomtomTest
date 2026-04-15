@@ -22,6 +22,8 @@
     "tomtom-base/3-Component/Fonts/Typography",
     "tomtom-base/3-Component/Effects/Shadows",
     "tomtom-base/3-Component/Effects/Disabled State",
-    "client-theme"
+    "client-theme/Light",
+    "client-theme/Dark",
+    "client-theme/Screen"
   ]
 }
