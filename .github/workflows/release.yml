@@ -1,0 +1,60 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release:
+    name: Publish GitHub Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
+
+      - name: Extract changelog section for this version
+        id: changelog
+        run: |
+          VERSION="${{ steps.version.outputs.VERSION }}"
+          # Extract the section between this version heading and the next
+          NOTES=$(awk "/^## \[$VERSION\]/{found=1; next} found && /^## \[/{exit} found{print}" CHANGELOG.md)
+          if [ -z "$NOTES" ]; then
+            NOTES="See CHANGELOG.md for details."
+          fi
+          # Write to a file to preserve newlines
+          echo "$NOTES" > release_notes.md
+          echo "Release notes extracted for v$VERSION"
+
+      - name: Package token files
+        run: |
+          VERSION="${{ steps.version.outputs.VERSION }}"
+          # Package only the distributable token layers (exclude Figma Only)
+          zip -r "tomtom-base-tokens-v${VERSION}.zip" \
+            tokens/1-Global \
+            tokens/2-System \
+            tokens/'3-Component' \
+            tokens/'$metadata.json' \
+            tokens/'$themes.json' \
+            CHANGELOG.md \
+            CLIENTS.md
+          echo "Packaged token files for v$VERSION"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "v${{ steps.version.outputs.VERSION }}"
+          body_path: release_notes.md
+          files: |
+            tomtom-base-tokens-v${{ steps.version.outputs.VERSION }}.zip
+            migration/v${{ steps.version.outputs.VERSION }}.json
+          fail_on_unmatched_files: false
+          draft: false
+          prerelease: false
