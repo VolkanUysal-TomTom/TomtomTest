@@ -101,3 +101,21 @@ See [`CLIENTS.md`](CLIENTS.md) for step-by-step instructions on how to set up To
 ## For the DS team
 
 See the [contributing guidelines](.github/PULL_REQUEST_TEMPLATE.md) for the PR checklist to follow when adding or changing tokens.
+
+### How to cut a release
+
+After merging a PR to `main`:
+
+1. Decide the new version number following [Semantic Versioning](https://semver.org/) — patch for value changes, minor for new tokens, major for renames/removals
+2. Make sure `CHANGELOG.md` has a section for that version (e.g. `## [1.2.0] — YYYY-MM-DD`)
+3. Push a version tag — GitHub Actions will automatically create the release:
+
+```bash
+git checkout main && git pull
+git tag v1.2.0
+git push origin v1.2.0
+```
+
+The workflow packages the distributable token files (`1-Global`, `2-System`, `3-Component`) into a zip, extracts the changelog section as release notes, and attaches the `migration/vX.X.X.json` manifest — all automatically.
+
+Clients watching the repo receive a release notification and can download the zip from the [Releases page](../../releases).
