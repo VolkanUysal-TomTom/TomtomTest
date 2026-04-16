@@ -1,0 +1,40 @@
+{
+  "version": "1.4.1",
+  "changes": {
+    "added": [
+      {
+        "token": "Test",
+        "type": "color",
+        "description": "Test token on primary surface",
+        "file": "2-System/Colours",
+        "group": "Surfaces/Primary",
+        "modes": {
+          "Light": { "value": "#db0000" },
+          "Dark":  { "value": "#db0000" }
+        }
+      },
+      {
+        "token": "brandnew",
+        "type": "color",
+        "description": "New brand colour token",
+        "file": "2-System/Colours",
+        "group": "Brand/Primary",
+        "modes": {
+          "Light": { "value": "#2846dc" },
+          "Dark":  { "value": "#2846dc" }
+        }
+      }
+    ],
+    "renamed": [],
+    "deprecated": [
+      {
+        "token": "Test",
+        "migration": "Re-injected at correct nesting Surfaces/Primary in v1.4.1"
+      },
+      {
+        "token": "brandnew",
+        "migration": "Re-injected at correct nesting Brand/Primary in v1.4.1"
+      }
+    ]
+  }
+}

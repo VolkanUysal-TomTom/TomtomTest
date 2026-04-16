@@ -123,33 +123,8 @@ jobs:
           with open(os.environ['MANIFEST_PATH'], 'r') as f:
               manifest = json.load(f)
 
-          # Process ADDED tokens
-          for token in manifest.get('changes', {}).get('added', []):
-              token_name = token['token']
-              file_dir = token.get('file', '')  # e.g. "2-System/Colours"
-              group = token.get('group', '')    # e.g. "POI Categories"
-
-              for mode, mode_data in token.get('modes', {}).items():
-                  file_path = f"tokens/{file_dir}/{mode}.json"
-                  if not os.path.exists(file_path):
-                      print(f"  Skipping {file_path} - file not found")
-                      continue
-
-                  data = load_json(file_path)
-
-                  if token_exists(data, token_name):
-                      print(f"  {token_name} already exists in {file_path}, skipping")
-                      continue
-
-                  token_def = {'value': mode_data['value'], 'type': token['type']}
-                  if mode_data.get('description'):
-                      token_def['description'] = mode_data['description']
-
-                  inject_token(data, group, token_name, token_def)
-                  save_json(file_path, data)
-                  print(f"  Added {token_name} to {file_path}")
-
-          # Process DEPRECATED tokens
+          # Process DEPRECATED tokens first — must run before ADDED so that
+          # tokens being re-injected at a new location are removed first
           for token in manifest.get('changes', {}).get('deprecated', []):
               token_name = token['token']
               for root_dir, dirs, files in os.walk('tokens'):
@@ -177,6 +152,32 @@ jobs:
                       if find_and_rename_token(data, old_name, new_name):
                           save_json(fpath, data)
                           print(f"  Renamed {old_name} -> {new_name} in {fpath}")
+
+          # Process ADDED tokens last — by this point deprecated/renamed are done
+          for token in manifest.get('changes', {}).get('added', []):
+              token_name = token['token']
+              file_dir = token.get('file', '')  # e.g. "2-System/Colours"
+              group = token.get('group', '')    # e.g. "POI Categories"
+
+              for mode, mode_data in token.get('modes', {}).items():
+                  file_path = f"tokens/{file_dir}/{mode}.json"
+                  if not os.path.exists(file_path):
+                      print(f"  Skipping {file_path} - file not found")
+                      continue
+
+                  data = load_json(file_path)
+
+                  if token_exists(data, token_name):
+                      print(f"  {token_name} already exists in {file_path}, skipping")
+                      continue
+
+                  token_def = {'value': mode_data['value'], 'type': token['type']}
+                  if mode_data.get('description'):
+                      token_def['description'] = mode_data['description']
+
+                  inject_token(data, group, token_name, token_def)
+                  save_json(file_path, data)
+                  print(f"  Added {token_name} to {file_path}")
           PYEOF
 
           python3 /tmp/apply_tokens.py
