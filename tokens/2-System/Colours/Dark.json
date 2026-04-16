@@ -102,6 +102,10 @@
       "tt_sys_color_brand_primary_stroke": {
         "value": "{Blue.tt_glb_color_blue_400}",
         "type": "color"
+      },
+      "brandnew": {
+        "value": "#2846dc",
+        "type": "color"
       }
     },
     "Secondary": {
