@@ -133,6 +133,7 @@ function resolveValue(value, map, depth = 0) {
 function encodePath(p) {
   return p.split('/').map(encodeURIComponent).join('/');
 }
+
 async function buildTokenMap(owner, repo, branch) {
   // Get the full git tree — encode branch name for URL safety (e.g. sync/v1.4.0)
   const encodedBranch = encodeURIComponent(branch);
@@ -179,14 +180,15 @@ async function loadReview() {
     reviewer = await userRes.json();
     console.log('Step 1 done: logged in as', reviewer.login);
 
-    // Fetch migration manifest from TomTom repo
+    // Fetch migration manifest from TomTom repo — use raw URL to avoid API/base64 issues
     console.log('Step 2: fetching manifest...');
-    const mRes = await gh(
-      `https://api.github.com/repos/${TOMTOM_OWNER}/${TOMTOM_REPO}/contents/migration/v${VERSION}.json`
+    const mRes = await fetch(
+      `https://raw.githubusercontent.com/${TOMTOM_OWNER}/${TOMTOM_REPO}/main/migration/v${VERSION}.json`
     );
-    if (!mRes.ok) throw new Error(`Migration manifest v${VERSION} not found in ${TOMTOM_OWNER}/${TOMTOM_REPO} (${mRes.status}).`);
-    const mFile = await mRes.json();
-    manifest = JSON.parse(atob(mFile.content.replace(/\n/g, '')));
+    if (!mRes.ok) throw new Error(`Migration manifest v${VERSION} not found (${mRes.status}). URL: raw.githubusercontent.com/${TOMTOM_OWNER}/${TOMTOM_REPO}/main/migration/v${VERSION}.json`);
+    const mText = await mRes.text();
+    console.log('Step 2: raw manifest length:', mText.length);
+    manifest = JSON.parse(mText);
     console.log('Step 2 done: manifest loaded with', (manifest.changes?.added?.length || 0), 'added tokens');
 
     // Build flat token resolution map from JLR's own files on the PR branch
