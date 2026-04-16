@@ -130,33 +130,38 @@ function resolveValue(value, map, depth = 0) {
 }
 
 async function buildTokenMap(owner, repo, branch) {
-  // Get the full git tree
+  // Get the full git tree — encode branch name for URL safety (e.g. sync/v1.4.0)
+  const encodedBranch = encodeURIComponent(branch);
   const treeRes = await gh(
-    `https://api.github.com/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`
+    `https://api.github.com/repos/${owner}/${repo}/git/trees/${encodedBranch}?recursive=1`
   );
-  if (!treeRes.ok) throw new Error('Could not fetch JLR repo file tree.');
+  if (!treeRes.ok) throw new Error(`Could not fetch file tree for ${owner}/${repo} branch ${branch}.`);
   const tree = await treeRes.json();
 
   const tokenFiles = (tree.tree || []).filter(f =>
     f.path.startsWith('tokens/') &&
     f.path.endsWith('.json') &&
-    !f.path.includes('/$')
+    !f.path.includes('/$') &&
+    !f.path.includes('Figma Only')
   );
 
+  console.log(`Building token map from ${tokenFiles.length} files on ${branch}`);
   const flat = {};
 
   for (const file of tokenFiles) {
-    const res = await gh(
-      `https://api.github.com/repos/${owner}/${repo}/contents/${file.path}?ref=${branch}`
-    );
-    if (!res.ok) continue;
-    const data = await res.json();
     try {
+      const res = await gh(
+        `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(file.path)}?ref=${encodedBranch}`
+      );
+      if (!res.ok) { console.warn(`Skip ${file.path}: ${res.status}`); continue; }
+      const data = await res.json();
+      if (!data.content) { console.warn(`Skip ${file.path}: no content`); continue; }
       const content = JSON.parse(atob(data.content.replace(/\n/g, '')));
       extractTokens(content, flat);
-    } catch { /* skip malformed files */ }
+    } catch (e) { console.warn(`Skip ${file.path}:`, e.message); }
   }
 
+  console.log(`Token map built: ${Object.keys(flat).length} tokens`);
   return flat;
 }
 
