@@ -133,7 +133,6 @@ function resolveValue(value, map, depth = 0) {
 function encodePath(p) {
   return p.split('/').map(encodeURIComponent).join('/');
 }
-
 async function buildTokenMap(owner, repo, branch) {
   // Get the full git tree — encode branch name for URL safety (e.g. sync/v1.4.0)
   const encodedBranch = encodeURIComponent(branch);
