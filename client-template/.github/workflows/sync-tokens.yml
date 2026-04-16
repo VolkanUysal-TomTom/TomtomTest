@@ -101,13 +101,14 @@ jobs:
               return False
 
           def inject_token(data, group, token_name, token_def):
-              """Inject token into the specified group (creates group if missing)"""
+              """Inject token into the specified group path (supports nested paths with '/')"""
+              current = data
               if group:
-                  if group not in data:
-                      data[group] = {}
-                  data[group][token_name] = token_def
-              else:
-                  data[token_name] = token_def
+                  for level in group.split('/'):
+                      if level not in current or not isinstance(current[level], dict):
+                          current[level] = {}
+                      current = current[level]
+              current[token_name] = token_def
 
           def token_exists(data, token_name):
               """Check if a token key exists anywhere in the data"""
