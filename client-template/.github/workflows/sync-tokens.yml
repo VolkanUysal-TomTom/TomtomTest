@@ -40,14 +40,15 @@ jobs:
       - name: Fetch migration manifest
         id: manifest
         run: |
-          MANIFEST=$(curl -s \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${{ steps.vars.outputs.tomtom_owner }}/${{ steps.vars.outputs.tomtom_repo }}/contents/migration/v${{ steps.vars.outputs.VERSION }}.json" \
-            | jq -r '.content' | base64 -d)
+          curl -sL "https://raw.githubusercontent.com/${{ steps.vars.outputs.tomtom_owner }}/${{ steps.vars.outputs.tomtom_repo }}/main/migration/v${{ steps.vars.outputs.VERSION }}.json" -o /tmp/manifest.json
 
-          echo "MANIFEST_JSON=$MANIFEST" >> $GITHUB_ENV
+          echo "--- manifest.json contents ---"
+          cat /tmp/manifest.json
+          echo "--- end ---"
 
+          echo "MANIFEST_PATH=/tmp/manifest.json" >> $GITHUB_ENV
+
+          MANIFEST=$(cat /tmp/manifest.json)
           ADDED=$(echo "$MANIFEST"      | jq -r '[.changes.added[]?.token]    | join("\n- ")' 2>/dev/null || echo "")
           RENAMED=$(echo "$MANIFEST"    | jq -r '[.changes.renamed[] | "\(.oldToken) → \(.newToken)"] | join("\n- ")' 2>/dev/null || echo "")
           DEPRECATED=$(echo "$MANIFEST" | jq -r '[.changes.deprecated[]?.token] | join("\n- ")' 2>/dev/null || echo "")
@@ -118,7 +119,8 @@ jobs:
                           return True
               return False
 
-          manifest = json.loads(os.environ['MANIFEST_JSON'])
+          with open(os.environ['MANIFEST_PATH'], 'r') as f:
+              manifest = json.load(f)
 
           # Process ADDED tokens
           for token in manifest.get('changes', {}).get('added', []):
@@ -201,9 +203,31 @@ jobs:
             const renamed    = `${{ steps.manifest.outputs.RENAMED }}`;
             const deprecated = `${{ steps.manifest.outputs.DEPRECATED }}`;
 
-            const addedSection      = added      ? `### New tokens — assign values in the review tool\n- ${added}`    : '';
-            const renamedSection    = renamed    ? `### Renamed tokens — update references\n- ${renamed}`             : '';
-            const deprecatedSection = deprecated ? `### Deprecated tokens — migrate before removal\n- ${deprecated}`  : '';
+            const addedList  = added.split('\n').filter(Boolean);
+            const renList    = renamed.split('\n').filter(Boolean);
+            const depList    = deprecated.split('\n').filter(Boolean);
+
+            const cap = (arr, n = 20) => arr.length > n
+              ? arr.slice(0, n).join('\n') + `\n- … and ${arr.length - n} more`
+              : arr.join('\n');
+
+            const addedSection      = addedList.length  ? `### New tokens (${addedList.length})\n${cap(addedList.map(t => `- ${t}`))}`   : '';
+            const renamedSection    = renList.length     ? `### Renamed tokens (${renList.length})\n${cap(renList.map(t => `- ${t}`))}`   : '';
+            const deprecatedSection = depList.length     ? `### Deprecated tokens (${depList.length})\n${cap(depList.map(t => `- ${t}`))}` : '';
+
+            const body = [
+              `## TomTom Token Update — v${{ steps.vars.outputs.VERSION }}`,
+              '',
+              `The TomTom Design System has released a new token version.`,
+              `This PR applies token changes from v${{ steps.vars.outputs.VERSION }}.`,
+              '',
+              addedSection,
+              renamedSection,
+              deprecatedSection,
+              '',
+              '---',
+              '_The designer review link will be posted as a comment below._',
+            ].filter(Boolean).join('\n').slice(0, 60000);
 
             const pr = await github.rest.pulls.create({
               owner: context.repo.owner,
@@ -211,19 +235,7 @@ jobs:
               head:  `sync/v${{ steps.vars.outputs.VERSION }}`,
               base:  'main',
               title: `chore(tokens): sync TomTom tokens to v${{ steps.vars.outputs.VERSION }}`,
-              body: [
-                `## TomTom Token Update — v${{ steps.vars.outputs.VERSION }}`,
-                '',
-                `The TomTom Design System has released a new token version.`,
-                `This PR applies token additions, renames, and deprecations from v${{ steps.vars.outputs.VERSION }} directly into the \`tokens/\` files.`,
-                '',
-                addedSection,
-                renamedSection,
-                deprecatedSection,
-                '',
-                '---',
-                '_The designer review link will be posted as a comment below._',
-              ].filter(Boolean).join('\n')
+              body
             });
 
             return pr.data.number;
