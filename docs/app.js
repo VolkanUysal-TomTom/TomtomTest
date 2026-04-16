@@ -129,13 +129,18 @@ function resolveValue(value, map, depth = 0) {
   return value;  // unresolved reference
 }
 
+// Encode a file path for the GitHub Contents API — encode each segment but keep slashes
+function encodePath(p) {
+  return p.split('/').map(encodeURIComponent).join('/');
+}
+
 async function buildTokenMap(owner, repo, branch) {
   // Get the full git tree — encode branch name for URL safety (e.g. sync/v1.4.0)
   const encodedBranch = encodeURIComponent(branch);
   const treeRes = await gh(
     `https://api.github.com/repos/${owner}/${repo}/git/trees/${encodedBranch}?recursive=1`
   );
-  if (!treeRes.ok) throw new Error(`Could not fetch file tree for ${owner}/${repo} branch ${branch}.`);
+  if (!treeRes.ok) throw new Error(`Could not fetch file tree for ${owner}/${repo} branch ${branch} (${treeRes.status}).`);
   const tree = await treeRes.json();
 
   const tokenFiles = (tree.tree || []).filter(f =>
@@ -151,7 +156,7 @@ async function buildTokenMap(owner, repo, branch) {
   for (const file of tokenFiles) {
     try {
       const res = await gh(
-        `https://api.github.com/repos/${owner}/${repo}/contents/${encodeURIComponent(file.path)}?ref=${encodedBranch}`
+        `https://api.github.com/repos/${owner}/${repo}/contents/${encodePath(file.path)}?ref=${encodedBranch}`
       );
       if (!res.ok) { console.warn(`Skip ${file.path}: ${res.status}`); continue; }
       const data = await res.json();
@@ -169,20 +174,26 @@ async function buildTokenMap(owner, repo, branch) {
 async function loadReview() {
   show('loading-screen');
   try {
+    console.log('Step 1: checking auth...');
     const userRes = await gh('https://api.github.com/user');
     if (!userRes.ok) { show('auth-screen'); return; }
     reviewer = await userRes.json();
+    console.log('Step 1 done: logged in as', reviewer.login);
 
     // Fetch migration manifest from TomTom repo
+    console.log('Step 2: fetching manifest...');
     const mRes = await gh(
       `https://api.github.com/repos/${TOMTOM_OWNER}/${TOMTOM_REPO}/contents/migration/v${VERSION}.json`
     );
-    if (!mRes.ok) throw new Error(`Migration manifest v${VERSION} not found in ${TOMTOM_OWNER}/${TOMTOM_REPO}.`);
+    if (!mRes.ok) throw new Error(`Migration manifest v${VERSION} not found in ${TOMTOM_OWNER}/${TOMTOM_REPO} (${mRes.status}).`);
     const mFile = await mRes.json();
     manifest = JSON.parse(atob(mFile.content.replace(/\n/g, '')));
+    console.log('Step 2 done: manifest loaded with', (manifest.changes?.added?.length || 0), 'added tokens');
 
     // Build flat token resolution map from JLR's own files on the PR branch
+    console.log('Step 3: building token map from', CLIENT_OWNER, CLIENT_REPO, BRANCH);
     tokenMap = await buildTokenMap(CLIENT_OWNER, CLIENT_REPO, BRANCH);
+    console.log('Step 3 done');
 
     // Build flat ordered review list
     allTokens = [
