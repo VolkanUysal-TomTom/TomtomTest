@@ -709,6 +709,16 @@
       "type": "color",
       "description": ""
     },
+    "tt_sys_color_parking_available": {
+      "value": "{Extended Colour Collection.tt_glb_color_mint_400}",
+      "type": "color",
+      "description": "Indicates available parking spots"
+    },
+    "tt_sys_color_parking_full": {
+      "value": "{Extended Colour Collection.tt_glb_color_red_400}",
+      "type": "color",
+      "description": "Indicates a full parking area"
+    },
     "tt_sys_color_public": {
       "value": "{Extended Colour Collection.tt_glb_color_granite_100}",
       "type": "color",
