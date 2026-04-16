@@ -20,58 +20,36 @@ jobs:
       - name: Set release variables
         id: vars
         run: |
-          echo "VERSION=${{ github.event.client_payload.version }}" >> $GITHUB_OUTPUT
-          echo "BRANCH=sync/v${{ github.event.client_payload.version }}"  >> $GITHUB_OUTPUT
-          echo "ZIP_URL=${{ github.event.client_payload.zip_url }}"        >> $GITHUB_OUTPUT
-          echo "REVIEW_URL=${{ github.event.client_payload.review_url }}"  >> $GITHUB_OUTPUT
+          echo "VERSION=${{ github.event.client_payload.version }}"           >> $GITHUB_OUTPUT
+          echo "BRANCH=sync/v${{ github.event.client_payload.version }}"     >> $GITHUB_OUTPUT
+          echo "REVIEW_URL=${{ github.event.client_payload.review_url }}"    >> $GITHUB_OUTPUT
+          echo "tomtom_owner=${{ github.event.client_payload.tomtom_owner }}" >> $GITHUB_OUTPUT
+          echo "tomtom_repo=${{ github.event.client_payload.tomtom_repo }}"   >> $GITHUB_OUTPUT
 
       - name: Create sync branch
         run: |
-          git config user.name  "tomtom-ds-bot"
-          git config user.email "ds-bot@tomtom.com"
           # Delete remote branch if it exists from a previous run
           git push origin --delete "${{ steps.vars.outputs.BRANCH }}" 2>/dev/null || true
           git checkout -b "${{ steps.vars.outputs.BRANCH }}"
 
-      - name: Download and unpack new base tokens
+      - name: Configure git user
         run: |
-          curl -sL "${{ steps.vars.outputs.ZIP_URL }}" -o base-tokens.zip
-          # Replace the tomtom-base folder with the new release contents
-          rm -rf tokens/tomtom-base
-          mkdir -p tokens/tomtom-base
-          unzip -q base-tokens.zip -d _tmp_tokens
-          # Move only the distributable layers
-          for dir in "1-Global" "2-System" "3-Component"; do
-            if [ -d "_tmp_tokens/tokens/$dir" ]; then
-              cp -r "_tmp_tokens/tokens/$dir" "tokens/tomtom-base/$dir"
-            fi
-          done
-          rm -rf _tmp_tokens base-tokens.zip
+          git config user.name  "tomtom-ds-bot"
+          git config user.email "ds-bot@tomtom.com"
 
-      - name: Commit updated base tokens
-        id: commit
-        run: |
-          git add tokens/tomtom-base
-          if git diff --staged --quiet; then
-            echo "No changes to tomtom-base — base tokens already up to date."
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            git commit -m "chore(tokens): update tomtom-base to v${{ steps.vars.outputs.VERSION }}"
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-          git push origin "${{ steps.vars.outputs.BRANCH }}"
-
-      - name: Fetch migration manifest for PR description
+      - name: Fetch migration manifest
         id: manifest
-        if: steps.commit.outputs.changed == 'true'
         run: |
           MANIFEST=$(curl -s \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${{ github.event.client_payload.tomtom_owner }}/${{ github.event.client_payload.tomtom_repo }}/contents/migration/v${{ steps.vars.outputs.VERSION }}.json" \
+            "https://api.github.com/repos/${{ steps.vars.outputs.tomtom_owner }}/${{ steps.vars.outputs.tomtom_repo }}/contents/migration/v${{ steps.vars.outputs.VERSION }}.json" \
             | jq -r '.content' | base64 -d)
-          ADDED=$(echo "$MANIFEST"    | jq -r '[.changes.added[]?.token]    | join("\n- ")' 2>/dev/null || echo "")
-          RENAMED=$(echo "$MANIFEST"  | jq -r '[.changes.renamed[] | "\(.oldToken) → \(.newToken)"] | join("\n- ")' 2>/dev/null || echo "")
+
+          echo "MANIFEST_JSON=$MANIFEST" >> $GITHUB_ENV
+
+          ADDED=$(echo "$MANIFEST"      | jq -r '[.changes.added[]?.token]    | join("\n- ")' 2>/dev/null || echo "")
+          RENAMED=$(echo "$MANIFEST"    | jq -r '[.changes.renamed[] | "\(.oldToken) → \(.newToken)"] | join("\n- ")' 2>/dev/null || echo "")
           DEPRECATED=$(echo "$MANIFEST" | jq -r '[.changes.deprecated[]?.token] | join("\n- ")' 2>/dev/null || echo "")
           {
             echo "ADDED<<EOF"
@@ -85,6 +63,134 @@ jobs:
             echo "EOF"
           } >> $GITHUB_OUTPUT
 
+      - name: Apply token changes via Python script
+        run: |
+          cat > /tmp/apply_tokens.py << 'PYEOF'
+          import json, os, sys
+
+          def load_json(path):
+              with open(path, 'r') as f:
+                  return json.load(f)
+
+          def save_json(path, data):
+              with open(path, 'w') as f:
+                  json.dump(data, f, indent=2, ensure_ascii=False)
+                  f.write('\n')  # trailing newline
+
+          def find_and_remove_token(data, token_name):
+              """Recursively find and remove a token by key name"""
+              if isinstance(data, dict):
+                  if token_name in data and isinstance(data.get(token_name), dict) and 'value' in data[token_name]:
+                      del data[token_name]
+                      return True
+                  for k, v in data.items():
+                      if isinstance(v, dict) and find_and_remove_token(v, token_name):
+                          return True
+              return False
+
+          def find_and_rename_token(data, old_name, new_name):
+              """Recursively find and rename a token key, preserving its value"""
+              if isinstance(data, dict):
+                  if old_name in data and isinstance(data.get(old_name), dict) and 'value' in data[old_name]:
+                      data[new_name] = data.pop(old_name)
+                      return True
+                  for k, v in data.items():
+                      if isinstance(v, dict) and find_and_rename_token(v, old_name, new_name):
+                          return True
+              return False
+
+          def inject_token(data, group, token_name, token_def):
+              """Inject token into the specified group (creates group if missing)"""
+              if group:
+                  if group not in data:
+                      data[group] = {}
+                  data[group][token_name] = token_def
+              else:
+                  data[token_name] = token_def
+
+          def token_exists(data, token_name):
+              """Check if a token key exists anywhere in the data"""
+              if isinstance(data, dict):
+                  if token_name in data and isinstance(data.get(token_name), dict) and 'value' in data[token_name]:
+                      return True
+                  for v in data.values():
+                      if isinstance(v, dict) and token_exists(v, token_name):
+                          return True
+              return False
+
+          manifest = json.loads(os.environ['MANIFEST_JSON'])
+
+          # Process ADDED tokens
+          for token in manifest.get('changes', {}).get('added', []):
+              token_name = token['token']
+              file_dir = token.get('file', '')  # e.g. "2-System/Colours"
+              group = token.get('group', '')    # e.g. "POI Categories"
+
+              for mode, mode_data in token.get('modes', {}).items():
+                  file_path = f"tokens/{file_dir}/{mode}.json"
+                  if not os.path.exists(file_path):
+                      print(f"  Skipping {file_path} - file not found")
+                      continue
+
+                  data = load_json(file_path)
+
+                  if token_exists(data, token_name):
+                      print(f"  {token_name} already exists in {file_path}, skipping")
+                      continue
+
+                  token_def = {'value': mode_data['value'], 'type': token['type']}
+                  if mode_data.get('description'):
+                      token_def['description'] = mode_data['description']
+
+                  inject_token(data, group, token_name, token_def)
+                  save_json(file_path, data)
+                  print(f"  Added {token_name} to {file_path}")
+
+          # Process DEPRECATED tokens
+          for token in manifest.get('changes', {}).get('deprecated', []):
+              token_name = token['token']
+              for root_dir, dirs, files in os.walk('tokens'):
+                  dirs[:] = [d for d in dirs if not d.startswith('$')]
+                  for fname in files:
+                      if not fname.endswith('.json') or fname.startswith('$'):
+                          continue
+                      fpath = os.path.join(root_dir, fname)
+                      data = load_json(fpath)
+                      if find_and_remove_token(data, token_name):
+                          save_json(fpath, data)
+                          print(f"  Removed {token_name} from {fpath}")
+
+          # Process RENAMED tokens
+          for token in manifest.get('changes', {}).get('renamed', []):
+              old_name = token['oldToken']
+              new_name = token['newToken']
+              for root_dir, dirs, files in os.walk('tokens'):
+                  dirs[:] = [d for d in dirs if not d.startswith('$')]
+                  for fname in files:
+                      if not fname.endswith('.json') or fname.startswith('$'):
+                          continue
+                      fpath = os.path.join(root_dir, fname)
+                      data = load_json(fpath)
+                      if find_and_rename_token(data, old_name, new_name):
+                          save_json(fpath, data)
+                          print(f"  Renamed {old_name} -> {new_name} in {fpath}")
+          PYEOF
+
+          python3 /tmp/apply_tokens.py
+
+      - name: Stage and check for changes
+        id: commit
+        run: |
+          git add -A tokens/
+          if git diff --staged --quiet; then
+            echo "No token changes detected — files already up to date."
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "chore(tokens): apply v${{ steps.vars.outputs.VERSION }} token changes"
+            git push origin "${{ steps.vars.outputs.BRANCH }}"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Create pull request
         id: pr
         if: steps.commit.outputs.changed == 'true'
@@ -95,21 +201,21 @@ jobs:
             const renamed    = `${{ steps.manifest.outputs.RENAMED }}`;
             const deprecated = `${{ steps.manifest.outputs.DEPRECATED }}`;
 
-            const addedSection      = added      ? `### New tokens — assign values in the review tool\n- ${added}`           : '';
-            const renamedSection    = renamed    ? `### Renamed tokens — update references\n- ${renamed}`                    : '';
-            const deprecatedSection = deprecated ? `### Deprecated tokens — migrate before removal\n- ${deprecated}`        : '';
+            const addedSection      = added      ? `### New tokens — assign values in the review tool\n- ${added}`    : '';
+            const renamedSection    = renamed    ? `### Renamed tokens — update references\n- ${renamed}`             : '';
+            const deprecatedSection = deprecated ? `### Deprecated tokens — migrate before removal\n- ${deprecated}`  : '';
 
             const pr = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo:  context.repo.repo,
               head:  `sync/v${{ steps.vars.outputs.VERSION }}`,
               base:  'main',
-              title: `chore(tokens): sync TomTom base tokens to v${{ steps.vars.outputs.VERSION }}`,
+              title: `chore(tokens): sync TomTom tokens to v${{ steps.vars.outputs.VERSION }}`,
               body: [
-                `## TomTom Base Token Update — v${{ steps.vars.outputs.VERSION }}`,
+                `## TomTom Token Update — v${{ steps.vars.outputs.VERSION }}`,
                 '',
                 `The TomTom Design System has released a new token version.`,
-                `This PR updates \`tokens/tomtom-base\` to v${{ steps.vars.outputs.VERSION }}.`,
+                `This PR applies token additions, renames, and deprecations from v${{ steps.vars.outputs.VERSION }} directly into the \`tokens/\` files.`,
                 '',
                 addedSection,
                 renamedSection,
@@ -129,14 +235,17 @@ jobs:
           script: |
             const prNumber = ${{ steps.pr.outputs.result }};
             const reviewUrl = '${{ steps.vars.outputs.REVIEW_URL }}'
+              + `?version=${{ steps.vars.outputs.VERSION }}`
               + `&pr=${prNumber}`
               + `&owner=${context.repo.owner}`
               + `&repo=${context.repo.repo}`
-              + `&branch=sync%2Fv${{ steps.vars.outputs.VERSION }}`;
+              + `&branch=sync%2Fv${{ steps.vars.outputs.VERSION }}`
+              + `&tomtom_owner=${{ steps.vars.outputs.tomtom_owner }}`
+              + `&tomtom_repo=${{ steps.vars.outputs.tomtom_repo }}`;
 
             await github.rest.issues.createComment({
-              owner:    context.repo.owner,
-              repo:     context.repo.repo,
+              owner:        context.repo.owner,
+              repo:         context.repo.repo,
               issue_number: prNumber,
               body:
                 `## 🎨 Designer Review Required\n\n` +
@@ -145,6 +254,7 @@ jobs:
                 `### 👉 [Open Designer Review Tool](${reviewUrl})\n\n` +
                 `In the review tool you can:\n` +
                 `- Accept TomTom's default values as-is\n` +
-                `- Set your own brand values for new tokens\n\n` +
+                `- Set your own brand values for new tokens\n` +
+                `- Reject tokens you don't want in your theme\n\n` +
                 `Once you submit the review, merge this PR and pull from Token Studio.`
             });

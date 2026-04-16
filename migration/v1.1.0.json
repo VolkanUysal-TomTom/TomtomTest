@@ -9,6 +9,8 @@
         "layer": "2-System",
         "type": "color",
         "description": "Semantic colour for an EV charging station that has available connectors.",
+        "file": "2-System/Colours",
+        "group": "POI Categories",
         "modes": {
           "Light": { "value": "#03bf95", "description": "Mint 300 — vivid teal on light backgrounds" },
           "Dark":  { "value": "#027c61", "description": "Mint 400 — darker teal for dark map surfaces" }
@@ -19,6 +21,8 @@
         "layer": "2-System",
         "type": "number",
         "description": "Bottom safe-area inset for floating and docked panels. Clears gesture-navigation bars on Android and iOS.",
+        "file": "2-System/Spacing/Vertical",
+        "group": "",
         "modes": {
           "Large":  { "value": "48", "description": "Large screen — full gesture bar height" },
           "Medium": { "value": "48", "description": "Medium screen — full gesture bar height" },

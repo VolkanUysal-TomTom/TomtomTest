@@ -1,35 +1,32 @@
 /* ─────────────────────────────────────────────────
    TomTom Token Review App
-   Step-by-step review with per-mode values
-   (Light/Dark + one screen size)
+   Single-set architecture: resolves values against
+   JLR's own token files on the PR branch.
    ───────────────────────────────────────────────── */
 
-const TOMTOM_OWNER = 'VolkanUysal-TomTom';
-const TOMTOM_REPO  = 'TomtomTest';
+const params        = new URLSearchParams(location.search);
+const VERSION       = params.get('version');       // e.g. 1.2.0
+const PR_NUMBER     = params.get('pr');
+const CLIENT_OWNER  = params.get('owner');
+const CLIENT_REPO   = params.get('repo');          // e.g. JLRTest
+const BRANCH        = params.get('branch');        // e.g. sync/v1.2.0
+const TOMTOM_OWNER  = params.get('tomtom_owner') || 'VolkanUysal-TomTom';
+const TOMTOM_REPO   = params.get('tomtom_repo')  || 'TomtomTest';
 
-const params       = new URLSearchParams(location.search);
-const VERSION      = params.get('version');   // e.g. 1.1.0
-const PR_NUMBER    = params.get('pr');
-const CLIENT_OWNER = params.get('owner');
-const CLIENT_REPO  = params.get('repo');      // e.g. JLRTest
-const BRANCH       = params.get('branch');    // e.g. sync/v1.1.0
+// Which colour modes and which screen modes to recognise
+const COLOR_MODES   = ['Light', 'Dark'];
+const SCREEN_MODES  = ['Large', 'Medium', 'Small'];
 
-// Which colour modes and which screen mode to show in UI
-// Clients can only have Light/Dark + one screen size
-const COLOR_MODES  = ['Light', 'Dark'];
-const SCREEN_MODES = ['Large', 'Medium', 'Small'];
+let ghToken    = sessionStorage.getItem('gh_token') || '';
+let reviewer   = null;
+let allTokens  = [];
+let currentIdx = 0;
+let tokenMap   = {};  // flat map: tokenName -> resolved hex/value (from JLR files)
+let manifest   = null;
 
-let ghToken     = sessionStorage.getItem('gh_token') || '';
-let reviewer    = null;
-let allTokens   = [];
-let currentIdx  = 0;
-
-// Per-token, per-mode decisions
-// decisions[tokenName][mode] = { action: 'accept'|'modify'|'reject', value }
+// Per-token decisions
+// decisions[tokenName] = { action: 'accept'|'modify'|'reject', value, modifiedValues: {mode: value} }
 const decisions = {};
-
-// Client's existing overrides per mode file
-const clientTheme = { Light: {}, Dark: {}, Screen: {} };
 
 /* ── Screens ──────────────────────────────────── */
 function show(id) {
@@ -97,6 +94,72 @@ function startSignIn() {
   }, 600);
 }
 
+/* ── Token map: load all JLR token files ─────── */
+function extractTokens(obj, map) {
+  if (typeof obj !== 'object' || obj === null) return;
+  for (const [key, val] of Object.entries(obj)) {
+    if (typeof val === 'object' && val !== null && 'value' in val) {
+      map[key] = val.value;  // token name -> raw value (may be a reference)
+    } else if (typeof val === 'object' && val !== null) {
+      extractTokens(val, map);
+    }
+  }
+}
+
+function resolveValue(value, map, depth = 0) {
+  if (depth > 10) return value;  // prevent infinite loops
+  if (typeof value !== 'string') return value;
+
+  // Token Studio reference format: {Group.tokenName} or {tokenName}
+  const refMatch = value.match(/^\{(.+)\}$/);
+  if (!refMatch) return value;  // literal value, return as-is
+
+  const ref   = refMatch[1];
+  // Try full reference key first, then just the last part (token name)
+  const parts = ref.split('.');
+  const tokenName = parts[parts.length - 1];
+
+  if (map[ref] !== undefined) {
+    return resolveValue(map[ref], map, depth + 1);
+  }
+  if (map[tokenName] !== undefined) {
+    return resolveValue(map[tokenName], map, depth + 1);
+  }
+
+  return value;  // unresolved reference
+}
+
+async function buildTokenMap(owner, repo, branch) {
+  // Get the full git tree
+  const treeRes = await gh(
+    `https://api.github.com/repos/${owner}/${repo}/git/trees/${branch}?recursive=1`
+  );
+  if (!treeRes.ok) throw new Error('Could not fetch JLR repo file tree.');
+  const tree = await treeRes.json();
+
+  const tokenFiles = (tree.tree || []).filter(f =>
+    f.path.startsWith('tokens/') &&
+    f.path.endsWith('.json') &&
+    !f.path.includes('/$')
+  );
+
+  const flat = {};
+
+  for (const file of tokenFiles) {
+    const res = await gh(
+      `https://api.github.com/repos/${owner}/${repo}/contents/${file.path}?ref=${branch}`
+    );
+    if (!res.ok) continue;
+    const data = await res.json();
+    try {
+      const content = JSON.parse(atob(data.content.replace(/\n/g, '')));
+      extractTokens(content, flat);
+    } catch { /* skip malformed files */ }
+  }
+
+  return flat;
+}
+
 /* ── Load ─────────────────────────────────────── */
 async function loadReview() {
   show('loading-screen');
@@ -105,22 +168,16 @@ async function loadReview() {
     if (!userRes.ok) { show('auth-screen'); return; }
     reviewer = await userRes.json();
 
-    // Fetch migration manifest
-    const mRes  = await gh(`https://api.github.com/repos/${TOMTOM_OWNER}/${TOMTOM_REPO}/contents/migration/v${VERSION}.json`);
-    if (!mRes.ok) throw new Error(`Migration manifest v${VERSION} not found.`);
+    // Fetch migration manifest from TomTom repo
+    const mRes = await gh(
+      `https://api.github.com/repos/${TOMTOM_OWNER}/${TOMTOM_REPO}/contents/migration/v${VERSION}.json`
+    );
+    if (!mRes.ok) throw new Error(`Migration manifest v${VERSION} not found in ${TOMTOM_OWNER}/${TOMTOM_REPO}.`);
     const mFile = await mRes.json();
-    const manifest = JSON.parse(atob(mFile.content.replace(/\n/g, '')));
+    manifest = JSON.parse(atob(mFile.content.replace(/\n/g, '')));
 
-    // Fetch existing client overrides from PR branch (best effort)
-    for (const modeFile of ['Light', 'Dark', 'Screen']) {
-      try {
-        const r = await gh(`https://api.github.com/repos/${CLIENT_OWNER}/${CLIENT_REPO}/contents/tokens/client-theme/${modeFile}.json?ref=${BRANCH}`);
-        if (r.ok) {
-          const f = await r.json();
-          clientTheme[modeFile] = JSON.parse(atob(f.content.replace(/\n/g, '')));
-        }
-      } catch { /* file doesn't exist yet */ }
-    }
+    // Build flat token resolution map from JLR's own files on the PR branch
+    tokenMap = await buildTokenMap(CLIENT_OWNER, CLIENT_REPO, BRANCH);
 
     // Build flat ordered review list
     allTokens = [
@@ -149,7 +206,7 @@ if (ghToken && VERSION && PR_NUMBER && CLIENT_REPO) loadReview();
 /* ── Render current step ──────────────────────── */
 function renderCurrent() {
   updateProgress();
-  ['card-added','card-renamed','card-deprecated','card-done']
+  ['card-added', 'card-renamed', 'card-deprecated', 'card-done']
     .forEach(id => document.getElementById(id).classList.add('hidden'));
 
   if (currentIdx >= allTokens.length) {
@@ -166,8 +223,8 @@ function renderCurrent() {
 function updateProgress() {
   const total = allTokens.length;
   const done  = currentIdx;
-  document.getElementById('progress-fill').style.width = total ? `${Math.round(done/total*100)}%` : '100%';
-  document.getElementById('progress-label').textContent = total ? `${done} / ${total}` : 'Done';
+  document.getElementById('progress-fill').style.width   = total ? `${Math.round(done / total * 100)}%` : '100%';
+  document.getElementById('progress-label').textContent  = total ? `${done} / ${total}` : 'Done';
 }
 
 /* ── Added token ──────────────────────────────── */
@@ -180,28 +237,19 @@ function renderAdded(token) {
   const modes    = token.modes || {};
   const modeKeys = Object.keys(modes);
 
-  // Determine which client file each mode maps to
-  const modeFileMap = modeKey =>
-    COLOR_MODES.includes(modeKey)  ? modeKey :   // 'Light' → Light.json
-    SCREEN_MODES.includes(modeKey) ? 'Screen' :  // 'Large'/'Medium'/'Small' → Screen.json
-    'Light';
+  // Init decision for this token
+  decisions[token.token] = { action: 'accept', modifiedValues: {} };
 
-  // Init decisions for this token
-  decisions[token.token] = {};
-  modeKeys.forEach(mk => {
-    const existing = clientTheme[modeFileMap(mk)]?.[token.token]?.value;
-    decisions[token.token][mk] = existing
-      ? { action: 'modify', value: existing }
-      : { action: 'accept', value: modes[mk]?.value };
-  });
-
-  // Build mode rows
   const container = document.getElementById('added-modes');
   container.innerHTML = '';
 
   modeKeys.forEach(mk => {
-    const mInfo   = modes[mk] || {};
-    const defVal  = mInfo.value || '';
+    const mInfo    = modes[mk] || {};
+    const rawVal   = mInfo.value || '';
+    // Resolve against JLR's own token map to get the actual colour
+    const resolved = resolveValue(rawVal, tokenMap);
+    const isRef    = rawVal !== resolved && rawVal.startsWith('{');
+
     const row     = document.createElement('div');
     row.className = 'mode-row';
     row.id        = `mode-row-${safeId(token.token)}-${mk}`;
@@ -209,121 +257,98 @@ function renderAdded(token) {
     row.innerHTML = `
       <div class="mode-header">
         <span class="mode-label">${mk}</span>
-        ${isColor ? `<span class="mode-swatch" id="swatch-${safeId(token.token)}-${mk}" style="background:${defVal}"></span>` : ''}
-        <span class="mode-default-val">${defVal}</span>
-        ${mInfo.description ? `<span class="mode-desc">— ${mInfo.description}</span>` : ''}
       </div>
       <div class="mode-body">
-        <div class="mode-tabs" id="tabs-${safeId(token.token)}-${mk}">
-          <button class="mode-tab active-accept" data-action="accept">Accept</button>
-          <button class="mode-tab"               data-action="modify">Modify</button>
-          <button class="mode-tab"               data-action="reject">Reject</button>
-        </div>
-        <div class="mode-input-wrap hidden" id="input-wrap-${safeId(token.token)}-${mk}">
-          ${isColor ? `<div class="mode-preview" id="preview-${safeId(token.token)}-${mk}" style="background:${defVal}"></div>` : ''}
-          <input class="mode-input" type="text"
-            placeholder="${isColor ? '#hex or rgba(…)' : 'Enter value'}"
-            value="${decisions[token.token][mk].action === 'modify' ? decisions[token.token][mk].value : ''}"
-            id="input-${safeId(token.token)}-${mk}">
+        <div class="value-in-tomtom">
+          <div class="value-label">VALUE IN TOMTOM REPO</div>
+          <div class="value-display">
+            ${isColor ? `<span class="color-swatch" style="background:${resolved}"></span>` : ''}
+            <span class="value-hex">${resolved}</span>
+            ${isRef ? `<span class="value-via">via ${rawVal.replace(/^\{/, '').replace(/\}$/, '').split('.').pop()}</span>` : ''}
+          </div>
+          ${mInfo.description ? `<div class="value-desc">${mInfo.description}</div>` : ''}
         </div>
       </div>
     `;
 
-    // Tab click handlers
-    row.querySelectorAll('.mode-tab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        const action = tab.dataset.action;
-        decisions[token.token][mk].action = action;
-
-        // Update tab styles
-        row.querySelectorAll('.mode-tab').forEach(t => {
-          t.className = 'mode-tab';
-          if (t.dataset.action === action) t.classList.add(`active-${action}`);
-        });
-
-        // Show/hide input
-        const inputWrap = document.getElementById(`input-wrap-${safeId(token.token)}-${mk}`);
-        if (action === 'modify') {
-          inputWrap.classList.remove('hidden');
-          document.getElementById(`input-${safeId(token.token)}-${mk}`).focus();
-        } else {
-          inputWrap.classList.add('hidden');
-          if (action === 'accept') decisions[token.token][mk].value = defVal;
-          if (action === 'reject') decisions[token.token][mk].value = null;
-        }
-
-        row.className = action === 'reject' ? 'mode-row is-rejected'
-                      : action === 'modify' ? 'mode-row is-modified'
-                      : 'mode-row';
-        updateConfirmBtn(token.token, modeKeys);
-      });
-    });
-
-    // Input handler
-    const input = row.querySelector('.mode-input');
-    input?.addEventListener('input', () => {
-      const v = input.value.trim();
-      decisions[token.token][mk] = { action: 'modify', value: v };
-      const preview = document.getElementById(`preview-${safeId(token.token)}-${mk}`);
-      if (preview) preview.style.background = v;
-      updateConfirmBtn(token.token, modeKeys);
-    });
-
-    // Restore existing state if already has a decision
-    const d = decisions[token.token][mk];
-    if (d.action !== 'accept') {
-      const existingTab = row.querySelector(`[data-action="${d.action}"]`);
-      existingTab?.click();
-    }
-
     container.appendChild(row);
   });
 
-  // "Accept all defaults" button
-  wireBtn('btn-accept', () => {
-    modeKeys.forEach(mk => { decisions[token.token][mk] = { action: 'accept', value: modes[mk]?.value }; });
-    addReviewed(token.token, buildModeLabels(modeKeys, 'accept'));
+  // Single set of action buttons for the whole token
+  const actionArea = document.getElementById('added-actions');
+  if (actionArea) {
+    actionArea.innerHTML = `
+      <div class="token-action-btns">
+        <button class="action-btn btn-accept-token" id="btn-token-accept">Accept</button>
+        <button class="action-btn btn-modify-token" id="btn-token-modify">Modify</button>
+        <button class="action-btn btn-reject-token" id="btn-token-reject">Reject</button>
+      </div>
+      <div class="modify-area hidden" id="modify-area-${safeId(token.token)}">
+        ${modeKeys.map(mk => `
+          <div class="modify-row">
+            <label class="modify-label">${mk}</label>
+            <input class="modify-input" type="text"
+              placeholder="${isColor ? '#hex or rgba(…)' : 'Enter value'}"
+              id="modify-input-${safeId(token.token)}-${mk}">
+            ${isColor ? `<span class="modify-preview" id="modify-preview-${safeId(token.token)}-${mk}"></span>` : ''}
+          </div>
+        `).join('')}
+        <button class="action-btn btn-confirm-modify" id="btn-confirm-modify-${safeId(token.token)}">Confirm</button>
+      </div>
+    `;
+  }
+
+  // Accept
+  wireBtn('btn-token-accept', () => {
+    decisions[token.token].action = 'accept';
+    addReviewed(token.token, [{ label: 'accepted', cls: 'badge-accepted' }]);
     next();
   });
 
-  // "Confirm choices" button — appears when any mode is manually set
-  wireBtn('btn-confirm', () => {
-    addReviewed(token.token, buildModeLabels(modeKeys, 'accept'));
-    next();
+  // Modify — reveal per-mode inputs
+  wireBtn('btn-token-modify', () => {
+    decisions[token.token].action = 'modify';
+    const modifyArea = document.getElementById(`modify-area-${safeId(token.token)}`);
+    if (modifyArea) modifyArea.classList.remove('hidden');
+
+    // Wire up live preview for each mode input
+    modeKeys.forEach(mk => {
+      const input   = document.getElementById(`modify-input-${safeId(token.token)}-${mk}`);
+      const preview = document.getElementById(`modify-preview-${safeId(token.token)}-${mk}`);
+      if (input) {
+        // Pre-fill with resolved value as starting point
+        const rawVal   = modes[mk]?.value || '';
+        const resolved = resolveValue(rawVal, tokenMap);
+        input.value    = resolved;
+        if (preview) preview.style.background = resolved;
+
+        input.addEventListener('input', () => {
+          const v = input.value.trim();
+          decisions[token.token].modifiedValues[mk] = v;
+          if (preview) preview.style.background = v;
+        });
+
+        // Capture initial pre-filled value
+        decisions[token.token].modifiedValues[mk] = resolved;
+      }
+    });
+
+    wireBtn(`btn-confirm-modify-${safeId(token.token)}`, () => {
+      addReviewed(token.token, modeKeys.map(mk => ({
+        label: `${mk}: ${decisions[token.token].modifiedValues[mk] || '?'}`,
+        cls: 'badge-modified'
+      })));
+      next();
+    });
   });
 
-  // "Reject" button
-  wireBtn('btn-reject', () => {
-    modeKeys.forEach(mk => { decisions[token.token][mk] = { action: 'reject', value: null }; });
+  // Reject
+  wireBtn('btn-token-reject', () => {
+    decisions[token.token].action = 'reject';
     addReviewed(token.token, [{ label: 'rejected', cls: 'badge-rejected' }]);
     next();
   });
 }
-
-function updateConfirmBtn(tokenName, modeKeys) {
-  const confirmBtn = document.getElementById('btn-confirm');
-  const acceptBtn  = document.getElementById('btn-accept');
-  if (!confirmBtn || !acceptBtn) return;
-  const hasCustom = modeKeys.some(mk => {
-    const a = decisions[tokenName]?.[mk]?.action;
-    return a === 'modify' || a === 'reject';
-  });
-  confirmBtn.style.display = hasCustom ? '' : 'none';
-  acceptBtn.style.display  = hasCustom ? 'none' : '';
-}
-
-function buildModeLabels(modeKeys, defaultAction) {
-  return modeKeys.map(mk => {
-    const d = decisions[currentToken()]?.[mk] || { action: defaultAction };
-    return {
-      label: `${mk}: ${d.action}`,
-      cls: d.action === 'modify' ? 'badge-modified'
-         : d.action === 'reject' ? 'badge-rejected'
-         : 'badge-accepted'
-    };
-  });
-}
-function currentToken() { return allTokens[currentIdx]?.token || allTokens[currentIdx]?.oldToken; }
 
 /* ── Renamed token ────────────────────────────── */
 function renderRenamed(token) {
@@ -356,9 +381,9 @@ function addReviewed(tokenName, modeBadges) {
   const item = document.createElement('div');
   item.className = 'rev-item';
 
-  const primaryAction = modeBadges[0]?.cls.includes('reject') ? 'rejected'
-                      : modeBadges[0]?.cls.includes('modified') ? 'modified'
-                      : modeBadges[0]?.cls.includes('ack') ? 'ack'
+  const primaryAction = modeBadges[0]?.cls.includes('reject')   ? 'rejected'
+                      : modeBadges[0]?.cls.includes('modified')  ? 'modified'
+                      : modeBadges[0]?.cls.includes('ack')        ? 'ack'
                       : 'accepted';
 
   item.innerHTML = `
@@ -389,46 +414,52 @@ document.getElementById('submit-btn')?.addEventListener('click', submitReview);
 
 async function submitReview() {
   const btn = document.getElementById('submit-btn');
-  btn.disabled = true;
+  btn.disabled    = true;
   btn.textContent = 'Submitting…';
 
   try {
-    // Apply decisions to each mode file
-    const newTheme = {
-      Light:  { ...clientTheme.Light },
-      Dark:   { ...clientTheme.Dark  },
-      Screen: { ...clientTheme.Screen }
-    };
+    let accepted = 0, modified = 0, rejected = 0;
 
-    for (const [tokenName, modeDecs] of Object.entries(decisions)) {
-      const token = allTokens.find(t => t.token === tokenName || t.newToken === tokenName);
+    for (const [tokenName, dec] of Object.entries(decisions)) {
+      const token = allTokens.find(t => t.token === tokenName);
       if (!token || token.kind !== 'added') continue;
 
-      for (const [mk, d] of Object.entries(modeDecs)) {
-        const fileKey = COLOR_MODES.includes(mk) ? mk : 'Screen';
-        if (d.action === 'modify' && d.value) {
-          newTheme[fileKey][tokenName] = { value: d.value, type: token.type };
-        } else if (d.action === 'accept' || d.action === 'reject') {
-          delete newTheme[fileKey][tokenName]; // resolve from tomtom-base
+      const fileDir = token.file || '';
+      const modes   = token.modes || {};
+
+      if (dec.action === 'accept') {
+        accepted++;
+        // No changes needed — the workflow already wrote TomTom's value
+        continue;
+      }
+
+      if (dec.action === 'reject') {
+        rejected++;
+        // Remove token from each mode file
+        for (const mk of Object.keys(modes)) {
+          const filePath = `tokens/${fileDir}/${mk}.json`;
+          await updateTokenInFile(
+            CLIENT_OWNER, CLIENT_REPO, BRANCH,
+            filePath, tokenName, null, true
+          );
+        }
+        continue;
+      }
+
+      if (dec.action === 'modify') {
+        modified++;
+        for (const [mk, newValue] of Object.entries(dec.modifiedValues)) {
+          if (!newValue) continue;
+          const filePath = `tokens/${fileDir}/${mk}.json`;
+          await updateTokenInFile(
+            CLIENT_OWNER, CLIENT_REPO, BRANCH,
+            filePath, tokenName, newValue, false
+          );
         }
       }
     }
 
-    // Commit each mode file to the PR branch
-    for (const [modeFile, content] of Object.entries(newTheme)) {
-      await commitFile(
-        `tokens/client-theme/${modeFile}.json`,
-        content,
-        `chore(tokens): apply v${VERSION} review (${modeFile}) by @${reviewer.login}`
-      );
-    }
-
-    // Tally for PR comment
-    const flat     = Object.values(decisions).flatMap(d => Object.values(d));
-    const accepted = flat.filter(d => d.action === 'accept').length;
-    const modified = flat.filter(d => d.action === 'modify').length;
-    const rejected = flat.filter(d => d.action === 'reject').length;
-
+    // Post summary comment on PR
     await gh(
       `https://api.github.com/repos/${CLIENT_OWNER}/${CLIENT_REPO}/issues/${PR_NUMBER}/comments`,
       {
@@ -439,15 +470,17 @@ async function submitReview() {
             `| Decision | Count |\n|---|---|\n` +
             `| ✓ Accepted TomTom default | ${accepted} |\n` +
             `| ✏ Modified with custom value | ${modified} |\n` +
-            `| ✗ Rejected | ${rejected} |\n\n` +
-            `\`tokens/client-theme/\` files updated on this branch.\n` +
+            `| ✗ Rejected (removed) | ${rejected} |\n\n` +
+            `Token files in \`tokens/\` updated directly on this branch.\n` +
             `Merge the PR, then pull from Token Studio to sync.`
         })
       }
     );
 
     document.getElementById('done-message').textContent =
-      `${accepted + modified + rejected} token decisions saved across Light, Dark, and Screen modes. Merge the PR and pull in Token Studio.`;
+      `${accepted + modified + rejected} token decisions applied. ` +
+      `Accepted: ${accepted}, Modified: ${modified}, Rejected: ${rejected}. ` +
+      `Merge the PR and pull from Token Studio.`;
     document.getElementById('pr-link').href =
       `https://github.com/${CLIENT_OWNER}/${CLIENT_REPO}/pull/${PR_NUMBER}`;
     show('done-screen');
@@ -458,21 +491,74 @@ async function submitReview() {
   }
 }
 
-/* ── Helpers ──────────────────────────────────── */
-async function commitFile(path, content, message) {
-  // Get existing SHA if file exists
-  let sha = null;
-  const check = await gh(`https://api.github.com/repos/${CLIENT_OWNER}/${CLIENT_REPO}/contents/${path}?ref=${BRANCH}`);
-  if (check.ok) sha = (await check.json()).sha;
-
-  const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))));
+/* ── File update helpers ──────────────────────── */
+async function updateTokenInFile(owner, repo, branch, filePath, tokenName, newValue, shouldRemove) {
   const res = await gh(
-    `https://api.github.com/repos/${CLIENT_OWNER}/${CLIENT_REPO}/contents/${path}`,
-    { method: 'PUT', body: JSON.stringify({ message, content: encoded, branch: BRANCH, ...(sha && { sha }) }) }
+    `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}?ref=${branch}`
   );
-  if (!res.ok) throw new Error((await res.json()).message);
+  if (!res.ok) {
+    console.warn(`Skipping ${filePath} — file not found on branch ${branch}`);
+    return;
+  }
+  const fileData = await res.json();
+  const sha      = fileData.sha;
+  let content;
+  try {
+    content = JSON.parse(atob(fileData.content.replace(/\n/g, '')));
+  } catch {
+    throw new Error(`Could not parse JSON in ${filePath}`);
+  }
+
+  if (shouldRemove) {
+    removeTokenFromObj(content, tokenName);
+  } else {
+    updateTokenValueInObj(content, tokenName, newValue);
+  }
+
+  const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2) + '\n')));
+  const putRes = await gh(
+    `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`,
+    {
+      method: 'PUT',
+      body: JSON.stringify({
+        message: `review: set ${tokenName} value`,
+        content: newContent,
+        sha:     sha,
+        branch:  branch
+      })
+    }
+  );
+  if (!putRes.ok) {
+    const errData = await putRes.json();
+    throw new Error(`Failed to commit ${filePath}: ${errData.message}`);
+  }
 }
 
+function updateTokenValueInObj(obj, tokenName, newValue) {
+  if (typeof obj !== 'object' || obj === null) return false;
+  if (tokenName in obj && typeof obj[tokenName] === 'object' && 'value' in obj[tokenName]) {
+    obj[tokenName].value = newValue;
+    return true;
+  }
+  for (const val of Object.values(obj)) {
+    if (typeof val === 'object' && updateTokenValueInObj(val, tokenName, newValue)) return true;
+  }
+  return false;
+}
+
+function removeTokenFromObj(obj, tokenName) {
+  if (typeof obj !== 'object' || obj === null) return false;
+  if (tokenName in obj && typeof obj[tokenName] === 'object' && 'value' in obj[tokenName]) {
+    delete obj[tokenName];
+    return true;
+  }
+  for (const val of Object.values(obj)) {
+    if (typeof val === 'object' && removeTokenFromObj(val, tokenName)) return true;
+  }
+  return false;
+}
+
+/* ── Low-level helpers ────────────────────────── */
 function gh(url, options = {}) {
   return fetch(url, {
     ...options,
@@ -485,7 +571,7 @@ function gh(url, options = {}) {
   });
 }
 
-function safeId(name) { return name.replace(/[^a-zA-Z0-9]/g, '_'); }
+function safeId(name)  { return name.replace(/[^a-zA-Z0-9]/g, '_'); }
 function shortName(name) {
   const parts = name.split('_').filter(Boolean);
   return parts.length > 3 ? parts.slice(-3).join('_') : name;

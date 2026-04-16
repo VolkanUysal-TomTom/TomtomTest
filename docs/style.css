@@ -241,6 +241,91 @@ body {
 #done-screen h1, #error-screen h1 { font-size: 24px; font-weight: 700; }
 #done-screen p,  #error-screen p  { color: var(--grey-500); max-width: 340px; line-height: 1.6; text-align: center; }
 
+/* ── Value display (new token card) ───── */
+.value-in-tomtom {
+  background: var(--grey-50);
+  border: 1.5px solid var(--grey-200);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.value-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 1px;
+  color: var(--grey-300); text-transform: uppercase;
+}
+.value-display {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.color-swatch {
+  width: 28px; height: 28px; border-radius: 6px;
+  border: 1.5px solid rgba(0,0,0,0.1); flex-shrink: 0;
+  display: inline-block;
+}
+.value-hex {
+  font-size: 14px; font-family: monospace; font-weight: 600; color: var(--grey-800);
+}
+.value-via {
+  font-size: 12px; color: var(--grey-300); font-style: italic;
+}
+.value-desc {
+  font-size: 12px; color: var(--grey-500);
+}
+
+/* ── Token action buttons (new design) ── */
+.token-action-btns {
+  display: flex; gap: 10px;
+}
+.btn-accept-token {
+  flex: 1; color: var(--tt-green);
+  border-color: var(--tt-green);
+}
+.btn-accept-token:hover { background: #e5f7ee; border-color: var(--tt-green); }
+.btn-modify-token {
+  flex: 1; color: var(--tt-blue);
+  border-color: var(--tt-blue);
+}
+.btn-modify-token:hover { background: #e8f3fb; border-color: var(--tt-blue); }
+.btn-reject-token {
+  flex: 1; color: var(--grey-500);
+}
+.btn-reject-token:hover { border-color: var(--tt-orange); color: var(--tt-orange); background: #fff5ee; }
+
+/* ── Modify area (per-mode inputs) ──── */
+.modify-area {
+  border: 1.5px solid var(--tt-blue);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  display: flex; flex-direction: column; gap: 10px;
+  background: #f5faff;
+}
+.modify-row {
+  display: flex; align-items: center; gap: 10px;
+}
+.modify-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.8px;
+  color: var(--grey-500); text-transform: uppercase;
+  width: 60px; flex-shrink: 0;
+}
+.modify-input {
+  flex: 1; padding: 7px 10px;
+  border: 1.5px solid var(--grey-200); border-radius: 6px;
+  font-size: 13px; font-family: monospace; outline: none;
+  transition: border-color 0.15s; background: var(--white);
+}
+.modify-input:focus { border-color: var(--tt-blue); }
+.modify-preview {
+  width: 24px; height: 24px; border-radius: 4px;
+  border: 1.5px solid rgba(0,0,0,0.1); flex-shrink: 0;
+  display: inline-block;
+}
+.btn-confirm-modify {
+  align-self: flex-end; flex: unset;
+  padding: 8px 20px; font-size: 13px;
+  background: var(--tt-blue); color: var(--white);
+  border-color: var(--tt-blue);
+}
+.btn-confirm-modify:hover { background: #1070b0; border-color: #1070b0; color: var(--white); }
+
 /* ── Responsive ───────────────────────── */
 @media (max-width: 720px) {
   .review-layout { grid-template-columns: 1fr; padding: 20px 16px 60px; }
