@@ -29,6 +29,10 @@
       "tt_sys_color_surface_primary_stroke": {
         "value": "{Black&White.tt_glb_color_black_a15}",
         "type": "color"
+      },
+      "Test": {
+        "value": "#db0000",
+        "type": "color"
       }
     },
     "Secondary": {
@@ -97,6 +101,10 @@
       },
       "tt_sys_color_brand_primary_stroke": {
         "value": "{Blue.tt_glb_color_blue_400}",
+        "type": "color"
+      },
+      "brandnew": {
+        "value": "#2846dc",
         "type": "color"
       }
     },
