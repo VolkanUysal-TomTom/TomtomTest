@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TomTom Token Release</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Release layout ───────────────────── */
+    .release-wrap {
+      width: 100%; max-width: 680px;
+      display: flex; flex-direction: column; gap: 16px;
+      padding: 36px 20px 80px;
+    }
+
+    /* ── Section card ─────────────────────── */
+    .r-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 28px 24px;
+      box-shadow: var(--shadow);
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .r-card-title {
+      font-size: 18px; font-weight: 700; color: var(--grey-800);
+    }
+
+    /* ── Last release badge ───────────────── */
+    .last-release-row {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 13px; color: var(--grey-500);
+    }
+    .last-release-row .version-chip { font-size: 12px; }
+
+    /* ── Commits list ─────────────────────── */
+    .commits-list {
+      display: flex; flex-direction: column; gap: 1px;
+      border: 1px solid var(--grey-200);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      max-height: 260px;
+      overflow-y: auto;
+    }
+    .commit-row {
+      display: flex; justify-content: space-between; align-items: baseline;
+      gap: 12px; padding: 10px 14px;
+      background: var(--white);
+      font-size: 13px;
+      border-bottom: 1px solid var(--grey-100);
+    }
+    .commit-row:last-child { border-bottom: none; }
+    .commit-msg { color: var(--grey-800); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .commit-meta { color: var(--grey-300); font-size: 11px; white-space: nowrap; font-family: monospace; }
+    .commits-empty { padding: 20px; text-align: center; color: var(--grey-300); font-size: 13px; }
+
+    /* ── Form fields ──────────────────────── */
+    .field { display: flex; flex-direction: column; gap: 6px; }
+    .field label { font-size: 12px; font-weight: 600; color: var(--grey-500); text-transform: uppercase; letter-spacing: 0.8px; }
+    .field input, .field textarea {
+      border: 1.5px solid var(--grey-200);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-size: 14px; font-family: inherit;
+      color: var(--grey-800);
+      outline: none;
+      transition: border-color 0.15s;
+      resize: none;
+    }
+    .field input:focus, .field textarea:focus { border-color: var(--tt-blue); }
+    .field input.input-error { border-color: var(--tt-red); }
+    .field textarea { min-height: 80px; }
+
+    /* ── Clients list ─────────────────────── */
+    .clients-list { display: flex; flex-direction: column; gap: 8px; }
+    .client-row {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 14px;
+      border: 1px solid var(--grey-200);
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+    }
+    .client-check { color: var(--tt-green); font-weight: 700; }
+    .client-name  { font-weight: 600; color: var(--grey-800); }
+    .client-repo  { color: var(--grey-300); margin-left: auto; font-family: monospace; font-size: 11px; }
+
+    /* ── Progress screen ──────────────────── */
+    .progress-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 40px 36px;
+      width: 100%; max-width: 440px;
+      box-shadow: var(--shadow-lg);
+      display: flex; flex-direction: column; gap: 24px;
+      text-align: center;
+    }
+    .progress-card h2 { font-size: 22px; font-weight: 700; }
+    .progress-steps { display: flex; flex-direction: column; gap: 12px; text-align: left; }
+    .p-step {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 13px; font-weight: 500;
+      background: var(--grey-50);
+      transition: background 0.2s;
+    }
+    .p-step .step-icon { width: 20px; text-align: center; flex-shrink: 0; }
+    .p-step.step-pending  { color: var(--grey-300); }
+    .p-step.step-running  { background: #EFF6FF; color: var(--tt-blue); }
+    .p-step.step-done     { background: #F0FDF4; color: var(--tt-green); }
+    .p-step.step-error    { background: #FFF0F0; color: #b00; }
+
+    .step-spinner {
+      width: 14px; height: 14px;
+      border: 2px solid currentColor; border-top-color: transparent;
+      border-radius: 50%; animation: spin 0.65s linear infinite;
+      display: inline-block;
+    }
+
+    /* ── Success state ────────────────────── */
+    .success-box {
+      background: #F0FDF4; border: 1.5px solid #86EFAC;
+      border-radius: var(--radius-sm); padding: 16px;
+      font-size: 13px; color: var(--tt-green);
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .success-icon { font-size: 18px; flex-shrink: 0; }
+
+    /* ── Nav link ─────────────────────────── */
+    .nav-link {
+      font-size: 13px; color: var(--grey-500);
+      text-decoration: none;
+    }
+    .nav-link:hover { color: var(--tt-blue); }
+    .topbar-nav { display: flex; align-items: center; gap: 16px; }
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ── Auth screen ──────────────────────────────────────────────── -->
+  <div id="auth-screen" class="screen">
+    <div class="auth-card">
+      <div class="brand">TomTom DS</div>
+      <h1>Token Release</h1>
+      <p class="subtitle">Sign in with GitHub to release design token updates to all client products.</p>
+      <button id="signin-btn" class="btn btn-primary btn-full">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        Sign in with GitHub
+      </button>
+      <div id="auth-error" class="auth-error hidden"></div>
+    </div>
+  </div>
+
+  <!-- ── Loading screen ───────────────────────────────────────────── -->
+  <div id="loading-screen" class="screen hidden">
+    <div class="spinner"></div>
+    <p class="loading-label" id="loading-label">Loading…</p>
+  </div>
+
+  <!-- ── Release screen ───────────────────────────────────────────── -->
+  <div id="release-screen" class="screen hidden" style="justify-content:flex-start;align-items:center;">
+
+    <header class="topbar" style="width:100%;">
+      <div class="topbar-left">
+        <span class="brand-sm">TomTom DS</span>
+        <span class="version-chip" id="last-version-chip">—</span>
+      </div>
+      <div class="topbar-right topbar-nav">
+        <a href="index.html" class="nav-link">Token Review →</a>
+        <img id="avatar" src="" alt="" width="26" height="26" style="border-radius:50%;display:none">
+        <span id="username" class="username-label"></span>
+      </div>
+    </header>
+
+    <div class="release-wrap">
+
+      <!-- Commits since last release -->
+      <div class="r-card">
+        <div>
+          <div class="r-card-title">Changes since <span id="since-label">last release</span></div>
+          <p style="font-size:13px;color:var(--grey-500);margin-top:4px;">These commits will be included in the release.</p>
+        </div>
+        <div id="commits-list" class="commits-list">
+          <div class="commits-empty">Loading commits…</div>
+        </div>
+      </div>
+
+      <!-- Version + notes -->
+      <div class="r-card">
+        <div class="r-card-title">Release details</div>
+
+        <div class="field">
+          <label>New version number</label>
+          <input id="version-input" type="text" placeholder="e.g. 1.5.0" autocomplete="off">
+        </div>
+
+        <div class="field">
+          <label>Release notes <span style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
+          <textarea id="notes-input" placeholder="What's in this release? Designers at client products will see this."></textarea>
+        </div>
+      </div>
+
+      <!-- Clients -->
+      <div class="r-card">
+        <div>
+          <div class="r-card-title">Will release to</div>
+          <p style="font-size:13px;color:var(--grey-500);margin-top:4px;">Each client will receive a pull request automatically.</p>
+        </div>
+        <div id="clients-list" class="clients-list">
+          <div class="commits-empty">Loading clients…</div>
+        </div>
+      </div>
+
+      <!-- Release button -->
+      <button id="release-btn" class="btn btn-primary btn-full" style="font-size:15px;padding:14px;">
+        🚀 &nbsp;Release to all clients
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ── Progress screen ──────────────────────────────────────────── -->
+  <div id="progress-screen" class="screen hidden">
+    <div class="progress-card">
+      <div>
+        <div class="brand">TomTom DS</div>
+        <h2 style="margin-top:8px;">Releasing v<span id="progress-version"></span></h2>
+      </div>
+
+      <div class="progress-steps">
+        <div class="p-step step-pending" id="step-manifest">
+          <span class="step-icon">○</span>
+          <span class="step-label">Generating manifest</span>
+        </div>
+        <div class="p-step step-pending" id="step-release">
+          <span class="step-icon">○</span>
+          <span class="step-label">Creating GitHub Release</span>
+        </div>
+        <div class="p-step step-pending" id="step-dispatch">
+          <span class="step-icon">○</span>
+          <span class="step-label" id="step-dispatch-label">Dispatching to clients</span>
+        </div>
+      </div>
+
+      <div id="success-box" class="success-box hidden">
+        <span class="success-icon">✓</span>
+        <div>
+          <strong>v<span id="success-version"></span> released successfully.</strong><br>
+          Client repos will receive a pull request within ~30 seconds.
+        </div>
+      </div>
+
+      <div id="progress-error" class="auth-error hidden"></div>
+
+      <div id="progress-actions" class="hidden" style="display:none;flex-direction:column;gap:10px;">
+        <button id="release-another-btn" class="btn btn-secondary btn-full">Release another version</button>
+        <a id="actions-link" href="#" target="_blank" class="btn btn-secondary btn-full" style="text-align:center;">
+          View in GitHub Actions ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="release.js"></script>
+</body>
+</html>

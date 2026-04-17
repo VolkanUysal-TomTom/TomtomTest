@@ -1,99 +1,157 @@
-name: Create Release
+name: Release TomTom Tokens
 
 on:
-  push:
-    tags:
-      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number (e.g. 1.5.0)'
+        required: true
+        type: string
+      release_notes:
+        description: 'Release notes'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: write
 
 jobs:
   release:
-    name: Publish GitHub Release
+    name: Release & distribute
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.RELEASE_PAT }}
 
-      - name: Extract version from tag
-        id: version
-        run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-      - name: Extract changelog section for this version
-        id: changelog
+      - name: Configure git
         run: |
-          VERSION="${{ steps.version.outputs.VERSION }}"
-          # Extract the section between this version heading and the next
-          NOTES=$(awk "/^## \[$VERSION\]/{found=1; next} found && /^## \[/{exit} found{print}" CHANGELOG.md)
-          if [ -z "$NOTES" ]; then
-            NOTES="See CHANGELOG.md for details."
+          git config user.name  "tomtom-ds-bot"
+          git config user.email "ds-bot@tomtom.com"
+
+      - name: Find last release tag
+        id: last_tag
+        run: |
+          LAST=$(git tag --sort=-version:refname \
+            | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' \
+            | head -1 || echo "")
+          echo "tag=$LAST" >> $GITHUB_OUTPUT
+          echo "Last tag: ${LAST:-none}"
+
+      - name: Generate migration manifest
+        run: |
+          VERSION="${{ inputs.version }}"
+          LAST="${{ steps.last_tag.outputs.tag }}"
+
+          if [ -z "$LAST" ]; then
+            echo "No previous tag — writing empty manifest"
+            mkdir -p migration
+            cat > "migration/v${VERSION}.json" <<JSON
+          {
+            "version": "${VERSION}",
+            "changes": { "added": [], "renamed": [], "deprecated": [] }
+          }
+          JSON
+          else
+            python3 scripts/generate-manifest.py "$LAST" main --version "$VERSION"
           fi
-          # Write to a file to preserve newlines
-          echo "$NOTES" > release_notes.md
-          echo "Release notes extracted for v$VERSION"
+          echo "Manifest written to migration/v${VERSION}.json"
+
+      - name: Commit manifest
+        run: |
+          VERSION="${{ inputs.version }}"
+          git add "migration/v${VERSION}.json"
+          if git diff --staged --quiet; then
+            echo "Manifest unchanged — nothing to commit"
+          else
+            git commit -m "chore: add migration manifest v${VERSION}"
+            git push origin main
+          fi
 
       - name: Package token files
         run: |
-          VERSION="${{ steps.version.outputs.VERSION }}"
-          # Package only the distributable token layers (exclude Figma Only)
+          VERSION="${{ inputs.version }}"
           zip -r "tomtom-base-tokens-v${VERSION}.zip" \
             tokens/1-Global \
             tokens/2-System \
-            tokens/'3-Component' \
-            tokens/'$metadata.json' \
-            tokens/'$themes.json' \
-            CHANGELOG.md \
-            CLIENTS.md
-          echo "Packaged token files for v$VERSION"
+            tokens/3-Component \
+            "migration/v${VERSION}.json" \
+            2>/dev/null || true
 
       - name: Create GitHub Release
-        id: release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: "v${{ steps.version.outputs.VERSION }}"
-          body_path: release_notes.md
-          files: |
-            tomtom-base-tokens-v${{ steps.version.outputs.VERSION }}.zip
-            migration/v${{ steps.version.outputs.VERSION }}.json
-          fail_on_unmatched_files: false
-          draft: false
-          prerelease: false
-
-      - name: Dispatch sync event to client repos
         env:
-          VERSION:    ${{ steps.version.outputs.VERSION }}
-          ZIP_URL:    ${{ fromJson(steps.release.outputs.assets)[0].browser_download_url }}
-          # Add each client repo below in the format OWNER/REPO
-          # Requires a secret CLIENT_DISPATCH_TOKEN with repo scope on each client repo
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          REVIEW_BASE="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
-          PAYLOAD=$(jq -n \
-            --arg version    "$VERSION" \
-            --arg zip_url    "$ZIP_URL" \
-            --arg review_url "$REVIEW_BASE" \
-            --arg tt_owner   "${{ github.repository_owner }}" \
-            --arg tt_repo    "${{ github.event.repository.name }}" \
-            '{
-              event_type: "tomtom-token-release",
-              client_payload: {
-                version:      $version,
-                zip_url:      $zip_url,
-                review_url:   $review_url,
-                tomtom_owner: $tt_owner,
-                tomtom_repo:  $tt_repo
-              }
-            }')
+          VERSION="${{ inputs.version }}"
+          NOTES="${{ inputs.release_notes }}"
+          [ -z "$NOTES" ] && NOTES="Release v${VERSION}"
 
-          # List of client repos to notify — add one curl per client
-          # Example (uncomment and replace with real repo):
-          # curl -s -X POST \
-          #   -H "Authorization: Bearer ${{ secrets.CLIENT_DISPATCH_TOKEN }}" \
-          #   -H "Accept: application/vnd.github+json" \
-          #   -H "Content-Type: application/json" \
-          #   "https://api.github.com/repos/VolkanUysal-TomTom/client-navkit-tokens/dispatches" \
-          #   -d "$PAYLOAD"
+          gh release create "v${VERSION}" \
+            --title "v${VERSION}" \
+            --notes "$NOTES" \
+            --target main \
+            "tomtom-base-tokens-v${VERSION}.zip" \
+            "migration/v${VERSION}.json"
 
-          echo "Dispatch payload ready for v$VERSION"
-          echo "Review tool base URL: $REVIEW_BASE"
-          echo "Add client repo dispatch curl commands above when client repos are created."
+      - name: Dispatch to all clients
+        env:
+          RELEASE_PAT: ${{ secrets.RELEASE_PAT }}
+        run: |
+          python3 - <<'PYEOF'
+          import json, os, urllib.request, urllib.error, sys
+
+          version    = "${{ inputs.version }}"
+          pat        = os.environ['RELEASE_PAT']
+          owner      = "${{ github.repository_owner }}"
+          repo       = "${{ github.event.repository.name }}"
+          review_url = f"https://{owner}.github.io/{repo}/"
+
+          with open('clients.json') as f:
+              clients = json.load(f)
+
+          if not clients:
+              print("No clients registered in clients.json — nothing to dispatch")
+              sys.exit(0)
+
+          errors = []
+          for client in clients:
+              payload = json.dumps({
+                  "event_type": "tomtom-token-release",
+                  "client_payload": {
+                      "version":      version,
+                      "review_url":   review_url,
+                      "tomtom_owner": owner,
+                      "tomtom_repo":  repo,
+                  }
+              }).encode()
+
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{client['owner']}/{client['repo']}/dispatches",
+                  data=payload,
+                  headers={
+                      "Authorization": f"Bearer {pat}",
+                      "Accept":        "application/vnd.github+json",
+                      "Content-Type":  "application/json",
+                  },
+                  method="POST",
+              )
+              try:
+                  with urllib.request.urlopen(req) as resp:
+                      print(f"✓ Dispatched to {client['name']} ({client['repo']})")
+              except urllib.error.HTTPError as e:
+                  msg = f"✗ Failed {client['name']}: HTTP {e.code} {e.reason}"
+                  print(msg)
+                  errors.append(msg)
+
+          if errors:
+              sys.exit(1)
+          PYEOF
