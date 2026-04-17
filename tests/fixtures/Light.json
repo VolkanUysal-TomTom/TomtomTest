@@ -1,0 +1,25 @@
+{
+  "Surfaces": {
+    "Primary": {
+      "tt_sys_color_surface_primary": {
+        "value": "{Grey.tt_glb_color_grey_100}",
+        "type": "color",
+        "description": "Primary surface"
+      }
+    },
+    "Secondary": {
+      "tt_sys_color_surface_secondary": {
+        "value": "{Grey.tt_glb_color_grey_200}",
+        "type": "color"
+      }
+    }
+  },
+  "Brand": {
+    "Primary": {
+      "tt_sys_color_brand_primary": {
+        "value": "#EB0A1E",
+        "type": "color"
+      }
+    }
+  }
+}
