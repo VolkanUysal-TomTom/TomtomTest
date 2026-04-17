@@ -52,6 +52,7 @@ jobs:
           ADDED=$(echo "$MANIFEST"      | jq -r '[.changes.added[]?.token]    | join("\n- ")' 2>/dev/null || echo "")
           RENAMED=$(echo "$MANIFEST"    | jq -r '[.changes.renamed[] | "\(.oldToken) → \(.newToken)"] | join("\n- ")' 2>/dev/null || echo "")
           DEPRECATED=$(echo "$MANIFEST" | jq -r '[.changes.deprecated[]?.token] | join("\n- ")' 2>/dev/null || echo "")
+          CHANGED=$(echo "$MANIFEST"    | jq -r '[.changes.changed[]?.token]   | join("\n- ")' 2>/dev/null || echo "")
           {
             echo "ADDED<<EOF"
             echo "$ADDED"
@@ -61,6 +62,9 @@ jobs:
             echo "EOF"
             echo "DEPRECATED<<EOF"
             echo "$DEPRECATED"
+            echo "EOF"
+            echo "CHANGED<<EOF"
+            echo "$CHANGED"
             echo "EOF"
           } >> $GITHUB_OUTPUT
 
@@ -212,13 +216,30 @@ jobs:
         id: commit
         run: |
           git add -A tokens/
-          if git diff --staged --quiet; then
-            echo "No token changes detected — files already up to date."
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
+
+          # Determine whether there are any changes to review — either tokens files were
+          # mutated (added/renamed/deprecated), OR the manifest has `changed` entries
+          # (value updates the designer may want to adopt — no file mutation needed).
+          HAS_FILE_CHANGES=false
+          if ! git diff --staged --quiet; then
+            HAS_FILE_CHANGES=true
+          fi
+
+          HAS_CHANGED=$(jq -r '(.changes.changed // []) | length > 0' /tmp/manifest.json)
+
+          if [ "$HAS_FILE_CHANGES" = "true" ]; then
             git commit -m "chore(tokens): apply v${{ steps.vars.outputs.VERSION }} token changes"
             git push origin "${{ steps.vars.outputs.BRANCH }}"
             echo "changed=true" >> $GITHUB_OUTPUT
+          elif [ "$HAS_CHANGED" = "true" ]; then
+            # No file diffs, but TomTom changed values on existing tokens — create an
+            # empty commit so the PR exists and the designer can review via the tool.
+            git commit --allow-empty -m "chore(tokens): review TomTom value updates for v${{ steps.vars.outputs.VERSION }}"
+            git push origin "${{ steps.vars.outputs.BRANCH }}"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "No token changes detected — files already up to date."
+            echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Create pull request
@@ -230,10 +251,12 @@ jobs:
             const added      = `${{ steps.manifest.outputs.ADDED }}`;
             const renamed    = `${{ steps.manifest.outputs.RENAMED }}`;
             const deprecated = `${{ steps.manifest.outputs.DEPRECATED }}`;
+            const changed    = `${{ steps.manifest.outputs.CHANGED }}`;
 
             const addedList  = added.split('\n').filter(Boolean);
             const renList    = renamed.split('\n').filter(Boolean);
             const depList    = deprecated.split('\n').filter(Boolean);
+            const chgList    = changed.split('\n').filter(Boolean);
 
             const cap = (arr, n = 20) => arr.length > n
               ? arr.slice(0, n).join('\n') + `\n- … and ${arr.length - n} more`
@@ -242,6 +265,7 @@ jobs:
             const addedSection      = addedList.length  ? `### New tokens (${addedList.length})\n${cap(addedList.map(t => `- ${t}`))}`   : '';
             const renamedSection    = renList.length     ? `### Renamed tokens (${renList.length})\n${cap(renList.map(t => `- ${t}`))}`   : '';
             const deprecatedSection = depList.length     ? `### Deprecated tokens (${depList.length})\n${cap(depList.map(t => `- ${t}`))}` : '';
+            const changedSection    = chgList.length     ? `### TomTom value updates to review (${chgList.length})\nTomTom changed the value of these existing tokens. Your brand values are unchanged — the review tool lets you adopt TomTom's update per token.\n\n${cap(chgList.map(t => `- ${t}`))}` : '';
 
             const body = [
               `## TomTom Token Update — v${{ steps.vars.outputs.VERSION }}`,
@@ -252,6 +276,7 @@ jobs:
               addedSection,
               renamedSection,
               deprecatedSection,
+              changedSection,
               '',
               '---',
               '_The designer review link will be posted as a comment below._',

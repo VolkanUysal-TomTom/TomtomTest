@@ -157,6 +157,24 @@ Every entry gets dispatched automatically on each release. To add a new client:
         "token": "tt_sys_color_removed_token",
         "migration": "Removed in v1.5.0"
       }
+    ],
+    "changed": [
+      {
+        "token": "tt_sys_color_surface_primary",
+        "type": "color",
+        "file": "2-System/Colours",
+        "group": "Surfaces/Primary",
+        "modes": {
+          "Light": {
+            "oldValue": "{Grey.tt_glb_color_grey_100}",
+            "newValue": "{Grey.tt_glb_color_grey_200}"
+          },
+          "Dark":  {
+            "oldValue": "{Grey.tt_glb_color_grey_800}",
+            "newValue": "{Grey.tt_glb_color_grey_900}"
+          }
+        }
+      }
     ]
   }
 }
@@ -168,6 +186,15 @@ Fields:
 - `modes`: keys are the JSON filenames without `.json` (e.g. `Light`, `Dark`, `Large`)
 
 **Important**: `group` must use the full path with `/` separators. The sync workflow splits on `/` and navigates each level. A single-level group like `Brand` and a nested group like `Brand/Primary` are both valid.
+
+### The `changed` category
+
+When TomTom updates the value of an **existing** token (e.g. re-points `tt_sys_color_surface_primary` from `grey_100` to `grey_200`), the generator emits a `changed` entry containing both the old and new TomTom values per mode. The sync workflow does **not** mutate client files for `changed` tokens — client brand values stay intact. Instead, the review tool shows a 3-column comparison (TomTom was / TomTom now / your current value) and the designer can:
+- **Adopt TomTom's new value** → writes TomTom's resolved hex into the client file (Option B: literal hex, because TomTom's reference won't resolve inside the client's own token map)
+- **Keep yours** → no file write
+- **Modify** → set a custom value
+
+If a release contains only `changed` entries (no file mutations), the sync workflow still creates the PR via an empty commit so the designer has somewhere to run the review.
 
 ---
 
@@ -198,8 +225,9 @@ The workflow (`client-template/.github/workflows/sync-tokens.yml`):
    - **DEPRECATED first**: removes tokens by key name from any file
    - **RENAMED next**: renames keys, preserving existing client values
    - **ADDED last**: injects new tokens at the correct nested group path
+   - **CHANGED: no-op on files** — listed in PR body only; the review tool handles per-token adopt/keep/modify
    - **Cleanup pass**: removes any empty group shells left behind
-4. Commits and pushes to `sync/vX.Y.Z` branch
+4. Commits and pushes to `sync/vX.Y.Z` branch (uses an empty commit if the only changes are `changed` entries, so a PR still gets created for review)
 5. Creates PR with token summary
 6. Posts bot comment with review tool link
 
@@ -251,7 +279,7 @@ pip install pytest
 python3 -m pytest tests/ -v
 ```
 
-33 tests covering:
+41 tests covering:
 - `inject_token` — nested group path injection, no literal slash keys
 - `find_and_remove_token` — recursive removal, preserves siblings
 - `find_and_rename_token` — preserves value, works at any depth
@@ -259,6 +287,7 @@ python3 -m pytest tests/ -v
 - `token_exists` — finds tokens at any depth, ignores groups
 - Processing order — deprecated before added allows correct re-injection
 - `extract_tokens_flat` — full group path preserved (the key manifest generator fix)
+- `detect_changed_tokens` — TomTom value changes on existing tokens emitted as `changed`, ignoring renames/added/removed
 
 Tests run automatically on every push to main and every PR via `.github/workflows/tests.yml`.
 
@@ -280,7 +309,6 @@ To onboard a new client:
 ## Known Issues & Future Improvements
 
 ### Not yet implemented
-- **Value change propagation**: When TomTom changes the value of an existing token, JLR doesn't see it (by design — JLR has own brand values). A `changed` category in the manifest + review tool card would let client designers choose to follow TomTom's semantic updates.
 - **OAuth for review tool**: Token review tool (`index.html`) still uses PAT input. The OAuth plumbing from `release.html` could be reused.
 - **Dry run mode**: A way to preview what a release would change without actually dispatching.
 

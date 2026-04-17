@@ -199,6 +199,7 @@ async function loadReview() {
     // Build flat ordered review list
     allTokens = [
       ...(manifest.changes.added      || []).map(t => ({ ...t, kind: 'added' })),
+      ...(manifest.changes.changed    || []).map(t => ({ ...t, kind: 'changed' })),
       ...(manifest.changes.renamed    || []).map(t => ({ ...t, kind: 'renamed' })),
       ...(manifest.changes.deprecated || []).map(t => ({ ...t, kind: 'deprecated' })),
     ];
@@ -223,7 +224,7 @@ if (ghToken && VERSION && PR_NUMBER && CLIENT_REPO) loadReview();
 /* ── Render current step ──────────────────────── */
 function renderCurrent() {
   updateProgress();
-  ['card-added', 'card-renamed', 'card-deprecated', 'card-done']
+  ['card-added', 'card-changed', 'card-renamed', 'card-deprecated', 'card-done']
     .forEach(id => document.getElementById(id).classList.add('hidden'));
 
   if (currentIdx >= allTokens.length) {
@@ -233,6 +234,7 @@ function renderCurrent() {
 
   const item = allTokens[currentIdx];
   if (item.kind === 'added')      renderAdded(item);
+  if (item.kind === 'changed')    renderChanged(item);
   if (item.kind === 'renamed')    renderRenamed(item);
   if (item.kind === 'deprecated') renderDeprecated(item);
 }
@@ -367,6 +369,153 @@ function renderAdded(token) {
   });
 }
 
+/* ── Changed token (TomTom value update) ──────── */
+function renderChanged(token) {
+  document.getElementById('card-changed').classList.remove('hidden');
+  document.getElementById('changed-name').textContent = token.token;
+
+  const isColor  = token.type === 'color';
+  const modes    = token.modes || {};
+  const modeKeys = Object.keys(modes);
+
+  // Default: keep client's existing values (no write on submit)
+  decisions[token.token] = {
+    kind: 'changed',
+    action: 'keep',
+    modifiedValues: {},
+    // Pre-resolved TomTom new values — used when "adopt" is chosen
+    adoptedValues: {},
+    file: token.file || '',
+    modeKeys,
+  };
+
+  const container = document.getElementById('changed-modes');
+  container.innerHTML = '';
+
+  modeKeys.forEach(mk => {
+    const mInfo  = modes[mk] || {};
+    const oldTT  = mInfo.oldValue || '';
+    const newTT  = mInfo.newValue || '';
+
+    // Resolved (hex) values — old TomTom ref, new TomTom ref, and the current JLR value
+    const oldTTResolved = resolveValue(oldTT, tokenMap);
+    const newTTResolved = resolveValue(newTT, tokenMap);
+    const clientValue   = tokenMap[token.token] ?? '';
+    const clientResolved = resolveValue(clientValue, tokenMap);
+
+    // Record what "adopt" would write — the resolved hex of TomTom's new value
+    // (Option B: literal hex, because TomTom's reference won't resolve in JLR's files)
+    decisions[token.token].adoptedValues[mk] = newTTResolved;
+
+    const row = document.createElement('div');
+    row.className = 'mode-row';
+    row.id = `changed-row-${safeId(token.token)}-${mk}`;
+    row.innerHTML = `
+      <div class="mode-header">
+        <span class="mode-label">${mk}</span>
+      </div>
+      <div class="mode-body" style="flex-direction:column;align-items:stretch;gap:6px">
+        <div class="value-in-tomtom">
+          <div class="value-label">TOMTOM WAS</div>
+          <div class="value-display">
+            ${isColor ? `<span class="color-swatch" style="background:${oldTTResolved}"></span>` : ''}
+            <span class="value-hex">${oldTTResolved}</span>
+            ${oldTT !== oldTTResolved ? `<span class="value-via">via ${oldTT.replace(/^\{/, '').replace(/\}$/, '').split('.').pop()}</span>` : ''}
+          </div>
+        </div>
+        <div class="value-in-tomtom">
+          <div class="value-label">TOMTOM NOW</div>
+          <div class="value-display">
+            ${isColor ? `<span class="color-swatch" style="background:${newTTResolved}"></span>` : ''}
+            <span class="value-hex">${newTTResolved}</span>
+            ${newTT !== newTTResolved ? `<span class="value-via">via ${newTT.replace(/^\{/, '').replace(/\}$/, '').split('.').pop()}</span>` : ''}
+          </div>
+        </div>
+        <div class="value-in-tomtom">
+          <div class="value-label">YOUR CURRENT VALUE</div>
+          <div class="value-display">
+            ${isColor ? `<span class="color-swatch" style="background:${clientResolved}"></span>` : ''}
+            <span class="value-hex">${clientResolved || '—'}</span>
+            ${clientValue && clientValue !== clientResolved ? `<span class="value-via">via ${String(clientValue).replace(/^\{/, '').replace(/\}$/, '').split('.').pop()}</span>` : ''}
+          </div>
+        </div>
+      </div>
+    `;
+    container.appendChild(row);
+  });
+
+  const actionArea = document.getElementById('changed-actions');
+  actionArea.innerHTML = `
+    <div class="token-action-btns">
+      <button class="action-btn btn-accept-token" id="btn-changed-adopt">Adopt TomTom's new value</button>
+      <button class="action-btn" id="btn-changed-keep">Keep yours</button>
+      <button class="action-btn btn-modify-token" id="btn-changed-modify">Modify</button>
+    </div>
+    <div class="modify-area hidden" id="modify-area-changed-${safeId(token.token)}">
+      ${modeKeys.map(mk => `
+        <div class="modify-row">
+          <label class="modify-label">${mk}</label>
+          <input class="modify-input" type="text"
+            placeholder="${isColor ? '#hex or rgba(…)' : 'Enter value'}"
+            id="modify-input-changed-${safeId(token.token)}-${mk}">
+          ${isColor ? `<span class="modify-preview" id="modify-preview-changed-${safeId(token.token)}-${mk}"></span>` : ''}
+        </div>
+      `).join('')}
+      <button class="action-btn btn-confirm-modify" id="btn-confirm-changed-${safeId(token.token)}">Confirm</button>
+    </div>
+  `;
+
+  // Adopt — writes TomTom's resolved new value (Option B: literal hex)
+  wireBtn('btn-changed-adopt', () => {
+    decisions[token.token].action = 'adopt';
+    addReviewed(token.token, modeKeys.map(mk => ({
+      label: `${mk}: adopted ${decisions[token.token].adoptedValues[mk] || '?'}`,
+      cls: 'badge-accepted'
+    })));
+    next();
+  });
+
+  // Keep — no file write on submit
+  wireBtn('btn-changed-keep', () => {
+    decisions[token.token].action = 'keep';
+    addReviewed(token.token, [{ label: 'kept yours', cls: 'badge-ack' }]);
+    next();
+  });
+
+  // Modify — per-mode custom values
+  wireBtn('btn-changed-modify', () => {
+    decisions[token.token].action = 'modify';
+    const area = document.getElementById(`modify-area-changed-${safeId(token.token)}`);
+    if (area) area.classList.remove('hidden');
+
+    modeKeys.forEach(mk => {
+      const input   = document.getElementById(`modify-input-changed-${safeId(token.token)}-${mk}`);
+      const preview = document.getElementById(`modify-preview-changed-${safeId(token.token)}-${mk}`);
+      if (input) {
+        // Pre-fill with TomTom's new resolved value as a helpful starting point
+        const starter = decisions[token.token].adoptedValues[mk] || '';
+        input.value = starter;
+        if (preview) preview.style.background = starter;
+        decisions[token.token].modifiedValues[mk] = starter;
+
+        input.addEventListener('input', () => {
+          const v = input.value.trim();
+          decisions[token.token].modifiedValues[mk] = v;
+          if (preview) preview.style.background = v;
+        });
+      }
+    });
+
+    wireBtn(`btn-confirm-changed-${safeId(token.token)}`, () => {
+      addReviewed(token.token, modeKeys.map(mk => ({
+        label: `${mk}: ${decisions[token.token].modifiedValues[mk] || '?'}`,
+        cls: 'badge-modified'
+      })));
+      next();
+    });
+  });
+}
+
 /* ── Renamed token ────────────────────────────── */
 function renderRenamed(token) {
   document.getElementById('card-renamed').classList.remove('hidden');
@@ -435,44 +584,75 @@ async function submitReview() {
   btn.textContent = 'Submitting…';
 
   try {
-    let accepted = 0, modified = 0, rejected = 0;
+    let accepted = 0, modified = 0, rejected = 0, adopted = 0, kept = 0;
 
     for (const [tokenName, dec] of Object.entries(decisions)) {
       const token = allTokens.find(t => t.token === tokenName);
-      if (!token || token.kind !== 'added') continue;
+      if (!token) continue;
 
       const fileDir = token.file || '';
       const modes   = token.modes || {};
 
-      if (dec.action === 'accept') {
-        accepted++;
-        // No changes needed — the workflow already wrote TomTom's value
-        continue;
-      }
+      // ── Added tokens ──────────────────────────
+      if (token.kind === 'added') {
+        if (dec.action === 'accept') { accepted++; continue; }
 
-      if (dec.action === 'reject') {
-        rejected++;
-        // Remove token from each mode file
-        for (const mk of Object.keys(modes)) {
-          const filePath = `tokens/${fileDir}/${mk}.json`;
-          await updateTokenInFile(
-            CLIENT_OWNER, CLIENT_REPO, BRANCH,
-            filePath, tokenName, null, true
-          );
+        if (dec.action === 'reject') {
+          rejected++;
+          for (const mk of Object.keys(modes)) {
+            const filePath = `tokens/${fileDir}/${mk}.json`;
+            await updateTokenInFile(
+              CLIENT_OWNER, CLIENT_REPO, BRANCH,
+              filePath, tokenName, null, true
+            );
+          }
+          continue;
+        }
+
+        if (dec.action === 'modify') {
+          modified++;
+          for (const [mk, newValue] of Object.entries(dec.modifiedValues)) {
+            if (!newValue) continue;
+            const filePath = `tokens/${fileDir}/${mk}.json`;
+            await updateTokenInFile(
+              CLIENT_OWNER, CLIENT_REPO, BRANCH,
+              filePath, tokenName, newValue, false
+            );
+          }
         }
         continue;
       }
 
-      if (dec.action === 'modify') {
-        modified++;
-        for (const [mk, newValue] of Object.entries(dec.modifiedValues)) {
-          if (!newValue) continue;
-          const filePath = `tokens/${fileDir}/${mk}.json`;
-          await updateTokenInFile(
-            CLIENT_OWNER, CLIENT_REPO, BRANCH,
-            filePath, tokenName, newValue, false
-          );
+      // ── Changed tokens (TomTom value updates) ─
+      if (token.kind === 'changed') {
+        if (dec.action === 'keep') { kept++; continue; }  // no file write
+
+        if (dec.action === 'adopt') {
+          adopted++;
+          // Write TomTom's resolved new value (Option B: literal hex) into each mode
+          for (const [mk, newValue] of Object.entries(dec.adoptedValues || {})) {
+            if (!newValue) continue;
+            const filePath = `tokens/${fileDir}/${mk}.json`;
+            await updateTokenInFile(
+              CLIENT_OWNER, CLIENT_REPO, BRANCH,
+              filePath, tokenName, newValue, false
+            );
+          }
+          continue;
         }
+
+        if (dec.action === 'modify') {
+          modified++;
+          for (const [mk, newValue] of Object.entries(dec.modifiedValues || {})) {
+            if (!newValue) continue;
+            const filePath = `tokens/${fileDir}/${mk}.json`;
+            await updateTokenInFile(
+              CLIENT_OWNER, CLIENT_REPO, BRANCH,
+              filePath, tokenName, newValue, false
+            );
+          }
+        }
+        continue;
       }
     }
 
@@ -485,18 +665,22 @@ async function submitReview() {
           body:
             `## ✅ Token review complete — @${reviewer.login}\n\n` +
             `| Decision | Count |\n|---|---|\n` +
-            `| ✓ Accepted TomTom default | ${accepted} |\n` +
+            `| ✓ Accepted TomTom default (new tokens) | ${accepted} |\n` +
             `| ✏ Modified with custom value | ${modified} |\n` +
-            `| ✗ Rejected (removed) | ${rejected} |\n\n` +
+            `| ✗ Rejected (removed) | ${rejected} |\n` +
+            `| ↻ Adopted TomTom value update | ${adopted} |\n` +
+            `| ⏸ Kept existing value | ${kept} |\n\n` +
             `Token files in \`tokens/\` updated directly on this branch.\n` +
             `Merge the PR, then pull from Token Studio to sync.`
         })
       }
     );
 
+    const total = accepted + modified + rejected + adopted + kept;
     document.getElementById('done-message').textContent =
-      `${accepted + modified + rejected} token decisions applied. ` +
-      `Accepted: ${accepted}, Modified: ${modified}, Rejected: ${rejected}. ` +
+      `${total} token decisions applied. ` +
+      `Accepted: ${accepted}, Modified: ${modified}, Rejected: ${rejected}, ` +
+      `Adopted: ${adopted}, Kept: ${kept}. ` +
       `Merge the PR and pull from Token Studio.`;
     document.getElementById('pr-link').href =
       `https://github.com/${CLIENT_OWNER}/${CLIENT_REPO}/pull/${PR_NUMBER}`;

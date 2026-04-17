@@ -95,6 +95,63 @@ def detect_mode(filepath):
     return os.path.splitext(os.path.basename(filepath))[0]
 
 
+def detect_changed_tokens(old_by_file, new_by_file, exclude, old_all, new_all):
+    """
+    Detect tokens present in BOTH old and new refs whose value changed in any mode.
+
+    Returns a list of { token, type, file, group, modes: { mode: { oldValue, newValue } } }.
+    Skips tokens that are matched as renames (in `exclude`).
+    """
+    changed = []
+    common = (old_all & new_all) - exclude
+
+    for token_name in sorted(common):
+        # Collect per-mode values from old and new, keyed by (file_dir, mode)
+        old_values = {}  # (file_dir, mode) -> value
+        new_values = {}
+
+        old_info = None
+        new_info = None
+
+        for file_dir, modes in old_by_file.items():
+            for mode, tokens in modes.items():
+                if token_name in tokens:
+                    old_values[(file_dir, mode)] = tokens[token_name]['value']
+                    old_info = tokens[token_name]
+
+        for file_dir, modes in new_by_file.items():
+            for mode, tokens in modes.items():
+                if token_name in tokens:
+                    new_values[(file_dir, mode)] = tokens[token_name]['value']
+                    new_info = tokens[token_name]
+
+        # Find modes where both refs have the token AND the value differs
+        mode_diffs = {}
+        new_file_dir = ''
+        for (file_dir, mode), new_val in new_values.items():
+            old_val = old_values.get((file_dir, mode))
+            if old_val is not None and old_val != new_val:
+                mode_diffs[mode] = {
+                    'oldValue': old_val,
+                    'newValue': new_val,
+                }
+                new_file_dir = new_file_dir or file_dir
+
+        if not mode_diffs:
+            continue
+
+        entry = {
+            'token': token_name,
+            'type': (new_info or {}).get('type', ''),
+            'file': new_file_dir,
+            'group': (new_info or {}).get('group', ''),
+            'modes': mode_diffs,
+        }
+        changed.append(entry)
+
+    return changed
+
+
 def main():
     parser = argparse.ArgumentParser(description='Generate migration manifest from git diff')
     parser.add_argument('old_ref', help='Old git ref (e.g. v1.3.0)')
@@ -232,6 +289,13 @@ def main():
         # For now just mark as deprecated without a specific replacement
         deprecated.append(dep_entry)
 
+    # Build changed list — tokens present in BOTH refs whose value differs in any mode
+    changed = detect_changed_tokens(
+        old_tokens_by_file, new_tokens_by_file,
+        exclude=matched_added | matched_removed,
+        old_all=old_all, new_all=new_all,
+    )
+
     # Build manifest
     manifest = {
         'version': args.version,
@@ -239,6 +303,7 @@ def main():
             'added': added,
             'renamed': renamed,
             'deprecated': deprecated,
+            'changed': changed,
         }
     }
 
@@ -252,6 +317,7 @@ def main():
     print(f"Added:      {len(added)} tokens")
     print(f"Renamed:    {len(renamed)} tokens")
     print(f"Deprecated: {len(deprecated)} tokens")
+    print(f"Changed:    {len(changed)} tokens")
     print()
 
     if added:
@@ -269,6 +335,12 @@ def main():
         print("Deprecated tokens:")
         for t in deprecated:
             print(f"  - {t['token']}")
+
+    if changed:
+        print("Changed tokens (TomTom value updates):")
+        for t in changed:
+            modes_str = ', '.join(t['modes'].keys())
+            print(f"  ≈ {t['token']} ({t['file']}/{{{modes_str}}})")
 
     print()
     print(f"Written to {output_path}")
