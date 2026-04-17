@@ -22,9 +22,9 @@ Figma Only/  → Figma-specific tokens (panel positions, locales) — excluded f
 
 ### Naming convention
 - `tt_glb_` → Global tokens
-- `tt_sys_` → System tokens  
+- `tt_sys_` → System tokens
 - `tt_cmp_` → Component tokens
-- `fo_` → Figma Only tokens
+- `fo_`     → Figma Only tokens
 
 ### Mode structure
 - **Colour tokens**: `Light.json` and `Dark.json` in each colour folder
@@ -32,25 +32,53 @@ Figma Only/  → Figma-specific tokens (panel positions, locales) — excluded f
 - **Spacing tokens**: `Tall.json`/`Short.json` (vertical), `Wide.json`/`Narrow.json` (horizontal)
 - **Screen-level component tokens**: `Large Tall Wide.json`, `Medium Short Narrow.json`, etc.
 
+---
+
 ## Release & Distribution Flow
 
 ```
-1. TomTom designer modifies tokens in Figma → Token Studio pushes to TomtomTest main
-2. Run manifest generator: python3 scripts/generate-manifest.py <old-tag> main --version X.Y.Z
-3. Review and commit migration/vX.Y.Z.json → push to main
-4. Create GitHub Release with tag vX.Y.Z
-5. Trigger dispatch to each client repo (curl command)
-6. Client repo workflow:
-   - Fetches manifest from TomtomTest (via raw.githubusercontent.com)
-   - Python script edits client token files (inject added, remove deprecated, rename renamed)
+1. TomTom designer modifies tokens in Figma → Token Studio pushes to TomtomTest branch
+2. Designer merges branch to TomtomTest main via GitHub PR
+   (repeat steps 1–2 as many times as needed — clients see nothing yet)
+3. When ready to release: open the Release page → enter version + notes → click Release
+4. Release workflow runs automatically:
+   a. Detects last release tag
+   b. Runs generate-manifest.py → commits migration/vX.Y.Z.json
+   c. Creates GitHub Release + tag vX.Y.Z
+   d. Reads clients.json → dispatches to every client repo
+5. Each client repo's sync workflow runs:
+   - Fetches manifest from TomtomTest
+   - Edits client token files (inject added, remove deprecated, rename renamed)
    - Creates PR on client repo
    - Posts bot comment with review tool link
-7. Client designer opens review tool (GitHub Pages):
-   - Sees each new token with TomTom's value resolved against their own token files
-   - Accept (keep as-is) / Modify (set different value) / Reject (remove)
-   - Submit writes decisions directly into client JSON files on PR branch
-8. Client merges PR → pulls from Token Studio into Figma
+6. Client designer opens review tool link from the PR comment:
+   - Sees each new token with TomTom's value resolved against their own tokens
+   - Accept / Modify / Reject each token
+   - Submit writes decisions into client JSON files on the PR branch
+7. Client merges PR → pulls from Token Studio into Figma
 ```
+
+---
+
+## Designer Workflow (no terminal needed)
+
+### Making token changes
+1. Open TomTom Figma file → Token Studio plugin
+2. Create a branch in Token Studio
+3. Add / modify tokens
+4. Push via Token Studio → creates branch in TomtomTest
+5. Open GitHub → create PR → merge to main
+6. Repeat as many times as needed before releasing
+
+### Triggering a release
+1. Open **`https://volkanuysal-tomtom.github.io/TomtomTest/release.html`**
+2. Sign in with GitHub (OAuth)
+3. See all commits since last release
+4. Enter version number (e.g. `1.5.0`) and release notes
+5. Click **🚀 Release to all clients**
+6. Watch live status — done in ~30 seconds
+
+---
 
 ## Key Files
 
@@ -58,28 +86,51 @@ Figma Only/  → Figma-specific tokens (panel positions, locales) — excluded f
 | File | Purpose |
 |------|---------|
 | `tokens/` | Token JSON files (1-Global, 2-System, 3-Component, Figma Only) |
+| `clients.json` | Registry of all client repos — add new clients here |
 | `migration/vX.Y.Z.json` | Migration manifests — lists added/renamed/deprecated tokens per release |
 | `scripts/generate-manifest.py` | Auto-generates migration manifests by diffing token files between git refs |
-| `docs/index.html` | GitHub Pages review app — HTML structure |
+| `scripts/generate_manifest.py` | Importable copy of above (underscore name, used by tests) |
+| `docs/index.html` | GitHub Pages token review app — HTML structure |
 | `docs/app.js` | Review app logic — auth, token loading, review UI, submit |
-| `docs/style.css` | Review app styles |
-| `.github/workflows/release.yml` | Release workflow (triggered on vX.Y.Z tags) |
-| `client-template/` | Template files for setting up new client repos |
-| `client-template/.github/workflows/sync-tokens.yml` | Client sync workflow template |
+| `docs/release.html` | GitHub Pages release page — designer triggers releases here |
+| `docs/release.js` | Release page logic — OAuth, commit list, workflow dispatch, status polling |
+| `docs/style.css` | Shared styles for both GitHub Pages apps |
+| `.github/workflows/release.yml` | Release workflow — triggered by release page via workflow_dispatch |
+| `.github/workflows/tests.yml` | CI — runs test suite on every push to main and PRs |
+| `client-template/.github/workflows/sync-tokens.yml` | Template for client repo sync workflow |
+| `cloudflare-worker/oauth-proxy.js` | Cloudflare Worker code for GitHub OAuth token exchange |
+| `tests/` | Test suite (pytest) |
 | `CLIENTS.md` | Client onboarding guide |
 
 ### Client repos (e.g. JLRTest)
 | File | Purpose |
 |------|---------|
 | `tokens/` | Same structure as TomtomTest but with client brand values |
-| `tokens/$metadata.json` | Token Studio set order (no tomtom-base or client-theme prefixes) |
+| `tokens/$metadata.json` | Token Studio set order |
 | `.github/workflows/sync-tokens.yml` | Sync workflow — triggered by repository_dispatch |
+
+---
+
+## clients.json — Adding a new client
+
+```json
+[
+  { "name": "JLR",  "owner": "VolkanUysal-TomTom", "repo": "JLRTest" },
+  { "name": "Ford", "owner": "VolkanUysal-TomTom", "repo": "FordTest" }
+]
+```
+
+Every entry gets dispatched automatically on each release. To add a new client:
+1. Add entry to `clients.json`
+2. Set up the client repo (see **Client Repo Setup** below)
+
+---
 
 ## Migration Manifest Format
 
 ```json
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "changes": {
     "added": [
       {
@@ -104,7 +155,7 @@ Figma Only/  → Figma-specific tokens (panel positions, locales) — excluded f
     "deprecated": [
       {
         "token": "tt_sys_color_removed_token",
-        "migration": "Removed in v1.4.0"
+        "migration": "Removed in v1.5.0"
       }
     ]
   }
@@ -112,112 +163,136 @@ Figma Only/  → Figma-specific tokens (panel positions, locales) — excluded f
 ```
 
 Fields:
-- `file`: directory within `tokens/` (e.g. `2-System/Colours`) — combined with mode name to get full path like `tokens/2-System/Colours/Light.json`
-- `group`: JSON group key where the token is nested (e.g. `POI Categories`, `Surfaces/Primary`, `Brand`). Use `""` for root level.
-- `modes`: keys are the JSON file names without `.json` (e.g. `Light`, `Dark`, `Large`, `Tall`)
+- `file`: directory within `tokens/` (e.g. `2-System/Colours`)
+- `group`: **full** nested path (e.g. `Surfaces/Primary`, `Brand/Primary`). Use `""` for root level.
+- `modes`: keys are the JSON filenames without `.json` (e.g. `Light`, `Dark`, `Large`)
+
+**Important**: `group` must use the full path with `/` separators. The sync workflow splits on `/` and navigates each level. A single-level group like `Brand` and a nested group like `Brand/Primary` are both valid.
+
+---
 
 ## Auto-generating Manifests
+
+The release workflow runs this automatically. For manual use:
 
 ```bash
 cd /path/to/TomtomTest
 python3 scripts/generate-manifest.py <old-tag> <new-ref> --version X.Y.Z
 ```
 
-**Important**: The `<old-tag>` must be the tag right before the Token Studio changes. If there were code/restructuring commits between the tag and the Token Studio changes, the diff will include false positives. Best practice:
-1. Tag BEFORE making Token Studio changes
-2. Make Token Studio changes
-3. Run the script comparing old-tag to main
-
 Example:
 ```bash
-python3 scripts/generate-manifest.py v1.3.0 main --version 1.4.0
+python3 scripts/generate-manifest.py v1.4.2 main --version 1.5.0
 ```
 
-## Dispatch Commands
+**Best practice**: Tag BEFORE making Token Studio changes, so the diff only includes real token changes and not structural repo changes.
 
-### Create a release
-```bash
-curl -X POST \
-  -H "Authorization: Bearer <PAT>" \
-  -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/VolkanUysal-TomTom/TomtomTest/releases" \
-  -d '{"tag_name":"vX.Y.Z","target_commitish":"main","name":"vX.Y.Z","body":"Release notes","draft":false,"prerelease":false}'
-```
-
-### Trigger client sync
-```bash
-curl -X POST \
-  -H "Authorization: Bearer <PAT>" \
-  -H "Accept: application/vnd.github+json" \
-  -H "Content-Type: application/json" \
-  "https://api.github.com/repos/VolkanUysal-TomTom/JLRTest/dispatches" \
-  -d '{"event_type":"tomtom-token-release","client_payload":{"version":"X.Y.Z","review_url":"https://volkanuysal-tomtom.github.io/TomtomTest/","tomtom_owner":"VolkanUysal-TomTom","tomtom_repo":"TomtomTest"}}'
-```
-
-### Update sync-tokens.yml on a client repo (via API)
-```bash
-SHA=$(curl -s -H "Authorization: Bearer <PAT>" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/VolkanUysal-TomTom/JLRTest/contents/.github/workflows/sync-tokens.yml" | python3 -c "import sys,json; print(json.load(sys.stdin)['sha'])")
-
-curl -s -X PUT \
-  -H "Authorization: Bearer <PAT>" \
-  -H "Accept: application/vnd.github+json" \
-  "https://api.github.com/repos/VolkanUysal-TomTom/JLRTest/contents/.github/workflows/sync-tokens.yml" \
-  -d "{\"message\":\"update sync workflow\",\"sha\":\"$SHA\",\"content\":\"$(base64 -i client-template/.github/workflows/sync-tokens.yml | tr -d '\n')\"}"
-```
-
-## GitHub Pages Review Tool
-
-- **URL**: `https://volkanuysal-tomtom.github.io/TomtomTest/`
-- **Source**: `docs/` folder on `main` branch
-- **Auth**: GitHub OAuth popup + PAT dev fallback (stored in sessionStorage as `gh_token`)
-- **URL params**: `version`, `pr`, `owner`, `repo`, `branch`, `tomtom_owner`, `tomtom_repo`
-
-### How the review tool works
-1. Authenticates via GitHub PAT (dev mode) or OAuth
-2. Fetches migration manifest from TomtomTest via `raw.githubusercontent.com`
-3. Builds a flat token map by loading ALL client token files from the PR branch
-4. For each token reference (e.g. `{tt_sys_color_brand_primary}`), resolves it against the client's own token values
-5. Presents tokens one at a time: Accept / Modify / Reject
-6. On submit: writes decisions directly into the client's JSON files on the PR branch via GitHub Contents API
+---
 
 ## Sync Workflow Details
 
 The workflow (`client-template/.github/workflows/sync-tokens.yml`):
 1. Triggered by `repository_dispatch` event `tomtom-token-release`
 2. Fetches manifest from `raw.githubusercontent.com/<owner>/<repo>/main/migration/v<version>.json`
-3. Runs embedded Python script that:
-   - **Added tokens**: reads `tokens/<file>/<mode>.json`, finds/creates the group, injects the token
-   - **Deprecated tokens**: walks all `tokens/**/*.json`, recursively finds and removes the key
-   - **Renamed tokens**: walks all files, renames the key preserving the existing value
-4. Stages with `git add -A tokens/`, commits, pushes
-5. Creates PR with truncated body (max 60000 chars for GitHub limit)
+3. Runs embedded Python script that processes in this order:
+   - **DEPRECATED first**: removes tokens by key name from any file
+   - **RENAMED next**: renames keys, preserving existing client values
+   - **ADDED last**: injects new tokens at the correct nested group path
+   - **Cleanup pass**: removes any empty group shells left behind
+4. Commits and pushes to `sync/vX.Y.Z` branch
+5. Creates PR with token summary
 6. Posts bot comment with review tool link
 
-## Known Issues & TODOs
+**Processing order matters**: deprecated runs before added so tokens being moved to a new group are removed first, allowing the added step to re-inject at the correct location.
 
-### Current issues
-- The manifest generator script can detect false positives if there were structural changes between tags — need to tag right before Token Studio changes
-- Review tool loads all 56 token files sequentially via API — can be slow (could batch or use raw URLs)
-- GitHub OAuth not yet set up — using PAT dev fallback (needs Cloudflare Worker proxy for OAuth code→token exchange)
-- The `scripts/generate-manifest.py` doesn't handle nested group paths perfectly — `Surfaces/Primary` vs `Primary` depends on the JSON nesting depth
+---
 
-### Future improvements
-- Wire up the actual dispatch in TomtomTest's `release.yml` (currently curl commands are manual)
-- Set up GitHub OAuth App + Cloudflare Worker proxy for production auth
-- Add a "dry run" mode to the sync workflow for testing
-- Batch token file loading in the review tool for better performance
-- Add validation that all mode files exist before injecting
+## GitHub Pages Apps
+
+### Token Review Tool
+- **URL**: `https://volkanuysal-tomtom.github.io/TomtomTest/`
+- **Used by**: Client designers (e.g. JLR) to review incoming token changes
+- **Auth**: PAT entered manually (OAuth upgrade planned)
+- **URL params**: `version`, `pr`, `owner`, `repo`, `branch`, `tomtom_owner`, `tomtom_repo`
+
+### Release Page
+- **URL**: `https://volkanuysal-tomtom.github.io/TomtomTest/release.html`
+- **Used by**: TomTom designers to trigger releases to all clients
+- **Auth**: GitHub OAuth via Cloudflare Worker proxy
+- **Worker URL**: `https://plain-wave-5669.volkan-uysal.workers.dev`
+- **OAuth App**: Client ID `Ov23liEnfBzfWKcryH7j` (registered under Volkan's GitHub account)
+
+---
+
+## GitHub Actions Secrets Required
+
+### TomtomTest repo
+| Secret | Purpose |
+|--------|---------|
+| `RELEASE_PAT` | PAT with `repo` + `workflow` scope — used by release.yml to dispatch to client repos |
+
+### Cloudflare Worker (plain-wave-5669)
+| Variable | Value |
+|----------|-------|
+| `GITHUB_CLIENT_ID` | `Ov23liEnfBzfWKcryH7j` |
+| `GITHUB_CLIENT_SECRET` | (secret — set in Cloudflare dashboard) |
+
+---
+
+## Tests
+
+```bash
+# First time setup
+python3 -m venv .venv
+source .venv/bin/activate
+pip install pytest
+
+# Run tests
+python3 -m pytest tests/ -v
+```
+
+33 tests covering:
+- `inject_token` — nested group path injection, no literal slash keys
+- `find_and_remove_token` — recursive removal, preserves siblings
+- `find_and_rename_token` — preserves value, works at any depth
+- `remove_empty_groups` — cleans up empty shells after removal
+- `token_exists` — finds tokens at any depth, ignores groups
+- Processing order — deprecated before added allows correct re-injection
+- `extract_tokens_flat` — full group path preserved (the key manifest generator fix)
+
+Tests run automatically on every push to main and every PR via `.github/workflows/tests.yml`.
+
+---
 
 ## Client Repo Setup
 
-To set up a new client repo:
-1. Client creates a repo with same token structure as TomtomTest (same files, their brand values)
+To onboard a new client:
+1. Client creates a repo with same token structure as TomtomTest (same files, their own brand values)
 2. Copy `client-template/.github/workflows/sync-tokens.yml` to client's `.github/workflows/`
-3. In client repo Settings → Actions → General → Workflow permissions: "Read and write" + "Allow GitHub Actions to create and approve pull requests"
-4. Add the dispatch curl command to TomtomTest's release process
+3. In client repo **Settings → Actions → General**:
+   - Workflow permissions: **Read and write**
+   - **Allow GitHub Actions to create and approve pull requests** ✓
+4. Add the client to `clients.json` in TomtomTest
+5. Push — the next release will automatically include the new client
+
+---
+
+## Known Issues & Future Improvements
+
+### Not yet implemented
+- **Value change propagation**: When TomTom changes the value of an existing token, JLR doesn't see it (by design — JLR has own brand values). A `changed` category in the manifest + review tool card would let client designers choose to follow TomTom's semantic updates.
+- **OAuth for review tool**: Token review tool (`index.html`) still uses PAT input. The OAuth plumbing from `release.html` could be reused.
+- **Dry run mode**: A way to preview what a release would change without actually dispatching.
+
+### Known limitations
+- Manifest generator can produce false positives if there were structural (non-token) commits between the last tag and current main. Best practice: tag right before Token Studio changes.
+- Review tool loads all ~56 token files sequentially via GitHub API — can be slow on first load.
+
+---
 
 ## GitHub Repos
 
 - **TomtomTest**: `https://github.com/VolkanUysal-TomTom/TomtomTest`
 - **JLRTest**: `https://github.com/VolkanUysal-TomTom/JLRTest`
 - **Review tool**: `https://volkanuysal-tomtom.github.io/TomtomTest/`
+- **Release page**: `https://volkanuysal-tomtom.github.io/TomtomTest/release.html`
