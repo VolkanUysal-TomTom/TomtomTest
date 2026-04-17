@@ -9,7 +9,7 @@ const CALLBACK   = 'https://volkanuysal-tomtom.github.io/TomtomTest/release.html
 
 // Set this to your Cloudflare Worker URL after deploying oauth-proxy.js
 // It will look like: https://tomtom-oauth-proxy.YOUR-ACCOUNT.workers.dev
-const WORKER_URL = 'REPLACE_WITH_YOUR_CLOUDFLARE_WORKER_URL';
+const WORKER_URL = 'https://plain-wave-5669.volkan-uysal.workers.dev';
 
 // ── State ─────────────────────────────────────────────────────────────────────
 let token      = null;
