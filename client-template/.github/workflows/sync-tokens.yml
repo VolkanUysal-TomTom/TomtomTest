@@ -100,6 +100,16 @@ jobs:
                           return True
               return False
 
+          def remove_empty_groups(data):
+              """Recursively remove empty dict values (leftover group shells after token removal)"""
+              if not isinstance(data, dict):
+                  return
+              for key in list(data.keys()):
+                  if isinstance(data[key], dict) and 'value' not in data[key]:
+                      remove_empty_groups(data[key])
+                      if not data[key]:
+                          del data[key]
+
           def inject_token(data, group, token_name, token_def):
               """Inject token into the specified group path (supports nested paths with '/')"""
               current = data
@@ -135,6 +145,7 @@ jobs:
                       fpath = os.path.join(root_dir, fname)
                       data = load_json(fpath)
                       if find_and_remove_token(data, token_name):
+                          remove_empty_groups(data)
                           save_json(fpath, data)
                           print(f"  Removed {token_name} from {fpath}")
 
@@ -178,6 +189,21 @@ jobs:
                   inject_token(data, group, token_name, token_def)
                   save_json(file_path, data)
                   print(f"  Added {token_name} to {file_path}")
+
+          # Final cleanup pass — remove any empty group shells left behind
+          print("Running cleanup pass to remove empty groups...")
+          for root_dir, dirs, files in os.walk('tokens'):
+              dirs[:] = [d for d in dirs if not d.startswith('$')]
+              for fname in files:
+                  if not fname.endswith('.json') or fname.startswith('$'):
+                      continue
+                  fpath = os.path.join(root_dir, fname)
+                  data = load_json(fpath)
+                  before = json.dumps(data)
+                  remove_empty_groups(data)
+                  if json.dumps(data) != before:
+                      save_json(fpath, data)
+                      print(f"  Cleaned empty groups in {fpath}")
           PYEOF
 
           python3 /tmp/apply_tokens.py
