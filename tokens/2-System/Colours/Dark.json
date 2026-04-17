@@ -2,7 +2,7 @@
   "Surfaces": {
     "Primary": {
       "tt_sys_color_surface_primary": {
-        "value": "{Grey.tt_glb_color_grey_800}",
+        "value": "#000",
         "type": "color",
         "description": "tt_color_surface_primary"
       },
@@ -32,6 +32,10 @@
       },
       "Test": {
         "value": "#db0000",
+        "type": "color"
+      },
+      "tt_system_volkan": {
+        "value": "#d200ec",
         "type": "color"
       }
     },
