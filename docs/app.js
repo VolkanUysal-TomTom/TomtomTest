@@ -309,7 +309,7 @@ function renderAdded(token) {
             <input class="modify-input" type="text"
               placeholder="${isColor ? '#hex or rgba(…)' : 'Enter value'}"
               id="modify-input-${safeId(token.token)}-${mk}">
-            ${isColor ? `<span class="modify-preview" id="modify-preview-${safeId(token.token)}-${mk}"></span>` : ''}
+            ${isColor ? `<input type="color" class="modify-colorpicker" id="modify-preview-${safeId(token.token)}-${mk}" title="Pick colour">` : ''}
           </div>
         `).join('')}
         <button class="action-btn btn-confirm-modify" id="btn-confirm-modify-${safeId(token.token)}">Confirm</button>
@@ -339,13 +339,13 @@ function renderAdded(token) {
         const rawVal   = modes[mk]?.value || '';
         const resolved = resolveValue(rawVal, tokenMap);
         input.value    = resolved;
-        if (preview) preview.style.background = resolved;
+        syncPickerFromText(preview, resolved);
 
         input.addEventListener('input', () => {
           const v = input.value.trim();
           decisions[token.token].modifiedValues[mk] = v;
-          if (preview) preview.style.background = v;
         });
+        wireColorPicker(input, preview);
 
         // Capture initial pre-filled value
         decisions[token.token].modifiedValues[mk] = resolved;
@@ -458,7 +458,7 @@ function renderChanged(token) {
           <input class="modify-input" type="text"
             placeholder="${isColor ? '#hex or rgba(…)' : 'Enter value'}"
             id="modify-input-changed-${safeId(token.token)}-${mk}">
-          ${isColor ? `<span class="modify-preview" id="modify-preview-changed-${safeId(token.token)}-${mk}"></span>` : ''}
+          ${isColor ? `<input type="color" class="modify-colorpicker" id="modify-preview-changed-${safeId(token.token)}-${mk}" title="Pick colour">` : ''}
         </div>
       `).join('')}
       <button class="action-btn btn-confirm-modify" id="btn-confirm-changed-${safeId(token.token)}">Confirm</button>
@@ -495,14 +495,14 @@ function renderChanged(token) {
         // Pre-fill with TomTom's new resolved value as a helpful starting point
         const starter = decisions[token.token].adoptedValues[mk] || '';
         input.value = starter;
-        if (preview) preview.style.background = starter;
+        syncPickerFromText(preview, starter);
         decisions[token.token].modifiedValues[mk] = starter;
 
         input.addEventListener('input', () => {
           const v = input.value.trim();
           decisions[token.token].modifiedValues[mk] = v;
-          if (preview) preview.style.background = v;
         });
+        wireColorPicker(input, preview);
       }
     });
 
@@ -834,4 +834,30 @@ function safeId(name)  { return name.replace(/[^a-zA-Z0-9]/g, '_'); }
 function shortName(name) {
   const parts = name.split('_').filter(Boolean);
   return parts.length > 3 ? parts.slice(-3).join('_') : name;
+}
+
+/**
+ * Sync a <input type="color"> swatch to a text value when the text is a valid
+ * hex (#rrggbb, or #rrggbbaa — alpha ignored). Leaves the picker unchanged
+ * for token refs or rgba() strings since those can't be represented.
+ */
+function syncPickerFromText(pickerEl, value) {
+  if (!pickerEl) return;
+  const m = /^#([0-9a-f]{6})([0-9a-f]{2})?$/i.exec(String(value || '').trim());
+  if (m) pickerEl.value = '#' + m[1].toLowerCase();
+}
+
+/**
+ * Wire bidirectional linkage between a text input and its color picker:
+ *   - typing valid hex in the text input updates the picker swatch
+ *   - using the picker updates the text input and fires 'input' on it so
+ *     the existing listener re-runs, which writes the decision
+ */
+function wireColorPicker(inputEl, pickerEl) {
+  if (!inputEl || !pickerEl) return;
+  inputEl.addEventListener('input', () => syncPickerFromText(pickerEl, inputEl.value));
+  pickerEl.addEventListener('input', () => {
+    inputEl.value = pickerEl.value;
+    inputEl.dispatchEvent(new Event('input', { bubbles: true }));
+  });
 }

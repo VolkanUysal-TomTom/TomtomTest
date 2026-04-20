@@ -318,6 +318,19 @@ body {
   border: 1.5px solid rgba(0,0,0,0.1); flex-shrink: 0;
   display: inline-block;
 }
+/* Color picker styled to look like a swatch — clicking opens the OS picker */
+.modify-colorpicker {
+  width: 28px; height: 28px; border-radius: 4px;
+  border: 1.5px solid rgba(0,0,0,0.15); flex-shrink: 0;
+  padding: 0; cursor: pointer;
+  -webkit-appearance: none; appearance: none;
+  background: var(--white);
+  transition: border-color 0.15s, transform 0.1s;
+}
+.modify-colorpicker:hover { border-color: var(--tt-blue); transform: scale(1.05); }
+.modify-colorpicker::-webkit-color-swatch-wrapper { padding: 0; }
+.modify-colorpicker::-webkit-color-swatch { border: none; border-radius: 3px; }
+.modify-colorpicker::-moz-color-swatch { border: none; border-radius: 3px; }
 .btn-confirm-modify {
   align-self: flex-end; flex: unset;
   padding: 8px 20px; font-size: 13px;
