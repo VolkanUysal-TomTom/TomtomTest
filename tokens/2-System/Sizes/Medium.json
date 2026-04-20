@@ -162,7 +162,7 @@
   },
   "Font Size": {
     "tt_sys_fontSize_xxl": {
-      "value": "{tt_glb_size_80}",
+      "value": "{tt_glb_size_96}",
       "type": "fontSizes"
     },
     "tt_sys_fontSize_xl": {
