@@ -1,0 +1,35 @@
+{
+  "version": "1.10.0",
+  "changes": {
+    "added": [
+      {
+        "token": "tt_system_surface_demo",
+        "type": "color",
+        "description": "",
+        "file": "2-System/Colours",
+        "group": "Surfaces/Primary",
+        "modes": {
+          "Dark": {
+            "value": "#3f61cf"
+          }
+        }
+      }
+    ],
+    "renamed": [],
+    "deprecated": [],
+    "changed": [
+      {
+        "token": "tt_sys_color_surface_primary",
+        "type": "color",
+        "file": "2-System/Colours",
+        "group": "Surfaces/Primary",
+        "modes": {
+          "Light": {
+            "oldValue": "{Grey.tt_glb_color_grey_100}",
+            "newValue": "{Black&White.tt_glb_color_white}"
+          }
+        }
+      }
+    ]
+  }
+}
