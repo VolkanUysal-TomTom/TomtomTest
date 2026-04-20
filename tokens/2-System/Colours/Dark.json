@@ -41,6 +41,10 @@
       "tt_system_surface_demo": {
         "value": "#3f61cf",
         "type": "color"
+      },
+      "tt_sys_Cleanroom": {
+        "value": "#6d26a5",
+        "type": "color"
       }
     },
     "Secondary": {
