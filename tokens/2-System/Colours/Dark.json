@@ -37,6 +37,10 @@
       "tt_system_volkan": {
         "value": "#d200ec",
         "type": "color"
+      },
+      "tt_system_surface_demo": {
+        "value": "#3f61cf",
+        "type": "color"
       }
     },
     "Secondary": {
