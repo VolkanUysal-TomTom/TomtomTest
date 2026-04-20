@@ -586,6 +586,15 @@ async function submitReview() {
   try {
     let accepted = 0, modified = 0, rejected = 0, adopted = 0, kept = 0;
 
+    // Group all file mutations by filePath to avoid SHA-mismatch races from
+    // multiple writes to the same file. Each entry becomes ONE GET + one PUT.
+    //   fileOps[filePath] = [ { op: 'set'|'remove', tokenName, value } ]
+    const fileOps = {};
+    const queue = (filePath, op) => {
+      if (!fileOps[filePath]) fileOps[filePath] = [];
+      fileOps[filePath].push(op);
+    };
+
     for (const [tokenName, dec] of Object.entries(decisions)) {
       const token = allTokens.find(t => t.token === tokenName);
       if (!token) continue;
@@ -600,11 +609,7 @@ async function submitReview() {
         if (dec.action === 'reject') {
           rejected++;
           for (const mk of Object.keys(modes)) {
-            const filePath = `tokens/${fileDir}/${mk}.json`;
-            await updateTokenInFile(
-              CLIENT_OWNER, CLIENT_REPO, BRANCH,
-              filePath, tokenName, null, true
-            );
+            queue(`tokens/${fileDir}/${mk}.json`, { op: 'remove', tokenName });
           }
           continue;
         }
@@ -613,11 +618,7 @@ async function submitReview() {
           modified++;
           for (const [mk, newValue] of Object.entries(dec.modifiedValues)) {
             if (!newValue) continue;
-            const filePath = `tokens/${fileDir}/${mk}.json`;
-            await updateTokenInFile(
-              CLIENT_OWNER, CLIENT_REPO, BRANCH,
-              filePath, tokenName, newValue, false
-            );
+            queue(`tokens/${fileDir}/${mk}.json`, { op: 'set', tokenName, value: newValue });
           }
         }
         continue;
@@ -629,14 +630,9 @@ async function submitReview() {
 
         if (dec.action === 'adopt') {
           adopted++;
-          // Write TomTom's resolved new value (Option B: literal hex) into each mode
           for (const [mk, newValue] of Object.entries(dec.adoptedValues || {})) {
             if (!newValue) continue;
-            const filePath = `tokens/${fileDir}/${mk}.json`;
-            await updateTokenInFile(
-              CLIENT_OWNER, CLIENT_REPO, BRANCH,
-              filePath, tokenName, newValue, false
-            );
+            queue(`tokens/${fileDir}/${mk}.json`, { op: 'set', tokenName, value: newValue });
           }
           continue;
         }
@@ -645,15 +641,16 @@ async function submitReview() {
           modified++;
           for (const [mk, newValue] of Object.entries(dec.modifiedValues || {})) {
             if (!newValue) continue;
-            const filePath = `tokens/${fileDir}/${mk}.json`;
-            await updateTokenInFile(
-              CLIENT_OWNER, CLIENT_REPO, BRANCH,
-              filePath, tokenName, newValue, false
-            );
+            queue(`tokens/${fileDir}/${mk}.json`, { op: 'set', tokenName, value: newValue });
           }
         }
         continue;
       }
+    }
+
+    // Apply all queued ops: one GET + one PUT per file.
+    for (const [filePath, ops] of Object.entries(fileOps)) {
+      await applyFileOps(CLIENT_OWNER, CLIENT_REPO, BRANCH, filePath, ops);
     }
 
     // Post summary comment on PR
@@ -693,6 +690,67 @@ async function submitReview() {
 }
 
 /* ── File update helpers ──────────────────────── */
+
+/**
+ * Apply a batch of token ops to a single file in one GET + one PUT.
+ * Avoids the SHA-mismatch race that happens when multiple sequential writes
+ * hit the same file (GitHub's Contents API read replica can lag a write by
+ * ~1s, so the SHA from a GET right after a PUT can still be pre-write).
+ *
+ * ops: [{ op: 'set', tokenName, value } | { op: 'remove', tokenName }]
+ */
+async function applyFileOps(owner, repo, branch, filePath, ops) {
+  const res = await gh(
+    `https://api.github.com/repos/${owner}/${repo}/contents/${encodePath(filePath)}?ref=${encodeURIComponent(branch)}`
+  );
+  if (!res.ok) {
+    console.warn(`Skipping ${filePath} — file not found on branch ${branch}`);
+    return;
+  }
+  const fileData = await res.json();
+  const sha      = fileData.sha;
+  let content;
+  try {
+    content = JSON.parse(atob(fileData.content.replace(/\n/g, '')));
+  } catch {
+    throw new Error(`Could not parse JSON in ${filePath}`);
+  }
+
+  // Apply every op to the in-memory object
+  const applied = [];
+  for (const op of ops) {
+    if (op.op === 'remove') {
+      removeTokenFromObj(content, op.tokenName);
+      applied.push(`remove ${op.tokenName}`);
+    } else if (op.op === 'set') {
+      updateTokenValueInObj(content, op.tokenName, op.value);
+      applied.push(`set ${op.tokenName}`);
+    }
+  }
+
+  const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2) + '\n')));
+  const commitMsg = applied.length === 1
+    ? `review: ${applied[0]} in ${filePath.split('/').pop()}`
+    : `review: apply ${applied.length} decisions to ${filePath.split('/').pop()}`;
+
+  const putRes = await gh(
+    `https://api.github.com/repos/${owner}/${repo}/contents/${encodePath(filePath)}`,
+    {
+      method: 'PUT',
+      body: JSON.stringify({
+        message: commitMsg,
+        content: newContent,
+        sha:     sha,
+        branch:  branch
+      })
+    }
+  );
+  if (!putRes.ok) {
+    const errData = await putRes.json();
+    throw new Error(`Failed to commit ${filePath}: ${errData.message}`);
+  }
+}
+
 async function updateTokenInFile(owner, repo, branch, filePath, tokenName, newValue, shouldRemove) {
   const res = await gh(
     `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}?ref=${branch}`
