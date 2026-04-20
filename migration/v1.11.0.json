@@ -1,0 +1,22 @@
+{
+  "version": "1.11.0",
+  "changes": {
+    "added": [
+      {
+        "token": "tt_sys_Cleanroom",
+        "type": "color",
+        "description": "",
+        "file": "2-System/Colours",
+        "group": "Surfaces/Primary",
+        "modes": {
+          "Dark": {
+            "value": "#6d26a5"
+          }
+        }
+      }
+    ],
+    "renamed": [],
+    "deprecated": [],
+    "changed": []
+  }
+}
