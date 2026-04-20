@@ -1,0 +1,22 @@
+{
+  "version": "1.9.0",
+  "changes": {
+    "added": [],
+    "renamed": [],
+    "deprecated": [],
+    "changed": [
+      {
+        "token": "tt_sys_color_surface_primary",
+        "type": "color",
+        "file": "2-System/Colours",
+        "group": "Surfaces/Primary",
+        "modes": {
+          "Light": {
+            "oldValue": "{Black&White.tt_glb_color_white}",
+            "newValue": "{Grey.tt_glb_color_grey_100}"
+          }
+        }
+      }
+    ]
+  }
+}

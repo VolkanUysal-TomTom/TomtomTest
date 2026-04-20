@@ -309,7 +309,7 @@ function renderAdded(token) {
             <input class="modify-input" type="text"
               placeholder="${isColor ? '#hex or rgba(…)' : 'Enter value'}"
               id="modify-input-${safeId(token.token)}-${mk}">
-            ${isColor ? `<span class="modify-preview" id="modify-preview-${safeId(token.token)}-${mk}"></span>` : ''}
+            ${isColor ? `<input type="color" class="modify-colorpicker" id="modify-preview-${safeId(token.token)}-${mk}" title="Pick colour">` : ''}
           </div>
         `).join('')}
         <button class="action-btn btn-confirm-modify" id="btn-confirm-modify-${safeId(token.token)}">Confirm</button>
@@ -339,13 +339,13 @@ function renderAdded(token) {
         const rawVal   = modes[mk]?.value || '';
         const resolved = resolveValue(rawVal, tokenMap);
         input.value    = resolved;
-        if (preview) preview.style.background = resolved;
+        syncPickerFromText(preview, resolved);
 
         input.addEventListener('input', () => {
           const v = input.value.trim();
           decisions[token.token].modifiedValues[mk] = v;
-          if (preview) preview.style.background = v;
         });
+        wireColorPicker(input, preview);
 
         // Capture initial pre-filled value
         decisions[token.token].modifiedValues[mk] = resolved;
@@ -458,7 +458,7 @@ function renderChanged(token) {
           <input class="modify-input" type="text"
             placeholder="${isColor ? '#hex or rgba(…)' : 'Enter value'}"
             id="modify-input-changed-${safeId(token.token)}-${mk}">
-          ${isColor ? `<span class="modify-preview" id="modify-preview-changed-${safeId(token.token)}-${mk}"></span>` : ''}
+          ${isColor ? `<input type="color" class="modify-colorpicker" id="modify-preview-changed-${safeId(token.token)}-${mk}" title="Pick colour">` : ''}
         </div>
       `).join('')}
       <button class="action-btn btn-confirm-modify" id="btn-confirm-changed-${safeId(token.token)}">Confirm</button>
@@ -495,14 +495,14 @@ function renderChanged(token) {
         // Pre-fill with TomTom's new resolved value as a helpful starting point
         const starter = decisions[token.token].adoptedValues[mk] || '';
         input.value = starter;
-        if (preview) preview.style.background = starter;
+        syncPickerFromText(preview, starter);
         decisions[token.token].modifiedValues[mk] = starter;
 
         input.addEventListener('input', () => {
           const v = input.value.trim();
           decisions[token.token].modifiedValues[mk] = v;
-          if (preview) preview.style.background = v;
         });
+        wireColorPicker(input, preview);
       }
     });
 
@@ -586,6 +586,15 @@ async function submitReview() {
   try {
     let accepted = 0, modified = 0, rejected = 0, adopted = 0, kept = 0;
 
+    // Group all file mutations by filePath to avoid SHA-mismatch races from
+    // multiple writes to the same file. Each entry becomes ONE GET + one PUT.
+    //   fileOps[filePath] = [ { op: 'set'|'remove', tokenName, value } ]
+    const fileOps = {};
+    const queue = (filePath, op) => {
+      if (!fileOps[filePath]) fileOps[filePath] = [];
+      fileOps[filePath].push(op);
+    };
+
     for (const [tokenName, dec] of Object.entries(decisions)) {
       const token = allTokens.find(t => t.token === tokenName);
       if (!token) continue;
@@ -600,11 +609,7 @@ async function submitReview() {
         if (dec.action === 'reject') {
           rejected++;
           for (const mk of Object.keys(modes)) {
-            const filePath = `tokens/${fileDir}/${mk}.json`;
-            await updateTokenInFile(
-              CLIENT_OWNER, CLIENT_REPO, BRANCH,
-              filePath, tokenName, null, true
-            );
+            queue(`tokens/${fileDir}/${mk}.json`, { op: 'remove', tokenName });
           }
           continue;
         }
@@ -613,11 +618,7 @@ async function submitReview() {
           modified++;
           for (const [mk, newValue] of Object.entries(dec.modifiedValues)) {
             if (!newValue) continue;
-            const filePath = `tokens/${fileDir}/${mk}.json`;
-            await updateTokenInFile(
-              CLIENT_OWNER, CLIENT_REPO, BRANCH,
-              filePath, tokenName, newValue, false
-            );
+            queue(`tokens/${fileDir}/${mk}.json`, { op: 'set', tokenName, value: newValue });
           }
         }
         continue;
@@ -629,14 +630,9 @@ async function submitReview() {
 
         if (dec.action === 'adopt') {
           adopted++;
-          // Write TomTom's resolved new value (Option B: literal hex) into each mode
           for (const [mk, newValue] of Object.entries(dec.adoptedValues || {})) {
             if (!newValue) continue;
-            const filePath = `tokens/${fileDir}/${mk}.json`;
-            await updateTokenInFile(
-              CLIENT_OWNER, CLIENT_REPO, BRANCH,
-              filePath, tokenName, newValue, false
-            );
+            queue(`tokens/${fileDir}/${mk}.json`, { op: 'set', tokenName, value: newValue });
           }
           continue;
         }
@@ -645,15 +641,16 @@ async function submitReview() {
           modified++;
           for (const [mk, newValue] of Object.entries(dec.modifiedValues || {})) {
             if (!newValue) continue;
-            const filePath = `tokens/${fileDir}/${mk}.json`;
-            await updateTokenInFile(
-              CLIENT_OWNER, CLIENT_REPO, BRANCH,
-              filePath, tokenName, newValue, false
-            );
+            queue(`tokens/${fileDir}/${mk}.json`, { op: 'set', tokenName, value: newValue });
           }
         }
         continue;
       }
+    }
+
+    // Apply all queued ops: one GET + one PUT per file.
+    for (const [filePath, ops] of Object.entries(fileOps)) {
+      await applyFileOps(CLIENT_OWNER, CLIENT_REPO, BRANCH, filePath, ops);
     }
 
     // Post summary comment on PR
@@ -693,6 +690,67 @@ async function submitReview() {
 }
 
 /* ── File update helpers ──────────────────────── */
+
+/**
+ * Apply a batch of token ops to a single file in one GET + one PUT.
+ * Avoids the SHA-mismatch race that happens when multiple sequential writes
+ * hit the same file (GitHub's Contents API read replica can lag a write by
+ * ~1s, so the SHA from a GET right after a PUT can still be pre-write).
+ *
+ * ops: [{ op: 'set', tokenName, value } | { op: 'remove', tokenName }]
+ */
+async function applyFileOps(owner, repo, branch, filePath, ops) {
+  const res = await gh(
+    `https://api.github.com/repos/${owner}/${repo}/contents/${encodePath(filePath)}?ref=${encodeURIComponent(branch)}`
+  );
+  if (!res.ok) {
+    console.warn(`Skipping ${filePath} — file not found on branch ${branch}`);
+    return;
+  }
+  const fileData = await res.json();
+  const sha      = fileData.sha;
+  let content;
+  try {
+    content = JSON.parse(atob(fileData.content.replace(/\n/g, '')));
+  } catch {
+    throw new Error(`Could not parse JSON in ${filePath}`);
+  }
+
+  // Apply every op to the in-memory object
+  const applied = [];
+  for (const op of ops) {
+    if (op.op === 'remove') {
+      removeTokenFromObj(content, op.tokenName);
+      applied.push(`remove ${op.tokenName}`);
+    } else if (op.op === 'set') {
+      updateTokenValueInObj(content, op.tokenName, op.value);
+      applied.push(`set ${op.tokenName}`);
+    }
+  }
+
+  const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2) + '\n')));
+  const commitMsg = applied.length === 1
+    ? `review: ${applied[0]} in ${filePath.split('/').pop()}`
+    : `review: apply ${applied.length} decisions to ${filePath.split('/').pop()}`;
+
+  const putRes = await gh(
+    `https://api.github.com/repos/${owner}/${repo}/contents/${encodePath(filePath)}`,
+    {
+      method: 'PUT',
+      body: JSON.stringify({
+        message: commitMsg,
+        content: newContent,
+        sha:     sha,
+        branch:  branch
+      })
+    }
+  );
+  if (!putRes.ok) {
+    const errData = await putRes.json();
+    throw new Error(`Failed to commit ${filePath}: ${errData.message}`);
+  }
+}
+
 async function updateTokenInFile(owner, repo, branch, filePath, tokenName, newValue, shouldRemove) {
   const res = await gh(
     `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}?ref=${branch}`
@@ -776,4 +834,30 @@ function safeId(name)  { return name.replace(/[^a-zA-Z0-9]/g, '_'); }
 function shortName(name) {
   const parts = name.split('_').filter(Boolean);
   return parts.length > 3 ? parts.slice(-3).join('_') : name;
+}
+
+/**
+ * Sync a <input type="color"> swatch to a text value when the text is a valid
+ * hex (#rrggbb, or #rrggbbaa — alpha ignored). Leaves the picker unchanged
+ * for token refs or rgba() strings since those can't be represented.
+ */
+function syncPickerFromText(pickerEl, value) {
+  if (!pickerEl) return;
+  const m = /^#([0-9a-f]{6})([0-9a-f]{2})?$/i.exec(String(value || '').trim());
+  if (m) pickerEl.value = '#' + m[1].toLowerCase();
+}
+
+/**
+ * Wire bidirectional linkage between a text input and its color picker:
+ *   - typing valid hex in the text input updates the picker swatch
+ *   - using the picker updates the text input and fires 'input' on it so
+ *     the existing listener re-runs, which writes the decision
+ */
+function wireColorPicker(inputEl, pickerEl) {
+  if (!inputEl || !pickerEl) return;
+  inputEl.addEventListener('input', () => syncPickerFromText(pickerEl, inputEl.value));
+  pickerEl.addEventListener('input', () => {
+    inputEl.value = pickerEl.value;
+    inputEl.dispatchEvent(new Event('input', { bubbles: true }));
+  });
 }

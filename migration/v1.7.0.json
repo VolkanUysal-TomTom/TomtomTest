@@ -1,0 +1,47 @@
+{
+  "version": "1.7.0",
+  "changes": {
+    "added": [
+      {
+        "token": "verynew",
+        "type": "color",
+        "description": "",
+        "file": "2-System/Colours",
+        "group": "Surfaces/Primary",
+        "modes": {
+          "Light": {
+            "value": "#55983b"
+          }
+        }
+      }
+    ],
+    "renamed": [],
+    "deprecated": [],
+    "changed": [
+      {
+        "token": "tt_sys_color_surface_primary",
+        "type": "color",
+        "file": "2-System/Colours",
+        "group": "Surfaces/Primary",
+        "modes": {
+          "Light": {
+            "oldValue": "{Grey.tt_glb_color_grey_100}",
+            "newValue": "{Black&White.tt_glb_color_white}"
+          }
+        }
+      },
+      {
+        "token": "tt_sys_fontSize_xxl",
+        "type": "fontSizes",
+        "file": "2-System/Sizes",
+        "group": "Font Size",
+        "modes": {
+          "Medium": {
+            "oldValue": "{tt_glb_size_80}",
+            "newValue": "{tt_glb_size_96}"
+          }
+        }
+      }
+    ]
+  }
+}
