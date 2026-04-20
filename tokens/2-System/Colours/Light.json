@@ -2,7 +2,7 @@
   "Surfaces": {
     "Primary": {
       "tt_sys_color_surface_primary": {
-        "value": "{Grey.tt_glb_color_grey_100}",
+        "value": "{Black&White.tt_glb_color_white}",
         "type": "color",
         "description": "tt_color_surface_primary"
       },
